@@ -1,0 +1,675 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x3a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f3c
+entry 0x403c8928
+[0;32mI (33) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Feb  4 2026 15:35:28[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v0.1[0m
+[0;32mI (37) boot: efuse block revision: v1.2[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (79) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (86) boot:  3 ota_0            OTA app          00 10 00020000 00300000[0m
+[0;32mI (92) boot:  4 ota_1            OTA app          00 11 00320000 00300000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (102) boot: No factory image, trying OTA 0[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=4bc18h (310296) map[0m
+[0;32mI (186) esp_image: segment 1: paddr=0006bc40 vaddr=3fc9b100 size=043d8h ( 17368) load[0m
+[0;32mI (191) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=9cdd0h (642512) map[0m
+[0;32mI (342) esp_image: segment 3: paddr=0010cdf8 vaddr=3fc9f4d8 size=006d0h (  1744) load[0m
+[0;32mI (343) esp_image: segment 4: paddr=0010d4d0 vaddr=40374000 size=17078h ( 94328) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=00124550 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (381) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (405) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (415) cpu_start: Multicore app[0m
+[0;32mI (424) cpu_start: Pro cpu start user code[0m
+[0;32mI (424) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (424) app_init: Application information:[0m
+[0;32mI (424) app_init: Project name:     JAQUAR_RS485_REMOTE_GATEWAY[0m
+[0;32mI (430) app_init: App version:      6d4ace7[0m
+[0;32mI (434) app_init: Compile time:     Feb  4 2026 15:35:17[0m
+[0;32mI (439) app_init: ELF file SHA256:  ac958409f...[0m
+[0;32mI (443) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (448) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (452) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (456) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (460) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FCA9D40 len 0003F9D0 (254 KiB): RAM[0m
+[0;32mI (471) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (476) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (481) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (487) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (496) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (500) spi_flash: flash io: opi_str[0m
+[0;33mW (504) spi_flash: Detected size(32768k) larger than the size in the binary image header(16384k). Using the size in the binary image header.[0m
+[0;32mI (516) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (522) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (529) main_task: Started on CPU0[0m
+[0;32mI (539) main_task: Calling app_main()[0m
+[0;32mI (539) MAIN: Starting Jaquar Remote Configuration Application[0m
+[0;32mI (569) MAIN: Watchdog timer started[0m
+[0;32mI (569) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (569) MAIN: Waiting for Z-Wave module to initialize...[0m
+[0;32mI (1829) MAIN: RAW RX (12 bytes):[0m
+01 0A 00 0A 05 00 01 02 01 00 00 F8 
+[0;32mI (1829) MAIN: SERIALAPI_STARTED received[0m
+[0;32mI (1829) MAIN: RF region set: INDIA[0m
+[0;32mI (1929) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 40 01 B1 
+[0;32mI (1929) MAIN: Received ACK (0x06)[0m
+[0;32mI (1929) MAIN: RF region set successfully[0m
+[0;32mI (2029) MAIN: RAW RX (11 bytes):[0m
+06 01 08 01 20 E1 0C 10 44 01 6E 
+[0;32mI (2029) MAIN: Received ACK (0x06)[0m
+[0;32mI (2029) MAIN: HomeID: E10C1044[0m
+[0;32mI (2029) MAIN: Z-Wave controller ready[0m
+[0;32mI (3579) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3579) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3579) WEB_MSG: Gateway Status : Loading...[0m
+[0;32mI (3589) MAIN: [0m
+
+
+[0;32mI (3589) MAIN: ========================================================[0m
+[0;32mI (3589) MAIN: STARTING Z-WAVE SERIAL API INITIALIZATION SEQUENCE[0m
+[0;32mI (3599) MAIN: ========================================================[0m
+[0;32mI (3809) MAIN: [0m
+[1] Getting controller capabilities...
+TX Get Capabilities: 01 03 00 07 FB 
+[0;32mI (3809) MAIN: Requesting controller capabilities...[0m
+[0;32mI (3909) MAIN: RAW RX (46 bytes):[0m
+06 01 2B 01 07 07 12 00 00 00 04 00 04 F6 87 3E 
+88 CF 2B C0 4F FB D7 FD E0 17 00 00 80 00 80 86 
+80 BA 05 00 70 00 00 EE 7F C0 00 00 00 D5 
+[0;32mI (3909) MAIN: Received ACK (0x06)[0m
+[0;32mI (3909) MAIN: === GET CAPABILITIES RESPONSE ===[0m
+[0;32mI (3919) MAIN: === CAPABILITIES RESPONSE ===[0m
+[0;32mI (3919) MAIN: Length: 41 bytes[0m
+[0;32mI (3919) MAIN: Full data:[0m
+07 12 00 00 00 04 00 04 F6 87 3E 88 CF 2B C0 4F 
+FB D7 FD E0 17 00 00 80 00 80 86 80 BA 05 00 70 
+00 00 EE 7F C0 00 00 00 D5 
+=============================
+[0;32mI (4009) MAIN: [0m
+[2] Getting SerialAPI supported command classes...
+TX SerialAPI Setup: Supported: 01 04 00 0B 01 F1 
+[0;32mI (4009) MAIN: Requesting SerialAPI supported command classes...[0m
+[0;32mI (4109) MAIN: RAW RX (25 bytes):[0m
+06 01 16 01 0B 01 FE 3E 01 03 00 01 00 00 00 01 
+00 00 00 00 00 00 00 01 21 
+[0;32mI (4109) MAIN: Received ACK (0x06)[0m
+[0;32mI (4109) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x01[0m
+[0;32mI (4109) MAIN: === SERIALAPI SUPPORTED RESPONSE ===[0m
+[0;32mI (4209) MAIN: [0m
+[3] Getting SUC Node ID...
+TX Get SUC Node ID: 01 03 00 02 FE 
+[0;32mI (4209) MAIN: Requesting SUC (Static Update Controller) Node ID...[0m
+[0;32mI (4309) MAIN: RAW RX (40 bytes):[0m
+06 01 25 01 02 09 00 1D 51 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 07 00 9B 
+[0;32mI (4309) MAIN: Received ACK (0x06)[0m
+[0;32mI (4309) MAIN: === GET SUC NODE ID RESPONSE ===[0m
+[0;32mI (4319) MAIN: === SUC NODE RESPONSE ===[0m
+[0;32mI (4319) MAIN: SUC Node ID: 9[0m
+[0;32mI (4319) MAIN: Capabilities: 0x00[0m
+[0;32mI (4319) MAIN: Full response:[0m
+09 00 1D 51 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 9B 
+=============================
+[0;32mI (4409) MAIN: [0m
+[4] Getting Z-Wave library version...
+TX Get Version: 01 03 00 15 E9 
+[0;32mI (4409) MAIN: Requesting Z-Wave library version...[0m
+[0;32mI (4509) MAIN: RAW RX (19 bytes):[0m
+06 01 10 01 15 5A 2D 57 61 76 65 20 37 2E 31 38 
+00 07 9E 
+[0;32mI (4509) MAIN: Received ACK (0x06)[0m
+[0;32mI (4509) MAIN: === GET VERSION RESPONSE ===[0m
+[0;32mI (4509) MAIN: === VERSION RESPONSE ===[0m
+[0;32mI (4509) MAIN: Library Type: 0x5A[0m
+[0;32mI (4519) MAIN: Library Type: Unknown[0m
+[0;32mI (4519) MAIN: Protocol Version: 45.87[0m
+[0;32mI (4519) MAIN: Application Version: 97.118[0m
+[0;32mI (4529) MAIN: Full data:[0m
+5A 2D 57 61 76 65 20 37 2E 31 38 00 07 9E 
+=============================
+[0;32mI (4609) MAIN: [0m
+[5] Getting Home ID and Node ID...
+[0;32mI (4709) MAIN: RAW RX (11 bytes):[0m
+06 01 08 01 20 E1 0C 10 44 01 6E 
+[0;32mI (4709) MAIN: Received ACK (0x06)[0m
+[0;32mI (4809) MAIN: [0m
+[7] Setting TX power...
+TX Set TX Power: 01 06 00 0B 04 7F 00 89 
+[0;32mI (4809) MAIN: Setting TX power to: 0x7F (measured: 0x00)[0m
+[0;32mI (4909) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 04 01 F5 
+[0;32mI (4909) MAIN: Received ACK (0x06)[0m
+[0;32mI (4909) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x04[0m
+[0;32mI (4909) MAIN: === TX POWER SET RESPONSE ===[0m
+[0;32mI (4909) MAIN: Status: 0x01[0m
+[0;32mI (4909) MAIN: ✓ TX power set SUCCESSFULLY to 0x7F[0m
+[0;32mI (4919) MAIN: TX Power is now at maximum (+7 dBm)[0m
+[0;32mI (4919) MAIN: [0m
+[9] Setting RF region to India...
+TX RF Region Set: 01 05 00 0B 40 05 B4 
+[0;32mI (4929) MAIN: Setting RF Region to: 0x05[0m
+[0;32mI (4939) MAIN: Region: India[0m
+[0;32mI (5029) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 40 01 B1 
+[0;32mI (5029) MAIN: Received ACK (0x06)[0m
+[0;32mI (5029) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x40[0m
+[0;32mI (5029) MAIN: === RF REGION SET RESPONSE ===[0m
+[0;32mI (5029) MAIN: Status: 0x01[0m
+[0;32mI (5029) MAIN: ✓ RF Region set SUCCESSFULLY[0m
+[0;32mI (5039) MAIN: [0m
+[10] Verifying RF region...
+TX RF Region Get: 01 04 00 0B 20 D0 
+[0;32mI (5049) MAIN: Requesting current RF Region[0m
+[0;32mI (5149) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 20 05 D5 
+[0;32mI (5149) MAIN: Received ACK (0x06)[0m
+[0;32mI (5149) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x20[0m
+[0;32mI (5149) MAIN: === RF REGION GET RESPONSE ===[0m
+[0;32mI (5149) MAIN: Current RF Region: 0x05[0m
+[0;32mI (5159) MAIN: === RF REGION INFORMATION ===[0m
+[0;32mI (5159) MAIN: Region Code: 0x05[0m
+[0;32mI (5159) MAIN: Region Name: India[0m
+[0;32mI (5169) MAIN: ============================[0m
+[0;32mI (5249) MAIN: ========================================================[0m
+[0;32mI (5249) MAIN: ✓ Z-WAVE CONTROLLER INITIALIZATION COMPLETE[0m
+[0;32mI (5249) MAIN: ========================================================[0m
+[0;32mI (5249) MAIN: [0m
+
+
+[0;32mI (5249) WIFI: Valid SSID found in NVS, use STA mode[0m
+[0;32mI (5259) WIFI: Starting in STA mode with saved credentials[0m
+[0;32mI (5259) WIFI: Initializing WiFi STA mode[0m
+[0;32mI (5269) pp: pp rom version: e7ae62f[0m
+[0;32mI (5269) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (5289) wifi:wifi driver task: 3fcbb24c, prio:23, stack:6656, core=0[0m
+[0;32mI (5299) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (5299) wifi:wifi certification version: v7.0[0m
+[0;32mI (5299) wifi:config NVS flash: enabled[0m
+[0;32mI (5299) wifi:config nano formatting: disabled[0m
+[0;32mI (5299) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (5309) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (5309) wifi:Init management short buffer num: 32[0m
+[0;32mI (5319) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (5319) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (5329) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (5329) wifi:Init static rx buffer num: 10[0m
+[0;32mI (5329) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (5339) wifi_init: rx ba win: 6[0m
+[0;32mI (5339) wifi_init: accept mbox: 6[0m
+[0;32mI (5339) wifi_init: tcpip mbox: 32[0m
+[0;32mI (5349) wifi_init: udp mbox: 6[0m
+[0;32mI (5349) wifi_init: tcp mbox: 6[0m
+[0;32mI (5349) wifi_init: tcp tx win: 5760[0m
+[0;32mI (5359) wifi_init: tcp rx win: 5760[0m
+[0;32mI (5359) wifi_init: tcp mss: 1440[0m
+[0;32mI (5359) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (5369) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (5369) WIFI: Connecting to SSID: Confio_R&D[0m
+[0;32mI (5379) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (5409) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (5429) wifi:mode : sta (68:b6:b3:3e:0f:10)[0m
+[0;32mI (5429) wifi:enable tsf[0m
+[0;32mI (5429) WIFI: WiFi STA started, connecting...[0m
+[0;32mI (5429) MAIN: ✓ Loaded 1 nodes from NVS[0m
+[0;32mI (5429) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (5439) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (5439) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5449) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5449) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (5459) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (5459) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (5469) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5469) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (5479) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (5479) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5489) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (5489) MAIN: =============================[0m
+[0;32mI (5499) MAIN: [0m
+
+
+[0;32mI (5499) wifi:connected with Confio_R&D, aid = 3, channel 3, BW20, bssid = a2:c9:eb:d7:01:43[0m
+[0;32mI (5509) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (5509) wifi:pm start, type: 1[0m
+
+[0;32mI (5519) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5519) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5529) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (5539) MAIN: ========================================================[0m
+[0;32mI (5539) MAIN: APPLICATION STARTED SUCCESSFULLY[0m
+[0;32mI (5549) MAIN: ========================================================[0m
+[0;32mI (5549) MAIN: Z-Wave Controller: READY[0m
+[0;32mI (5559) MAIN: ========================================================[0m
+[0;32mI (5559) MAIN: [0m
+
+
+[0;32mI (8369) WIFI: Got IP: 192.168.1.34[0m
+[0;32mI (8369) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (8369) WIFI: mDNS service started with hostname 'jaquarremote' on port 5000[0m
+
+[0;32mI (8369) MAIN: Starting web server...[0m
+[0;32mI (8369) MAIN: Starting HTTP server on port: 80[0m
+[0;32mI (8379) MAIN: HTTP server started successfully[0m
+[0;32mI (8379) WIFI: WiFi connected successfully after 0 seconds total[0m
+[0;32mI (8389) esp_netif_handlers: sta ip: 192.168.1.34, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8589) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (13589) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (18589) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (23589) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (23759) wifi:<ba-add>idx:0 (ifx:0, a2:c9:eb:d7:01:43), tid:0, ssn:0, winSize:64[0m
+[0;32mI (28589) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (30569) MAIN: === CURRENT NODES (1) ===[0m
+[0;32mI (30569) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (30569) MAIN: =====================[0m
+[0;32mI (31129) MAIN: Inclusion process started via web[0m
+[0;32mI (31129) WEB_MSG: Inclusion process started. Put Z-Wave device in inclusion mode within 60 seconds.[0m
+[0;32mI (31729) MAIN: ========== STARTING INCLUSION PROCESS ==========[0m
+[0;32mI (31829) MAIN: RAW RX (1 bytes):[0m
+06 
+[0;32mI (31829) MAIN: Received ACK (0x06)[0m
+[0;32mI (31929) MAIN: Z-Wave inclusion started[0m
+[0;32mI (32029) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 05 01 00 00 B6 
+[0;32mI (32029) MAIN: Received ACK (0x06)[0m
+[0;32mI (32029) MAIN: ADD_NODE → status=LEARN_READY node=0[0m
+[0;32mI (32029) MAIN: Controller ready[0m
+[0;32mI (35119) MAIN: RAW RX (9 bytes):[0m
+01 07 00 4A 05 02 00 00 B5 
+[0;32mI (35119) MAIN: ADD_NODE → status=NODE_FOUND node=0[0m
+[0;32mI (35119) MAIN: Device detected[0m
+[0;32mI (35119) WEB_MSG: Device detected and adding please wait!![0m
+[0;32mI (35219) MAIN: RAW RX (27 bytes):[0m
+01 19 00 4A 05 03 08 12 04 18 01 5E 98 9F 55 86 
+6C 73 72 87 7A 5A 5B 8E 59 85 E4 
+[0;32mI (35219) MAIN: ADD_NODE → status=ADDING_SLAVE node=8[0m
+[0;32mI (35219) MAIN: Node 8 assigned, NIF stored (18 bytes)[0m
+[0;32mI (39049) MAIN: RAW RX (9 bytes):[0m
+01 07 00 4A 05 05 08 00 BA 
+[0;32mI (39049) MAIN: ADD_NODE → status=PROTOCOL_DONE node=8[0m
+[0;32mI (39049) MAIN: Protocol done for node 8[0m
+[0;32mI (39049) MAIN: Sending ADD_NODE_STOP after PROTOCOL_DONE[0m
+[0;32mI (39079) MAIN: Done received from within 60 seconds[0m
+[0;32mI (39159) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 05 06 08 00 B9 
+[0;32mI (39159) MAIN: Received ACK (0x06)[0m
+[0;32mI (39159) MAIN: ADD_NODE → status=DONE node=8[0m
+[0;32mI (39159) MAIN: ✔ Inclusion COMPLETED for node 8[0m
+[0;32mI (39159) MAIN: Node 8 added to list. Total nodes: 2[0m
+[0;32mI (39169) MAIN: Adding node 8 with HomeID: E10C1044[0m
+[0;32mI (39169) MAIN: === NODE 8 INFORMATION ===[0m
+[0;32mI (39179) MAIN: NIF length: 18 bytes[0m
+[0;32mI (39179) MAIN: Basic Device Class   : 0x04 (Routing Slave)[0m
+[0;32mI (39179) MAIN: Generic Device Class : 0x18[0m
+[0;32mI (39189) MAIN: Specific Device Class: 0x01[0m
+[0;32mI (39189) MAIN: Supported Command Classes:[0m
+[0;32mI (39199) MAIN:   CC 0x5E (Z-Wave Plus Info)[0m
+[0;32mI (39199) MAIN:   CC 0x98 (Security)[0m
+[0;32mI (39199) MAIN:   CC 0x9F (Unknown CC)[0m
+[0;32mI (39209) MAIN:   CC 0x55 (Unknown CC)[0m
+[0;32mI (39209) MAIN:   CC 0x86 (Unknown CC)[0m
+[0;32mI (39209) MAIN:   CC 0x6C (Unknown CC)[0m
+[0;32mI (39219) MAIN:   CC 0x73 (Unknown CC)[0m
+[0;32mI (39219) MAIN:   CC 0x72 (Manufacturer Specific)[0m
+[0;32mI (39219) MAIN:   CC 0x87 (Unknown CC)[0m
+[0;32mI (39229) MAIN:   CC 0x7A (Unknown CC)[0m
+[0;32mI (39229) MAIN:   CC 0x5A (Unknown CC)[0m
+[0;32mI (39229) MAIN:   CC 0x5B (Unknown CC)[0m
+[0;32mI (39239) MAIN:   CC 0x8E (Multi Channel Association)[0m
+[0;32mI (39239) MAIN:   CC 0x59 (Unknown CC)[0m
+[0;32mI (39249) MAIN:   CC 0x85 (Association)[0m
+[0;32mI (39249) MAIN: ==========================[0m
+[0;32mI (39249) MAIN: =============================================[0m
+[0;32mI (39259) MAIN: Node 8 classified as REMOTE / CENTRAL SCENE[0m
+[0;32mI (39259) MAIN: =============================================[0m
+[0;32mI (39269) WEB_MSG: REMOTE Device 8 was adding...[0m
+[0;32mI (39269) MAIN: [INT] Start interview node 8[0m
+[0;32mI (39279) MAIN: Sent Manufacturer Specific Get to node 8[0m
+[0;32mI (39379) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (39379) MAIN: Received ACK (0x06)[0m
+[0;32mI (39479) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 D2 7F 7F 7F 7F 01 01 
+04 00 00 00 00 02 01 00 00 7F 7F 7F 7F 7F 5B 
+[0;32mI (39579) MAIN: RAW RX (19 bytes):[0m
+01 11 00 A8 00 01 08 08 72 05 00 00 00 04 00 01 
+00 D2 E7 
+[0;32mI (39579) MAIN: Manufacturer Report: node=8 man=0x0000 type=0x0004 prod=0x0001[0m
+[0;32mI (39579) MAIN: Sent Central Scene Supported Get to node 8[0m
+[0;32mI (39679) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (39679) MAIN: Received ACK (0x06)[0m
+[0;32mI (39779) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 D2 7F 7F 7F 7F 01 01 
+03 00 00 00 00 02 01 00 00 7F 7F 7F 7F 7F 5C 
+[0;32mI (39879) MAIN: RAW RX (16 bytes):[0m
+01 0E 00 A8 00 01 08 05 5B 02 03 83 07 00 D2 59 
+
+[0;32mI (39879) MAIN: Central Scene: node=8 scenes=3 flags=0x83[0m
+[0;32mI (39879) MAIN: Sent MC Lifeline association to node 8[0m
+[0;32mI (39879) MAIN: [INT] Interview completed for node 8[0m
+[0;32mI (39899) MAIN: ✓ Node table saved to NVS (2 nodes)[0m
+[0;32mI (39899) MAIN: ==============NVS Table Data=================[0m
+[0;32mI (39899) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (39899) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (39909) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (39909) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (39919) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (39929) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (39929) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (39939) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (39939) MAIN: DEVICE 2 -> Node 8 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (39949) MAIN:            Node 8 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (39959) MAIN:            Node 8 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (39959) MAIN:            Node 8 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (39969) MAIN:            Node 8 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (39969) MAIN:            Node 8 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (39979) MAIN: RAW RX (7 bytes):[0m
+[0;32mI (39979) MAIN:            Node 8 | REMOTE         | EP:6 SC:3[0m
+06 01 04 01 13 01 E8 I (39989) MAIN: =============================
+
+[0;32mI (39989) WEB_MSG: REMOTE 8  - was Added Successfully!!![0m
+[0;32mI (39989) MAIN: Received ACK (0x06)[0m
+[0;32mI (44999) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (49999) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (54999) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (59999) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (64999) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (65569) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (65569) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (65569) MAIN: Node 8: REMOTE         NIF:18 bytes[0m
+[0;32mI (65569) MAIN: =====================[0m
+[0;32mI (69999) WEB_MSG: Gateway Status : ONLINE[0m
+[1;31mE (70569) MAIN: Watchdog timeout - System appears stuck, restarting...[0m
+[0;32mI (70569) wifi:state: run -> init (0x0)[0m
+[0;32mI (70579) wifi:pm stop, total sleep time: 55402934 us / 65060310 us[0m
+
+[0;32mI (70579) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (70579) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (70579) WIFI: WiFi disconnected, reason: 8. Retry 1/5 in 4 seconds[0m
+[0;33mW (70589) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;33mW (70589) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (70629) wifi:flush txq[0m
+[0;32mI (70629) wifi:stop sw txq[0m
+[0;32mI (70629) wifi:lmac stop hw txq[0m
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x3a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375cbc
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f3c
+entry 0x403c8928
+[0;32mI (37) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Feb  4 2026 15:35:28[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v0.1[0m
+[0;32mI (42) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (54) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (90) boot:  3 ota_0            OTA app          00 10 00020000 00300000[0m
+[0;32mI (97) boot:  4 ota_1            OTA app          00 11 00320000 00300000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=4bc18h (310296) map[0m
+[0;32mI (187) esp_image: segment 1: paddr=0006bc40 vaddr=3fc9b100 size=043d8h ( 17368) load[0m
+[0;32mI (192) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=9cdd0h (642512) map[0m
+[0;32mI (343) esp_image: segment 3: paddr=0010cdf8 vaddr=3fc9f4d8 size=006d0h (  1744) load[0m
+[0;32mI (343) esp_image: segment 4: paddr=0010d4d0 vaddr=40374000 size=17078h ( 94328) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=00124550 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     JAQUAR_RS485_REMOTE_GATEWAY[0m
+[0;32mI (407) app_init: App version:      6d4ace7[0m
+[0;32mI (411) app_init: Compile time:     Feb  4 2026 15:35:17[0m
+[0;32mI (416) app_init: ELF file SHA256:  ac958409f...[0m
+[0;32mI (420) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (436) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FCA9D40 len 0003F9D0 (254 KiB): RAM[0m
+[0;32mI (448) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (453) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (464) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (473) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (477) spi_flash: flash io: opi_str[0m
+[0;33mW (481) spi_flash: Detected size(32768k) larger than the size in the binary image header(16384k). Using the size in the binary image header.[0m
+[0;32mI (493) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (499) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (506) main_task: Started on CPU0[0m
+[0;32mI (516) main_task: Calling app_main()[0m
+[0;32mI (516) MAIN: Starting Jaquar Remote Configuration Application[0m
+[0;32mI (546) MAIN: Watchdog timer started[0m
+[0;32mI (546) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (546) MAIN: Waiting for Z-Wave module to initialize...[0m
+[0;32mI (1346) MAIN: RAW RX (24 bytes):[0m
+01 16 00 A8 00 01 08 0D 87 03 00 03 50 03 00 50 
+04 00 50 05 00 00 CF 5F 
+[0;33mW (1346) MAIN: Cmd from unknown node 8[0m
+[0;32mI (3556) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3556) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3556) WEB_MSG: Gateway Status : Loading...[0m
+[0;32mI (3566) MAIN: [0m
+
+
+[0;32mI (3566) MAIN: ========================================================[0m
+[0;32mI (3566) MAIN: STARTING Z-WAVE SERIAL API INITIALIZATION SEQUENCE[0m
+[0;32mI (3576) MAIN: ========================================================[0m
+[0;32mI (3786) MAIN: [0m
+[1] Getting controller capabilities...
+TX Get Capabilities: 01 03 00 07 FB 
+[0;32mI (3786) MAIN: Requesting controller capabilities...[0m
+[0;32mI (3886) MAIN: RAW RX (46 bytes):[0m
+06 01 2B 01 07 07 12 00 00 00 04 00 04 F6 87 3E 
+88 CF 2B C0 4F FB D7 FD E0 17 00 00 80 00 80 86 
+80 BA 05 00 70 00 00 EE 7F C0 00 00 00 D5 
+[0;32mI (3886) MAIN: Received ACK (0x06)[0m
+[0;32mI (3886) MAIN: === GET CAPABILITIES RESPONSE ===[0m
+[0;32mI (3896) MAIN: === CAPABILITIES RESPONSE ===[0m
+[0;32mI (3896) MAIN: Length: 41 bytes[0m
+[0;32mI (3896) MAIN: Full data:[0m
+07 12 00 00 00 04 00 04 F6 87 3E 88 CF 2B C0 4F 
+FB D7 FD E0 17 00 00 80 00 80 86 80 BA 05 00 70 
+00 00 EE 7F C0 00 00 00 D5 
+=============================
+[0;32mI (3986) MAIN: [0m
+[2] Getting SerialAPI supported command classes...
+TX SerialAPI Setup: Supported: 01 04 00 0B 01 F1 
+[0;32mI (3986) MAIN: Requesting SerialAPI supported command classes...[0m
+[0;32mI (4086) MAIN: RAW RX (25 bytes):[0m
+06 01 16 01 0B 01 FE 3E 01 03 00 01 00 00 00 01 
+00 00 00 00 00 00 00 01 21 
+[0;32mI (4086) MAIN: Received ACK (0x06)[0m
+[0;32mI (4086) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x01[0m
+[0;32mI (4086) MAIN: === SERIALAPI SUPPORTED RESPONSE ===[0m
+[0;32mI (4186) MAIN: [0m
+[3] Getting SUC Node ID...
+TX Get SUC Node ID: 01 03 00 02 FE 
+[0;32mI (4186) MAIN: Requesting SUC (Static Update Controller) Node ID...[0m
+[0;32mI (4286) MAIN: RAW RX (40 bytes):[0m
+06 01 25 01 02 09 00 1D D1 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 07 00 1B 
+[0;32mI (4286) MAIN: Received ACK (0x06)[0m
+[0;32mI (4286) MAIN: === GET SUC NODE ID RESPONSE ===[0m
+[0;32mI (4296) MAIN: === SUC NODE RESPONSE ===[0m
+[0;32mI (4296) MAIN: SUC Node ID: 9[0m
+[0;32mI (4296) MAIN: Capabilities: 0x00[0m
+[0;32mI (4296) MAIN: Full response:[0m
+09 00 1D D1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 1B 
+=============================
+[0;32mI (4386) MAIN: [0m
+[4] Getting Z-Wave library version...
+TX Get Version: 01 03 00 15 E9 
+[0;32mI (4386) MAIN: Requesting Z-Wave library version...[0m
+[0;32mI (4486) MAIN: RAW RX (19 bytes):[0m
+06 01 10 01 15 5A 2D 57 61 76 65 20 37 2E 31 38 
+00 07 9E 
+[0;32mI (4486) MAIN: Received ACK (0x06)[0m
+[0;32mI (4486) MAIN: === GET VERSION RESPONSE ===[0m
+[0;32mI (4486) MAIN: === VERSION RESPONSE ===[0m
+[0;32mI (4486) MAIN: Library Type: 0x5A[0m
+[0;32mI (4496) MAIN: Library Type: Unknown[0m
+[0;32mI (4496) MAIN: Protocol Version: 45.87[0m
+[0;32mI (4496) MAIN: Application Version: 97.118[0m
+[0;32mI (4506) MAIN: Full data:[0m
+5A 2D 57 61 76 65 20 37 2E 31 38 00 07 9E 
+=============================
+[0;32mI (4586) MAIN: [0m
+[5] Getting Home ID and Node ID...
+[0;32mI (4686) MAIN: RAW RX (11 bytes):[0m
+06 01 08 01 20 E1 0C 10 44 01 6E 
+[0;32mI (4686) MAIN: Received ACK (0x06)[0m
+[0;32mI (4786) MAIN: [0m
+[7] Setting TX power...
+TX Set TX Power: 01 06 00 0B 04 7F 00 89 
+[0;32mI (4786) MAIN: Setting TX power to: 0x7F (measured: 0x00)[0m
+[0;32mI (4886) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 04 01 F5 
+[0;32mI (4886) MAIN: Received ACK (0x06)[0m
+[0;32mI (4886) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x04[0m
+[0;32mI (4886) MAIN: === TX POWER SET RESPONSE ===[0m
+[0;32mI (4886) MAIN: Status: 0x01[0m
+[0;32mI (4886) MAIN: ✓ TX power set SUCCESSFULLY to 0x7F[0m
+[0;32mI (4896) MAIN: TX Power is now at maximum (+7 dBm)[0m
+[0;32mI (4896) MAIN: [0m
+[9] Setting RF region to India...
+TX RF Region Set: 01 05 00 0B 40 05 B4 
+[0;32mI (4906) MAIN: Setting RF Region to: 0x05[0m
+[0;32mI (4916) MAIN: Region: India[0m
+[0;32mI (5006) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 40 01 B1 
+[0;32mI (5006) MAIN: Received ACK (0x06)[0m
+[0;32mI (5006) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x40[0m
+[0;32mI (5006) MAIN: === RF REGION SET RESPONSE ===[0m
+[0;32mI (5006) MAIN: Status: 0x01[0m
+[0;32mI (5006) MAIN: ✓ RF Region set SUCCESSFULLY[0m
+[0;32mI (5016) MAIN: [0m
+[10] Verifying RF region...
+TX RF Region Get: 01 04 00 0B 20 D0 
+[0;32mI (5026) MAIN: Requesting current RF Region[0m
+[0;32mI (5126) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 20 05 D5 
+[0;32mI (5126) MAIN: Received ACK (0x06)[0m
+[0;32mI (5126) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x20[0m
+[0;32mI (5126) MAIN: === RF REGION GET RESPONSE ===[0m
+[0;32mI (5126) MAIN: Current RF Region: 0x05[0m
+[0;32mI (5136) MAIN: === RF REGION INFORMATION ===[0m
+[0;32mI (5136) MAIN: Region Code: 0x05[0m
+[0;32mI (5136) MAIN: Region Name: India[0m
+[0;32mI (5146) MAIN: ============================[0m
+[0;32mI (5226) MAIN: ========================================================[0m
+[0;32mI (5226) MAIN: ✓ Z-WAVE CONTROLLER INITIALIZATION COMPLETE[0m
+[0;32mI (5226) MAIN: ========================================================[0m
+[0;32mI (5226) MAIN: [0m
+
+
+[0;32mI (5226) WIFI: Valid SSID found in NVS, use STA mode[0m
+[0;32mI (5236) WIFI: Starting in STA mode with saved credentials[0m
+[0;32mI (5236) WIFI: Initializing WiFi STA mode[0m
+[0;32mI (5246) pp: pp rom version: e7ae62f[0m
+[0;32mI (5246) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (5266) wifi:wifi driver task: 3fcbb24c, prio:23, stack:6656, core=0[0m
+[0;32mI (5276) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (5276) wifi:wifi certification version: v7.0[0m
+[0;32mI (5276) wifi:config NVS flash: enabled[0m
+[0;32mI (5276) wifi:config nano formatting: disabled[0m
+[0;32mI (5276) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (5286) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (5286) wifi:Init management short buffer num: 32[0m
+[0;32mI (5296) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (5296) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (5306) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (5306) wifi:Init static rx buffer num: 10[0m
+[0;32mI (5306) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (5316) wifi_init: rx ba win: 6[0m
+[0;32mI (5316) wifi_init: accept mbox: 6[0m
+[0;32mI (5316) wifi_init: tcpip mbox: 32[0m
+[0;32mI (5326) wifi_init: udp mbox: 6[0m
+[0;32mI (5326) wifi_init: tcp mbox: 6[0m
+[0;32mI (5326) wifi_init: tcp tx win: 5760[0m
+[0;32mI (5336) wifi_init: tcp rx win: 5760[0m
+[0;32mI (5336) wifi_init: tcp mss: 1440[0m
+[0;32mI (5336) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (5346) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (5346) WIFI: Connecting to SSID: Confio_R&D[0m
+[0;32mI (5356) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (5396) wifi:mode : sta (68:b6:b3:3e:0f:10)[0m
+[0;32mI (5396) wifi:enable tsf[0m
+[0;32mI (5406) WIFI: WiFi STA started, connecting...[0m
+[0;32mI (5406) MAIN: ✓ Loaded 2 nodes from NVS[0m
+[0;32mI (5406) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (5406) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (5406) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5426) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5426) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (5436) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (5436) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5446) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (5446) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (5446) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5456) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (5456) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (5466) MAIN: DEVICE 2 -> Node 8 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (5476) wifi:connected with Confio_R&D, aid = 3, channel 3, BW20, bssid = a2:c9:eb:d7:01:43[0m
+[0;32mI (5486) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (5486) wifi:pm start, type: 1[0m
+
+[0;32mI (5486) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5496) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5506) MAIN:            Node 8 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (5506) MAIN:            Node 8 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (5516) MAIN:            Node 8 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (5526) MAIN:            Node 8 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (5526) MAIN:            Node 8 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (5536) MAIN:            Node 8 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (5536) MAIN: =============================[0m
+[0;32mI (5546) MAIN: [0m
+
+
+[0;32mI (5546) MAIN: ========================================================[0m
+[0;32mI (5546) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (5556) MAIN: APPLICATION STARTED SUCCESSFULLY[0m
+[0;32mI (5556) MAIN: ========================================================[0m
+[0;32mI (5566) MAIN: Z-Wave Controller: READY[0m
+[0;32mI (5566) MAIN: ========================================================[0m
+[0;32mI (5576) MAIN: [0m
+
+
+I BOD: Brownout detector was trig
