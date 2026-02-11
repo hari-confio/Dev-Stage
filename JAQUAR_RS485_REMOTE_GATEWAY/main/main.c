@@ -29,6 +29,10 @@
 #include "soc/soc.h"
 #include "soc/rtc_cntl_reg.h"
 #include "cJSON.h"
+#include "esp_ota_ops.h"
+#include "esp_partition.h"
+#include "esp_flash_partitions.h"
+#include "esp_app_format.h"
 
 static const char *TAG = "MAIN";
 static const char *TAG_ASSOCIATION = "ASSOCIATION";
@@ -42,8 +46,8 @@ static const char *TAGBUTTON = "BUTTON";
 static QueueHandle_t gpio_evt_queue = NULL;
 static uint32_t button_press_count = 0;
 static uint32_t last_press_time = 0;
-static const uint32_t MULTI_PRESS_TIMEOUT_MS = 1000; // 1 second timeout for multi-press detection
-static const uint8_t MULTI_PRESS_THRESHOLD = 5; // Threshold for multi-press detection
+// static const uint8_t MULTI_PRESS_THRESHOLD_CLEAR_WIFI = 5;
+// static const uint8_t MULTI_PRESS_THRESHOLD_HARD_RESET = 10;
 static esp_timer_handle_t web_msg_timer;
 //static bool wifi_initialized = false;
 static uint8_t pending_node_id = 0;
@@ -53,6 +57,8 @@ static bool exclusion_in_progress = false;
 // WiFi configuration variables
 static bool wifi_connected = false;
 uint8_t web_dev_type = 0;
+static TaskHandle_t blink_leds_ota_handle = NULL;
+static volatile bool ota_running = false;
 // WiFi connection retry variables
 static int wifi_connect_retries = 0;
 static const int MAX_WIFI_RETRIES = 5;           // 5 retries
@@ -619,6 +625,24 @@ void blink_wifi_led_task(void *pvParameter)
     }
 }
 
+void blink_leds_ota(void *pvParameter)
+{
+    ota_running = true;
+
+    while (ota_running) {
+        TURN_ON_WIFI_LED;
+        TURN_ON_ZWAVE_LED;
+        vTaskDelay(pdMS_TO_TICKS(200));
+
+        TURN_OFF_WIFI_LED;
+        TURN_OFF_ZWAVE_LED;
+        vTaskDelay(pdMS_TO_TICKS(200));
+    }
+
+    vTaskDelete(NULL);
+}
+
+
 // Start configuration web server (AP mode)
 void start_configuration_server(void) {
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
@@ -661,7 +685,7 @@ void start_mdns_service(void) {
     if (!mdns_started) {
         ESP_ERROR_CHECK(mdns_init());
         ESP_ERROR_CHECK(mdns_hostname_set("jaquarremote"));
-        ESP_ERROR_CHECK(mdns_instance_name_set("Confio Jaquar Remote"));
+        ESP_ERROR_CHECK(mdns_instance_name_set("Jaquar Remote Gateway"));
         ESP_ERROR_CHECK(mdns_service_add(NULL, "_jaquarremote", "_tcp", TCP_PORT, NULL, 0));
         ESP_LOGI(TAG_WIFI,"mDNS service started with hostname 'jaquarremote' on port %d\n", TCP_PORT);
         mdns_started = true;
@@ -1408,6 +1432,44 @@ static void nvs_clear_all_nodes(void)
     ESP_LOGI(TAG, "✓ All nodes removed from NVS and runtime");
 }
 
+static void link_devices_to_gateway(){
+    if (g_node_count > 0) {
+        ESP_LOGI(TAG, "=== CURRENT NODES (%d) ===", g_node_count);
+        for (int i = 0; i < g_node_count; i++) {
+            // ESP_LOGI(TAG,
+            //     "Node %d: %-14s NIF:%d bytes",
+            //     g_included_nodes[i].node_id,
+            //     dev_type_str(g_included_nodes[i].dev_type),
+            //     g_included_nodes[i].nif_len
+            // );
+        zw_send_mc_lifeline_association_set(g_included_nodes[i].node_id);
+        kick_watchdog();
+        vTaskDelay(50);
+    }
+    } else {
+        ESP_LOGI(TAG, "=== NO NODES IN NETWORK ===");
+    }
+}
+
+static void unlink_devices_to_gateway(){
+    if (g_node_count > 0) {
+        ESP_LOGI(TAG, "=== CURRENT NODES (%d) ===", g_node_count);
+        for (int i = 0; i < g_node_count; i++) {
+            // ESP_LOGI(TAG,
+            //     "Node %d: %-14s NIF:%d bytes",
+            //     g_included_nodes[i].node_id,
+            //     dev_type_str(g_included_nodes[i].dev_type),
+            //     g_included_nodes[i].nif_len
+            // );
+        zw_send_mc_lifeline_association_remove(g_included_nodes[i].node_id);
+        kick_watchdog();
+        vTaskDelay(50);
+    }
+    } else {
+        ESP_LOGI(TAG, "=== NO NODES IN NETWORK ===");
+    }
+}
+
 static void classify_device(node_info_t  *node)
 {
     if (node->basic == 0x04 &&
@@ -1517,14 +1579,14 @@ static void zw_interview_task(void *arg)
                 if (node->current_ep <= node->endpoint_count) {
                     zw_send_mc_capability_get(node->node_id, node->current_ep);
                 } else {
-                    zw_send_mc_association_set(node->node_id);
+                    zw_send_mc_lifeline_association_set(node->node_id);
                     node->interview_state = INT_STATE_DONE;
                 }
                 kick_watchdog();
                 break;
 
             case INT_EVT_CENTRAL_SCENE_DONE:
-                zw_setup_central_scene_association(node->node_id);
+                zw_send_mc_lifeline_association_set(node->node_id);
                 node->interview_state = INT_STATE_DONE;
                 kick_watchdog();
                 break;
@@ -1650,20 +1712,34 @@ void zw_send_mc_capability_get(uint8_t node_id, uint8_t ep)
     ESP_LOGI(TAG, "Sent MC Capability Get (EP %d) to node %d", ep, node_id);
 }
 
-void zw_send_mc_association_set(uint8_t node_id)
+void zw_send_mc_lifeline_association_set(uint8_t node_id)
 {
-    //0x01 0x0C 0x00 0x13 0x0C 0x06 0x8E 0x01 0x01 0x01 0x01 0x00 0x05 0x61
     uint8_t frame[] = {
         SOF, 0x0C, REQUEST, FUNC_ID_ZW_SEND_DATA,
         node_id,
         0x06,
         COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION, MULTI_CHANNEL_ASSOCIATION_SET,
-        0x01,0x01,0x01,0x00,0x05,0x00
+        LIFELINE_GROUP_1,0x01,0x01,0x00,0x05,0x00
     };
     frame[13] = calculate_checksum(&frame[1], 12);
     uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
 
-    ESP_LOGI(TAG, "Sent MC Association to node %d", node_id);
+    ESP_LOGI(TAG, "Sent MC Lifeline Association SET to node %d", node_id);
+}
+
+void zw_send_mc_lifeline_association_remove(uint8_t node_id)
+{
+    uint8_t frame[] = {
+        SOF, 0x0C, REQUEST, FUNC_ID_ZW_SEND_DATA,
+        node_id,
+        0x06,
+        COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION, MULTI_CHANNEL_ASSOCIATION_REMOVE,
+        LIFELINE_GROUP_1,0x01,0x01,0x00,0x05,0x00
+    };
+    frame[13] = calculate_checksum(&frame[1], 12);
+    uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
+
+    ESP_LOGI(TAG, "Sent MC Lifeline Association REMOVE to node %d", node_id);
 }
 
 void zw_send_central_scene_get(uint8_t node_id)
@@ -1682,21 +1758,6 @@ void zw_send_central_scene_get(uint8_t node_id)
     uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
 
     ESP_LOGI(TAG, "Sent Central Scene Supported Get to node %d", node_id);
-}
-
-static void zw_setup_central_scene_association(uint8_t node_id)
-{
-    uint8_t frame[] = {
-        SOF, 0x0C, REQUEST, FUNC_ID_ZW_SEND_DATA,
-        node_id,
-        0x06,
-        COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION, MULTI_CHANNEL_ASSOCIATION_SET,
-        LIFELINE_GROUP_1,0x01,0x01,0x00,0x05,0x00
-    };
-    frame[13] = calculate_checksum(&frame[1], 12);
-    uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
-
-    ESP_LOGI(TAG, "Sent MC Lifeline association to node %d", node_id);
 }
 
 // ==================== RESPONSE HANDLING FOR ASSOCIATION AND PARAMETER CONFIG ====================
@@ -2527,38 +2588,63 @@ void send_msg_to_web(const char *msg)
 }
 
 void set_parameter_config(uint8_t dest_device_id, uint8_t param_num, uint8_t param_value){
-    /*
-    *Setting Parameters for Individual Buttons
-    * Parameter Number - 1 : for Btn-1 Keypad ID
-    * Parameter NUmber - 2 : for Btn-1 Keypad ID's Button
-    * Parameter Number - 3 : for Btn-2 Keypad ID
-    * Parameter NUmber - 4 : for Btn-2 Keypad ID's Button
-    * Parameter Number - 5 : for Btn-3 Keypad ID
-    * Parameter NUmber - 6 : for Btn-3 Keypad ID's Button
-    * Parameter Number - 7 : for Btn-4 Keypad ID
-    * Parameter NUmber - 8 : for Btn-4 Keypad ID's Button
-    * Parameter Number - 9 : for Btn-5 Keypad ID
-    * Parameter NUmber - 10 : for Btn-5 Keypad ID's Button
-    * Parameter Number - 11 : for Btn-6 Keypad ID
-    * Parameter NUmber - 12 : for Btn-6 Keypad ID's Button
-    *
-    *Reset Parameters for Individual Buttons
-    * Parameter Number - 1 : Parameter Value = 0 : clear Btn-1 Keypad ID
-    * Parameter NUmber - 2 : Parameter Value = 0 : clear Btn-1 Keypad ID's Button
-    * Parameter Number - 3 : Parameter Value = 0 : clear Btn-2 Keypad ID
-    * Parameter NUmber - 4 : Parameter Value = 0 : clear Btn-2 Keypad ID's Button
-    * Parameter Number - 5 : Parameter Value = 0 : clear Btn-3 Keypad ID
-    * Parameter NUmber - 6 : Parameter Value = 0 : clear Btn-3 Keypad ID's Button
-    * Parameter Number - 7 : Parameter Value = 0 : clear Btn-4 Keypad ID
-    * Parameter NUmber - 8 : Parameter Value = 0 : clear Btn-4 Keypad ID's Button
-    * Parameter Number - 9 : Parameter Value = 0 : clear Btn-5 Keypad ID
-    * Parameter NUmber - 10 : Parameter Value = 0 : clear Btn-5 Keypad ID's Button
-    * Parameter Number - 11 : Parameter Value = 0 : clear Btn-6 Keypad ID
-    * Parameter NUmber - 12 : Parameter Value = 0 : clear Btn-6 Keypad ID's Button
-    *
-    * Resetting all Parameters
-    * Parameter Number - 255 : Parameter Value = 0 : Reset all Mapppings
-    */
+/*
+ *Setting Parameters for Individual Buttons
+ * Parameter Number - 1 : for Btn-1 Keypad ID
+ * Parameter Number - 2 : for Btn-1 Keypad ID's Button
+ * Parameter Number - 3 : for Btn-2 Keypad ID
+ * Parameter Number - 4 : for Btn-2 Keypad ID's Button
+ * Parameter Number - 5 : for Btn-3 Keypad ID
+ * Parameter Number - 6 : for Btn-3 Keypad ID's Button
+ * Parameter Number - 7 : for Btn-4 Keypad ID
+ * Parameter Number - 8 : for Btn-4 Keypad ID's Button
+ * Parameter Number - 9 : for Btn-5 Keypad ID
+ * Parameter Number - 10 : for Btn-5 Keypad ID's Button
+ * Parameter Number - 11 : for Btn-6 Keypad ID
+ * Parameter Number - 12 : for Btn-6 Keypad ID's Button
+ * Parameter Number - 13 : for Btn-7 Keypad ID
+ * Parameter Number - 14 : for Btn-7 Keypad ID's Button
+ * Parameter Number - 15 : for Btn-8 Keypad ID
+ * Parameter Number - 16 : for Btn-8 Keypad ID's Button
+ * Parameter Number - 17 : for Btn-9 Keypad ID
+ * Parameter Number - 18 : for Btn-9 Keypad ID's Button
+ * Parameter Number - 19 : for Btn-10 Keypad ID
+ * Parameter Number - 20 : for Btn-10 Keypad ID's Button
+ * Parameter Number - 21 : for Btn-11 Keypad ID
+ * Parameter Number - 22 : for Btn-11 Keypad ID's Button
+ * Parameter Number - 23 : for Btn-12 Keypad ID
+ * Parameter Number - 24 : for Btn-12 Keypad ID's Button
+ *
+ *
+ *Reset Parameters for Individual Buttons
+ * Parameter Number - 1 : Parameter Value = 0 : clear Btn-1 Keypad ID
+ * Parameter Number - 2 : Parameter Value = 0 : clear Btn-1 Keypad ID's Button
+ * Parameter Number - 3 : Parameter Value = 0 : clear Btn-2 Keypad ID
+ * Parameter Number - 4 : Parameter Value = 0 : clear Btn-2 Keypad ID's Button
+ * Parameter Number - 5 : Parameter Value = 0 : clear Btn-3 Keypad ID
+ * Parameter Number - 6 : Parameter Value = 0 : clear Btn-3 Keypad ID's Button
+ * Parameter Number - 7 : Parameter Value = 0 : clear Btn-4 Keypad ID
+ * Parameter Number - 8 : Parameter Value = 0 : clear Btn-4 Keypad ID's Button
+ * Parameter Number - 9 : Parameter Value = 0 : clear Btn-5 Keypad ID
+ * Parameter Number - 10 : Parameter Value = 0 : clear Btn-5 Keypad ID's Button
+ * Parameter Number - 11 : Parameter Value = 0 : clear Btn-6 Keypad ID
+ * Parameter Number - 12 : Parameter Value = 0 : clear Btn-6 Keypad ID's Button
+ * Parameter Number - 13 : Parameter Value = 0 : clear Btn-7 Keypad ID
+ * Parameter Number - 14 : Parameter Value = 0 : clear Btn-7 Keypad ID's Button
+ * Parameter Number - 15 : Parameter Value = 0 : clear Btn-8 Keypad ID
+ * Parameter Number - 16 : Parameter Value = 0 : clear Btn-8 Keypad ID's Button
+ * Parameter Number - 17 : Parameter Value = 0 : clear Btn-9 Keypad ID
+ * Parameter Number - 18 : Parameter Value = 0 : clear Btn-9 Keypad ID's Button
+ * Parameter Number - 19 : Parameter Value = 0 : clear Btn-10 Keypad ID
+ * Parameter Number - 20 : Parameter Value = 0 : clear Btn-10 Keypad ID's Button
+ * Parameter Number - 21 : Parameter Value = 0 : clear Btn-11 Keypad ID
+ * Parameter Number - 22 : Parameter Value = 0 : clear Btn-11 Keypad ID's Button
+ * Parameter Number - 23 : Parameter Value = 0 : clear Btn-12 Keypad ID
+ * Parameter Number - 24 : Parameter Value = 0 : clear Btn-12 Keypad ID's Button
+ *
+ * Resetting all Parameters
+ * Parameter Number - 255 : Parameter Value = 0 : Reset all Mapppings
+ */
 
     /*Parameter Set 
     Send Command : 0x01 0x0C 0x00 0x13 0x66 0x05 0x70 0x04 0x03 0x01 0xFF 0x25 0x01 0x2E 
@@ -2733,6 +2819,27 @@ static esp_err_t status_get_handler(httpd_req_t *req)
     httpd_resp_set_type(req, "text/plain");
     httpd_resp_send(req, response, HTTPD_RESP_USE_STRLEN);
     return ESP_OK;
+}
+
+static uint8_t parse_keypad_button(const char *btn)
+{
+    if (!btn) return 0xFF;
+
+    if (strcmp(btn, "B1_SINGLE") == 0) return 1;
+    else if (strcmp(btn, "B2_SINGLE") == 0) return 2;
+    else if (strcmp(btn, "B3_SINGLE") == 0) return 3;
+    else if (strcmp(btn, "B4_SINGLE") == 0) return 4;
+    else if (strcmp(btn, "B5_SINGLE") == 0) return 5;
+    else if (strcmp(btn, "B6_SINGLE") == 0) return 6;
+
+    else if (strcmp(btn, "B1_DOUBLE") == 0) return 7;
+    else if (strcmp(btn, "B2_DOUBLE") == 0) return 8;
+    else if (strcmp(btn, "B3_DOUBLE") == 0) return 9;
+    else if (strcmp(btn, "B4_DOUBLE") == 0) return 10;
+    else if (strcmp(btn, "B5_DOUBLE") == 0) return 11;
+    else if (strcmp(btn, "B6_DOUBLE") == 0) return 12;
+
+    return 0xFF; // invalid
 }
 
 // ==================== WEB SERVER HANDLERS ====================
@@ -2927,7 +3034,13 @@ static esp_err_t save_assoc_set_post_handler(httpd_req_t *req) {
     
     // Convert strings to uint8_t
     uint8_t dest_keypad_id = (uint8_t)atoi(keypadId->valuestring);
-    uint8_t button = (uint8_t)atoi(keypadBtn->valuestring);
+    uint8_t button = parse_keypad_button(keypadBtn->valuestring);
+    if (button == 0xFF) {
+        ESP_LOGE(TAG_ASSOCIATION, "Invalid keypad button: %s", keypadBtn->valuestring);
+        cJSON_Delete(root);
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid keypad button");
+        return ESP_OK;
+    }
     uint8_t dest_zwave_id = (uint8_t)atoi(zwaveId->valuestring);
     uint8_t ep = (uint8_t)atoi(endpoint->valuestring);
     
@@ -2994,10 +3107,13 @@ static esp_err_t save_assoc_get_post_handler(httpd_req_t *req) {
     
     // Convert strings to uint8_t
     uint8_t dest_keypad_id = (uint8_t)atoi(keypadId->valuestring);
-    uint8_t button = (uint8_t)atoi(keypadBtn->valuestring);
-   // uint8_t dest_zwave_id = (uint8_t)atoi(zwaveId->valuestring);
-   // uint8_t ep = (uint8_t)atoi(endpoint->valuestring);
-    
+    uint8_t button = parse_keypad_button(keypadBtn->valuestring);
+    if (button == 0xFF) {
+        ESP_LOGE(TAG_ASSOCIATION, "Invalid keypad button: %s", keypadBtn->valuestring);
+        cJSON_Delete(root);
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid keypad button");
+        return ESP_OK;
+    }
     ESP_LOGI(TAG_ASSOCIATION, "Association config - Keypad ID: %u, Button: %u",
              dest_keypad_id, button);
     blink_zwave_led();
@@ -3060,8 +3176,13 @@ static esp_err_t save_assoc_remove_post_handler(httpd_req_t *req) {
     
     // Convert strings to uint8_t
     uint8_t dest_keypad_id = (uint8_t)atoi(keypadId->valuestring);
-    uint8_t button = (uint8_t)atoi(keypadBtn->valuestring);
-    
+    uint8_t button = parse_keypad_button(keypadBtn->valuestring);
+    if (button == 0xFF) {
+        ESP_LOGE(TAG_ASSOCIATION, "Invalid keypad button: %s", keypadBtn->valuestring);
+        cJSON_Delete(root);
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid keypad button");
+        return ESP_OK;
+    }
     ESP_LOGI(TAG_ASSOCIATION, "Association config - Keypad ID: %u, Button: %u",
              dest_keypad_id, button);
     blink_zwave_led();
@@ -3288,6 +3409,134 @@ static esp_err_t exclusion_post_handler(httpd_req_t *req) {
     return ESP_OK;
 }
 
+static esp_err_t linkGateway_post_handler(httpd_req_t *req) {
+    char buf[100];
+    int ret, remaining = req->content_len;
+    
+    // Read POST data if any
+    while (remaining > 0) {
+        if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
+            if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
+                continue;
+            }
+            return ESP_FAIL;
+        }
+        remaining -= ret;
+    }
+    
+    ESP_LOGI(TAG, "Linking Devices started via web");
+    link_devices_to_gateway();
+    const char *response = "Linking was successfull!!";
+    httpd_resp_send(req, response, strlen(response));
+    show_Online_msg = true;
+    return ESP_OK;
+}
+
+static esp_err_t unlinkGateway_post_handler(httpd_req_t *req) {
+    char buf[100];
+    int ret, remaining = req->content_len;
+    
+    // Read POST data if any
+    while (remaining > 0) {
+        if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
+            if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
+                continue;
+            }
+            return ESP_FAIL;
+        }
+        remaining -= ret;
+    }
+    
+    ESP_LOGI(TAG, "Unlinking Devices started via web");
+    unlink_devices_to_gateway();
+    const char *response = "UnLinking was successfull!!";
+    httpd_resp_send(req, response, strlen(response));
+    show_Online_msg = true;
+    return ESP_OK;
+}
+
+esp_err_t ota_upload_handler(httpd_req_t *req)
+{
+    char buf[1024];
+    int remaining = req->content_len;
+    bool image_started = false;
+    esp_err_t err;
+
+    ESP_LOGI("OTA", "Starting OTA update. Size: %d bytes", remaining);
+    xTaskCreate(blink_leds_ota, "Gateway is in OTA progress", 2048, NULL, 5, &blink_leds_ota_handle);
+    const esp_partition_t *update_partition =
+        esp_ota_get_next_update_partition(NULL);
+
+    if (!update_partition) {
+        ESP_LOGE("OTA", "No OTA partition found");
+        httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "No OTA partition");
+        return ESP_FAIL;
+    }
+
+    esp_ota_handle_t ota_handle = 0;
+
+    err = esp_ota_begin(update_partition, OTA_SIZE_UNKNOWN, &ota_handle);
+    if (err != ESP_OK) {
+        ESP_LOGE("OTA", "esp_ota_begin failed (%s)", esp_err_to_name(err));
+        httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "OTA begin failed");
+        return ESP_FAIL;
+    }
+
+    while (remaining > 0) {
+        int received = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)));
+        if (received <= 0) continue;
+
+        int offset = 0;
+
+        if (!image_started) {
+            for (int i = 0; i < received; i++) {
+                if ((uint8_t)buf[i] == 0xE9) {
+                    offset = i;
+                    image_started = true;
+                    ESP_LOGI("OTA", "Firmware start found at offset %d", offset);
+                    break;
+                }
+            }
+
+            if (!image_started) {
+                remaining -= received;
+                continue;
+            }
+        }
+
+        err = esp_ota_write(ota_handle, buf + offset, received - offset);
+        if (err != ESP_OK) {
+            ESP_LOGE("OTA", "esp_ota_write failed (%s)", esp_err_to_name(err));
+            esp_ota_abort(ota_handle);
+            httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "OTA write failed");
+            return ESP_FAIL;
+        }
+
+        remaining -= received;
+    }
+
+    err = esp_ota_end(ota_handle);
+    if (err != ESP_OK) {
+        ESP_LOGE("OTA", "esp_ota_end failed (%s)", esp_err_to_name(err));
+        httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "OTA end failed");
+        return ESP_FAIL;
+    }
+
+    err = esp_ota_set_boot_partition(update_partition);
+    if (err != ESP_OK) {
+        ESP_LOGE("OTA", "esp_ota_set_boot_partition failed (%s)", esp_err_to_name(err));
+        httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "Set boot partition failed");
+        return ESP_FAIL;
+    }
+    ota_running = false;
+    blink_leds_ota_handle = NULL;
+    httpd_resp_sendstr(req, "OTA Successful! Rebooting...");
+    vTaskDelay(pdMS_TO_TICKS(1500));
+    esp_restart();
+
+    return ESP_OK;
+}
+
 /* URI handlers */
 static const httpd_uri_t root = {
     .uri       = "/",
@@ -3352,6 +3601,20 @@ static const httpd_uri_t saveAssocRemove = {
     .user_ctx  = NULL
 };
 
+static const httpd_uri_t linkGateway = {
+    .uri       = "/linkGateway",
+    .method    = HTTP_POST,
+    .handler   = linkGateway_post_handler,
+    .user_ctx  = NULL
+};
+
+static const httpd_uri_t unlinkGateway = {
+    .uri       = "/unlinkGateway",
+    .method    = HTTP_POST,
+    .handler   = unlinkGateway_post_handler,
+    .user_ctx  = NULL
+};
+
 static const httpd_uri_t clearWifi = {
     .uri       = "/clearWifi",
     .method    = HTTP_POST,
@@ -3379,6 +3642,13 @@ static const httpd_uri_t hardReset = {
     .handler   = hard_reset_post_handler,
     .user_ctx  = NULL
 };
+
+static const httpd_uri_t ota_upload = {
+    .uri = "/ota",
+    .method = HTTP_POST,
+    .handler = ota_upload_handler
+};
+
 // ==================== WEB SERVER INITIALIZATION ====================
 httpd_handle_t start_webserver(void) {
     httpd_handle_t server = NULL;
@@ -3399,10 +3669,13 @@ httpd_handle_t start_webserver(void) {
         httpd_register_uri_handler(server, &saveAssocSet);
         httpd_register_uri_handler(server, &saveAssocGet);
         httpd_register_uri_handler(server, &saveAssocRemove);
+        httpd_register_uri_handler(server, &linkGateway);
+        httpd_register_uri_handler(server, &unlinkGateway);
         httpd_register_uri_handler(server, &clearWifi);
         httpd_register_uri_handler(server, &zwaveNetworkReset);
         httpd_register_uri_handler(server, &softReset);
         httpd_register_uri_handler(server, &hardReset);
+        httpd_register_uri_handler(server, &ota_upload);
         ESP_LOGI(TAG, "HTTP server started successfully");
         return server;
     }
@@ -3423,54 +3696,80 @@ static void button_task(void *arg)
 {
     uint32_t gpio_num;
     uint32_t current_time;
-    
+
     while (1) {
-        if (xQueueReceive(gpio_evt_queue, &gpio_num, portMAX_DELAY)) {
+
+        /* Wait for button interrupt */
+        if (xQueueReceive(gpio_evt_queue, &gpio_num, pdMS_TO_TICKS(50))) {
+
             current_time = xTaskGetTickCount() * portTICK_PERIOD_MS;
-            
-            // Debounce
+
+            /* Debounce */
             vTaskDelay(pdMS_TO_TICKS(50));
-            
-            // Check if button is still pressed after debounce
-            if (gpio_get_level(BUTTON_GPIO) == 0) { // Assuming active LOW
-                ESP_LOGI(TAGBUTTON, "Button pressed on GPIO %lu", gpio_num);
-                
-                // Check if this is part of a multi-press sequence
-                if (current_time - last_press_time < MULTI_PRESS_TIMEOUT_MS) {
-                    button_press_count++;
-                    ESP_LOGI(TAGBUTTON, "Multi-press count: %lu", button_press_count);
-                    
-                    // Check if threshold reached
-                    if (button_press_count == MULTI_PRESS_THRESHOLD) {
-                        ESP_LOGI(TAGBUTTON, "=== MULTI-PRESS DETECTED ===");
-                        ESP_LOGI(TAGBUTTON, "Button pressed %d times in sequence!", MULTI_PRESS_THRESHOLD);
-                        ESP_LOGI(TAGBUTTON, "===========================");
-                        TURN_OFF_WIFI_LED
-                        //Clear WiFi credentials
-                        nvs_handle_t nvs;
-                        esp_err_t err = nvs_open("wifi_config", NVS_READWRITE, &nvs);
-                        if (err == ESP_OK) {
-                            nvs_erase_all(nvs);
-                            nvs_commit(nvs);
-                            nvs_close(nvs);
-                            ESP_LOGI(TAG, "WiFi credentials cleared");
-                        }
-                        vTaskDelay(500);
-                        esp_restart();
-                        // Reset counter
-                        button_press_count = 0;
-                    }
-                } else {
-                    // New press sequence
-                    button_press_count = 1;
-                    ESP_LOGI(TAGBUTTON, "New press sequence started");
-                }
-                
+
+            if (gpio_get_level(BUTTON_GPIO) == 0) { // Active LOW
+                button_press_count++;
                 last_press_time = current_time;
+
+                ESP_LOGI(TAGBUTTON,
+                         "Button pressed. Count = %lu",
+                         button_press_count);
+            }
+        }
+
+        /* ---- EVALUATE AFTER 1 SECOND OF NO PRESS ---- */
+        if (button_press_count > 0) {
+
+            uint32_t now = xTaskGetTickCount() * portTICK_PERIOD_MS;
+
+            if ((now - last_press_time) >= MULTI_PRESS_EVAL_DELAY_MS) {
+
+                ESP_LOGI(TAGBUTTON,
+                         "Evaluating press sequence: %lu presses",
+                         button_press_count);
+
+                if (button_press_count >= MULTI_PRESS_THRESHOLD_HARD_RESET) {
+
+                    ESP_LOGE(TAGBUTTON, "=== RESETTING Gateway ===");
+                    TURN_OFF_WIFI_LED;
+                    TURN_OFF_ZWAVE_LED;
+
+                    nvs_clear_all_nodes();
+
+                    nvs_handle_t nvs;
+                    if (nvs_open("wifi_config", NVS_READWRITE, &nvs) == ESP_OK) {
+                        nvs_erase_all(nvs);
+                        nvs_commit(nvs);
+                        nvs_close(nvs);
+                    }
+
+                    reset_zwave();
+                    vTaskDelay(pdMS_TO_TICKS(500));
+                    esp_restart();
+                }
+                else if (button_press_count >= MULTI_PRESS_THRESHOLD_CLEAR_WIFI) {
+
+                    ESP_LOGE(TAGBUTTON, "=== RESETTING WiFi CREDENTIALS ===");
+                    TURN_OFF_WIFI_LED;
+
+                    nvs_handle_t nvs;
+                    if (nvs_open("wifi_config", NVS_READWRITE, &nvs) == ESP_OK) {
+                        nvs_erase_all(nvs);
+                        nvs_commit(nvs);
+                        nvs_close(nvs);
+                    }
+
+                    vTaskDelay(pdMS_TO_TICKS(500));
+                    esp_restart();
+                }
+
+                /* Reset counter AFTER evaluation */
+                button_press_count = 0;
             }
         }
     }
 }
+
 
 void blink_zwave_led_task(void *pvParameter)
 {
@@ -3634,14 +3933,20 @@ void app_main(void) {
     }
     nvs_load_node_table();
     print_node_table();
-    ESP_LOGI(TAG, "\n\n");
-    ESP_LOGI(TAG, "========================================================");
-    ESP_LOGI(TAG, "APPLICATION STARTED SUCCESSFULLY");
-    ESP_LOGI(TAG, "========================================================");
+    ESP_LOGI(TAG, "\n");
+    // ESP_LOGI(TAG, "========================================================");
+    // ESP_LOGI(TAG, "APPLICATION STARTED SUCCESSFULLY");
+    // ESP_LOGI(TAG, "========================================================");
     ESP_LOGI(TAG, "Z-Wave Controller: READY");
-    ESP_LOGI(TAG, "========================================================");
-    ESP_LOGI(TAG, "\n\n");
-
+    // ESP_LOGI(TAG, "========================================================");
+    ESP_LOGI(TAG, "\n");
+   // ESP_LOGI("CHECK", "Next OTA partition: %s", esp_ota_get_next_update_partition(NULL)->label);
+    //ESP_LOGI(TAG, "Application started successfully");
+   // ESP_LOGE("OTA_TEST", "OTA IMAGE BOOTED");
+   // ESP_LOGE("OTA_TEST", "BUILD: %s %s", __DATE__, __TIME__);
+    ESP_LOGI(TAG, "=====================================");
+    ESP_LOGI(TAG, "====Jaquar RS485 Remote Gateway====");
+    ESP_LOGI(TAG, "=====================================");
     // Main loop
     while (1) {
         kick_watchdog();
@@ -3668,6 +3973,6 @@ void app_main(void) {
                 ESP_LOGI(TAG, "=== NO NODES IN NETWORK ===");
             }
         }
-        vTaskDelay(pdMS_TO_TICKS(4000));
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 }
