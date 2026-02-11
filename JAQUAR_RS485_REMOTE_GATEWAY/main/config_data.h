@@ -30,7 +30,9 @@
 
 #define MAX_NODES       232
 #define MAX_NIF_LEN     64
-
+#define MULTI_PRESS_EVAL_DELAY_MS 1000
+#define MULTI_PRESS_THRESHOLD_CLEAR_WIFI 5
+#define MULTI_PRESS_THRESHOLD_HARD_RESET 10
 #define INC_EXC_TIMEOUT 60
 /* Z-Wave */
 #define SOF 0x01
@@ -299,6 +301,6 @@ void wifi_init_softap(void);
 void start_configuration_server(void);
 static void print_node_table(void);
 void send_msg_to_web(const char *msg);
-static void zw_setup_central_scene_association(uint8_t node_id);
-void zw_send_mc_association_set(uint8_t node_id);
+void zw_send_mc_lifeline_association_set(uint8_t node_id);
+void zw_send_mc_lifeline_association_remove(uint8_t node_id);
 #endif // CONFIG_DATA_H
