@@ -1,0 +1,17 @@
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Received 14 bytes from client: 84 BA 20 FF FE 92 60 DD 08 01 01 01 EF 75 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 16 08 14 62 F5 72 
+sent data to rs485 device
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 60 DD 08 02 01 01 1F 75 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 15 14 04 61 25 72 
+sent data to rs485 device
+Sent encrypted data over RS485.

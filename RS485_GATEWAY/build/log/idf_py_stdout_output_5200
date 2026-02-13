@@ -1,0 +1,206 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (33) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v0.1[0m
+[0;32mI (37) boot: efuse block revision: v1.2[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1bd04h (113924) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0002bd2c vaddr=3fc99b00 size=042ech ( 17132) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=90190h (590224) map[0m
+[0;32mI (267) esp_image: segment 3: paddr=000c01b8 vaddr=3fc9ddec size=0065ch (  1628) load[0m
+[0;32mI (267) esp_image: segment 4: paddr=000c081c vaddr=40374000 size=15ae0h ( 88800) load[0m
+[0;32mI (295) esp_image: segment 5: paddr=000d6304 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (323) cpu_start: Pro cpu start user code[0m
+[0;32mI (323) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (323) app_init: Application information:[0m
+[0;32mI (323) app_init: Project name:     app-template[0m
+[0;32mI (327) app_init: App version:      6d4ace7[0m
+[0;32mI (331) app_init: Compile time:     Apr 24 2025 11:59:59[0m
+[0;32mI (336) app_init: ELF file SHA256:  464ea2db0...[0m
+[0;32mI (341) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (345) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (349) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (353) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (363) heap_init: At 3FCA2070 len 000476A0 (285 KiB): RAM[0m
+[0;32mI (369) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (385) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (394) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (398) spi_flash: flash io: opi_str[0m
+[0;33mW (401) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (414) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (420) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (457) wifi_portal: No saved credentials. Starting AP...[0m
+[0;32mI (457) wifi_portal: Starting SoftAP...[0m
+[0;32mI (457) pp: pp rom version: e7ae62f[0m
+[0;32mI (457) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (467) wifi:wifi driver task: 3fcac1b8, prio:23, stack:6656, core=0[0m
+[0;32mI (477) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (477) wifi:wifi certification version: v7.0[0m
+[0;32mI (477) wifi:config NVS flash: enabled[0m
+[0;32mI (477) wifi:config nano formatting: disabled[0m
+[0;32mI (477) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (487) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (487) wifi:Init management short buffer num: 32[0m
+[0;32mI (497) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (497) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (507) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (507) wifi:Init static rx buffer num: 10[0m
+[0;32mI (507) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (517) wifi_init: rx ba win: 6[0m
+[0;32mI (517) wifi_init: accept mbox: 6[0m
+[0;32mI (517) wifi_init: tcpip mbox: 32[0m
+[0;32mI (527) wifi_init: udp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp mbox: 6[0m
+[0;32mI (527) wifi_init: tcp tx win: 5760[0m
+[0;32mI (527) wifi_init: tcp rx win: 5760[0m
+[0;32mI (537) wifi_init: tcp mss: 1440[0m
+[0;32mI (537) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (537) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1007) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (1037) wifi:mode : softAP (7c:df:a1:e1:13:61)[0m
+[0;32mI (1047) wifi:Total power save buffer number: 16[0m
+[0;32mI (1047) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1047) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1047) wifi_portal: SoftAP started. SSID: ESP32-Setup, Password: 12345678[0m
+[0;32mI (1047) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1067) main_task: Returned from app_main()[0m
+[0;32mI (26377) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (26377) wifi:station: 26:59:d9:f2:a7:6e join, AID=1, bgn, 40U[0m
+[0;32mI (26857) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (27347) wifi:<ba-add>idx:2 (ifx:1, 26:59:d9:f2:a7:6e), tid:0, ssn:16, winSize:64[0m
+[0;33mW (200217) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (200217) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (223557) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (223557) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;33mW (235757) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (235767) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (33) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v0.1[0m
+[0;32mI (37) boot: efuse block revision: v1.2[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1bd04h (113924) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0002bd2c vaddr=3fc99b00 size=042ech ( 17132) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=90190h (590224) map[0m
+[0;32mI (267) esp_image: segment 3: paddr=000c01b8 vaddr=3fc9ddec size=0065ch (  1628) load[0m
+[0;32mI (267) esp_image: segment 4: paddr=000c081c vaddr=40374000 size=15ae0h ( 88800) load[0m
+[0;32mI (295) esp_image: segment 5: paddr=000d6304 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (323) cpu_start: Pro cpu start user code[0m
+[0;32mI (323) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (323) app_init: Application information:[0m
+[0;32mI (323) app_init: Project name:     app-template[0m
+[0;32mI (327) app_init: App version:      6d4ace7[0m
+[0;32mI (331) app_init: Compile time:     Apr 24 2025 11:59:59[0m
+[0;32mI (336) app_init: ELF file SHA256:  464ea2db0...[0m
+[0;32mI (341) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (345) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (349) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (353) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (363) heap_init: At 3FCA2070 len 000476A0 (285 KiB): RAM[0m
+[0;32mI (369) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (385) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (394) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (398) spi_flash: flash io: opi_str[0m
+[0;33mW (401) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (414) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (420) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (457) wifi_portal: No saved credentials. Starting AP...[0m
+[0;32mI (457) wifi_portal: Starting SoftAP...[0m
+[0;32mI (457) pp: pp rom version: e7ae62f[0m
+[0;32mI (457) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (477) wifi:wifi driver task: 3fcac23c, prio:23, stack:6656, core=0[0m
+[0;32mI (487) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (487) wifi:wifi certification version: v7.0[0m
+[0;32mI (487) wifi:config NVS flash: enabled[0m
+[0;32mI (487) wifi:config nano formatting: disabled[0m
+[0;32mI (487) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (497) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (497) wifi:Init management short buffer num: 32[0m
+[0;32mI (507) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (507) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (507) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (517) wifi:Init static rx buffer num: 10[0m
+[0;32mI (517) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (527) wifi_init: rx ba win: 6[0m
+[0;32mI (527) wifi_init: accept mbox: 6[0m
+[0;32mI (527) wifi_init: tcpip mbox: 32[0m
+[0;32mI (537) wifi_init: udp mbox: 6[0m
+[0;32mI (537) wifi_init: tcp mbox: 6[0m
+[0;32mI (537) wifi_init: tcp tx win: 5760[0m
+[0;32mI (537) wifi_init: tcp rx win: 5760[0m
+[0;32mI (547) wifi_init: tcp mss: 1440[0m
+[0;32mI (547) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (547) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (557) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (597) wifi:mode : softAP (7c:df:a1:e1:13:61)[0m
+[0;32mI (597) wifi:Total power save buffer number: 16[0m
+[0;32mI (607) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (607) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (607) wifi_portal: SoftAP started. SSID: ESP32-Setup, Password: 12345678[0m
+[0;32mI (607) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (617) main_task: Returned from app_main()[0m
+[0;32mI (15707) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15707) wifi:station: 26:59:d9:f2:a7:6e join, AID=1, bgn, 40U[0m
+[0;32mI (16247) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (16587) wifi:<ba-add>idx:2 (ifx:1, 26:59:d9:f2:a7:6e), tid:0, ssn:16, winSize:64[0m
+[0;33mW (43447) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (43447) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m

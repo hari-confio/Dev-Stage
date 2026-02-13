@@ -1,0 +1,9 @@
+New client connected, socket 55
+Waiting for new client...
+Added client 55 to slot 0 (pre-pairing)
+Failed to receive initial bytes from client 55
+New client 55 connected. Total clients: 0
+Assigned Client 55 to Device ID Index 1
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0

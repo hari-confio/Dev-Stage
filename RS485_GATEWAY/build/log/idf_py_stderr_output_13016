@@ -1,0 +1,29 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037a426: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x4200373c: esp_cache_err_get_cpuid at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/cache_err_int.c:76
+[0m
+[0;33m--- 0x400570f0: memset in ROM
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037a426: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037a426: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037a426: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x4037a426: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x4037a426: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/cpu.c:64
+[0m
+[0m

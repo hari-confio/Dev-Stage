@@ -1,0 +1,23 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40375c15: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037c689: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384905: __assert_func at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/assert.c:80
+0x4203010f: esp_netif_create_default_wifi_ap at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_wifi/src/wifi_default.c:374 (discriminator 1)
+0x4200be8f: start_softap at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:60
+0x4200c0e4: connect_post_handler at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:142
+0x4203183b: httpd_uri at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_uri.c:331
+0x420320a9: httpd_parse_req at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_parse.c:663
+0x4203213d: httpd_req_new at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_parse.c:791
+0x42030fb0: httpd_sess_process at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_sess.c:427
+0x420301f6: httpd_process_session at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_main.c:267
+0x4209051b: httpd_sess_enum at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x420309b8: httpd_server at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_main.c:317
+0x42030a27: httpd_thread at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_http_server/src/httpd_main.c:339
+0x4037d121: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b54: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

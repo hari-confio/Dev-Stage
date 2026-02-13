@@ -1,0 +1,12 @@
+[0;32mI (36360) RS485_APP: Ethernet Link Down[0m
+[0;32mI (38360) RS485_APP: Ethernet Link Up[0m
+[0;32mI (38360) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (39370) esp_netif_handlers: eth ip: 192.168.1.177, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (39370) RS485_APP: Got IP: 192.168.1.177[0m
+mDNS already started, skipping service add.
+[0;32mI (2370) RS485_APP: Ethernet Link Up[0m
+[0;32mI (2370) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (3380) esp_netif_handlers: eth ip: 192.168.1.177, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3380) RS485_APP: Got IP: 192.168.1.177[0m
+[0;32mI (3380) mdns_mem: mDNS task will be created from internal RAM[0m
+mDNS service started with hostname 'confiors485' on port 5000

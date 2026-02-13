@@ -1,0 +1,95 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x42016ccc: w5500_get_rx_received_size at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:236
+0x42016df1: emac_w5500_alloc_recv_buf at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:617
+0x420171c2: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:775
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40382764: systimer_ll_counter_snapshot at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/systimer_ll.h:90
+ (inlined by) systimer_hal_get_counter_value at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/systimer_hal.c:50
+0x403770b2: esp_timer_impl_get_time at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_timer/src/esp_timer_impl_systimer.c:72
+0x4200bb40: usb_serial_jtag_tx_char_no_driver at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c:169
+0x4200bf97: usb_serial_jtag_write at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c:199
+0x4200cb06: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4/components/vfs/vfs.c:945 (discriminator 4)
+0x42039356: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11 (discriminator 1)
+0x4200c169: console_write at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_vfs_console/vfs_console.c:73
+0x4200cb06: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4/components/vfs/vfs.c:945 (discriminator 4)
+0x42038d02: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x420382c5: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x42038316: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x42038915: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42040003: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4203f442: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x42038d79: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4204a142: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4/components/log/src/os/log_write.c:34
+0x4038407d: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4/components/log/src/os/log_write.c:44
+0x4201720b: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:783 (discriminator 1)
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4038272c: spi_hal_usr_is_done at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:144
+0x40379ffd: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1409
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201670f: w5500_read_buffer at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:277
+0x4201799b: emac_w5500_receive at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:681
+0x420171db: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:779
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x420083ea: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/uart_ll.h:410
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_uart/src/uart_vfs.c:170
+0x42009297: uart_write at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_uart/src/uart_vfs.c:223
+0x4200cb06: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4/components/vfs/vfs.c:945 (discriminator 4)
+0x42039356: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11 (discriminator 1)
+0x4200c160: console_write at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_vfs_console/vfs_console.c:71
+0x4200cb06: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4/components/vfs/vfs.c:945 (discriminator 4)
+0x42038d02: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x420382c5: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x42038316: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x42038915: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42040003: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4203f442: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x42038d79: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4204a142: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4/components/log/src/os/log_write.c:34
+0x4038407d: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4/components/log/src/os/log_write.c:44
+0x4201720b: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:783 (discriminator 1)
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40381eaa: spi_ll_master_set_line_mode at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/spi_ll.h:665
+0x4038236a: spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:46
+0x40379c14: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:785
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

@@ -1,0 +1,56 @@
+[0;32mI (46410) RS485_APP: Ethernet Link Down[0m
+[0;32mI (48410) RS485_APP: Ethernet Link Up[0m
+[0;32mI (48410) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (49410) esp_netif_handlers: eth ip: 192.168.1.177, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (49410) RS485_APP: Got IP: 192.168.1.177[0m
+mDNS already started, skipping service add.
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 3B 06 0F A8 17 53 
+-->Received Btn/Knob 1 btn state 48
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 03 01 01 30 11 56 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-03 -9-01 -10-01 -11-30 -12-11 -13-56 
+
+CRC Calculated: 11 56
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 39 12 04 28 E7 3F 
+-->Received Btn/Knob 2 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 03 02 01 00 E1 42 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-03 -9-02 -10-01 -11-00 -12-E1 -13-42 
+
+CRC Calculated: E1 42
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 38 12 0A 81 27 41 
+-->Received Btn/Knob 2 btn state 9
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 03 02 01 09 21 44 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-03 -9-02 -10-01 -11-09 -12-21 -13-44 
+
+CRC Calculated: 21 44
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 36 1A 08 1E B6 7F 
+-->Received Btn/Knob 3 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 03 03 01 00 B0 82 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-03 -9-03 -10-01 -11-00 -12-B0 -13-82 
+
+CRC Calculated: B0 82
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 35 17 0A 83 F7 42 
+-->Received Btn/Knob 3 btn state 11
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 03 03 01 0B F1 45 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-03 -9-03 -10-01 -11-0B -12-F1 -13-45 
+
+CRC Calculated: F1 45
+
+--CRC is in correct Format--
+
+BTN PROCESSING

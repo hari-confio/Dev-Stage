@@ -1,0 +1,161 @@
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 01 01 00 F8 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 11 02 0E 16 FE 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 11 02 0E 16 FE 0D 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 00 08 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 11 10 0E 1E 0E 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 11 10 0E 1E 0E 0D 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 01 C9 D0 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 10 0E 0D 4A CF CD 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 10 0E 0D 4A CF CD 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 01 01 01 39 D0 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 14 08 04 52 3F CD 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 14 08 04 52 3F CD 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 01 01 00 F8 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 13 03 03 01 FE 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 13 03 03 01 FE 0D 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 00 08 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 0C 0F 0B 2D 0E 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 0C 0F 0B 2D 0E 0D 
+Sent encrypted data over RS485.
+Sent heartbeat to client.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 01 01 01 39 D0 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 14 04 0B 5D 3F CD 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 14 04 0B 5D 3F CD 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 01 01 00 F8 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 11 06 0B 06 FE 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 11 06 0B 06 FE 0D 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 01 C9 D0 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 0D 12 0C 42 CF CD 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 0D 12 0C 42 CF CD 
+Sent encrypted data over RS485.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 00 08 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 13 11 0B 20 0E 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 13 11 0B 20 0E 0D 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 01 C9 D0 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 0B 10 14 35 CF CD 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 0B 10 14 35 CF CD 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 00 08 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 0E 11 13 06 0E 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 0E 11 13 06 0E 0D 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 01 C9 D0 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 0C 0F 09 3D CF CD 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 0C 0F 09 3D CF CD 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 00 08 10 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 11 13 10 14 0E 0D 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 11 13 10 14 0E 0D 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 63 F2 04 02 01 01 C9 D0 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6C F0 12 0B 07 44 CF CD 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6C F0 12 0B 07 44 CF CD 
+Sent encrypted data over RS485.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Raw Response and len 14: 8D B6 25 FD FF 8B 6C F0 0B 0A 54 5D 42 CD 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 63 F2 04 01 0D 01 3C D0 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-63 -7-F2 -8-04 -9-01 -10-0D -11-01 -12-3C -13-D0 
+
+CRC Calculated: 3C D0
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6C A4 1E 09 53 62 12 A1 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 63 A6 06 01 0D 01 0C A4 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-63 -7-A6 -8-06 -9-01 -10-0D -11-01 -12-0C -13-A4 
+
+CRC Calculated: 0C A4
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6C B9 01 01 05 51 EA 93 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 63 BB 02 01 01 01 E4 96 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-63 -7-BB -8-02 -9-01 -10-01 -11-01 -12-E4 -13-96 
+
+CRC Calculated: E4 96
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6C B9 06 08 52 33 E7 93 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 63 BB 02 01 0D 01 E1 96 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-63 -7-BB -8-02 -9-01 -10-0D -11-01 -12-E1 -13-96 
+
+CRC Calculated: E1 96
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.

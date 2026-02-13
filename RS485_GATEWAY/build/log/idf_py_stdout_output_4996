@@ -1,0 +1,761 @@
+[0;32mI (5092301) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5094401) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5124401) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5124401) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5154401) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5154401) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5184401) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5184401) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5214401) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5214401) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5244401) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5244401) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5274401) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5276351) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5306351) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5306351) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5336351) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5336351) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5366351) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5366351) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5396351) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5396351) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5426351) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5426351) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5456351) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5458321) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5488321) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5488321) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5518321) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5518321) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5548321) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5548321) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5578321) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5578321) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5608321) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5608321) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5638321) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5640331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5670331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5670331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5700331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5700331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5730331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5730331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5760331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5760331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5790331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5790331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5820331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5822381) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5852381) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5852381) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5882381) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5882381) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5912381) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5912381) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5942381) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5942381) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5972381) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (5972381) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (5985331) RS485_APP: Client disconnected from socket 57[0m
+
+[0;32mI (5985331) RS485_APP: Cleaning up socket 57[0m
+[0;32mI (5985331) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (5985331) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (5985501) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (5985501) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (5985511) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (5985511) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (5985521) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (5985521) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (5986521) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (5986521) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6016521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6016521) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6031751) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6031751) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6031751) RS485_DATA: Processed Response:[0m
+[0;32mI (6031751) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6031751) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6046521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6046521) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6076521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6076521) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6106521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6106521) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6108971) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6108971) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6108971) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6108971) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6109151) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6109151) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6109161) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6109161) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6109161) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6109161) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6109171) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6109171) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6109241) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6109241) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6109251) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6109251) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6109251) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6109251) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6109251) RS485_APP: New client connected, socket 56[0m
+
+[0;33mW (6109261) RS485_APP: Existing client on socket 55 found. Disconnecting old client.[0m
+[0;32mI (6109371) RS485_APP: Client connected on socket 56[0m
+
+[0;32mI (6126011) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6126011) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6126011) RS485_DATA: Processed Response:[0m
+[0;32mI (6126011) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6126011) RS485_APP: Sent data to client 56[0m
+
+[0;32mI (6139371) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6139371) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6169371) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6169371) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6199371) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6199371) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6229371) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6229371) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6236031) RS485_APP: Client disconnected from socket 56[0m
+
+[0;32mI (6236031) RS485_APP: Cleaning up socket 56[0m
+[0;32mI (6236031) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6236031) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6236201) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6236201) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6236201) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6236211) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6236231) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6236231) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6237231) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6237231) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6259531) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6259531) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6259531) RS485_DATA: Processed Response:[0m
+[0;32mI (6259531) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6259531) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6267231) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6267231) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6270861) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6270861) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6270861) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6270871) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6271031) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6271031) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6271041) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6271041) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6271061) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6271061) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6272061) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6272061) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6286681) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6286681) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6286681) RS485_DATA: Processed Response:[0m
+[0;32mI (6286681) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6286681) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6302061) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6302061) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6317331) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6317331) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6317341) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6317341) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6317511) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6317511) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6317541) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6317541) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6340371) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6340371) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6340371) RS485_DATA: Processed Response:[0m
+[0;32mI (6340371) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6340371) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6347541) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6347541) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6350511) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6350511) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6350511) RS485_DATA: Processed Response:[0m
+[0;32mI (6350511) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6350511) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6377541) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6377541) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6407541) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6407541) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6437541) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6437541) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6441511) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6441511) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6441511) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6441521) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6462861) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6462861) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6462861) RS485_DATA: Processed Response:[0m
+[0;32mI (6462861) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6462861) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6471521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6501521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6531521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6561521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6591521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6621521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6651521) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6673751) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6673751) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6673751) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6673751) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6673921) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (6673921) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (6674941) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (6674941) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (6690641) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6690641) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6690641) RS485_DATA: Processed Response:[0m
+[0;32mI (6690641) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6690641) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6704941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6704941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6734941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6734941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6740651) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (6740651) RS485_DATA: Decrypted Response: [0m
+[0;32mI (6740651) RS485_DATA: Processed Response:[0m
+[0;32mI (6740651) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (6740651) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (6764941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6764941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6794941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6794941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6824941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6824941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6854941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6854941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6884941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6884941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6914941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6914941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6944941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6944941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (6974941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (6974941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7004941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7004941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7034941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7034941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7064941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7064941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7094941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7096361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7126361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7126361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7126891) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7126891) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7126891) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7126901) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7127071) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7127071) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7127081) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7127081) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7127081) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7127091) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7127091) RS485_APP: New client connected, socket 56[0m
+
+[0;32mI (7127101) RS485_APP: Client connected on socket 56[0m
+
+[0;32mI (7127151) RS485_APP: Client disconnected from socket 56[0m
+
+[0;32mI (7127151) RS485_APP: Cleaning up socket 56[0m
+[0;32mI (7127161) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7127161) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7127161) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7127161) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7127171) RS485_APP: New client connected, socket 56[0m
+
+[0;32mI (7127171) RS485_APP: Client connected on socket 56[0m
+
+[0;32mI (7157181) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7157181) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7174551) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7174551) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7174551) RS485_DATA: Processed Response:[0m
+[0;32mI (7174551) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7174551) RS485_APP: Sent data to client 56[0m
+
+[0;32mI (7187181) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7187181) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7187281) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7187281) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7187281) RS485_DATA: Processed Response:[0m
+[0;32mI (7187281) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7187281) RS485_APP: Sent data to client 56[0m
+
+[0;32mI (7217181) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7217181) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7247181) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7247181) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7277181) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7278371) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7308371) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7308371) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7331421) RS485_APP: Client disconnected from socket 56[0m
+
+[0;32mI (7331421) RS485_APP: Cleaning up socket 56[0m
+[0;32mI (7331431) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7331431) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7331591) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7331591) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7331601) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7331601) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7331621) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7331621) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7332631) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7332631) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7349141) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7349141) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7349141) RS485_DATA: Processed Response:[0m
+[0;32mI (7349141) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7349141) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (7360481) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7360481) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7360481) RS485_DATA: Processed Response:[0m
+[0;32mI (7360481) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7360481) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (7362631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7362631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7368631) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7368631) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7368631) RS485_DATA: Processed Response:[0m
+[0;32mI (7368631) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7368631) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (7376681) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7376681) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7376681) RS485_DATA: Processed Response:[0m
+[0;32mI (7376681) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7376681) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (7392631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7392631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7422631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7422631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7452631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7452631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7482631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7482631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7512631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7512631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7542631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7542631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7572631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7572631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7602631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7602631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7632631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7632631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7662631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7662631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7692631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7692631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7722631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7722631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7752631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7752631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7782631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7782631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7799111) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7799111) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7799111) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7799121) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7799301) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7799301) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7799311) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7799311) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7799311) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7799311) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7799321) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7799321) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7799391) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7799391) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7799401) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7799401) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7799401) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7799401) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (7799411) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7799411) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7821011) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7821011) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7821011) RS485_DATA: Processed Response:[0m
+[0;32mI (7821011) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7821011) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (7828871) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (7828871) RS485_DATA: Decrypted Response: [0m
+[0;32mI (7828871) RS485_DATA: Processed Response:[0m
+[0;32mI (7828871) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (7828871) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (7829421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7829421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7859421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7859421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7889421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7889421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7919421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7919421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7949421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7949421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (7979421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (7979421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8009421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8009421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8039421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8039421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8069421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8069421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8099421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8099421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8129421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8129421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8159421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8159421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8189421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8189421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8219421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8219421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8249421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8249421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8279421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8279421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8309421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8309421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8339421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8339421) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8369421) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8370331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8400331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8400331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8430331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8430331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8460331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8460331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8490331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8490331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8520331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8520331) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8550331) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8552361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8582361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8582361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8612361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8612361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8642361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8642361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8672361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8672361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8702361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8702361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8732361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8732361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8762361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8762361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8792361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8792361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8822361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8822361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8852361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8852361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8882361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8882361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8912361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8912361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8942361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8942361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (8972361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (8972361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9002361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9002361) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9032361) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9034311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9064311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9064311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9094311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9094311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9124311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9124311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9154311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9154311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9184311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9184311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9214311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9214311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9244311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9244311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9274311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9274311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9304311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9304311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9334311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9334311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9364311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9364311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9394311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9394311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9424311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9424311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9454311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9454311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9484311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9484311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9514311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9514311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9544311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9544311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9574311) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (9574311) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (9604321) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (96043

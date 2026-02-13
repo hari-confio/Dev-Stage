@@ -1,0 +1,219 @@
+[0;32mI (62361) RS485_APP: Ethernet Link Down[0m
+[0;32mI (66361) RS485_APP: Ethernet Link Up[0m
+[0;32mI (66361) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (67881) esp_netif_handlers: eth ip: 192.168.0.137, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (67881) RS485_APP: Got IP: 192.168.0.137[0m
+[0;32mI (67881) RS485_APP: mDNS already started, skipping service add.[0m
+
+[0;32mI (72441) RS485_DATA: Raw Response and len 17: [0m
+00 FF 00 F0 00 E2 00 F0 00 00 F0 00 00 00 F0 00 00 
+[0;32mI (72441) RS485_DATA: Decrypted Response: [0m
+F7 03 FB F2 FF E9 F7 F2 00 00 F0 00 FA 03 F0 00 00 
+[0;32mI (72461) RS485_DATA: Raw Response and len 1: [0m
+00 
+[0;32mI (72461) RS485_DATA: Decrypted Response: [0m
+00 
+[0;32mI (86131) RS485_DATA: Raw Response and len 1: [0m
+FF 
+[0;32mI (86131) RS485_DATA: Decrypted Response: [0m
+FF 
+[0;32mI (86151) RS485_DATA: Raw Response and len 1: [0m
+FC 
+[0;32mI (86151) RS485_DATA: Decrypted Response: [0m
+FC 
+[0;32mI (86181) RS485_DATA: Raw Response and len 1: [0m
+F8 
+[0;32mI (86181) RS485_DATA: Decrypted Response: [0m
+F8 
+I (86201) RS485_DATA: Raw Response and len 3: 
+0B A0 FF 
+[0;32mI (86201) RS485_DATA: Decrypted Response: [0m
+0B A0 FF 
+[0;32mI (86221) RS485_DATA: Raw Response and len 5: [0m
+3C 00 F8 FF F9 
+[0;32mI (86221) RS485_DATA: Decrypted Response: [0m
+3C 00 F8 FF F9 
+[0;32mI (86241) RS485_DATA: Raw Response and len 5: [0m
+00 00 10 51 FF 
+[0;32mI (86241) RS485_DATA: Decrypted Response: [0m
+00 00 10 51 FF 
+[0;32mI (86261) RS485_DATA: Raw Response and len 5: [0m
+00 00 00 00 A0 
+[0;32mI (86261) RS485_DATA: Decrypted Response: [0m
+00 00 00 00 A0 
+[0;32mI (86281) RS485_DATA: Raw Response and len 6: [0m
+00 00 40 70 60 E0 
+[0;32mI (86281) RS485_DATA: Decrypted Response: [0m
+00 00 40 70 60 E0 
+[0;32mI (86301) RS485_DATA: Raw Response and len 6: [0m
+01 00 00 73 61 FA 
+[0;32mI (86301) RS485_DATA: Decrypted Response: [0m
+01 00 00 73 61 FA 
+[0;32mI (86321) RS485_DATA: Raw Response and len 6: [0m
+4B 02 00 00 20 CB 
+[0;32mI (86321) RS485_DATA: Decrypted Response: [0m
+4B 02 00 00 20 CB 
+[0;32mI (86341) RS485_DATA: Raw Response and len 6: [0m
+03 02 00 60 E9 FF 
+[0;32mI (86341) RS485_DATA: Decrypted Response: [0m
+03 02 00 60 E9 FF 
+[0;32mI (86361) RS485_DATA: Raw Response and len 5: [0m
+FF 00 00 00 50 
+[0;32mI (86361) RS485_DATA: Decrypted Response: [0m
+FF 00 00 00 50 
+[0;32mI (86381) RS485_DATA: Raw Response and len 5: [0m
+02 00 A5 DB FF 
+[0;32mI (86381) RS485_DATA: Decrypted Response: [0m
+02 00 A5 DB FF 
+[0;32mI (86401) RS485_DATA: Raw Response and len 4: [0m
+02 00 FE C1 
+[0;32mI (86401) RS485_DATA: Decrypted Response: [0m
+02 00 FE C1 
+[0;32mI (86421) RS485_DATA: Raw Response and len 4: [0m
+00 00 E0 F0 
+[0;32mI (86421) RS485_DATA: Decrypted Response: [0m
+00 00 E0 F0 
+[0;32mI (86441) RS485_DATA: Raw Response and len 5: [0m
+2E 01 42 46 FF 
+[0;32mI (86441) RS485_DATA: Decrypted Response: [0m
+2E 01 42 46 FF 
+[0;32mI (86461) RS485_DATA: Raw Response and len 6: [0m
+00 22 00 28 20 E0 
+[0;32mI (86461) RS485_DATA: Decrypted Response: [0m
+00 22 00 28 20 E0 
+[0;32mI (86481) RS485_DATA: Raw Response and len 6: [0m
+01 00 00 20 20 50 
+[0;32mI (86481) RS485_DATA: Decrypted Response: [0m
+01 00 00 20 20 50 
+[0;32mI (86501) RS485_DATA: Raw Response and len 6: [0m
+01 22 00 20 68 22 
+[0;32mI (86501) RS485_DATA: Decrypted Response: [0m
+01 22 00 20 68 22 
+[0;32mI (86521) RS485_DATA: Raw Response and len 7: [0m
+01 00 00 68 64 22 F9 
+[0;32mI (86521) RS485_DATA: Decrypted Response: [0m
+01 00 00 68 64 22 F9 
+[0;32mI (86541) RS485_DATA: Raw Response and len 8: [0m
+01 00 00 00 00 00 00 EB 
+[0;32mI (86541) RS485_DATA: Decrypted Response: [0m
+01 00 00 00 00 00 00 EB 
+[0;32mI (86561) RS485_DATA: Raw Response and len 7: [0m
+00 00 10 20 00 10 FF 
+[0;32mI (86561) RS485_DATA: Decrypted Response: [0m
+00 00 10 20 00 10 FF 
+[0;32mI (86581) RS485_DATA: Raw Response and len 8: [0m
+00 00 00 00 00 00 00 FB 
+[0;32mI (86581) RS485_DATA: Decrypted Response: [0m
+00 00 00 00 00 00 00 FB 
+[0;32mI (86601) RS485_DATA: Raw Response and len 8: [0m
+03 00 02 02 02 02 22 F0 
+[0;32mI (86601) RS485_DATA: Decrypted Response: [0m
+03 00 02 02 02 02 22 F0 
+[0;32mI (86621) RS485_DATA: Raw Response and len 8: [0m
+03 00 00 00 00 00 00 FB 
+[0;32mI (86621) RS485_DATA: Decrypted Response: [0m
+03 00 00 00 00 00 00 FB 
+[0;32mI (86641) RS485_DATA: Raw Response and len 8: [0m
+02 00 02 06 02 02 A2 FF 
+[0;32mI (86641) RS485_DATA: Decrypted Response: [0m
+02 00 02 06 02 02 A2 FF 
+[0;32mI (86661) RS485_DATA: Raw Response and len 7: [0m
+02 00 22 60 20 00 FF 
+[0;32mI (86661) RS485_DATA: Decrypted Response: [0m
+02 00 22 60 20 00 FF 
+[0;32mI (86681) RS485_DATA: Raw Response and len 7: [0m
+00 20 F0 9F 0F 02 42 
+[0;32mI (86681) RS485_DATA: Decrypted Response: [0m
+00 20 F0 9F 0F 02 42 
+[0;32mI (86701) RS485_DATA: Raw Response and len 5: [0m
+02 00 FA 22 E2 
+[0;32mI (86701) RS485_DATA: Decrypted Response: [0m
+02 00 FA 22 E2 
+[0;32mI (86721) RS485_DATA: Raw Response and len 5: [0m
+0B A2 FF 22 F9 
+[0;32mI (86721) RS485_DATA: Decrypted Response: [0m
+0B A2 FF 22 F9 
+[0;32mI (86741) RS485_DATA: Raw Response and len 5: [0m
+FF 00 FA 00 D1 
+[0;32mI (86741) RS485_DATA: Decrypted Response: [0m
+FF 00 FA 00 D1 
+[0;32mI (86761) RS485_DATA: Raw Response and len 5: [0m
+13 22 E2 11 FF 
+[0;32mI (86761) RS485_DATA: Decrypted Response: [0m
+13 22 E2 11 FF 
+[0;32mI (86781) RS485_DATA: Raw Response and len 7: [0m
+5F 20 00 00 00 02 FC 
+[0;32mI (86781) RS485_DATA: Decrypted Response: [0m
+5F 20 00 00 00 02 FC 
+[0;32mI (86801) RS485_DATA: Raw Response and len 7: [0m
+4B 20 22 60 20 11 F9 
+[0;32mI (86801) RS485_DATA: Decrypted Response: [0m
+4B 20 22 60 20 11 F9 
+[0;32mI (86821) RS485_DATA: Raw Response and len 6: [0m
+11 42 42 00 00 EA 
+[0;32mI (86821) RS485_DATA: Decrypted Response: [0m
+11 42 42 00 00 EA 
+[0;32mI (86841) RS485_DATA: Raw Response and len 6: [0m
+23 22 2A 2A 02 C2 
+[0;32mI (86841) RS485_DATA: Decrypted Response: [0m
+23 22 2A 2A 02 C2 
+[0;32mI (86861) RS485_DATA: Raw Response and len 4: [0m
+02 20 22 FA 
+[0;32mI (86861) RS485_DATA: Decrypted Response: [0m
+02 20 22 FA 
+[0;32mI (86881) RS485_DATA: Raw Response and len 4: [0m
+22 FC 00 F8 
+[0;32mI (86881) RS485_DATA: Decrypted Response: [0m
+22 FC 00 F8 
+[0;32mI (86901) RS485_DATA: Raw Response and len 3: [0m
+11 10 FF 
+[0;32mI (86901) RS485_DATA: Decrypted Response: [0m
+11 10 FF 
+[0;32mI (86921) RS485_DATA: Raw Response and len 2: [0m
+A2 42 
+[0;32mI (86921) RS485_DATA: Decrypted Response: [0m
+A2 42 
+[0;32mI (86941) RS485_DATA: Raw Response and len 2: [0m
+A2 B1 
+[0;32mI (86941) RS485_DATA: Decrypted Response: [0m
+A2 B1 
+[0;32mI (86961) RS485_DATA: Raw Response and len 2: [0m
+F9 FB 
+[0;32mI (86961) RS485_DATA: Decrypted Response: [0m
+F9 FB 
+[0;32mI (86981) RS485_DATA: Raw Response and len 2: [0m
+FE FE 
+[0;32mI (86981) RS485_DATA: Decrypted Response: [0m
+FE FE 
+[0;32mI (87001) RS485_DATA: Raw Response and len 2: [0m
+FF FE 
+[0;32mI (87001) RS485_DATA: Decrypted Response: [0m
+FF FE 
+[0;32mI (87021) RS485_DATA: Raw Response and len 1: [0m
+FF 
+[0;32mI (87021) RS485_DATA: Decrypted Response: [0m
+FF 
+[0;32mI (113511) RS485_DATA: Raw Response and len 3: [0m
+F0 00 00 
+[0;32mI (113511) RS485_DATA: Decrypted Response: [0m
+F0 00 00 
+[0;32mI (113531) RS485_DATA: Raw Response and len 1: [0m
+00 
+[0;32mI (113531) RS485_DATA: Decrypted Response: [0m
+00 
+[0;32mI (114501) RS485_DATA: Raw Response and len 15: [0m
+00 00 00 00 00 00 00 00 00 00 E0 00 00 00 00 
+[0;32mI (114501) RS485_DATA: Decrypted Response: [0m
+F7 04 FB 02 FF 07 F7 02 00 00 E0 00 FA 03 00 
+[0;32mI (114521) RS485_DATA: Raw Response and len 1: [0m
+00 
+[0;32mI (114521) RS485_DATA: Decrypted Response: [0m
+00 
+[0;32mI (114531) RS485_DATA: Raw Response and len 1: [0m
+00 
+[0;32mI (114531) RS485_DATA: Decrypted Response: [0m
+00 
+[0;32mI (114551) RS485_DATA: Raw Response and len 1: [0m
+00 
+[0;32mI (114551) RS485_DATA: Decrypted Response: [0m
+00 

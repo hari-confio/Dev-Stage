@@ -1,0 +1,44 @@
+[0;32mI (424931) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (424931) RS485_DATA: Decrypted Response: [0m
+[0;32mI (424931) RS485_DATA: Processed Response:[0m
+[0;32mI (424931) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (424931) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (428631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (428631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (458631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (458631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (488631) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (488631) RS485_C4_DATA: Received 4 bytes from client: [0m
+[1;31mE (492361) RS485_APP: Socket error on recv: errno=113[0m
+
+[0;32mI (492361) RS485_APP: Ethernet Link Down[0m
+[0;32mI (492361) RS485_APP: Cleaning up socket 55[0m
+[0;32mI (496361) RS485_APP: Ethernet Link Up[0m
+[0;32mI (496361) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (496721) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (496721) RS485_DATA: Decrypted Response: [0m
+[0;32mI (496721) RS485_DATA: Processed Response:[0m
+[0;32mI (496721) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (498361) RS485_APP: Ethernet Link Down[0m
+[0;32mI (500361) RS485_APP: Ethernet Link Up[0m
+[0;32mI (500361) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (502361) RS485_APP: Ethernet Link Down[0m
+[0;32mI (504361) RS485_APP: Ethernet Link Up[0m
+[0;32mI (504361) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (515431) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (515431) RS485_DATA: Decrypted Response: [0m
+[0;32mI (515431) RS485_DATA: Processed Response:[0m
+[0;32mI (515431) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (516361) RS485_APP: Ethernet Link Down[0m
+[0;32mI (518361) RS485_APP: Ethernet Link Up[0m
+[0;32mI (518361) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (526361) RS485_APP: Ethernet Link Down[0m
+[0;32mI (528361) RS485_APP: Ethernet Link Up[0m
+[0;32mI (528361) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (606361) RS485_APP: Ethernet Link Down[0m
+[0;32mI (610361) RS485_APP: Ethernet Link Up[0m
+[0;32mI (610361) RS485_APP: MAC: 02:85:18:76:fd:69[0m

@@ -1,0 +1,14 @@
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0D 25 04 4D CE BA 
+-->Received Btn/Knob 4 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 04 01 01 C8 BD 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-04 -10-01 -11-01 -12-C8 -13-BD 
+
+CRC Calculated: C8 BD
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55

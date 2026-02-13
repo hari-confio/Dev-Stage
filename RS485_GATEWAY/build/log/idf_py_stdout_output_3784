@@ -1,0 +1,6 @@
+[0;32mI (2350) RS485_APP: Ethernet Link Up[0m
+[0;32mI (2350) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (3860) esp_netif_handlers: eth ip: 192.168.0.156, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3860) RS485_APP: Got IP: 192.168.0.156[0m
+[0;32mI (3860) mdns_mem: mDNS task will be created from internal RAM[0m
+mDNS service started with hostname 'confiors485' on port 5000

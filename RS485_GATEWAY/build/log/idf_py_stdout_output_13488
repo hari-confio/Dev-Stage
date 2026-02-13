@@ -1,0 +1,58 @@
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+[1;31mE (295269) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (295269) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (295269) task_wdt: Tasks currently running:[0m
+[1;31mE (295269) task_wdt: CPU 0: w5500_tsk[0m
+[1;31mE (295269) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (295269) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201B522:0x3FC97960 0x4201B938:0x3FC97980 0x40377629:0x3FC979B0 0x40379666:0x3FCA4750 0x40379ECB:0x3FCA4780 0x4037A052:0x3FCA47C0 0x4201783B:0x3FCA47E0 0x42045FD3:0x3FCA4840 0x4201719A:0x3FCA4860 0x4037D591:0x3FCA48A0
+
+[1;31mE (300269) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (300269) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (300269) task_wdt: Tasks currently running:[0m
+[1;31mE (300269) task_wdt: CPU 0: w5500_tsk[0m
+[1;31mE (300269) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (300269) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201B522:0x3FC97960 0x4201B938:0x3FC97980 0x40377629:0x3FC979B0 0x4037A20A:0x3FCA4760 0x40379996:0x3FCA4780 0x40379FD4:0x3FCA47A0 0x4037A05D:0x3FCA47C0 0x4201783B:0x3FCA47E0 0x42045FD3:0x3FCA4840 0x4201719A:0x3FCA4860 0x4037D591:0x3FCA48A0
+
+[1;31mE (305269) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (305269) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (305269) task_wdt: Tasks currently running:[0m
+[1;31mE (305269) task_wdt: CPU 0: w5500_tsk[0m
+[1;31mE (305269) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (305269) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201B522:0x3FC97960 0x4201B938:0x3FC97980 0x40377629:0x3FC979B0 0x40056F84:0x3FCA46F0 0x40382525:0x3FCA4700 0x40379C14:0x3FCA4730 0x40379F87:0x3FCA4780 0x4037A052:0x3FCA47C0 0x4201783B:0x3FCA47E0 0x42045FD3:0x3FCA4840 0x4201719A:0x3FCA4860 0x4037D591:0x3FCA48A0
+
+Client disconnected from socket 55
+[1;31mE (315089) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (315089) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (315089) task_wdt: Tasks currently running:[0m
+[1;31mE (315089) task_wdt: CPU 0: w5500_tsk[0m
+[1;31mE (315089) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (315089) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201B522:0x3FC97960 0x4201B938:0x3FC97980 0x40377629:0x3FC979B0 0x400559DD:0x3FCA4770 0x4037D92A:0x3FCA4780 0x4037D3CC:0x3FCA47A0 0x4201782D:0x3FCA47E0 0x42045FD3:0x3FCA4840 0x4201719A:0x3FCA4860 0x4037D591:0x3FCA48A0
+
+[1;31mE (325289) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (325289) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (325289) task_wdt: Tasks currently running:[0m
+[1;31mE (325289) task_wdt: CPU 0: w5500_tsk[0m
+[1;31mE (325289) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (325289) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201B522:0x3FC97960 0x4201B938:0x3FC97980 0x40377629:0x3FC979B0 0x4037A20A:0x3FCA4760 0x40379996:0x3FCA4780 0x40379FD4:0x3FCA47A0 0x4037A05D:0x3FCA47C0 0x4201783B:0x3FCA47E0 0x42045FD3:0x3FCA4840 0x4201719A:0x3FCA4860 0x4037D591:0x3FCA48A0
+
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55

@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Espressif\python_env\idf5.4_py3.11_env\Lib\site-packages\esp_idf_monitor\__main__.py", line 1, in <module>
+    from .idf_monitor import main
+  File "C:\Espressif\python_env\idf5.4_py3.11_env\Lib\site-packages\esp_idf_monitor\idf_monitor.py", line 39, in <module>
+    from esp_idf_monitor.base.argument_parser import get_parser
+  File "C:\Espressif\python_env\idf5.4_py3.11_env\Lib\site-packages\esp_idf_monitor\base\argument_parser.py", line 11, in <module>
+    from .coredump import COREDUMP_DECODE_DISABLE, COREDUMP_DECODE_INFO
+  File "C:\Espressif\python_env\idf5.4_py3.11_env\Lib\site-packages\esp_idf_monitor\base\coredump.py", line 11, in <module>
+    from .logger import Logger  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.4_py3.11_env\Lib\site-packages\esp_idf_monitor\base\logger.py", line 4, in <module>
+    import datetime
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1201, in get_code
+  File "<frozen importlib._bootstrap_external>", line 729, in _compile_bytecode
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Espressif\frameworks\esp-idf-v5.4\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

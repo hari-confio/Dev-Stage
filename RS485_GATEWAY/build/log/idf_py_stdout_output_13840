@@ -1,0 +1,94 @@
+[0;32mI (316421) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (316421) RS485_DATA: Decrypted Response: [0m
+[0;32mI (316421) RS485_DATA: Processed Response:[0m
+[0;32mI (316421) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (316421) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (316491) RS485_C4_DATA: Received 14 bytes from client: [0m
+84 BA 20 FF FE 92 60 DD 08 01 01 00 2E B5 
+[0;32mI (317491) RS485_C4_DATA: Accumulated data (14 bytes):[0m
+84 BA 20 FF FE 92 60 DD 08 01 01 00 2E B5 
+[0;32mI (317491) RS485_C4_DATA: --CRC is in correct Format--[0m
+[0;32mI (317491) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (317491) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (317621) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (317621) RS485_C4_DATA: [0m
+-------------------------------------
+
+[0;32mI (317621) RS485_C4_DATA: Received 64 bytes from client: [0m
+84 BA 20 FF FE 92 60 DD 08 02 01 00 DE B5 84 BA 20 FF FE 92 60 DD 08 03 01 00 8F 75 84 BA 20 FF FE 92 60 DD 08 04 01 00 3E B4 84 BA 20 FF FE 92 60 DD 08 05 01 00 6F 74 84 BA 20 FF FE 92 60 DD 
+[0;32mI (318641) RS485_C4_DATA: Accumulated data (64 bytes):[0m
+84 BA 20 FF FE 92 60 DD 08 02 01 00 DE B5 84 BA 20 FF FE 92 60 DD 08 03 01 00 8F 75 84 BA 20 FF FE 92 60 DD 08 04 01 00 3E B4 84 BA 20 FF FE 92 60 DD 08 05 01 00 6F 74 84 BA 20 FF FE 92 60 DD 
+[0;32mI (318651) RS485_C4_DATA: --CRC is in correct Format--[0m
+[0;32mI (318651) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (318651) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (318781) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (318781) RS485_C4_DATA: [0m
+-------------------------------------
+
+[0;32mI (318781) RS485_C4_DATA: --CRC is in correct Format--[0m
+[0;32mI (318781) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (318781) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (318911) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (318911) RS485_C4_DATA: [0m
+-------------------------------------
+
+[0;32mI (318911) RS485_C4_DATA: --CRC is in correct Format--[0m
+[0;32mI (318911) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (318911) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (319041) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (319041) RS485_C4_DATA: [0m
+-------------------------------------
+
+[0;32mI (319041) RS485_C4_DATA: --CRC is in correct Format--[0m
+[0;32mI (319041) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (319041) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (319171) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (319171) RS485_C4_DATA: [0m
+-------------------------------------
+
+[0;32mI (319171) RS485_C4_DATA: Received 34 bytes from client: [0m
+08 06 01 00 9F 74 84 BA 20 FF FE 92 60 DD 08 07 01 00 CE B4 84 BA 20 FF FE 92 60 DD 08 08 01 00 FE B7 
+[0;32mI (320181) RS485_C4_DATA: Accumulated data (34 bytes):[0m
+08 06 01 00 9F 74 84 BA 20 FF FE 92 60 DD 08 07 01 00 CE B4 84 BA 20 FF FE 92 60 DD 08 08 01 00 FE B7 
+[1;31mE (320181) RS485_C4_DATA: --CRC is not in correct Format--[0m
+
+[1;31mE (320181) RS485_C4_DATA: --CRC is not in correct Format--[0m
+
+[0;32mI (350191) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (350191) RS485_C4_DATA: Received 4 bytes from client: [0m
+50 4F 4E 47 
+[0;32mI (351191) RS485_C4_DATA: Accumulated data (4 bytes):[0m
+50 4F 4E 47 
+[0;32mI (381191) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (381191) RS485_C4_DATA: Received 4 bytes from client: [0m
+50 4F 4E 47 
+[0;32mI (382191) RS485_C4_DATA: Accumulated data (4 bytes):[0m
+50 4F 4E 47 
+[0;32mI (412191) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (412191) RS485_C4_DATA: Received 4 bytes from client: [0m
+50 4F 4E 47 
+[0;32mI (413191) RS485_C4_DATA: Accumulated data (4 bytes):[0m
+50 4F 4E 47 
+[0;32mI (443191) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (443191) RS485_C4_DATA: Received 4 bytes from client: [0m
+50 4F 4E 47 

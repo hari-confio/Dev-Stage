@@ -1,0 +1,67 @@
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3D 10 0C 5E 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Client disconnected from socket 55
+New client connected, socket 55
+Client connected on socket 55
+Waiting for new client...
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Client connected on socket 55
+Waiting for new client...
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Client connected on socket 55
+Waiting for new client...
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 41 13 02 49 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 41 27 01 37 7E 0B 
+-->Received Btn/Knob 4 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 04 01 01 78 0E 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 04 01 01 78 0E 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Client disconnected from socket 55

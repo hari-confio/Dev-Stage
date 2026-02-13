@@ -1,0 +1,6 @@
+[0;32mI (54350) RS485_APP: Ethernet Link Down[0m
+[0;32mI (58350) RS485_APP: Ethernet Link Up[0m
+[0;32mI (58350) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (59860) esp_netif_handlers: eth ip: 192.168.0.156, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (59860) RS485_APP: Got IP: 192.168.0.156[0m
+mDNS already started, skipping service add.

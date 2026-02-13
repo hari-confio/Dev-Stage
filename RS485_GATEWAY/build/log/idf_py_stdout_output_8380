@@ -1,0 +1,293 @@
+[0;32mI (12641) RS485_DATA: Raw Response and len 14: [0m
+95 6B BE FD FF 03 98 D7 37 03 0C BB 23 71 
+[0;32mI (12641) RS485_DATA: Decrypted Response: [0m
+8C 6F B9 FF FE 0A 8F D9 03 01 01 43 1D 74 
+[0;32mI (12641) RS485_DATA: Processed Response:[0m
+8C 6F B9 FF FE 0A 8F D9 03 01 01 43 1D 74 
+[0;32mI (12651) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (242981) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (242981) RS485_APP: Waiting for new client...[0m
+
+[0;32mI (242981) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (272981) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (272981) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (272981) RS485_C4_DATA: 50 [0m
+[0;32mI (272981) RS485_C4_DATA: 4F [0m
+[0;32mI (272981) RS485_C4_DATA: 4E [0m
+[0;32mI (272981) RS485_C4_DATA: 47 [0m
+
+[0;32mI (277041) RS485_C4_DATA: Received 12 bytes from client: [0m
+[0;32mI (277041) RS485_C4_DATA: 8C [0m
+[0;32mI (277041) RS485_C4_DATA: 6F [0m
+[0;32mI (277041) RS485_C4_DATA: B9 [0m
+[0;32mI (277051) RS485_C4_DATA: FF [0m
+[0;32mI (277051) RS485_C4_DATA: FE [0m
+[0;32mI (277051) RS485_C4_DATA: 0A [0m
+[0;32mI (277051) RS485_C4_DATA: 8E [0m
+[0;32mI (277061) RS485_C4_DATA: 8D [0m
+[0;32mI (277061) RS485_C4_DATA: 03 [0m
+[0;32mI (277061) RS485_C4_DATA: 00 [0m
+[0;32mI (277071) RS485_C4_DATA: AC [0m
+[0;32mI (277071) RS485_C4_DATA: 1F [0m
+
+[0;32mI (287181) RS485_DATA: Raw Response and len 14: [0m
+95 6B BE FD FF 03 98 D7 3B 0F 0B DD 72 AB 
+[0;32mI (287181) RS485_DATA: Decrypted Response: [0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 65 6C AE 
+[0;32mI (287181) RS485_DATA: Processed Response:[0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 65 6C AE 
+[0;32mI (287191) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (287191) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (293371) RS485_DATA: Raw Response and len 14: [0m
+95 6B BE FD FF 03 98 D7 38 14 11 AD 72 8F 
+[0;32mI (293371) RS485_DATA: Decrypted Response: [0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 35 6C 92 
+[0;32mI (293371) RS485_DATA: Processed Response:[0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 35 6C 92 
+[0;32mI (293381) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (293381) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (294841) RS485_DATA: Raw Response and len 14: [0m
+95 6B BE FD FF 03 98 D7 36 10 0B B6 33 52 
+[0;32mI (294841) RS485_DATA: Decrypted Response: [0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 3E 2D 55 
+[0;32mI (294841) RS485_DATA: Processed Response:[0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 3E 2D 55 
+[0;32mI (294851) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (294851) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (306401) RS485_C4_DATA: Received 12 bytes from client: [0m
+[0;32mI (306401) RS485_C4_DATA: 8C [0m
+[0;32mI (306401) RS485_C4_DATA: 6F [0m
+[0;32mI (306401) RS485_C4_DATA: B9 [0m
+[0;32mI (306401) RS485_C4_DATA: FF [0m
+[0;32mI (306411) RS485_C4_DATA: FE [0m
+[0;32mI (306411) RS485_C4_DATA: 0A [0m
+[0;32mI (306411) RS485_C4_DATA: 8E [0m
+[0;32mI (306411) RS485_C4_DATA: 8D [0m
+[0;32mI (306421) RS485_C4_DATA: 03 [0m
+[0;32mI (306421) RS485_C4_DATA: 00 [0m
+[0;32mI (306421) RS485_C4_DATA: AC [0m
+[0;32mI (306421) RS485_C4_DATA: 1F [0m
+
+[0;32mI (311431) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (311431) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (311431) RS485_C4_DATA: 50 [0m
+[0;32mI (311431) RS485_C4_DATA: 4F [0m
+[0;32mI (311431) RS485_C4_DATA: 4E [0m
+[0;32mI (311431) RS485_C4_DATA: 47 [0m
+
+[0;32mI (318141) RS485_C4_DATA: Received 12 bytes from client: [0m
+[0;32mI (318141) RS485_C4_DATA: 8C [0m
+[0;32mI (318141) RS485_C4_DATA: 6F [0m
+[0;32mI (318141) RS485_C4_DATA: B9 [0m
+[0;32mI (318141) RS485_C4_DATA: FF [0m
+[0;32mI (318151) RS485_C4_DATA: FE [0m
+[0;32mI (318151) RS485_C4_DATA: 0A [0m
+[0;32mI (318151) RS485_C4_DATA: 8E [0m
+[0;32mI (318151) RS485_C4_DATA: 8D [0m
+[0;32mI (318161) RS485_C4_DATA: 03 [0m
+[0;32mI (318161) RS485_C4_DATA: 00 [0m
+[0;32mI (318161) RS485_C4_DATA: AC [0m
+[0;32mI (318171) RS485_C4_DATA: 1F [0m
+
+[0;32mI (343171) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (343171) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (343171) RS485_C4_DATA: 50 [0m
+[0;32mI (343171) RS485_C4_DATA: 4F [0m
+[0;32mI (343171) RS485_C4_DATA: 4E [0m
+[0;32mI (343171) RS485_C4_DATA: 47 [0m
+
+[0;32mI (366121) RS485_DATA: Raw Response and len 14: [0m
+95 6B BE FD FF 03 98 D7 39 10 01 DD 72 AB 
+[0;32mI (366121) RS485_DATA: Decrypted Response: [0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 65 6C AE 
+[0;32mI (366121) RS485_DATA: Processed Response:[0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 65 6C AE 
+[0;32mI (366131) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (366131) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (373181) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (373181) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (373181) RS485_C4_DATA: 50 [0m
+[0;32mI (373181) RS485_C4_DATA: 4F [0m
+[0;32mI (373181) RS485_C4_DATA: 4E [0m
+[0;32mI (373181) RS485_C4_DATA: 47 [0m
+
+[0;32mI (403191) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (403191) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (403191) RS485_C4_DATA: 50 [0m
+[0;32mI (403191) RS485_C4_DATA: 4F [0m
+[0;32mI (403191) RS485_C4_DATA: 4E [0m
+[0;32mI (403191) RS485_C4_DATA: 47 [0m
+
+[0;32mI (433201) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (433201) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (433201) RS485_C4_DATA: 50 [0m
+[0;32mI (433201) RS485_C4_DATA: 4F [0m
+[0;32mI (433201) RS485_C4_DATA: 4E [0m
+[0;32mI (433201) RS485_C4_DATA: 47 [0m
+
+[0;32mI (447541) RS485_C4_DATA: Received 12 bytes from client: [0m
+[0;32mI (447541) RS485_C4_DATA: 8C [0m
+[0;32mI (447541) RS485_C4_DATA: 6F [0m
+[0;32mI (447541) RS485_C4_DATA: B9 [0m
+[0;32mI (447551) RS485_C4_DATA: FF [0m
+[0;32mI (447551) RS485_C4_DATA: FE [0m
+[0;32mI (447551) RS485_C4_DATA: 0A [0m
+[0;32mI (447551) RS485_C4_DATA: 8E [0m
+[0;32mI (447561) RS485_C4_DATA: 8D [0m
+[0;32mI (447561) RS485_C4_DATA: 03 [0m
+[0;32mI (447561) RS485_C4_DATA: 00 [0m
+[0;32mI (447561) RS485_C4_DATA: AC [0m
+[0;32mI (447571) RS485_C4_DATA: 1F [0m
+
+[0;32mI (467571) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (467571) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (467571) RS485_C4_DATA: 50 [0m
+[0;32mI (467571) RS485_C4_DATA: 4F [0m
+[0;32mI (467571) RS485_C4_DATA: 4E [0m
+[0;32mI (467571) RS485_C4_DATA: 47 [0m
+
+[0;32mI (475081) RS485_C4_DATA: Received 12 bytes from client: [0m
+[0;32mI (475081) RS485_C4_DATA: 8C [0m
+[0;32mI (475081) RS485_C4_DATA: 6F [0m
+[0;32mI (475081) RS485_C4_DATA: B9 [0m
+[0;32mI (475091) RS485_C4_DATA: FF [0m
+[0;32mI (475091) RS485_C4_DATA: FE [0m
+[0;32mI (475091) RS485_C4_DATA: 0A [0m
+[0;32mI (475091) RS485_C4_DATA: 8E [0m
+[0;32mI (475101) RS485_C4_DATA: 8D [0m
+[0;32mI (475101) RS485_C4_DATA: 03 [0m
+[0;32mI (475101) RS485_C4_DATA: 00 [0m
+[0;32mI (475101) RS485_C4_DATA: AC [0m
+[0;32mI (475111) RS485_C4_DATA: 1F [0m
+
+[0;32mI (483451) RS485_DATA: Raw Response and len 14: [0m
+95 6B BE FD FF 03 98 D7 35 13 08 B6 33 52 
+[0;32mI (483451) RS485_DATA: Decrypted Response: [0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 3E 2D 55 
+[0;32mI (483451) RS485_DATA: Processed Response:[0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 3E 2D 55 
+[0;32mI (483461) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (483461) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (485161) RS485_DATA: Raw Response and len 14: [0m
+95 6B BE FD FF 03 98 D7 34 0C 11 DD 72 AB 
+[0;32mI (485161) RS485_DATA: Decrypted Response: [0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 65 6C AE 
+[0;32mI (485161) RS485_DATA: Processed Response:[0m
+8C 6F B9 FF FE 0A 8F D9 03 02 01 65 6C AE 
+[0;32mI (485171) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (485171) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (500111) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (500111) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (500111) RS485_C4_DATA: 50 [0m
+[0;32mI (500111) RS485_C4_DATA: 4F [0m
+[0;32mI (500111) RS485_C4_DATA: 4E [0m
+[0;32mI (500111) RS485_C4_DATA: 47 [0m
+
+[0;32mI (505051) RS485_C4_DATA: Received 12 bytes from client: [0m
+[0;32mI (505051) RS485_C4_DATA: 8C [0m
+[0;32mI (505051) RS485_C4_DATA: 6F [0m
+[0;32mI (505051) RS485_C4_DATA: B9 [0m
+[0;32mI (505051) RS485_C4_DATA: FF [0m
+[0;32mI (505051) RS485_C4_DATA: FE [0m
+[0;32mI (505061) RS485_C4_DATA: 0A [0m
+[0;32mI (505061) RS485_C4_DATA: 8E [0m
+[0;32mI (505061) RS485_C4_DATA: 8D [0m
+[0;32mI (505061) RS485_C4_DATA: 03 [0m
+[0;32mI (505071) RS485_C4_DATA: 00 [0m
+[0;32mI (505071) RS485_C4_DATA: AC [0m
+[0;32mI (505071) RS485_C4_DATA: 1F [0m
+
+[0;32mI (535081) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (535081) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (535081) RS485_C4_DATA: 50 [0m
+[0;32mI (535081) RS485_C4_DATA: 4F [0m
+[0;32mI (535081) RS485_C4_DATA: 4E [0m
+[0;32mI (535081) RS485_C4_DATA: 47 [0m
+
+[0;32mI (564861) RS485_C4_DATA: Received 12 bytes from client: [0m
+[0;32mI (564861) RS485_C4_DATA: 8C [0m
+[0;32mI (564861) RS485_C4_DATA: 6F [0m
+[0;32mI (564861) RS485_C4_DATA: B9 [0m
+[0;32mI (564871) RS485_C4_DATA: FF [0m
+[0;32mI (564871) RS485_C4_DATA: FE [0m
+[0;32mI (564871) RS485_C4_DATA: 0A [0m
+[0;32mI (564871) RS485_C4_DATA: 8E [0m
+[0;32mI (564881) RS485_C4_DATA: 8D [0m
+[0;32mI (564881) RS485_C4_DATA: 03 [0m
+[0;32mI (564881) RS485_C4_DATA: 00 [0m
+[0;32mI (564881) RS485_C4_DATA: AC [0m
+[0;32mI (564891) RS485_C4_DATA: 1F [0m
+
+[0;32mI (569891) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (569891) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (569891) RS485_C4_DATA: 50 [0m
+[0;32mI (569891) RS485_C4_DATA: 4F [0m
+[0;32mI (569891) RS485_C4_DATA: 4E [0m
+[0;32mI (569891) RS485_C4_DATA: 47 [0m
+
+[0;32mI (599901) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (599901) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (599901) RS485_C4_DATA: 50 [0m
+[0;32mI (599901) RS485_C4_DATA: 4F [0m
+[0;32mI (599901) RS485_C4_DATA: 4E [0m
+[0;32mI (599911) RS485_C4_DATA: 47 [0m
+
+[0;32mI (629911) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (629911) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (629911) RS485_C4_DATA: 50 [0m
+[0;32mI (629911) RS485_C4_DATA: 4F [0m
+[0;32mI (629911) RS485_C4_DATA: 4E [0m
+[0;32mI (629911) RS485_C4_DATA: 47 [0m
+
+[0;32mI (659921) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (659921) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (659921) RS485_C4_DATA: 50 [0m
+[0;32mI (659921) RS485_C4_DATA: 4F [0m
+[0;32mI (659921) RS485_C4_DATA: 4E [0m
+[0;32mI (659921) RS485_C4_DATA: 47 [0m
+
+[0;32mI (689931) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (689931) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (689931) RS485_C4_DATA: 50 [0m
+[0;32mI (689931) RS485_C4_DATA: 4F [0m
+[0;32mI (689931) RS485_C4_DATA: 4E [0m
+[0;32mI (689931) RS485_C4_DATA: 47 [0m
+
+[0;32mI (719941) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (719941) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (719941) RS485_C4_DATA: 50 [0m
+[0;32mI (719941) RS485_C4_DATA: 4F [0m
+[0;32mI (719941) RS485_C4_DATA: 4E [0m
+[0;32mI (719941) RS485_C4_DATA: 47 [0m
+
+[0;32mI (749951) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (749951) RS485_C4_DATA: Received 4 bytes from client: [0m
+[0;32mI (749951) RS485_C4_DATA: 50 [0m
+[0;32mI (749951) RS485_C4_DATA: 4F [0m
+[0;32mI (749951) RS485_C4_DATA: 4E [0m
+[0;32mI (749951) RS485_C4_DATA: 47 [0m
+

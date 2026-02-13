@@ -1,0 +1,32 @@
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 20 08 14 BF 58 E9 
+-->Received Btn/Knob 1 btn state 71
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 08 01 01 47 52 EC 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-08 -9-01 -10-01 -11-47 -12-52 -13-EC 
+
+CRC Calculated: 53 54
+
+--CRC is not in correct Format--
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 28 06 0B D9 D9 33 
+-->Received Btn/Knob 1 btn state 97
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 08 01 01 61 D3 36 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-08 -9-01 -10-01 -11-61 -12-D3 -13-36 
+
+CRC Calculated: D2 8E
+
+--CRC is not in correct Format--
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 1F 01 10 D7 58 E3 
+-->Received Btn/Knob 1 btn state 95
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 08 01 01 5F 52 E6 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-08 -9-01 -10-01 -11-5F -12-52 -13-E6 
+
+CRC Calculated: 53 5E
+
+--CRC is not in correct Format--
+Raw Response and len 14: 95 6B BE FD FF 03 98 FA 28 09 0B D6 99 23 
+-->Received Btn/Knob 1 btn state 94
+Decrypted Response: 8C 6F B9 FF FE 0A 8F FC 08 01 01 5E 93 26 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8F -7-FC -8-08 -9-01 -10-01 -11-5E -12-93 -13-26 
+
+CRC Calculated: 92 9E
+
+--CRC is not in correct Format--

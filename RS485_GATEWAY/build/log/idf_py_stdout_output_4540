@@ -1,0 +1,155 @@
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0C 3C 0E 46 6F 7A 
+-->Received Btn/Knob 6 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 06 01 01 69 7D 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-06 -10-01 -11-01 -12-69 -13-7D 
+
+CRC Calculated: 69 7D
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0D 2E 0B 62 9F 7A 
+-->Received Btn/Knob 5 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 05 01 01 99 7D 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-05 -10-01 -11-01 -12-99 -13-7D 
+
+CRC Calculated: 99 7D
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 1C 09 46 3E F2 22 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 04 01 EC 25 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-04 -11-01 -12-EC -13-25 
+
+CRC Calculated: EC 25
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 1E 04 48 5C F2 22 
+sent data to rs485 device
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 13 01 3D 50 E1 E9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 04 01 DB EC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-04 -11-01 -12-DB -13-EC 
+
+CRC Calculated: DB EC
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 14 01 3F 4C E1 E9 
+sent data to rs485 device
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 19 08 13 3D F5 72 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 01 01 EF 75 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-01 -11-01 -12-EF -13-75 
+
+CRC Calculated: EF 75
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 16 03 4E 4E F2 22 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 04 01 EC 25 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-04 -11-01 -12-EC -13-25 
+
+CRC Calculated: EC 25
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 1B 01 3E 56 F2 22 
+sent data to rs485 device
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 12 09 48 5A E1 E9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 04 01 DB EC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-04 -11-01 -12-DB -13-EC 
+
+CRC Calculated: DB EC
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 12 08 46 61 E1 E9 
+sent data to rs485 device
+Sent data to client 55
+Client disconnected from socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 17 05 4A 5E F2 22 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 04 01 EC 25 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-04 -11-01 -12-EC -13-25 
+
+CRC Calculated: EC 25
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 18 09 46 3D F2 22 
+sent data to rs485 device
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 1D 38 05 45 64 B1 
+-->Received Btn/Knob 6 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 06 01 01 5E B4 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-06 -10-01 -11-01 -12-5E -13-B4 
+
+CRC Calculated: 5E B4
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 1E 09 4E 50 F2 22 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 04 01 EC 25 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-04 -11-01 -12-EC -13-25 
+
+CRC Calculated: EC 25
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 1B 01 43 50 F2 22 
+sent data to rs485 device

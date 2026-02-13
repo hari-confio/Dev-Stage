@@ -1,0 +1,4461 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x39 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (33) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v0.1[0m
+[0;32mI (37) boot: efuse block revision: v1.2[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1b314h (111380) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0002b33c vaddr=3fc9a800 size=04988h ( 18824) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002fccc vaddr=40374000 size=0034ch (   844) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=8e268h (582248) map[0m
+[0;32mI (270) esp_image: segment 4: paddr=000be290 vaddr=4037434c size=16480h ( 91264) load[0m
+[0;32mI (296) esp_image: segment 5: paddr=000d4718 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (305) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (305) boot: Disabling RNG early entropy source...[0m
+[0;32mI (315) cpu_start: Multicore app[0m
+[0;32mI (324) cpu_start: Pro cpu start user code[0m
+[0;32mI (324) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (324) app_init: Application information:[0m
+[0;32mI (324) app_init: Project name:     app-template[0m
+[0;32mI (328) app_init: App version:      6d4ace7[0m
+[0;32mI (332) app_init: Compile time:     Apr 21 2025 16:30:51[0m
+[0;32mI (337) app_init: ELF file SHA256:  214bb129a...[0m
+[0;32mI (342) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (347) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (350) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (354) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (358) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (365) heap_init: At 3FCA3818 len 00045EF8 (279 KiB): RAM[0m
+[0;32mI (370) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (375) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (386) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (395) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (399) spi_flash: flash io: opi_str[0m
+[0;33mW (402) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (415) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (421) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (428) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (458) pp: pp rom version: e7ae62f[0m
+[0;32mI (458) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (468) wifi:wifi driver task: 3fcad8b0, prio:23, stack:6656, core=0[0m
+[0;32mI (468) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (468) wifi:wifi certification version: v7.0[0m
+[0;32mI (468) wifi:config NVS flash: enabled[0m
+[0;32mI (468) wifi:config nano formatting: disabled[0m
+[0;32mI (478) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (478) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (488) wifi:Init management short buffer num: 32[0m
+[0;32mI (488) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (498) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (498) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (498) wifi:Init static rx buffer num: 10[0m
+[0;32mI (508) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (508) wifi_init: rx ba win: 6[0m
+[0;32mI (518) wifi_init: accept mbox: 6[0m
+[0;32mI (518) wifi_init: tcpip mbox: 32[0m
+[0;32mI (518) wifi_init: udp mbox: 6[0m
+[0;32mI (518) wifi_init: tcp mbox: 6[0m
+[0;32mI (528) wifi_init: tcp tx win: 5760[0m
+[0;32mI (528) wifi_init: tcp rx win: 5760[0m
+[0;32mI (528) wifi_init: tcp mss: 1440[0m
+[0;32mI (538) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (538) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (538) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (548) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (588) wifi:mode : sta (7c:df:a1:e1:13:60)[0m
+[0;32mI (588) wifi:enable tsf[0m
+Client list at boot:
+[0] = 0
+[1] = 0
+[2] = 0
+[3] = 0
+[4] = 0
+[5] = 0
+[6] = 0
+[7] = 0
+[8] = 0
+[9] = 0
+[0;32mI (598) main_task: Returned from app_main()[0m
+[0;32mI (598) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (608) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (618) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (618) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (858) wifi:<ba-add>idx:0 (ifx:0, 2a:87:ba:d1:c4:54), tid:0, ssn:2, winSize:64[0m
+[0;32mI (858) wifi:connected with CONFIO_5G, aid = 1, channel 3, BW20, bssid = 2a:87:ba:d1:c4:54[0m
+[0;32mI (868) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (868) wifi:pm start, type: 1[0m
+
+[0;32mI (878) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (878) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (908) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2438) esp_netif_handlers: sta ip: 192.168.0.106, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2438) RS485_APP: Connected! IP Address: 192.168.0.106[0m
+ESP32 IP Address: 192.168.0.106
+[0;32mI (3438) mdns_mem: mDNS task will be created from internal RAM[0m
+mdns hostname set to: [confiors485]
+TCP server listening on port 5000
+[0;32mI (5408) wifi:<ba-add>idx:1 (ifx:0, 2a:87:ba:d1:c4:54), tid:6, ssn:0, winSize:64[0m
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 01 4F 2D 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 03 4F 05 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 01 41 1C 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 05 3D 04 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+New client connected, socket 56
+Client 56 connected. Total clients before assignment: 1
+Client List Status: [0] = 55, [1] = -1, Assigned Client 56 to Device ID Index 1
+---clientstatus-56
+
+[DEBUG] Client count after assignment: 1
+Raw data received from client 56 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 1
+Client List Status: [0] = 55, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 1
+Raw data received from client 57 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 1F 
+Decrypted Response: 1F 
+Raw Response and len 2: 1F 00 
+Decrypted Response: 1F 00 
+Client 57 disconnected
+Clearing client 57 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 1
+Client List Status: [0] = 55, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 1
+Raw data received from client 57 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 01 3F 32 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 08 43 22 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+Client 57 disconnected
+Clearing client 57 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 04 02 7E A5 D8 
+-->Received Button/Knob 1 state : 6
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 01 06 9F DB 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-01 -10-06 -11-9F -12-DB 
+CRC Calculated: 9F DB
+
+--CRC is in correct Format--[DEBUG] Client count after processing RS485: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 07 0A 80 24 1C 
+-->Received Button/Knob 1 state : 8
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 01 08 1E 1F 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-01 -10-08 -11-1E -12-1F 
+CRC Calculated: 1E 1F
+
+--CRC is in correct Format--[DEBUG] Client count after processing RS485: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 09 47 04 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 06 4C 25 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Client 55 disconnected
+Clearing client 55 from list position 0
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 1
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+---clientstatus-57
+
+NVS entries cleared for slot 0
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+Clearing client 57 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 07 02 8B 64 11 
+-->Received Button/Knob 1 state : 19
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 01 13 5E 14 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-01 -10-13 -11-5E -12-14 
+CRC Calculated: 5E 14
+
+--CRC is in correct Format--[DEBUG] Client count after processing RS485: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 0A 02 91 E4 10 
+-->Received Button/Knob 1 state : 25
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 01 19 DE 13 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-01 -10-19 -11-DE -12-13 
+CRC Calculated: DE 13
+
+--CRC is in correct Format--[DEBUG] Client count after processing RS485: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 06 0B 99 E5 BE 
+-->Received Button/Knob 1 state : 33
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 01 21 DF C1 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-01 -10-21 -11-DF -12-C1 
+CRC Calculated: DF C1
+
+--CRC is in correct Format--[DEBUG] Client count after processing RS485: 0
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 55, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 57 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 57 disconnected
+Clearing client 57 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 55, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 57 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 57 disconnected
+Clearing client 57 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 58
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 55, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 58 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 58 disconnected
+Clearing client 58 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 55, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 57 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 02 48 14 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 0A 44 11 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+Client 57 disconnected
+Clearing client 57 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 05 3F 06 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 0A 3D 20 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Raw Response and len 1: FE 
+Decrypted Response: FE 
+Client 55 disconnected
+Clearing client 55 from list position 0
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 1
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 1
+NVS entries cleared for slot 0
+Raw data received from client 57 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 55 disconnected
+Clearing client 55 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 55 (8 bytes): 00 00 00 00 00 00 00 00 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 55 disconnected
+Clearing client 55 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 05 4B 0E 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 09 3E 32 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 57
+Device ID matched for client 57
+Sent data to client 57
+[DEBUG] Client count after processing RS485: 1
+Client 57 disconnected
+Clearing client 57 from list position 0
+NVS entries cleared for slot 0
+Raw Response and len 1: FE 
+Decrypted Response: FE 
+Client 55 disconnected
+Clearing client 55 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 03 50 04 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 0A 48 06 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Client 55 disconnected
+Clearing client 55 from list position 0
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 1
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 1
+NVS entries cleared for slot 0
+Client 57 disconnected
+Clearing client 57 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 06 0E 9A A5 BD 
+-->Received Button/Knob 1 state : 34
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 01 22 9F C0 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-01 -10-22 -11-9F -12-C0 
+CRC Calculated: 9F C0
+
+--CRC is in correct Format--[DEBUG] Client count after processing RS485: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 08 40 18 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 05 50 13 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Raw Response and len 1: FE 
+Decrypted Response: FE 
+Raw data received from client 55 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 55 disconnected
+New client connected, socket 57
+Clearing client 55 from list position 0
+Client 57 connected. Total clients before assignment: 1
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+NVS entries cleared for slot 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Raw data received from client 57 (8 bytes): 8C F6 81 FF FE E9 40 56 
+Warning: 8 leftover byte(s) not processed (incomplete frame)
+Client 57 disconnected
+New client connected, socket 55
+Clearing client 57 from list position 0
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+NVS entries cleared for slot 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+Clearing client 57 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Raw Response and len 13: 95 F2 86 FD FF E2 49 54 08 3E 1F 22 86 
+-->Received Button/Knob 4 state : 0
+Decrypted Response: 8C F6 81 FF FE E9 40 56 01 04 00 1C 89 
+Processed Response: -0-8C -1-F6 -2-81 -3-FF -4-FE -5-E9 -6-40 -7-56 -8-01 -9-04 -10-00 -11-1C -12-89 
+CRC Calculated: 1C 89
+
+--CRC is in correct Format--
+Device Inclusion
+
+Encrypted Frame:
+95 F2 86 FD FF E2 49 54 0A 44 2F 22 86 
+
+----DEVICE INCLUSION ENCRYPTED DATA SENT----
+
+Checking Device ID list [0]: 8C F6 81 FF FE E9 40 56  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+Client 55 disconnected
+Clearing client 55 from list position 0
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 1
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 1
+NVS entries cleared for slot 0
+Client 57 disconnected
+Clearing client 57 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 57
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+Clearing client 57 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+New client connected, socket 57
+Clearing client 55 from list position 0
+Client 57 connected. Total clients before assignment: 0
+NVS entries cleared for slot 0
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+New client connected, socket 58
+---clientstatus-57
+
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+New client connected, socket 55
+[DEBUG] Client count after assignment: 0
+---clientstatus-58
+New client connected, socket 59
+
+Client 59 connected. Total clients before assignment: 0
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 58, [3] = -1, Assigned Client 55 to Device ID Index 3
+New client connected, socket 60
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+Client List Status: [0] = 57, [1] = 56, [2] = 58, [3] = 55, [4] = -1, Assigned Client 59 to Device ID Index 4
+New client connected, socket 61
+Client 58 disconnected
+Clearing client 57 from list position 0
+---clientstatus-55
+Client 60 connected. Total clients before assignment: 0
+New client connected, socket 62
+Client List Status: [0] = -1, ---clientstatus-59
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 57
+Assigned Client 60 to Device ID Index 0
+Client 62 connected. Total clients before assignment: 0
+Clearing client 58 from list position 2
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 63
+Client 55 disconnected
+Clearing client 55 from list position 3
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 61 connected. Total clients before assignment: 0
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+Accept failed
+Client 60 disconnected
+Client List Status: [0] = 60, [1] = 56, NVS entries cleared for slot 3
+Client List Status: [0] = 60, [1] = 56, [2] = 63, NVS entries cleared for slot 2
+New client connected, socket 55
+Client 57 connected. Total clients before assignment: 0
+[2] = 63, [3] = -1, Assigned Client 61 to Device ID Index 3
+New client connected, socket 58
+[3] = -1, [4] = 59, [5] = -1, Assigned Client 62 to Device ID Index 5
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 59 disconnected
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 63, [3] = 61, [4] = 59, [5] = 62, [6] = -1, Assigned Client 57 to Device ID Index 6
+Accept failed
+---clientstatus-62
+Clearing client 60 from list position 0
+Client 58 connected. Total clients before assignment: 0
+Client 63 disconnected
+Clearing client 59 from list position 4
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 55, Client 62 disconnected
+---clientstatus-61
+---clientstatus-57
+
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 4
+Clearing client 62 from list position 5
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+[1] = 56, [2] = 63, Clearing client 63 from list position 2
+NVS entries cleared for slot 5
+NVS entries cleared for slot 0
+New client connected, socket 62
+Client 61 disconnected
+Client 57 disconnected
+Clearing client 57 from list position 6
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 55, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+New client connected, socket 60
+NVS entries cleared for slot 6
+Client 55 disconnected
+NVS entries cleared for slot 2
+Client 62 connected. Total clients before assignment: 0
+Clearing client 61 from list position 3
+[3] = 61, Assigned Client 58 to Device ID Index 3
+---clientstatus-59
+Clearing client 55 from list position 0
+New client connected, socket 57
+Client List Status: [0] = -1, Assigned Client 62 to Device ID Index 0
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Client 58 disconnected
+New client connected, socket 63
+Clearing client 58 from list position 3
+Client 60 connected. Total clients before assignment: 0
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+Client 59 disconnected
+Clearing client 59 from list position 2
+Accept failed
+Client 63 connected. Total clients before assignment: 0
+NVS entries cleared for slot 3
+Client List Status: [0] = 62, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+New client connected, socket 58
+NVS entries cleared for slot 2
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [3] = -1, Assigned Client 63 to Device ID Index 3
+New client connected, socket 59
+---clientstatus-60
+
+NVS entries cleared for slot 0
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [3] = 63, [4] = -1, Assigned Client 57 to Device ID Index 4
+New client connected, socket 55
+Client 58 connected. Total clients before assignment: 0
+Client 59 connected. Total clients before assignment: 0
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 3
+---clientstatus-57
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [3] = 63, [4] = 57, [5] = -1, Assigned Client 58 to Device ID Index 5
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+Client 63 disconnected
+Accept failed
+Clearing client 63 from list position 3
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [3] = -1, Assigned Client 55 to Device ID Index 3
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [DEBUG] Client count after assignment: 0
+---clientstatus-55
+NVS entries cleared for slot 3
+Accept failed
+Client 57 disconnected
+Client 61 connected. Total clients before assignment: 0
+[3] = 55, [4] = 57, [5] = 58, [6] = -1, Assigned Client 59 to Device ID Index 6
+New client connected, socket 63
+Clearing client 57 from list position 4
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [3] = 55, [4] = -1, Assigned Client 61 to Device ID Index 4
+Accept failed
+NVS entries cleared for slot 4
+---clientstatus-58
+Client 60 disconnected
+Client 62 disconnected
+Clearing client 62 from list position 0
+New client connected, socket 57
+Client 63 connected. Total clients before assignment: 0
+---clientstatus-59
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 63 to Device ID Index 0
+Accept failed
+Clearing client 60 from list position 2
+Client 61 disconnected
+Clearing client 61 from list position 4
+Accept failed
+Client 55 disconnected
+Clearing client 55 from list position 3
+
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+NVS entries cleared for slot 0
+Accept failed
+NVS entries cleared for slot 4
+Client List Status: [0] = 63, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+New client connected, socket 60
+NVS entries cleared for slot 3
+[DEBUG] Client count after assignment: 0
+---clientstatus-63
+Client 58 disconnected
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = 57, [3] = -1, Assigned Client 60 to Device ID Index 3
+New client connected, socket 55
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+---clientstatus-57
+Client 59 disconnected
+Clearing client 59 from list position 6
+---clientstatus-60
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 62
+Client List Status: [0] = 63, Client 63 disconnected
+Clearing client 58 from list position 5
+NVS entries cleared for slot 6
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, Client 60 disconnected
+New client connected, socket 59
+Client 62 connected. Total clients before assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = 57, [3] = 60, [4] = -1, Assigned Client 62 to Device ID Index 4
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+Client 61 connected. Total clients before assignment: 0
+[2] = 57, [3] = 60, [4] = 62, [5] = -1, Assigned Client 55 to Device ID Index 5
+New client connected, socket 58
+Client 57 disconnected
+Client List Status: Clearing client 60 from list position 3
+Client 59 connected. Total clients before assignment: 0
+Accept failed
+---clientstatus-62
+Clearing client 63 from list position 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+[0] = 63, Assigned Client 61 to Device ID Index 0
+Client List Status: [0] = 61, [1] = 56, [2] = 57, Client 58 connected. Total clients before assignment: 0
+Accept failed
+Client 55 disconnected
+NVS entries cleared for slot 3
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 60
+[3] = -1, Assigned Client 59 to Device ID Index 3
+Clearing client 57 from list position 2
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+Accept failed
+---clientstatus-61
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+Client 62 disconnected
+New client connected, socket 63
+Clearing client 62 from list position 4
+---clientstatus-58
+
+NVS entries cleared for slot 2
+Clearing client 55 from list position 5
+Accept failed
+Client 59 disconnected
+Client 60 connected. Total clients before assignment: 0
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, [1] = 56, [2] = 58, [3] = 59, [4] = -1, Assigned Client 63 to Device ID Index 4
+New client connected, socket 57
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+Accept failed
+Clearing client 59 from list position 3
+Client List Status: [0] = 61, [1] = 56, [2] = 58, [3] = -1, Assigned Client 60 to Device ID Index 3
+NVS entries cleared for slot 3
+NVS entries cleared for slot 4
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+Client 58 disconnected
+---clientstatus-60
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 61, [1] = 56, [2] = 58, [3] = 60, [4] = 63, [5] = -1, 
+Client 55 connected. Total clients before assignment: 0
+Clearing client 58 from list position 2
+New client connected, socket 62
+Assigned Client 57 to Device ID Index 5
+[DEBUG] Client count after assignment: 0
+Client 63 disconnected
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+Accept failed
+Client 61 disconnected
+Clearing client 63 from list position 4
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client List Status: [0] = 61, [1] = 56, [2] = 59, [3] = 60, [4] = -1, Assigned Client 55 to Device ID Index 4
+Accept failed
+Client 60 disconnected
+NVS entries cleared for slot 2
+Client 62 connected. Total clients before assignment: 0
+---clientstatus-57
+---clientstatus-59
+Clearing client 61 from list position 0
+New client connected, socket 58
+NVS entries cleared for slot 4
+---clientstatus-55
+Clearing client 60 from list position 3
+Client List Status: [0] = -1, Assigned Client 62 to Device ID Index 0
+New client connected, socket 63
+NVS entries cleared for slot 0
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 59, [3] = -1, Assigned Client 58 to Device ID Index 3
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+---clientstatus-62
+Client 63 connected. Total clients before assignment: 0
+NVS entries cleared for slot 3
+---clientstatus-58
+Client 61 connected. Total clients before assignment: 0
+Client 55 disconnected
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 60
+
+[DEBUG] Client count after assignment: 0
+
+Client List Status: [0] = 62, [1] = 56, [2] = 59, [3] = 58, [4] = 55, [5] = 57, [6] = -1, Assigned Client 61 to Device ID Index 6
+Accept failed
+Client 57 disconnected
+Client 59 disconnected
+Client List Status: Client 60 connected. Total clients before assignment: 0
+Accept failed
+Client 62 disconnected
+[DEBUG] Client count after assignment: 0
+Client 58 disconnected
+Clearing client 58 from list position 3
+NVS entries cleared for slot 3
+Accept failed
+Clearing client 59 from list position 2
+[0] = 62, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+Client List Status: [0] = 62, [1] = 56, [2] = 63, [3] = -1, Client 58 connected. Total clients before assignment: 0
+Client 61 disconnected
+Clearing client 61 from list position 6
+Accept failed
+Clearing client 62 from list position 0
+Clearing client 55 from list position 4
+---clientstatus-63
+Clearing client 57 from list position 5
+NVS entries cleared for slot 2
+Client List Status: [0] = -1, Assigned Client 58 to Device ID Index 0
+New client connected, socket 59
+NVS entries cleared for slot 0
+NVS entries cleared for slot 4
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+Assigned Client 60 to Device ID Index 3
+NVS entries cleared for slot 6
+Client 59 connected. Total clients before assignment: 0
+---clientstatus-58
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+Client 55 connected. Total clients before assignment: 0
+Client List Status: Client List Status: [0] = 58, [1] = 56, [2] = 63, [3] = 60, [4] = -1, Assigned Client 59 to Device ID Index 4
+New client connected, socket 62
+NVS entries cleared for slot 5
+Accept failed
+Client 61 connected. Total clients before assignment: 0
+Client 63 disconnected
+Client 58 disconnected
+Clearing client 58 from list position 0
+New client connected, socket 57
+[0] = 58, Assigned Client 55 to Device ID Index 0
+Client 62 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 55, [1] = 56, [2] = 63, [3] = 60, [4] = 59, [5] = -1, Assigned Client 61 to Device ID Index 5
+Clearing client 63 from list position 2
+---clientstatus-60
+NVS entries cleared for slot 0
+Accept failed
+Client 57 connected. Total clients before assignment: 0
+---clientstatus-59
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+NVS entries cleared for slot 2
+
+[DEBUG] Client count after assignment: 0
+
+Client 60 disconnected
+---clientstatus-61
+Client 55 disconnected
+New client connected, socket 63
+Clearing client 55 from list position 0
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+Clearing client 60 from list position 3
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 63 connected. Total clients before assignment: 0
+NVS entries cleared for slot 0
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, New client connected, socket 55
+Client 61 disconnected
+Client List Status: [0] = 57, [1] = 56, [2] = 62, [3] = -1, Assigned Client 63 to Device ID Index 3
+Accept failed
+Client 55 connected. Total clients before assignment: 0
+Clearing client 61 from list position 5
+---clientstatus-57
+Client 59 disconnected
+NVS entries cleared for slot 3
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 60
+Assigned Client 62 to Device ID Index 2
+---clientstatus-63
+
+NVS entries cleared for slot 5
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 57, [1] = 56, [2] = 62, [3] = 63, Client 61 connected. Total clients before assignment: 0
+Client 57 disconnected
+[4] = 59, [5] = -1, Assigned Client 58 to Device ID Index 5
+Client List Status: [0] = 57, [1] = 56, [2] = 62, [3] = 63, [4] = 59, [5] = 58, [6] = -1, Assigned Client 55 to Device ID Index 6
+Accept failed
+---clientstatus-58
+[DEBUG] Client count after assignment: 0
+Clearing client 59 from list position 4
+Client List Status: [0] = 57, [1] = 56, [2] = 62, [3] = 63, [4] = -1, Assigned Client 61 to Device ID Index 4
+Accept failed
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-62
+---clientstatus-55
+
+Client 63 disconnected
+Clearing client 63 from list position 3
+Accept failed
+Clearing client 57 from list position 0
+Client 60 connected. Total clients before assignment: 0
+Client 61 disconnected
+
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 4
+Accept failed
+NVS entries cleared for slot 3
+NVS entries cleared for slot 0
+Client List Status: [0] = -1, Assigned Client 60 to Device ID Index 0
+New client connected, socket 57
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 61 from list position 4
+[DEBUG] Client count after assignment: 0
+Client 57 connected. Total clients before assignment: 0
+---clientstatus-60
+Client 58 disconnected
+Clearing client 55 from list position 6
+New client connected, socket 59
+NVS entries cleared for slot 4
+Client 62 disconnected
+Client List Status: [0] = 60, [1] = 56, [2] = 62, [3] = -1, Assigned Client 57 to Device ID Index 3
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 6
+New client connected, socket 63
+Client 59 connected. Total clients before assignment: 0
+Clearing client 62 from list position 2
+---clientstatus-57
+Clearing client 58 from list position 5
+New client connected, socket 55
+Client 61 connected. Total clients before assignment: 0
+Client 60 disconnected
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = -1, 
+Accept failed
+[DEBUG] Client count after assignment: 0
+Clearing client 60 from list position 0
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+Accept failed
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 59, [1] = 56, [2] = 63, [3] = 57, [4] = -1, Assigned Client 61 to Device ID Index 4
+Client List Status: [0] = 59, [1] = 56, [2] = 63, Accept failed
+Assigned Client 63 to Device ID Index 2
+NVS entries cleared for slot 5
+---clientstatus-59
+Client 57 disconnected
+NVS entries cleared for slot 0
+New client connected, socket 58
+NVS entries cleared for slot 2
+---clientstatus-61
+[3] = 57, ---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Client 58 connected. Total clients before assignment: 0
+
+[4] = 61, [5] = -1, Assigned Client 55 to Device ID Index 5
+New client connected, socket 60
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 59, [1] = 56, [2] = 63, [3] = 57, [4] = 61, [5] = 55, [6] = -1, Assigned Client 58 to Device ID Index 6
+New client connected, socket 62
+Clearing client 57 from list position 3
+Client 63 disconnected
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-58
+NVS entries cleared for slot 3
+Clearing client 63 from list position 2
+Accept failed
+Client List Status: [0] = 59, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+New client connected, socket 57
+Client 55 disconnected
+Client 62 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client 59 disconnected
+---clientstatus-60
+Client 58 disconnected
+Client 61 disconnected
+Clearing client 61 from list position 4
+Accept failed
+Clearing client 55 from list position 5
+[0] = 59, [1] = 56, [2] = 60, [3] = -1, Assigned Client 62 to Device ID Index 3
+Client 57 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 59, [1] = 56, [2] = 60, [3] = 62, [4] = -1, Assigned Client 57 to Device ID Index 4
+NVS entries cleared for slot 4
+Accept failed
+NVS entries cleared for slot 5
+NVS entries cleared for slot 2
+Clearing client 59 from list position 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+---clientstatus-62
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Client 60 disconnected
+Clearing client 60 from list position 2
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+Clearing client 58 from list position 6
+Client 57 disconnected
+Clearing client 57 from list position 4
+NVS entries cleared for slot 2
+Client 61 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client List Status: [0] = -1, Assigned Client 61 to Device ID Index 0
+New client connected, socket 63
+Client 55 connected. Total clients before assignment: 0
+NVS entries cleared for slot 4
+NVS entries cleared for slot 0
+Accept failed
+Client 60 connected. Total clients before assignment: 0
+Client 62 disconnected
+NVS entries cleared for slot 6
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 57
+---clientstatus-61
+Client List Status: Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+[0] = 61, [1] = 56, [2] = 60, [3] = 62, [4] = -1, Assigned Client 55 to Device ID Index 4
+New client connected, socket 58
+Clearing client 62 from list position 3
+New client connected, socket 59
+Client List Status: [0] = 61, [1] = 56, [2] = 60, [3] = -1, Assigned Client 63 to Device ID Index 3
+NVS entries cleared for slot 3
+Accept failed
+Client 59 connected. Total clients before assignment: 0
+Client 57 connected. Total clients before assignment: 0
+
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+Client 60 disconnected
+Clearing client 60 from list position 2
+New client connected, socket 62
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+Client List Status: [0] = 61, [1] = 56, [2] = 57, [3] = 63, [4] = 55, [5] = -1, Assigned Client 59 to Device ID Index 5
+Accept failed
+NVS entries cleared for slot 2
+Client 62 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client List Status: [0] = 61, ---clientstatus-55
+
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, [2] = 57, Client 57 disconnected
+Accept failed
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+[3] = 63, [4] = 55, Client 61 disconnected
+Accept failed
+[DEBUG] Client count after assignment: 0
+---clientstatus-59
+Client 63 disconnected
+[5] = 59, [6] = -1, Assigned Client 62 to Device ID Index 6
+Clearing client 61 from list position 0
+Accept failed
+Clearing client 57 from list position 2
+Client 55 disconnected
+Clearing client 55 from list position 4
+Clearing client 63 from list position 3
+Accept failed
+Client 60 connected. Total clients before assignment: 0
+Client 58 connected. Total clients before assignment: 0
+Client List Status: NVS entries cleared for slot 0
+Accept failed
+NVS entries cleared for slot 2
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 3
+Client List Status: [0] = -1, Assigned Client 60 to Device ID Index 0
+New client connected, socket 57
+NVS entries cleared for slot 4
+Client 59 disconnected
+---clientstatus-62
+[0] = -1, Client 57 connected. Total clients before assignment: 0
+New client connected, socket 55
+---clientstatus-60
+Clearing client 59 from list position 5
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = -1, Client 55 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 60, Assigned Client 57 to Device ID Index 2
+NVS entries cleared for slot 5
+[1] = 56, [2] = 57, [3] = -1, Assigned Client 58 to Device ID Index 3
+New client connected, socket 59
+
+[DEBUG] Client count after assignment: 0
+Client 62 disconnected
+[1] = 56, [2] = 57, [3] = 58, [4] = -1, Assigned Client 55 to Device ID Index 4
+New client connected, socket 63
+Client 60 disconnected
+Clearing client 62 from list position 6
+Client 61 connected. Total clients before assignment: 0
+Client 59 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: ---clientstatus-58
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 57, [3] = 58, [4] = 55, [5] = -1, Assigned Client 63 to Device ID Index 5
+Accept failed
+---clientstatus-55
+Clearing client 60 from list position 0
+NVS entries cleared for slot 6
+Client List Status: [0] = -1, Assigned Client 61 to Device ID Index 0
+New client connected, socket 62
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+[0] = 60, [1] = 56, [2] = 57, Client 55 disconnected
+Clearing client 55 from list position 4
+Accept failed
+Client 58 disconnected
+NVS entries cleared for slot 0
+[3] = 58, [4] = -1, Assigned Client 59 to Device ID Index 4
+---clientstatus-61
+New client connected, socket 60
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-57
+Client 62 connected. Total clients before assignment: 0
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 4
+Clearing client 58 from list position 3
+Client 63 disconnected
+
+Client List Status: [0] = 61, [1] = 56, [2] = 57, [3] = -1, Assigned Client 62 to Device ID Index 3
+New client connected, socket 55
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+Accept failed
+NVS entries cleared for slot 3
+Clearing client 63 from list position 5
+---clientstatus-62
+Client 55 connected. Total clients before assignment: 0
+Client 57 disconnected
+New client connected, socket 58
+Clearing client 57 from list position 2
+Client 59 disconnected
+Clearing client 59 from list position 4
+NVS entries cleared for slot 5
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 63
+Client 60 connected. Total clients before assignment: 0
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+Accept failed
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, [1] = 56, [2] = 58, [3] = 62, [4] = -1, Assigned Client 60 to Device ID Index 4
+Accept failed
+NVS entries cleared for slot 2
+Clearing client 61 from list position 0
+NVS entries cleared for slot 4
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+New client connected, socket 57
+Client List Status: [0] = 55, [1] = 56, [2] = 58, [3] = 62, [4] = 60, [5] = -1, Assigned Client 63 to Device ID Index 5
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 55, [1] = 56, [2] = 58, Client 59 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: ---clientstatus-63
+[3] = 62, ---clientstatus-55
+NVS entries cleared for slot 0
+Client 62 disconnected
+---clientstatus-58
+
+---clientstatus-60
+
+[4] = 60, [5] = 63, [6] = -1, Assigned Client 57 to Device ID Index 6
+New client connected, socket 61
+[DEBUG] Client count after assignment: 0
+Client 58 disconnected
+Clearing client 58 from list position 2
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+[0] = 55, [1] = 56, ---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Client 63 disconnected
+Clearing client 62 from list position 3
+Client 55 disconnected
+Clearing client 55 from list position 0
+Accept failed
+Client 61 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 61 to Device ID Index 0
+Clearing client 63 from list position 5
+Accept failed
+NVS entries cleared for slot 3
+[2] = -1, Assigned Client 59 to Device ID Index 2
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+New client connected, socket 62
+Clearing client 57 from list position 6
+NVS entries cleared for slot 5
+NVS entries cleared for slot 0
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+---clientstatus-61
+Client 62 connected. Total clients before assignment: 0
+Client List Status: [DEBUG] Client count after assignment: 0
+New client connected, socket 63
+NVS entries cleared for slot 2
+Client 59 disconnected
+Clearing client 59 from list position 2
+
+[DEBUG] Client count after assignment: 0
+[0] = 61, [1] = 56, [2] = -1, Assigned Client 62 to Device ID Index 2
+New client connected, socket 58
+NVS entries cleared for slot 2
+NVS entries cleared for slot 6
+Client 61 disconnected
+Client 63 connected. Total clients before assignment: 0
+Client List Status: Client 60 disconnected
+New client connected, socket 57
+Clearing client 60 from list position 4
+---clientstatus-62
+Clearing client 61 from list position 0
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 61, Assigned Client 63 to Device ID Index 0
+NVS entries cleared for slot 4
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+[0] = -1, [1] = 56, [2] = 62, [3] = -1, Assigned Client 55 to Device ID Index 3
+NVS entries cleared for slot 0
+Client 62 disconnected
+New client connected, socket 60
+Client 58 connected. Total clients before assignment: 0
+Client List Status: Client 57 connected. Total clients before assignment: 0
+---clientstatus-63
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = 62, [3] = 55, [4] = -1, Assigned Client 59 to Device ID Index 4
+Accept failed
+[0] = 63, Client List Status: [0] = 63, [1] = 56, [2] = 62, [3] = 55, [4] = 59, [5] = -1, Assigned Client 57 to Device ID Index 5
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client 60 connected. Total clients before assignment: 0
+Client 55 disconnected
+Client 61 connected. Total clients before assignment: 0
+Accept failed
+---clientstatus-59
+[1] = 56, ---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+Clearing client 55 from list position 3
+NVS entries cleared for slot 3
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 62 from list position 2
+Client 63 disconnected
+Clearing client 63 from list position 0
+New client connected, socket 55
+Clearing client 57 from list position 5
+Client List Status: [0] = -1, Assigned Client 61 to Device ID Index 0
+NVS entries cleared for slot 2
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+New client connected, socket 62
+Client 59 disconnected
+Clearing client 59 from list position 4
+Accept failed
+NVS entries cleared for slot 0
+Client 55 connected. Total clients before assignment: 0
+NVS entries cleared for slot 5
+New client connected, socket 63
+[2] = 62, [3] = -1, Assigned Client 58 to Device ID Index 3
+---clientstatus-61
+NVS entries cleared for slot 4
+Client List Status: [0] = 61, [1] = 56, [2] = 60, [3] = 58, [4] = -1, Assigned Client 55 to Device ID Index 4
+New client connected, socket 57
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 61, Client 62 connected. Total clients before assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 57 connected. Total clients before assignment: 0
+---clientstatus-60
+[1] = 56, [2] = 60, [3] = 58, [4] = 55, [5] = -1, Assigned Client 63 to Device ID Index 5
+Accept failed
+Client List Status: [0] = 61, [1] = 56, [2] = 60, [3] = 58, [4] = 55, [5] = 63, [6] = -1, Assigned Client 57 to Device ID Index 6
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-58
+Client List Status: ---clientstatus-55
+Accept failed
+Client 61 disconnected
+Clearing client 61 from list position 0
+
+[DEBUG] Client count after assignment: 0
+Client 60 disconnected
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client 63 disconnected
+Clearing client 63 from list position 5
+[0] = 61, Assigned Client 62 to Device ID Index 0
+---clientstatus-57
+Accept failed
+Client 55 disconnected
+Client List Status: Client 61 connected. Total clients before assignment: 0
+Clearing client 60 from list position 2
+Accept failed
+NVS entries cleared for slot 5
+Client 58 disconnected
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+[0] = 62, Client List Status: [0] = 62, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+New client connected, socket 63
+Client 57 disconnected
+[1] = 56, [2] = 61, [3] = 58, [4] = 55, [5] = -1, Assigned Client 59 to Device ID Index 5
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 61, [3] = 58, [4] = 55, [5] = 59, [6] = 57, [7] = -1, Assigned Client 63 to Device ID Index 7
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+Accept failed
+
+Clearing client 57 from list position 6
+NVS entries cleared for slot 2
+Clearing client 58 from list position 3
+---clientstatus-63
+Clearing client 55 from list position 4
+Client 62 disconnected
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 60
+NVS entries cleared for slot 3
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+Clearing client 62 from list position 0
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 6
+Client 59 disconnected
+Clearing client 59 from list position 5
+New client connected, socket 57
+NVS entries cleared for slot 4
+Client 63 disconnected
+Client 58 connected. Total clients before assignment: 0
+Client List Status: Client 61 disconnected
+Clearing client 61 from list position 2
+NVS entries cleared for slot 5
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+New client connected, socket 55
+Client 60 connected. Total clients before assignment: 0
+NVS entries cleared for slot 2
+Clearing client 63 from list position 7
+New client connected, socket 59
+NVS entries cleared for slot 0
+[0] = -1, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+NVS entries cleared for slot 7
+Client 59 connected. Total clients before assignment: 0
+---clientstatus-57
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 57, [1] = 56, ---clientstatus-58
+Client List Status: [2] = 58, [3] = -1, Assigned Client 60 to Device ID Index 3
+New client connected, socket 62
+
+[DEBUG] Client count after assignment: 0
+[0] = 57, [1] = 56, [2] = 58, Client 61 connected. Total clients before assignment: 0
+New client connected, socket 63
+Client 62 connected. Total clients before assignment: 0
+
+Client 57 disconnected
+Clearing client 57 from list position 0
+Accept failed
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 59, [1] = 56, [2] = 58, [3] = 60, [4] = -1, Assigned Client 63 to Device ID Index 4
+Accept failed
+Client List Status: [0] = 59, [1] = 56, [2] = 58, [3] = 60, [4] = 63, [5] = -1, Assigned Client 62 to Device ID Index 5
+Accept failed
+[DEBUG] Client count after assignment: 0
+[3] = 60, [4] = 63, [5] = 62, [6] = -1, Client List Status: ---clientstatus-59
+
+Client 58 disconnected
+NVS entries cleared for slot 0
+---clientstatus-60
+
+[0] = 59, [1] = 56, [2] = 58, [3] = 60, [4] = 63, [5] = 62, [6] = 55, [7] = -1, Assigned Client 61 to Device ID Index 7
+[DEBUG] Client count after assignment: 0
+Clearing client 58 from list position 2
+Assigned Client 55 to Device ID Index 6
+[DEBUG] Client count after assignment: 0
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Client 59 disconnected
+Clearing client 59 from list position 0
+---clientstatus-55
+Client 60 disconnected
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+Client 63 disconnected
+Client 62 disconnected
+Clearing client 62 from list position 5
+NVS entries cleared for slot 5
+New client connected, socket 57
+
+[DEBUG] Client count after assignment: 0
+Clearing client 60 from list position 3
+New client connected, socket 58
+Client 55 disconnected
+Clearing client 55 from list position 6
+Clearing client 63 from list position 4
+Client 61 disconnected
+New client connected, socket 59
+NVS entries cleared for slot 3
+Client 58 connected. Total clients before assignment: 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client List Status: [0] = -1, NVS entries cleared for slot 4
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 62
+Client List Status: [0] = 57, [1] = 56, NVS entries cleared for slot 6
+Clearing client 61 from list position 7
+Client List Status: [2] = -1, Assigned Client 58 to Device ID Index 2
+New client connected, socket 55
+Assigned Client 57 to Device ID Index 0
+Client 60 connected. Total clients before assignment: 0
+NVS entries cleared for slot 7
+New client connected, socket 63
+[0] = 57, [1] = 56, [2] = 58, [3] = -1, Assigned Client 59 to Device ID Index 3
+Client List Status: [0] = 57, [1] = 56, [2] = 58, [3] = 59, [4] = -1, Assigned Client 60 to Device ID Index 4
+New client connected, socket 61
+Client 63 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client 62 connected. Total clients before assignment: 0
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 58, [3] = 59, [4] = 60, [5] = -1, Assigned Client 55 to Device ID Index 5
+Accept failed
+---clientstatus-57
+---clientstatus-59
+
+Accept failed
+[0] = 57, [1] = 56, [2] = 58, [3] = 59, [4] = 60, ---clientstatus-55
+---clientstatus-60
+
+---clientstatus-58
+Client List Status: [5] = 55, [6] = -1, Assigned Client 63 to Device ID Index 6
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-63
+Client 61 connected. Total clients before assignment: 0
+Accept failed
+Client 55 disconnected
+[0] = 57, [1] = 56, [2] = 58, [3] = 59, [4] = 60, [5] = 55, [6] = 63, [7] = -1, Assigned Client 62 to Device ID Index 7
+Client 58 disconnected
+Clearing client 58 from list position 2
+Client 57 disconnected
+Accept failed
+
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+Accept failed
+NVS entries cleared for slot 2
+Clearing client 57 from list position 0
+[DEBUG] Client count after assignment: 0
+Clearing client 55 from list position 5
+New client connected, socket 58
+Client 60 disconnected
+Clearing client 60 from list position 4
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 55
+---clientstatus-62
+NVS entries cleared for slot 4
+Client 59 disconnected
+NVS entries cleared for slot 0
+Client 63 disconnected
+New client connected, socket 57
+Clearing client 63 from list position 6
+Client List Status: [0] = -1, Assigned Client 58 to Device ID Index 0
+Clearing client 59 from list position 3
+New client connected, socket 60
+Client 61 disconnected
+Client 57 connected. Total clients before assignment: 0
+NVS entries cleared for slot 6
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 63
+Client List Status: [0] = 58, ---clientstatus-58
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, Clearing client 61 from list position 2
+Accept failed
+
+[1] = 56, Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+Accept failed
+[DEBUG] Client count after assignment: 0
+[2] = -1, Client 62 disconnected
+Accept failed
+
+Client List Status: [0] = 58, [1] = 56, [2] = 63, [3] = -1, Assigned Client 57 to Device ID Index 3
+Clearing client 62 from list position 7
+[DEBUG] Client count after assignment: 0
+Accept failed
+[1] = 56, Client 58 disconnected
+Clearing client 58 from list position 0
+[3] = -1, [4] = -1, Assigned Client 55 to Device ID Index 4
+Accept failed
+[2] = 63, [3] = 57, [4] = 55, [5] = -1, Assigned Client 60 to Device ID Index 5
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+---clientstatus-63
+NVS entries cleared for slot 0
+NVS entries cleared for slot 3
+---clientstatus-60
+NVS entries cleared for slot 7
+---clientstatus-55
+Client 57 disconnected
+New client connected, socket 58
+NVS entries cleared for slot 2
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 59
+
+[DEBUG] Client count after assignment: 0
+Clearing client 57 from list position 3
+Client 55 disconnected
+Client List Status: Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+New client connected, socket 61
+Clearing client 55 from list position 4
+[0] = -1, [1] = 56, [2] = 63, [3] = -1, Assigned Client 58 to Device ID Index 3
+---clientstatus-59
+NVS entries cleared for slot 4
+Client 63 disconnected
+New client connected, socket 55
+Clearing client 63 from list position 2
+NVS entries cleared for slot 3
+Client 61 connected. Total clients before assignment: 0
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 57
+Client 55 connected. Total clients before assignment: 0
+NVS entries cleared for slot 2
+Client List Status: [0] = 59, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+New client connected, socket 62
+
+[DEBUG] Client count after assignment: 0
+Client 59 disconnected
+Client 57 connected. Total clients before assignment: 0
+Client List Status: Client List Status: [0] = 59, [1] = 56, [2] = 61, [3] = 58, [4] = -1, Assigned Client 55 to Device ID Index 4
+New client connected, socket 63
+Client 62 connected. Total clients before assignment: 0
+Client 60 disconnected
+Client 58 disconnected
+Clearing client 58 from list position 3
+Accept failed
+---clientstatus-61
+[0] = 59, [1] = 56, [2] = 61, [3] = -1, Assigned Client 57 to Device ID Index 3
+Clearing client 59 from list position 0
+NVS entries cleared for slot 3
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-55
+New client connected, socket 58
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+Client List Status: Client 58 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Clearing client 60 from list position 5
+NVS entries cleared for slot 0
+Client 63 connected. Total clients before assignment: 0
+Client 57 disconnected
+Clearing client 57 from list position 3
+New client connected, socket 59
+[0] = -1, Assigned Client 62 to Device ID Index 0
+Client 55 disconnected
+NVS entries cleared for slot 5
+Accept failed
+Client List Status: [0] = 62, [1] = 56, [2] = 61, [3] = -1, Assigned Client 63 to Device ID Index 3
+Clearing client 55 from list position 4
+Clearing client 61 from list position 2
+NVS entries cleared for slot 3
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+New client connected, socket 57
+[0] = -1, [1] = 56, [2] = 59, [3] = 63, [4] = -1, Assigned Client 58 to Device ID Index 4
+New client connected, socket 60
+---clientstatus-62
+Accept failed
+---clientstatus-63
+
+NVS entries cleared for slot 2
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+Client 60 connected. Total clients before assignment: 0
+
+NVS entries cleared for slot 4
+[DEBUG] Client count after assignment: 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 55
+Client List Status: ---clientstatus-58
+Client 61 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client List Status: [DEBUG] Client count after assignment: 0
+[0] = 62, [1] = 56, [2] = 59, Client 59 disconnected
+Clearing client 59 from list position 2
+Accept failed
+[0] = 62, Client 63 disconnected
+Clearing client 63 from list position 3
+[3] = 63, Assigned Client 57 to Device ID Index 3
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 2
+[1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 59
+[0] = 62, [1] = 56, [2] = 60, [3] = 57, [4] = 58, [5] = -1, Assigned Client 61 to Device ID Index 5
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, Accept failed
+Client 62 disconnected
+NVS entries cleared for slot 3
+---clientstatus-60
+Client List Status: ---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, [2] = 60, [3] = 57, [4] = 58, [5] = 61, [6] = -1, Assigned Client 59 to Device ID Index 6
+New client connected, socket 63
+Clearing client 62 from list position 0
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-57
+Client 58 disconnected
+Clearing client 58 from list position 4
+Accept failed
+---clientstatus-59
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 63 to Device ID Index 0
+Accept failed
+---clientstatus-63
+Client 61 disconnected
+Clearing client 61 from list position 5
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+[0] = 62, Client 60 disconnected
+Clearing client 60 from list position 2
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+NVS entries cleared for slot 0
+Accept failed
+Client 59 disconnected
+Clearing client 59 from list position 6
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+New client connected, socket 61
+Clearing client 57 from list position 3
+[1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+NVS entries cleared for slot 4
+Client 63 disconnected
+Clearing client 63 from list position 0
+New client connected, socket 58
+NVS entries cleared for slot 3
+NVS entries cleared for slot 6
+NVS entries cleared for slot 2
+---clientstatus-55
+Client 61 connected. Total clients before assignment: 0
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 57
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+Client List Status: [0] = -1, Assigned Client 58 to Device ID Index 0
+Client 55 disconnected
+Clearing client 55 from list position 2
+New client connected, socket 60
+Client List Status: [0] = 58, [1] = 56, [2] = -1, ---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Client 58 disconnected
+Clearing client 58 from list position 0
+New client connected, socket 62
+NVS entries cleared for slot 0
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, New client connected, socket 58
+NVS entries cleared for slot 2
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 61, [3] = -1, Assigned Client 57 to Device ID Index 3
+New client connected, socket 55
+Client 62 connected. Total clients before assignment: 0
+Assigned Client 61 to Device ID Index 2
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 63
+Client List Status: Assigned Client 60 to Device ID Index 0
+---clientstatus-57
+
+Client List Status: [0] = 60, [1] = 56, [2] = 61, [3] = 57, [4] = -1, Assigned Client 62 to Device ID Index 4
+Accept failed
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+
+[0] = 60, Accept failed
+[1] = 56, [2] = 61, [3] = 57, [4] = 62, Client 63 connected. Total clients before assignment: 0
+Client 57 disconnected
+[DEBUG] Client count after assignment: 0
+Client 58 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [5] = -1, Assigned Client 59 to Device ID Index 5
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+[0] = 60, ---clientstatus-60
+Accept failed
+Client 55 connected. Total clients before assignment: 0
+---clientstatus-59
+Client List Status: Clearing client 57 from list position 3
+Client 62 disconnected
+Clearing client 62 from list position 4
+Accept failed
+[1] = 56, 
+[DEBUG] Client count after assignment: 0
+
+Client 60 disconnected
+NVS entries cleared for slot 3
+Clearing client 61 from list position 2
+NVS entries cleared for slot 4
+New client connected, socket 57
+[2] = 61, Assigned Client 58 to Device ID Index 2
+[DEBUG] Client count after assignment: 0
+[0] = 60, New client connected, socket 62
+Clearing client 60 from list position 0
+NVS entries cleared for slot 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client List Status: [0] = -1, ---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+Client List Status: [0] = 57, [1] = 56, [2] = 58, [3] = -1, Assigned Client 55 to Device ID Index 3
+Client 58 disconnected
+New client connected, socket 61
+Assigned Client 57 to Device ID Index 0
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 58, [3] = 55, [4] = -1, Assigned Client 60 to Device ID Index 4
+Accept failed
+Client 59 disconnected
+[1] = 56, Client 62 connected. Total clients before assignment: 0
+Accept failed
+---clientstatus-55
+
+Client 61 connected. Total clients before assignment: 0
+---clientstatus-57
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client List Status: [0] = 57, [1] = 56, [2] = 58, [3] = 55, [4] = 60, [5] = 59, [6] = -1, Assigned Client 62 to Device ID Index 6
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client List Status: [0] = 57, Client 55 disconnected
+[2] = 58, [3] = 55, [4] = 60, [5] = 59, [6] = 62, [7] = -1, Assigned Client 63 to Device ID Index 7
+Clearing client 55 from list position 3
+NVS entries cleared for slot 3
+Accept failed
+Clearing client 58 from list position 2
+---clientstatus-62
+[1] = 56, 
+[DEBUG] Client count after assignment: 0
+---clientstatus-63
+Client 60 disconnected
+Clearing client 60 from list position 4
+New client connected, socket 55
+
+[DEBUG] Client count after assignment: 0
+Clearing client 59 from list position 5
+Client 57 disconnected
+Clearing client 57 from list position 0
+Accept failed
+NVS entries cleared for slot 2
+NVS entries cleared for slot 4
+Client 55 connected. Total clients before assignment: 0
+[2] = -1, Assigned Client 61 to Device ID Index 2
+New client connected, socket 58
+NVS entries cleared for slot 5
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+New client connected, socket 59
+---clientstatus-61
+NVS entries cleared for slot 0
+Client 63 disconnected
+Client 62 disconnected
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 57
+Client List Status: [0] = 55, [1] = 56, [2] = 61, [3] = -1, Assigned Client 58 to Device ID Index 3
+New client connected, socket 60
+Client 59 connected. Total clients before assignment: 0
+Client 57 connected. Total clients before assignment: 0
+Client List Status: Clearing client 63 from list position 7
+Clearing client 62 from list position 6
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client List Status: [0] = 55, [1] = 56, [2] = 61, [3] = 58, [4] = -1, Assigned Client 59 to Device ID Index 4
+Client 55 disconnected
+Accept failed
+
+[0] = 55, [1] = 56, [2] = 61, [3] = 58, [4] = 59, [5] = -1, Assigned Client 57 to Device ID Index 5
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 7
+Accept failed
+NVS entries cleared for slot 6
+Client 60 connected. Total clients before assignment: 0
+---clientstatus-58
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 62
+Client 61 disconnected
+Client List Status: 
+[DEBUG] Client count after assignment: 0
+---clientstatus-57
+Client 59 disconnected
+New client connected, socket 63
+Clearing client 59 from list position 4
+Clearing client 61 from list position 2
+[0] = 55, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+Accept failed
+Client 62 connected. Total clients before assignment: 0
+Client List Status: [0] = 55, [1] = 56, Client 63 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client 58 disconnected
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+Clearing client 55 from list position 0
+[0] = 55, Assigned Client 63 to Device ID Index 0
+New client connected, socket 61
+Clearing client 58 from list position 3
+[2] = 60, [3] = -1, Assigned Client 62 to Device ID Index 3
+Accept failed
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+Client 61 connected. Total clients before assignment: 0
+NVS entries cleared for slot 3
+NVS entries cleared for slot 4
+New client connected, socket 55
+Client 60 disconnected
+---clientstatus-62
+---clientstatus-63
+Client 57 disconnected
+Client List Status: Client 55 connected. Total clients before assignment: 0
+Clearing client 60 from list position 2
+New client connected, socket 58
+
+[DEBUG] Client count after assignment: 0
+Clearing client 57 from list position 5
+[0] = 63, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+New client connected, socket 59
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+Client List Status: [0] = 63, [1] = 56, [2] = 61, [3] = 62, [4] = -1, Assigned Client 55 to Device ID Index 4
+NVS entries cleared for slot 2
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 57
+Client List Status: [0] = 63, ---clientstatus-61
+Client 63 disconnected
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client 62 disconnected
+
+[DEBUG] Client count after assignment: 0
+Client 59 connected. Total clients before assignment: 0
+[1] = 56, [2] = 61, [3] = 62, [4] = 55, [5] = -1, Assigned Client 58 to Device ID Index 5
+Accept failed
+Client 61 disconnected
+Client List Status: [0] = 63, [1] = 56, [2] = 61, [3] = 62, [4] = 55, [5] = 58, [6] = -1, Assigned Client 59 to Device ID Index 6
+Client List Status: [0] = 63, [1] = 56, [2] = 61, Client 60 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 63, [1] = 56, [2] = 61, [3] = 62, [4] = 55, [5] = 58, [6] = 59, [7] = -1, Assigned Client 60 to Device ID Index 7
+Accept failed
+Clearing client 63 from list position 0
+[3] = 62, [4] = 55, [5] = 58, [6] = 59, [7] = 60, [8] = -1, Assigned Client 57 to Device ID Index 8
+NVS entries cleared for slot 0
+---clientstatus-58
+---clientstatus-59
+
+Client 55 disconnected
+New client connected, socket 63
+Clearing client 55 from list position 4
+---clientstatus-60
+---clientstatus-57
+
+Clearing client 61 from list position 2
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 62 from list position 3
+Client 63 connected. Total clients before assignment: 0
+NVS entries cleared for slot 4
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+NVS entries cleared for slot 2
+Client 59 disconnected
+NVS entries cleared for slot 3
+Client List Status: [0] = -1, Assigned Client 63 to Device ID Index 0
+Client 57 disconnected
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 63, 
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+New client connected, socket 62
+[DEBUG] Client count after assignment: 0
+Clearing client 57 from list position 8
+Clearing client 59 from list position 6
+Client 63 disconnected
+Clearing client 63 from list position 0
+NVS entries cleared for slot 0
+Accept failed
+---clientstatus-55
+Client 62 connected. Total clients before assignment: 0
+Client 58 disconnected
+NVS entries cleared for slot 8
+NVS entries cleared for slot 6
+Client 61 connected. Total clients before assignment: 0
+New client connected, socket 57
+Client List Status: [0] = -1, 
+Clearing client 58 from list position 5
+Client 60 disconnected
+Clearing client 60 from list position 7
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, [1] = 56, [2] = 55, [3] = -1, Assigned Client 57 to Device ID Index 3
+New client connected, socket 59
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+Assigned Client 61 to Device ID Index 0
+New client connected, socket 58
+NVS entries cleared for slot 7
+Client List Status: [0] = 61, [1] = 56, [2] = 55, [3] = 57, [4] = -1, Assigned Client 62 to Device ID Index 4
+---clientstatus-57
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client List Status: [0] = 61, Client 58 connected. Total clients before assignment: 0
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 63
+Client 60 connected. Total clients before assignment: 0
+Client List Status: Client List Status: [0] = 61, [1] = 56, [2] = 55, [3] = 57, [4] = 62, [5] = -1, Assigned Client 58 to Device ID Index 5
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+[1] = 56, [2] = 55, [3] = 57, [4] = 62, [5] = 58, [6] = -1, Assigned Client 59 to Device ID Index 6
+Clearing client 57 from list position 3
+Accept failed
+Client 63 connected. Total clients before assignment: 0
+---clientstatus-61
+[0] = 61, ---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-59
+NVS entries cleared for slot 3
+Client List Status: [0] = 61, [1] = 56, [2] = 55, [3] = -1, Assigned Client 63 to Device ID Index 3
+New client connected, socket 57
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, [2] = 55, Client 55 disconnected
+Client 58 disconnected
+Clearing client 58 from list position 5
+Accept failed
+Client 57 connected. Total clients before assignment: 0
+
+Client 59 disconnected
+[3] = 63, [4] = 62, [5] = -1, Assigned Client 60 to Device ID Index 5
+NVS entries cleared for slot 5
+Client List Status: [0] = 61, [1] = 56, [2] = 55, Clearing client 59 from list position 6
+New client connected, socket 58
+---clientstatus-63
+---clientstatus-60
+
+Client 62 disconnected
+Accept failed
+Clearing client 62 from list position 4
+Clearing client 55 from list position 2
+NVS entries cleared for slot 6
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 61, [DEBUG] Client count after assignment: 0
+[3] = 63, [4] = -1, Client 61 disconnected
+
+[DEBUG] Client count after assignment: 0
+Client 59 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+[1] = 56, [2] = 59, [3] = 63, [4] = 57, [5] = 60, [6] = -1, Assigned Client 57 to Device ID Index 4
+Accept failed
+Client 63 disconnected
+Clearing client 63 from list position 3
+Assigned Client 58 to Device ID Index 6
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 61 from list position 0
+---clientstatus-57
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 3
+---clientstatus-58
+NVS entries cleared for slot 4
+New client connected, socket 63
+NVS entries cleared for slot 2
+Client 59 disconnected
+Clearing client 59 from list position 2
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+NVS entries cleared for slot 2
+Client 60 disconnected
+Clearing client 60 from list position 5
+New client connected, socket 59
+Client 55 connected. Total clients before assignment: 0
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = -1, Client 57 disconnected
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+New client connected, socket 62
+Clearing client 57 from list position 4
+Client List Status: [0] = 63, [1] = 56, [2] = 59, [3] = -1, Assigned Client 55 to Device ID Index 3
+Accept failed
+---clientstatus-59
+NVS entries cleared for slot 4
+Client 58 disconnected
+Assigned Client 63 to Device ID Index 0
+Client 61 connected. Total clients before assignment: 0
+New client connected, socket 57
+NVS entries cleared for slot 5
+Client 62 connected. Total clients before assignment: 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 60
+---clientstatus-63
+Client List Status: Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = 59, [3] = 55, [4] = -1, Assigned Client 57 to Device ID Index 4
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 3
+Accept failed
+
+[0] = 63, [1] = 56, [2] = 59, [3] = -1, Assigned Client 61 to Device ID Index 3
+Client 60 connected. Total clients before assignment: 0
+NVS entries cleared for slot 3
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+Client List Status: [0] = 63, [1] = 56, [2] = 59, [3] = 61, [4] = 57, [5] = -1, Client 55 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 63, [1] = 56, [2] = 59, [3] = 61, [4] = 57, [5] = 62, [6] = 58, [7] = -1, Assigned Client 55 to Device ID Index 7
+Accept failed
+---clientstatus-57
+Clearing client 58 from list position 6
+Client 59 disconnected
+---clientstatus-61
+Client List Status: Client 63 disconnected
+Clearing client 63 from list position 0
+Accept failed
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Clearing client 59 from list position 2
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Assigned Client 62 to Device ID Index 5
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+NVS entries cleared for slot 2
+[0] = 63, Assigned Client 60 to Device ID Index 0
+New client connected, socket 59
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+Clearing client 57 from list position 4
+Client 61 disconnected
+Client 59 connected. Total clients before assignment: 0
+---clientstatus-60
+New client connected, socket 63
+
+[DEBUG] Client count after assignment: 0
+Client 62 disconnected
+NVS entries cleared for slot 4
+Clearing client 61 from list position 3
+Client List Status: [0] = 60, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+New client connected, socket 57
+Clearing client 62 from list position 5
+NVS entries cleared for slot 3
+NVS entries cleared for slot 6
+Client 63 connected. Total clients before assignment: 0
+Client 55 disconnected
+Client 60 disconnected
+Clearing client 60 from list position 0
+---clientstatus-59
+NVS entries cleared for slot 5
+Client List Status: [0] = -1, Assigned Client 63 to Device ID Index 0
+New client connected, socket 58
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 60
+---clientstatus-63
+Client 58 connected. Total clients before assignment: 0
+Clearing client 55 from list position 7
+Client 59 disconnected
+Client List Status: [0] = 63, [1] = 56, [2] = 59, [3] = -1, Assigned Client 57 to Device ID Index 3
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = 59, [3] = 57, [4] = -1, Assigned Client 60 to Device ID Index 4
+New client connected, socket 61
+Client List Status: [0] = 63, [1] = 56, [2] = 59, [3] = 57, [4] = 60, [5] = -1, Assigned Client 58 to Device ID Index 5
+New client connected, socket 62
+NVS entries cleared for slot 7
+Accept failed
+Clearing client 59 from list position 2
+---clientstatus-57
+
+---clientstatus-60
+
+---clientstatus-58
+Client 62 connected. Total clients before assignment: 0
+New client connected, socket 55
+Client List Status: [0] = 63, 
+Client 61 connected. Total clients before assignment: 0
+Accept failed
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, Client 55 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [DEBUG] Client count after assignment: 0
+Client List Status: [0] = 63, [1] = 56, Client 60 disconnected
+Accept failed
+Clearing client 60 from list position 4
+[0] = 63, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+NVS entries cleared for slot 2
+Client 58 disconnected
+[2] = -1, [3] = 57, [4] = -1, Assigned Client 62 to Device ID Index 4
+New client connected, socket 59
+[2] = -1, [3] = 57, [4] = 62, Client 59 connected. Total clients before assignment: 0
+[DEBUG] Client count after assignment: 0
+Client 63 disconnected
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 58 from list position 5
+NVS entries cleared for slot 4
+Client List Status: [0] = 63, [1] = 56, [2] = 55, [3] = 57, [4] = 62, [5] = -1, Assigned Client 59 to Device ID Index 5
+New client connected, socket 60
+Client 57 disconnected
+Clearing client 63 from list position 0
+NVS entries cleared for slot 0
+---clientstatus-55
+Accept failed
+Client 62 disconnected
+NVS entries cleared for slot 5
+---clientstatus-59
+Client 60 connected. Total clients before assignment: 0
+New client connected, socket 58
+Client List Status: [0] = -1, Assigned Client 60 to Device ID Index 0
+Clearing client 62 from list position 4
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 63
+Client 58 connected. Total clients before assignment: 0
+[5] = 58, 
+[DEBUG] Client count after assignment: 0
+Clearing client 57 from list position 3
+NVS entries cleared for slot 4
+Client 59 disconnected
+Accept failed
+Clearing client 59 from list position 5
+Client List Status: [0] = 60, [1] = 56, [2] = 55, [3] = -1, Assigned Client 58 to Device ID Index 3
+New client connected, socket 62
+NVS entries cleared for slot 5
+[6] = -1, Assigned Client 61 to Device ID Index 6
+Client 55 disconnected
+New client connected, socket 59
+NVS entries cleared for slot 3
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 55, [3] = 58, [4] = -1, Assigned Client 63 to Device ID Index 4
+New client connected, socket 57
+Client 62 connected. Total clients before assignment: 0
+Accept failed
+---clientstatus-60
+---clientstatus-61
+
+Client 59 connected. Total clients before assignment: 0
+Accept failed
+---clientstatus-58
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+
+Client 63 disconnected
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+Accept failed
+Clearing client 61 from list position 6
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 55, [3] = 58, [4] = 63, [5] = -1, Assigned Client 62 to Device ID Index 5
+Accept failed
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 55 from list position 2
+Clearing client 63 from list position 4
+Client List Status: [0] = 60, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+Accept failed
+Client 60 disconnected
+NVS entries cleared for slot 2
+NVS entries cleared for slot 4
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+Client List Status: [0] = 60, [1] = 56, [2] = 59, [3] = 58, [4] = -1, NVS entries cleared for slot 6
+New client connected, socket 63
+Client 55 connected. Total clients before assignment: 0
+---clientstatus-59
+
+Assigned Client 57 to Device ID Index 4
+New client connected, socket 61
+Client 58 disconnected
+Clearing client 58 from list position 3
+Client 63 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 60, [1] = 56, [2] = 59, [DEBUG] Client count after assignment: 0
+---clientstatus-62
+NVS entries cleared for slot 3
+Client List Status: [0] = 60, [1] = 56, [2] = 59, [3] = -1, Assigned Client 55 to Device ID Index 3
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client 62 disconnected
+---clientstatus-57
+
+New client connected, socket 58
+Clearing client 60 from list position 0
+[3] = -1, [4] = 57, [5] = 62, [6] = -1, Assigned Client 63 to Device ID Index 6
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 58 connected. Total clients before assignment: 0
+NVS entries cleared for slot 0
+---clientstatus-55
+Client 61 connected. Total clients before assignment: 0
+New client connected, socket 60
+Clearing client 62 from list position 5
+Client 59 disconnected
+Clearing client 59 from list position 2
+Client 57 disconnected
+Clearing client 57 from list position 4
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client 60 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = -1, Assigned Client 60 to Device ID Index 0
+Client List Status: [0] = 60, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 4
+Client List Status: [0] = 60, [1] = 56, [2] = 58, [3] = 55, [4] = -1, Assigned Client 61 to Device ID Index 4
+Client 55 disconnected
+NVS entries cleared for slot 5
+---clientstatus-58
+New client connected, socket 57
+NVS entries cleared for slot 2
+---clientstatus-60
+Client 63 disconnected
+---clientstatus-61
+
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+
+[DEBUG] Client count after assignment: 0
+Clearing client 55 from list position 3
+[DEBUG] Client count after assignment: 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 62
+Client 58 disconnected
+Client 59 connected. Total clients before assignment: 0
+Client List Status: Clearing client 63 from list position 6
+Accept failed
+NVS entries cleared for slot 3
+Client 61 disconnected
+Client List Status: [0] = 60, [1] = 56, [2] = 58, [3] = -1, Assigned Client 57 to Device ID Index 3
+New client connected, socket 55
+Clearing client 61 from list position 4
+Client 62 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 58, [3] = 57, [4] = -1, Assigned Client 59 to Device ID Index 4
+Accept failed
+Clearing client 58 from list position 2
+[0] = 60, [1] = 56, [2] = -1, Assigned Client 62 to Device ID Index 2
+---clientstatus-57
+NVS entries cleared for slot 4
+---clientstatus-59
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 6
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 63
+Client List Status: [0] = 60, 
+Client 61 connected. Total clients before assignment: 0
+Client 60 disconnected
+Accept failed
+Client 59 disconnected
+---clientstatus-62
+[1] = 56, Client 63 connected. Total clients before assignment: 0
+NVS entries cleared for slot 2
+Accept failed
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 62, [3] = 57, Clearing client 59 from list position 4
+Client 57 disconnected
+New client connected, socket 58
+Clearing client 60 from list position 0
+[4] = 59, Assigned Client 61 to Device ID Index 4
+[2] = 62, [3] = 57, [4] = 61, [5] = -1, Assigned Client 55 to Device ID Index 5
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+Client List Status: NVS entries cleared for slot 4
+Clearing client 57 from list position 3
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: ---clientstatus-55
+Client 62 disconnected
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 3
+Accept failed
+[0] = -1, NVS entries cleared for slot 0
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = 62, [3] = -1, Assigned Client 59 to Device ID Index 3
+Clearing client 62 from list position 2
+New client connected, socket 57
+[0] = -1, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+Assigned Client 58 to Device ID Index 0
+New client connected, socket 60
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 62
+Client 59 disconnected
+Clearing client 61 from list position 4
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, ---clientstatus-58
+Accept failed
+Client 62 connected. Total clients before assignment: 0
+Clearing client 59 from list position 3
+NVS entries cleared for slot 4
+[2] = 63, [3] = -1, Assigned Client 60 to Device ID Index 3
+Client List Status: [0] = 58, [1] = 56, New client connected, socket 61
+NVS entries cleared for slot 3
+---clientstatus-63
+Client 55 disconnected
+Clearing client 55 from list position 5
+Client List Status: [0] = 58, [1] = 56, [2] = 63, [3] = 60, [4] = -1, Assigned Client 62 to Device ID Index 4
+New client connected, socket 59
+NVS entries cleared for slot 5
+---clientstatus-60
+New client connected, socket 55
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-62
+Client 59 connected. Total clients before assignment: 0
+[2] = 63, [3] = 60, Client 61 connected. Total clients before assignment: 0
+Accept failed
+Client 60 disconnected
+
+Client 63 disconnected
+Clearing client 63 from list position 2
+Accept failed
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+[DEBUG] Client count after assignment: 0
+Client 58 disconnected
+Clearing client 58 from list position 0
+Accept failed
+Client 55 connected. Total clients before assignment: 0
+[4] = 62, [5] = -1, Assigned Client 57 to Device ID Index 5
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+Accept failed
+Client List Status: Client List Status: [0] = -1, Assigned Client 61 to Device ID Index 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+Client 62 disconnected
+[0] = -1, [1] = 56, [2] = 59, [3] = 60, [4] = 62, [5] = 57, [6] = -1, Assigned Client 55 to Device ID Index 6
+Clearing client 60 from list position 3
+Accept failed
+---clientstatus-57
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+Client 58 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Clearing client 62 from list position 4
+NVS entries cleared for slot 3
+
+[DEBUG] Client count after assignment: 0
+Client 59 disconnected
+New client connected, socket 60
+Client 61 disconnected
+Clearing client 61 from list position 0
+---clientstatus-55
+NVS entries cleared for slot 4
+NVS entries cleared for slot 2
+New client connected, socket 62
+Client 57 disconnected
+Clearing client 59 from list position 2
+Client 60 connected. Total clients before assignment: 0
+[0] = 61, Assigned Client 58 to Device ID Index 0
+
+[DEBUG] Client count after assignment: 0
+Clearing client 57 from list position 5
+New client connected, socket 63
+NVS entries cleared for slot 2
+Accept failed
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+NVS entries cleared for slot 5
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 57
+Client List Status: [0] = 58, ---clientstatus-58
+Client 55 disconnected
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+Client 60 disconnected
+Client 62 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 58, Clearing client 55 from list position 6
+[1] = 56, [2] = 60, [3] = -1, Assigned Client 63 to Device ID Index 3
+Accept failed
+[1] = 56, [2] = 60, [3] = 63, [4] = -1, Assigned Client 62 to Device ID Index 4
+Clearing client 60 from list position 2
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client 59 connected. Total clients before assignment: 0
+NVS entries cleared for slot 0
+NVS entries cleared for slot 6
+New client connected, socket 61
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+New client connected, socket 55
+Client 61 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = 57, [3] = 63, NVS entries cleared for slot 2
+---clientstatus-57
+Accept failed
+---clientstatus-62
+
+---clientstatus-63
+Client 58 disconnected
+Client List Status: Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = 57, New client connected, socket 60
+[0] = 58, [1] = 56, [2] = 57, Client 60 connected. Total clients before assignment: 0
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+[3] = 63, [4] = 62, [5] = -1, Assigned Client 59 to Device ID Index 5
+Client List Status: [0] = 58, [1] = 56, [2] = 57, [3] = 63, [4] = 62, [5] = 59, [6] = -1, Assigned Client 60 to Device ID Index 6
+Accept failed
+---clientstatus-59
+Client 62 disconnected
+Clearing client 58 from list position 0
+Client 63 disconnected
+Accept failed
+Clearing client 63 from list position 3
+[4] = 62, [5] = 59, [6] = 60, [7] = -1, Assigned Client 61 to Device ID Index 7
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+Client 57 disconnected
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+---clientstatus-61
+NVS entries cleared for slot 3
+[3] = 63, Assigned Client 55 to Device ID Index 3
+New client connected, socket 63
+
+[DEBUG] Client count after assignment: 0
+Client 59 disconnected
+Client 58 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: 
+[DEBUG] Client count after assignment: 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 59 from list position 5
+[0] = -1, Assigned Client 58 to Device ID Index 0
+Client 63 connected. Total clients before assignment: 0
+Accept failed
+Client 61 disconnected
+Clearing client 62 from list position 4
+Client 60 disconnected
+Clearing client 60 from list position 6
+NVS entries cleared for slot 5
+Accept failed
+Clearing client 57 from list position 2
+---clientstatus-58
+
+Clearing client 61 from list position 7
+NVS entries cleared for slot 4
+Client 55 disconnected
+NVS entries cleared for slot 6
+NVS entries cleared for slot 2
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+New client connected, socket 57
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 7
+Clearing client 55 from list position 3
+---clientstatus-63
+Client 57 connected. Total clients before assignment: 0
+Client 58 disconnected
+NVS entries cleared for slot 3
+
+[DEBUG] Client count after assignment: 0
+Clearing client 58 from list position 0
+New client connected, socket 55
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+NVS entries cleared for slot 0
+New client connected, socket 59
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 63, [3] = -1, Assigned Client 55 to Device ID Index 3
+New client connected, socket 58
+Client 63 disconnected
+---clientstatus-57
+Client 59 connected. Total clients before assignment: 0
+---clientstatus-55
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client List Status: Clearing client 63 from list position 2
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+NVS entries cleared for slot 2
+
+[DEBUG] Client count after assignment: 0
+Client 60 connected. Total clients before assignment: 0
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+[0] = 57, [1] = 56, [2] = 59, [3] = 55, [4] = -1, Assigned Client 58 to Device ID Index 4
+New client connected, socket 62
+Client 55 disconnected
+Client List Status: [0] = 57, [1] = 56, [2] = 59, [3] = 55, [4] = 58, [5] = -1, Assigned Client 60 to Device ID Index 5
+New client connected, socket 63
+---clientstatus-59
+Client 57 disconnected
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Client 61 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 57, [1] = 56, [2] = 59, [3] = 55, [4] = 58, [5] = 60, [6] = -1, Assigned Client 61 to Device ID Index 6
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 62 connected. Total clients before assignment: 0
+Clearing client 55 from list position 3
+Client 58 disconnected
+---clientstatus-60
+Client 63 connected. Total clients before assignment: 0
+Accept failed
+Clearing client 57 from list position 0
+---clientstatus-61
+Client 59 disconnected
+Client List Status: NVS entries cleared for slot 3
+Clearing client 58 from list position 4
+New client connected, socket 55
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 57
+[0] = -1, Client 61 disconnected
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 59, [3] = -1, Assigned Client 63 to Device ID Index 3
+Clearing client 61 from list position 6
+Client List Status: [0] = 62, [1] = 56, [2] = 59, [3] = 63, [4] = -1, Assigned Client 55 to Device ID Index 4
+Accept failed
+NVS entries cleared for slot 6
+Client 60 disconnected
+Clearing client 60 from list position 5
+New client connected, socket 61
+Client 57 connected. Total clients before assignment: 0
+Client List Status: NVS entries cleared for slot 4
+---clientstatus-63
+---clientstatus-55
+Clearing client 59 from list position 2
+New client connected, socket 58
+NVS entries cleared for slot 5
+Client 61 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 61, NVS entries cleared for slot 2
+New client connected, socket 60
+---clientstatus-61
+Assigned Client 62 to Device ID Index 0
+[0] = 62, [1] = 56, [2] = 61, [3] = 63, [4] = 55, [5] = -1, Assigned Client 58 to Device ID Index 5
+New client connected, socket 59
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+[3] = 63, [4] = 55, [5] = 58, [6] = -1, Assigned Client 57 to Device ID Index 6
+
+[DEBUG] Client count after assignment: 0
+Client 62 disconnected
+Client 60 connected. Total clients before assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Client 63 disconnected
+Clearing client 63 from list position 3
+Accept failed
+Client List Status: [0] = 62, [1] = 56, [2] = 61, [3] = -1, Assigned Client 60 to Device ID Index 3
+Clearing client 62 from list position 0
+NVS entries cleared for slot 3
+Client 59 connected. Total clients before assignment: 0
+Accept failed
+Client 61 disconnected
+---clientstatus-57
+
+Client 58 disconnected
+Clearing client 58 from list position 5
+NVS entries cleared for slot 0
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+New client connected, socket 62
+[DEBUG] Client count after assignment: 0
+---clientstatus-60
+NVS entries cleared for slot 5
+Clearing client 61 from list position 2
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-59
+Client 55 disconnected
+New client connected, socket 58
+Clearing client 55 from list position 4
+NVS entries cleared for slot 2
+Client 62 connected. Total clients before assignment: 0
+Client 57 disconnected
+
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 4
+Client List Status: [0] = 59, [1] = 56, [2] = -1, Assigned Client 62 to Device ID Index 2
+New client connected, socket 55
+Clearing client 57 from list position 6
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+Client 58 connected. Total clients before assignment: 0
+Client 60 disconnected
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 63
+Client 61 connected. Total clients before assignment: 0
+Client 59 disconnected
+Clearing client 59 from list position 0
+Clearing client 60 from list position 3
+Client 55 connected. Total clients before assignment: 0
+NVS entries cleared for slot 6
+Client 62 disconnected
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 57
+Client List Status: [0] = -1, Assigned Client 61 to Device ID Index 0
+NVS entries cleared for slot 3
+Client List Status: [0] = 61, [1] = 56, [2] = 62, [3] = -1, Assigned Client 55 to Device ID Index 3
+Accept failed
+---clientstatus-61
+Clearing client 62 from list position 2
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+New client connected, socket 60
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 57 connected. Total clients before assignment: 0
+NVS entries cleared for slot 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+NVS entries cleared for slot 2
+Client List Status: [0] = 61, [1] = 56, [2] = 63, [3] = 55, [4] = -1, Assigned Client 58 to Device ID Index 4
+New client connected, socket 62
+Client 63 disconnected
+Clearing client 63 from list position 2
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Client 59 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client 62 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+Accept failed
+---clientstatus-57
+---clientstatus-58
+Client List Status: NVS entries cleared for slot 2
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, New client connected, socket 63
+[0] = 61, [1] = 56, [2] = 57, [3] = 55, [4] = 58, [5] = -1, Client 63 connected. Total clients before assignment: 0
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 61 disconnected
+Clearing client 61 from list position 0
+[1] = 56, [2] = 57, [3] = 55, [4] = 58, [5] = 59, [6] = -1, Assigned Client 60 to Device ID Index 6
+NVS entries cleared for slot 0
+Client List Status: [0] = -1, Assigned Client 63 to Device ID Index 0
+New client connected, socket 61
+[0] = 61, [1] = 56, [2] = 57, [3] = 55, [4] = 58, [5] = 59, [6] = 60, [7] = -1, Assigned Client 62 to Device ID Index 7
+Accept failed
+Client 58 disconnected
+Clearing client 55 from list position 3
+Client 61 connected. Total clients before assignment: 0
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-63
+Accept failed
+
+Clearing client 58 from list position 4
+NVS entries cleared for slot 3
+Client List Status: [0] = 63, [1] = 56, [2] = 57, [3] = -1, Assigned Client 61 to Device ID Index 3
+NVS entries cleared for slot 4
+Assigned Client 59 to Device ID Index 5
+New client connected, socket 55
+Client 57 disconnected
+Clearing client 57 from list position 2
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+Client 55 connected. Total clients before assignment: 0
+---clientstatus-59
+Client 60 disconnected
+Clearing client 60 from list position 6
+Accept failed
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+Client 62 disconnected
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 63, [1] = 56, [2] = 55, [3] = 61, [4] = -1, Assigned Client 58 to Device ID Index 4
+Client 61 disconnected
+
+NVS entries cleared for slot 2
+NVS entries cleared for slot 6
+Accept failed
+Client 63 disconnected
+---clientstatus-55
+Clearing client 62 from list position 7
+---clientstatus-58
+Clearing client 61 from list position 3
+New client connected, socket 57
+[DEBUG] Client count after assignment: 0
+Clearing client 63 from list position 0
+
+[DEBUG] Client count after assignment: 0
+
+Client 55 disconnected
+Clearing client 55 from list position 2
+Client 59 disconnected
+NVS entries cleared for slot 0
+New client connected, socket 60
+NVS entries cleared for slot 7
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 3
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = -1, Clearing client 59 from list position 5
+Client 58 disconnected
+New client connected, socket 62
+Clearing client 58 from list position 4
+Assigned Client 57 to Device ID Index 0
+Client 61 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+New client connected, socket 63
+---clientstatus-57
+Client 60 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, NVS entries cleared for slot 2
+Accept failed
+NVS entries cleared for slot 4
+---clientstatus-61
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 55
+Client List Status: [0] = 57, NVS entries cleared for slot 5
+Client 62 connected. Total clients before assignment: 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+[1] = 56, [2] = 61, [3] = -1, Client 58 connected. Total clients before assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 59
+[1] = 56, [2] = 61, [3] = 63, [4] = -1, Assigned Client 60 to Device ID Index 4
+Accept failed
+Client List Status: [0] = 57, [1] = 56, [2] = 61, [3] = 63, [4] = 60, [5] = -1, Assigned Client 55 to Device ID Index 5
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 61, [3] = 63, [4] = 60, [5] = 55, [6] = -1, Assigned Client 62 to Device ID Index 6
+Accept failed
+Assigned Client 63 to Device ID Index 3
+Client 57 disconnected
+Clearing client 61 from list position 2
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client List Status: ---clientstatus-62
+---clientstatus-63
+Clearing client 57 from list position 0
+Accept failed
+NVS entries cleared for slot 2
+---clientstatus-55
+Client List Status: Client 60 disconnected
+Clearing client 60 from list position 4
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+[0] = 57, Client 55 disconnected
+New client connected, socket 57
+Clearing client 55 from list position 5
+Client 61 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, 
+Accept failed
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 4
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+Client 63 disconnected
+NVS entries cleared for slot 5
+[1] = 56, [2] = 57, [3] = 63, [4] = -1, Assigned Client 61 to Device ID Index 4
+Clearing client 63 from list position 3
+Client 62 disconnected
+[0] = -1, Assigned Client 58 to Device ID Index 0
+---clientstatus-57
+New client connected, socket 55
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, [2] = 57, Client 61 disconnected
+Clearing client 61 from list position 4
+New client connected, socket 60
+NVS entries cleared for slot 3
+Clearing client 62 from list position 6
+[3] = -1, Assigned Client 59 to Device ID Index 3
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 4
+Client 60 connected. Total clients before assignment: 0
+New client connected, socket 63
+NVS entries cleared for slot 6
+---clientstatus-58
+---clientstatus-59
+New client connected, socket 61
+
+[DEBUG] Client count after assignment: 0
+Client List Status: Client 59 disconnected
+
+Client 55 connected. Total clients before assignment: 0
+Client List Status: New client connected, socket 62
+[0] = 58, [1] = 56, [2] = 57, [3] = 59, [4] = -1, Assigned Client 60 to Device ID Index 4
+Client 57 disconnected
+Clearing client 57 from list position 2
+Accept failed
+Client 62 connected. Total clients before assignment: 0
+Clearing client 59 from list position 3
+[DEBUG] Client count after assignment: 0
+[0] = 58, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+Accept failed
+NVS entries cleared for slot 2
+Client List Status: [0] = 58, [1] = 56, [2] = 55, [3] = -1, NVS entries cleared for slot 3
+New client connected, socket 57
+---clientstatus-55
+Assigned Client 62 to Device ID Index 3
+Client 58 disconnected
+Client 61 connected. Total clients before assignment: 0
+---clientstatus-60
+New client connected, socket 59
+Client 63 connected. Total clients before assignment: 0
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = 55, [3] = 62, [4] = 60, [5] = -1, Assigned Client 57 to Device ID Index 5
+Accept failed
+---clientstatus-62
+Clearing client 58 from list position 0
+Client List Status: 
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client List Status: [0] = -1, Assigned Client 63 to Device ID Index 0
+
+[DEBUG] Client count after assignment: 0
+[0] = -1, Client 62 disconnected
+Accept failed
+Client 60 disconnected
+Clearing client 60 from list position 4
+---clientstatus-57
+---clientstatus-63
+
+[1] = 56, [2] = 55, [3] = 62, [4] = -1, Assigned Client 61 to Device ID Index 4
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 63 disconnected
+Clearing client 62 from list position 3
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+---clientstatus-61
+NVS entries cleared for slot 0
+Client 57 disconnected
+Client 59 connected. Total clients before assignment: 0
+Clearing client 63 from list position 0
+New client connected, socket 58
+NVS entries cleared for slot 3
+NVS entries cleared for slot 4
+Client 55 disconnected
+Clearing client 55 from list position 2
+New client connected, socket 60
+Clearing client 57 from list position 5
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+
+[DEBUG] Client count after assignment: 0
+Client 60 connected. Total clients before assignment: 0
+New client connected, socket 62
+Client List Status: [0] = 59, NVS entries cleared for slot 0
+---clientstatus-59
+NVS entries cleared for slot 2
+Client 61 disconnected
+New client connected, socket 55
+Clearing client 61 from list position 4
+[1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+
+[DEBUG] Client count after assignment: 0
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 59, NVS entries cleared for slot 4
+New client connected, socket 63
+---clientstatus-60
+NVS entries cleared for slot 5
+Client 59 disconnected
+New client connected, socket 57
+Clearing client 59 from list position 0
+Client 62 connected. Total clients before assignment: 0
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 58 to Device ID Index 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 58, [1] = 56, Client 63 connected. Total clients before assignment: 0
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+[2] = 60, Client 61 connected. Total clients before assignment: 0
+
+[1] = 56, [2] = 60, [3] = -1, Assigned Client 55 to Device ID Index 3
+Accept failed
+Client 58 disconnected
+[3] = -1, Client List Status: [0] = 58, [1] = 56, [2] = 60, [3] = 55, [4] = -1, Assigned Client 61 to Device ID Index 4
+[4] = -1, Accept failed
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = 60, [3] = 55, ---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = 60, [3] = 55, [4] = 61, [5] = -1, Assigned Client 57 to Device ID Index 5
+Accept failed
+NVS entries cleared for slot 0
+Client 55 disconnected
+[4] = 61, [5] = 57, [6] = -1, Assigned Client 63 to Device ID Index 6
+Client 60 disconnected
+---clientstatus-57
+Clearing client 55 from list position 3
+Clearing client 58 from list position 0
+[5] = -1, [6] = 63, [7] = -1, Assigned Client 62 to Device ID Index 7
+New client connected, socket 59
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 0
+---clientstatus-61
+---clientstatus-63
+Clearing client 60 from list position 2
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+Client 57 disconnected
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+NVS entries cleared for slot 3
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 55
+Client List Status: [0] = -1, Client 62 disconnected
+
+Client 61 disconnected
+Client 58 connected. Total clients before assignment: 0
+Client List Status: Client 55 connected. Total clients before assignment: 0
+New client connected, socket 60
+Clearing client 57 from list position 5
+Clearing client 62 from list position 7
+NVS entries cleared for slot 7
+Clearing client 61 from list position 4
+Accept failed
+Assigned Client 59 to Device ID Index 0
+[0] = 59, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+New client connected, socket 62
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 4
+---clientstatus-59
+Client List Status: Client 60 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 59, Client 62 connected. Total clients before assignment: 0
+Client 63 disconnected
+
+[DEBUG] Client count after assignment: 0
+Client 59 disconnected
+Accept failed
+Clearing client 59 from list position 0
+Client 61 connected. Total clients before assignment: 0
+---clientstatus-58
+Client List Status: Clearing client 63 from list position 6
+Accept failed
+[0] = 59, Assigned Client 55 to Device ID Index 0
+[1] = 56, [2] = 58, [3] = -1, Assigned Client 60 to Device ID Index 3
+[0] = -1, [1] = 56, [2] = 58, [3] = 60, [4] = -1, Assigned Client 62 to Device ID Index 4
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 5
+NVS entries cleared for slot 0
+Client List Status: [0] = 55, [1] = 56, [2] = 58, [3] = 60, [4] = 62, [5] = -1, Assigned Client 61 to Device ID Index 5
+New client connected, socket 57
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+---clientstatus-60
+NVS entries cleared for slot 6
+Client 55 disconnected
+Clearing client 55 from list position 0
+---clientstatus-62
+
+Client 58 disconnected
+New client connected, socket 63
+Clearing client 58 from list position 2
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 55
+Client List Status: [0] = -1, Client 59 connected. Total clients before assignment: 0
+NVS entries cleared for slot 2
+---clientstatus-61
+Client 60 disconnected
+New client connected, socket 58
+[DEBUG] Client count after assignment: 0
+Assigned Client 57 to Device ID Index 0
+Client 55 connected. Total clients before assignment: 0
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 59 to Device ID Index 2
+Accept failed
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 58 connected. Total clients before assignment: 0
+Client 62 disconnected
+---clientstatus-59
+Client List Status: Client List Status: [0] = 57, [1] = 56, [2] = 59, [3] = 60, [4] = 62, [5] = 61, [6] = -1, Assigned Client 63 to Device ID Index 6
+Client 57 disconnected
+Clearing client 57 from list position 0
+Client List Status: [0] = -1, Assigned Client 58 to Device ID Index 0
+Accept failed
+[0] = 57, Clearing client 60 from list position 3
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 62 from list position 4
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, [2] = 59, [3] = -1, Assigned Client 55 to Device ID Index 3
+Accept failed
+Client 63 disconnected
+NVS entries cleared for slot 4
+---clientstatus-58
+Client 59 disconnected
+NVS entries cleared for slot 3
+Client 61 disconnected
+NVS entries cleared for slot 0
+---clientstatus-55
+Clearing client 63 from list position 6
+New client connected, socket 57
+Clearing client 59 from list position 2
+Clearing client 61 from list position 5
+New client connected, socket 60
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+Client 60 connected. Total clients before assignment: 0
+NVS entries cleared for slot 5
+NVS entries cleared for slot 6
+New client connected, socket 59
+Client 55 disconnected
+Client 57 connected. Total clients before assignment: 0
+Client 58 disconnected
+Clearing client 58 from list position 0
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+NVS entries cleared for slot 0
+New client connected, socket 62
+Clearing client 55 from list position 3
+Client List Status: NVS entries cleared for slot 3
+Client List Status: [0] = 59, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+New client connected, socket 55
+---clientstatus-59
+Client 62 connected. Total clients before assignment: 0
+[0] = 59, [1] = 56, [2] = 60, [3] = -1, Assigned Client 57 to Device ID Index 3
+Client List Status: [0] = 59, [1] = 56, [2] = 60, ---clientstatus-57
+New client connected, socket 58
+[3] = 57, [4] = -1, Assigned Client 62 to Device ID Index 4
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 63
+Client List Status: [0] = 59, 
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 59, [1] = 56, [2] = 60, [3] = 57, [4] = 62, [5] = -1, Assigned Client 58 to Device ID Index 5
+Accept failed
+---clientstatus-62
+
+[1] = 56, [2] = 60, [3] = 57, [4] = 62, [5] = 58, [6] = -1, Assigned Client 55 to Device ID Index 6
+Accept failed
+[DEBUG] Client count after assignment: 0
+Client 63 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 59, Client 61 connected. Total clients before assignment: 0
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 59 disconnected
+Clearing client 59 from list position 0
+[DEBUG] Client count after assignment: 0
+---clientstatus-60
+Accept failed
+Client List Status: [0] = -1, Assigned Client 61 to Device ID Index 0
+Client 58 disconnected
+[1] = 56, [2] = 60, [3] = 57, [4] = 62, [5] = 58, [6] = 55, [7] = -1, Assigned Client 63 to Device ID Index 7
+Accept failed
+NVS entries cleared for slot 0
+Client 57 disconnected
+
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+New client connected, socket 59
+
+[DEBUG] Client count after assignment: 0
+Clearing client 57 from list position 3
+NVS entries cleared for slot 3
+---clientstatus-55
+Accept failed
+Client 62 disconnected
+Clearing client 58 from list position 5
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 61, [1] = 56, [2] = 60, [3] = -1, Assigned Client 59 to Device ID Index 3
+New client connected, socket 57
+---clientstatus-63
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+---clientstatus-59
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 58
+Client List Status: [0] = 61, [DEBUG] Client count after assignment: 0
+Clearing client 62 from list position 4
+Client 55 disconnected
+Accept failed
+Clearing client 55 from list position 6
+Client 61 disconnected
+[1] = 56, Client 58 connected. Total clients before assignment: 0
+Client 63 disconnected
+Clearing client 63 from list position 7
+Accept failed
+NVS entries cleared for slot 4
+
+[DEBUG] Client count after assignment: 0
+Clearing client 61 from list position 0
+New client connected, socket 62
+[2] = 60, [3] = 59, [4] = -1, Assigned Client 57 to Device ID Index 4
+NVS entries cleared for slot 6
+Client 59 disconnected
+Accept failed
+NVS entries cleared for slot 0
+Client 62 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 62 to Device ID Index 0
+New client connected, socket 55
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Client 60 disconnected
+NVS entries cleared for slot 7
+New client connected, socket 61
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [3] = 59, [4] = 57, [5] = -1, Assigned Client 55 to Device ID Index 5
+Client List Status: [0] = 62, [1] = 56, [2] = 60, [3] = 59, [4] = 57, [5] = 55, [6] = -1, Assigned Client 58 to Device ID Index 6
+New client connected, socket 63
+---clientstatus-55
+Client 57 disconnected
+Clearing client 60 from list position 2
+Client 61 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+Accept failed
+Clearing client 57 from list position 4
+NVS entries cleared for slot 4
+---clientstatus-62
+Accept failed
+
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+NVS entries cleared for slot 2
+Clearing client 59 from list position 3
+[DEBUG] Client count after assignment: 0
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 57
+Client List Status: 
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 3
+New client connected, socket 60
+Client 62 disconnected
+Clearing client 62 from list position 0
+Client 58 disconnected
+Clearing client 58 from list position 6
+New client connected, socket 59
+Client 55 disconnected
+Clearing client 55 from list position 5
+[0] = 62, Assigned Client 63 to Device ID Index 0
+Client 57 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = 63, [1] = 56, [2] = 61, [3] = -1, Assigned Client 57 to Device ID Index 3
+---clientstatus-63
+NVS entries cleared for slot 6
+
+[DEBUG] Client count after assignment: 0
+Client 60 connected. Total clients before assignment: 0
+New client connected, socket 58
+NVS entries cleared for slot 5
+NVS entries cleared for slot 0
+New client connected, socket 55
+
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+Client List Status: [0] = 63, [1] = 56, [2] = 61, [3] = 57, [4] = -1, Assigned Client 60 to Device ID Index 4
+New client connected, socket 62
+Client 58 connected. Total clients before assignment: 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 63 disconnected
+Clearing client 63 from list position 0
+NVS entries cleared for slot 0
+Client 62 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: [0] = -1, Assigned Client 58 to Device ID Index 0
+Client 57 disconnected
+New client connected, socket 63
+Clearing client 61 from list position 2
+---clientstatus-60
+Client List Status: Client 55 connected. Total clients before assignment: 0
+Accept failed
+Client 59 connected. Total clients before assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Client 63 connected. Total clients before assignment: 0
+[0] = 58, [1] = 56, [2] = 59, [3] = 57, [4] = 60, [5] = -1, Assigned Client 62 to Device ID Index 5
+Accept failed
+Client List Status: [0] = 58, [1] = 56, [2] = 59, [3] = 57, [4] = 60, [5] = 62, [6] = -1, Assigned Client 63 to Device ID Index 6
+Accept failed
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 58, [1] = 56, [2] = 59, [3] = 57, Assigned Client 59 to Device ID Index 2
+New client connected, socket 61
+Client 60 disconnected
+---clientstatus-63
+Clearing client 57 from list position 3
+[4] = 60, [5] = 62, [6] = 63, [7] = -1, Assigned Client 55 to Device ID Index 7
+Clearing client 60 from list position 4
+Accept failed
+
+NVS entries cleared for slot 3
+Client 58 disconnected
+---clientstatus-62
+Client 61 connected. Total clients before assignment: 0
+New client connected, socket 57
+Client List Status: [0] = 58, ---clientstatus-55
+[DEBUG] Client count after assignment: 0
+Clearing client 58 from list position 0
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+[1] = 56, [2] = 59, [3] = -1, Assigned Client 61 to Device ID Index 3
+Client 63 disconnected
+Clearing client 63 from list position 6
+Accept failed
+---clientstatus-59
+Client 62 disconnected
+Client 57 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: NVS entries cleared for slot 4
+---clientstatus-61
+NVS entries cleared for slot 0
+NVS entries cleared for slot 6
+New client connected, socket 58
+
+[DEBUG] Client count after assignment: 0
+[0] = -1, Assigned Client 57 to Device ID Index 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 60
+Clearing client 62 from list position 5
+Client 59 disconnected
+Clearing client 59 from list position 2
+New client connected, socket 63
+Client 58 connected. Total clients before assignment: 0
+---clientstatus-57
+Client 61 disconnected
+Client 60 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: NVS entries cleared for slot 5
+NVS entries cleared for slot 2
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 57, 
+[0] = 57, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+Client 59 connected. Total clients before assignment: 0
+Clearing client 61 from list position 3
+New client connected, socket 62
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+[1] = 56, [2] = 60, [3] = -1, ---clientstatus-60
+Client 62 connected. Total clients before assignment: 0
+Client 57 disconnected
+Accept failed
+Client List Status: [0] = 57, [1] = 56, [2] = 60, [3] = 63, [4] = -1, Assigned Client 58 to Device ID Index 4
+Clearing client 57 from list position 0
+Accept failed
+Client 55 disconnected
+Assigned Client 63 to Device ID Index 3
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+Accept failed
+Client List Status: [0] = 59, [1] = 56, [2] = 60, [3] = 63, [4] = 58, [5] = -1, Assigned Client 62 to Device ID Index 5
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 3
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-59
+---clientstatus-62
+
+New client connected, socket 61
+[DEBUG] Client count after assignment: 0
+Client 58 disconnected
+---clientstatus-63
+Client 60 disconnected
+
+[DEBUG] Client count after assignment: 0
+Clearing client 55 from list position 7
+Client 61 connected. Total clients before assignment: 0
+Accept failed
+Client 62 disconnected
+Clearing client 58 from list position 4
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+Client 59 disconnected
+NVS entries cleared for slot 7
+Client List Status: [0] = 59, [1] = 56, [2] = 60, [3] = 63, [4] = -1, Assigned Client 61 to Device ID Index 4
+New client connected, socket 55
+Clearing client 62 from list position 5
+NVS entries cleared for slot 4
+Clearing client 60 from list position 2
+New client connected, socket 57
+Client 63 disconnected
+Clearing client 63 from list position 3
+---clientstatus-61
+Client 55 connected. Total clients before assignment: 0
+Client List Status: NVS entries cleared for slot 2
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 58
+Client List Status: [0] = 59, [1] = 56, [2] = -1, Assigned Client 57 to Device ID Index 2
+Clearing client 59 from list position 0
+New client connected, socket 60
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 58 to Device ID Index 0
+[0] = 59, [1] = 56, [2] = 57, [3] = -1, Assigned Client 55 to Device ID Index 3
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 3
+---clientstatus-58
+NVS entries cleared for slot 5
+---clientstatus-55
+Client 61 disconnected
+NVS entries cleared for slot 0
+Client 60 connected. Total clients before assignment: 0
+Client 57 disconnected
+
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+Client List Status: [0] = 58, [1] = 56, [2] = 57, [3] = 55, Client 59 connected. Total clients before assignment: 0
+[4] = 61, [5] = -1, Assigned Client 60 to Device ID Index 5
+New client connected, socket 62
+Client 55 disconnected
+Clearing client 55 from list position 3
+Client List Status: [0] = 58, [1] = 56, [2] = 57, [3] = -1, Assigned Client 59 to Device ID Index 3
+New client connected, socket 63
+NVS entries cleared for slot 3
+[DEBUG] Client count after assignment: 0
+Clearing client 61 from list position 4
+NVS entries cleared for slot 4
+Client 62 connected. Total clients before assignment: 0
+Clearing client 57 from list position 2
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 55
+---clientstatus-59
+Client 58 disconnected
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 58, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+NVS entries cleared for slot 2
+Accept failed
+Client 61 connected. Total clients before assignment: 0
+Client 55 connected. Total clients before assignment: 0
+
+Clearing client 58 from list position 0
+Client List Status: [0] = -1, Assigned Client 62 to Device ID Index 0
+Client List Status: [0] = 62, [1] = 56, [2] = 63, [3] = 59, [4] = -1, Assigned Client 61 to Device ID Index 4
+New client connected, socket 57
+---clientstatus-62
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+NVS entries cleared for slot 0
+---clientstatus-63
+Client 60 disconnected
+Clearing client 60 from list position 5
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 58
+Client List Status: [0] = 62, [DEBUG] Client count after assignment: 0
+
+Client 59 disconnected
+NVS entries cleared for slot 5
+Client List Status: [0] = 62, [1] = 56, [2] = 63, [3] = 59, [4] = 61, [5] = -1, Assigned Client 55 to Device ID Index 5
+New client connected, socket 60
+[1] = 56, [2] = 63, [3] = 59, [4] = 61, [5] = 55, Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 62, [1] = 56, [2] = 63, [3] = 59, [4] = 61, [5] = 55, [6] = -1, Assigned Client 58 to Device ID Index 6
+Accept failed
+[6] = -1, [7] = -1, Assigned Client 57 to Device ID Index 7
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+Client 60 connected. Total clients before assignment: 0
+Accept failed
+---clientstatus-58
+Client 62 disconnected
+Clearing client 62 from list position 0
+---clientstatus-57
+Accept failed
+Clearing client 59 from list position 3
+---clientstatus-55
+Client 61 disconnected
+Client List Status: 
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+
+Clearing client 61 from list position 4
+[0] = -1, Assigned Client 60 to Device ID Index 0
+Client 63 disconnected
+NVS entries cleared for slot 3
+Client 57 disconnected
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 4
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+---clientstatus-60
+Clearing client 63 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 61
+Client 55 disconnected
+Client 58 disconnected
+Clearing client 58 from list position 6
+
+NVS entries cleared for slot 6
+Client 61 connected. Total clients before assignment: 0
+Clearing client 55 from list position 5
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 58
+Client List Status: [0] = 60, Clearing client 57 from list position 7
+NVS entries cleared for slot 5
+[DEBUG] Client count after assignment: 0
+New client connected, socket 62
+Client 60 disconnected
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+New client connected, socket 55
+Client List Status: [0] = 60, [1] = 56, [2] = 61, [3] = -1, Assigned Client 58 to Device ID Index 3
+New client connected, socket 63
+NVS entries cleared for slot 7
+Client 55 connected. Total clients before assignment: 0
+[1] = 56, [2] = 61, [3] = 58, [4] = -1, Assigned Client 59 to Device ID Index 4
+New client connected, socket 57
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, [2] = 61, [3] = 58, [4] = 59, [5] = -1, Assigned Client 55 to Device ID Index 5
+Accept failed
+Client 62 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, [1] = 56, Clearing client 60 from list position 0
+Accept failed
+Client 57 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 63 to Device ID Index 0
+[2] = 61, [3] = 58, [4] = 59, [5] = 55, [6] = -1, Assigned Client 62 to Device ID Index 6
+Accept failed
+---clientstatus-61
+---clientstatus-63
+
+---clientstatus-59
+NVS entries cleared for slot 0
+Client List Status: [0] = 63, [1] = 56, [2] = 61, [3] = 58, [4] = 59, [5] = 55, [6] = 62, [7] = -1, Assigned Client 57 to Device ID Index 7
+New client connected, socket 60
+---clientstatus-55
+---clientstatus-62
+
+---clientstatus-58
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+---clientstatus-57
+Client 60 connected. Total clients before assignment: 0
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Client 61 disconnected
+Accept failed
+Clearing client 61 from list position 2
+Client 58 disconnected
+Client 59 disconnected
+Client List Status: Client 57 disconnected
+Clearing client 57 from list position 7
+Client 62 disconnected
+Client 63 disconnected
+NVS entries cleared for slot 2
+Accept failed
+Clearing client 58 from list position 3
+Clearing client 59 from list position 4
+[0] = 63, [1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+Clearing client 63 from list position 0
+NVS entries cleared for slot 3
+NVS entries cleared for slot 4
+Client 55 disconnected
+NVS entries cleared for slot 7
+Clearing client 62 from list position 6
+---clientstatus-60
+NVS entries cleared for slot 0
+Clearing client 55 from list position 5
+NVS entries cleared for slot 6
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 5
+Client 60 disconnected
+Clearing client 60 from list position 2
+NVS entries cleared for slot 2
+New client connected, socket 55
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = -1, Assigned Client 55 to Device ID Index 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+New client connected, socket 57
+NVS entries cleared for slot 0
+Client 57 connected. Total clients before assignment: 0
+New client connected, socket 55
+Client List Status: [0] = -1, Assigned Client 57 to Device ID Index 0
+Client 55 connected. Total clients before assignment: 0
+New client connected, socket 58
+---clientstatus-57
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+New client connected, socket 59
+Client 58 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 55, [3] = -1, Assigned Client 58 to Device ID Index 3
+New client connected, socket 60
+
+[DEBUG] Client count after assignment: 0
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 61
+Client List Status: [0] = 57, Client 60 connected. Total clients before assignment: 0
+Client 57 disconnected
+New client connected, socket 62
+---clientstatus-58
+[1] = 56, [2] = 55, [3] = 58, [4] = -1, Assigned Client 59 to Device ID Index 4
+Client 62 connected. Total clients before assignment: 0
+New client connected, socket 63
+
+[DEBUG] Client count after assignment: 0
+Client 61 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client List Status: [0] = 57, [1] = 56, [2] = 55, [3] = 58, [4] = 59, [5] = -1, Assigned Client 60 to Device ID Index 5
+Accept failed
+---clientstatus-59
+Client List Status: ---clientstatus-55
+Client 63 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client 58 disconnected
+Clearing client 57 from list position 0
+---clientstatus-60
+
+[0] = 57, Assigned Client 62 to Device ID Index 0
+[0] = 57, [1] = 56, [2] = 55, [3] = 58, [4] = 59, [5] = 60, [6] = -1, Assigned Client 63 to Device ID Index 6
+Accept failed
+---clientstatus-62
+[0] = 57, [1] = 56, [2] = 55, [3] = 58, [4] = 59, [5] = 60, [6] = 63, [7] = -1, Assigned Client 61 to Device ID Index 7
+Accept failed
+NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 57
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Client 57 connected. Total clients before assignment: 0
+---clientstatus-63
+Client 55 disconnected
+Accept failed
+Clearing client 55 from list position 2
+Client 62 disconnected
+[DEBUG] Client count after assignment: 0
+Client 60 disconnected
+Accept failed
+Clearing client 60 from list position 5
+Client List Status: NVS entries cleared for slot 5
+Clearing client 58 from list position 3
+NVS entries cleared for slot 2
+New client connected, socket 60
+Clearing client 62 from list position 0
+Client 59 disconnected
+Client 61 disconnected
+[0] = 62, Assigned Client 57 to Device ID Index 0
+NVS entries cleared for slot 3
+Client 60 connected. Total clients before assignment: 0
+New client connected, socket 55
+Client List Status: [0] = 57, Clearing client 59 from list position 4
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 58
+Client 63 disconnected
+[1] = 56, [2] = -1, Assigned Client 60 to Device ID Index 2
+NVS entries cleared for slot 4
+---clientstatus-57
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 59
+Clearing client 63 from list position 6
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 60, [3] = -1, Assigned Client 55 to Device ID Index 3
+Accept failed
+NVS entries cleared for slot 6
+Accept failed
+Clearing client 61 from list position 7
+---clientstatus-60
+NVS entries cleared for slot 0
+Client 58 connected. Total clients before assignment: 0
+New client connected, socket 62
+Client List Status: [0] = 57, Client 59 connected. Total clients before assignment: 0
+NVS entries cleared for slot 7
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+[1] = 56, [2] = 60, [3] = 55, [4] = -1, Assigned Client 58 to Device ID Index 4
+Client 60 disconnected
+Client 61 connected. Total clients before assignment: 0
+New client connected, socket 63
+Client 62 connected. Total clients before assignment: 0
+---clientstatus-55
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+---clientstatus-58
+Clearing client 60 from list position 2
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 61 to Device ID Index 2
+Client 55 disconnected
+
+NVS entries cleared for slot 2
+Client 63 connected. Total clients before assignment: 0
+New client connected, socket 60
+Client List Status: [0] = 57, Client List Status: [0] = 57, [1] = 56, [2] = 61, [3] = 55, [4] = 58, [5] = -1, Assigned Client 59 to Device ID Index 5
+Accept failed
+Client 57 disconnected
+---clientstatus-61
+
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 57, [1] = 56, [2] = 61, [3] = 55, [4] = 58, [5] = 59, [6] = -1, Assigned Client 62 to Device ID Index 6
+Accept failed
+[1] = 56, [2] = 61, [3] = 55, [4] = 58, [5] = 59, [6] = 62, [7] = -1, Assigned Client 63 to Device ID Index 7
+Accept failed
+---clientstatus-62
+
+Clearing client 57 from list position 0
+Clearing client 55 from list position 3
+Client 60 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: Client 61 disconnected
+---clientstatus-63
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 3
+Accept failed
+[0] = -1, Client 58 disconnected
+Clearing client 61 from list position 2
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 0
+Client 59 disconnected
+Assigned Client 60 to Device ID Index 0
+Clearing client 58 from list position 4
+NVS entries cleared for slot 2
+[DEBUG] Client count after assignment: 0
+Client 63 disconnected
+Clearing client 63 from list position 7
+---clientstatus-60
+
+New client connected, socket 55
+[DEBUG] Client count after assignment: 0
+Clearing client 59 from list position 5
+NVS entries cleared for slot 7
+NVS entries cleared for slot 4
+Client 62 disconnected
+New client connected, socket 57
+Clearing client 62 from list position 6
+Client 60 disconnected
+NVS entries cleared for slot 5
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [0] = 60, Client 57 connected. Total clients before assignment: 0
+[1] = 56, [2] = -1, Assigned Client 55 to Device ID Index 2
+New client connected, socket 58
+Client List Status: [0] = 60, [1] = 56, [2] = 55, [3] = -1, Assigned Client 57 to Device ID Index 3
+New client connected, socket 59
+NVS entries cleared for slot 6
+Clearing client 60 from list position 0
+---clientstatus-55
+Client 58 connected. Total clients before assignment: 0
+Client 59 connected. Total clients before assignment: 0
+Client List Status: NVS entries cleared for slot 0
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 61
+---clientstatus-57
+New client connected, socket 60
+
+[DEBUG] Client count after assignment: 0
+Client 55 disconnected
+Clearing client 55 from list position 2
+New client connected, socket 62
+[0] = -1, Assigned Client 59 to Device ID Index 0
+Client List Status: [0] = 59, [1] = 56, [2] = -1, Assigned Client 58 to Device ID Index 2
+New client connected, socket 63
+Client 60 connected. Total clients before assignment: 0
+---clientstatus-59
+
+[DEBUG] Client count after assignment: 0
+NVS entries cleared for slot 2
+Accept failed
+Client 62 connected. Total clients before assignment: 0
+---clientstatus-58
+Client 63 connected. Total clients before assignment: 0
+Client List Status: [0] = 59, New client connected, socket 55
+Client 59 disconnected
+Client List Status: [0] = 59, [1] = 56, [2] = 58, [3] = 57, [4] = -1, Assigned Client 62 to Device ID Index 4
+Accept failed
+Clearing client 59 from list position 0
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = -1, Client 58 disconnected
+Accept failed
+Clearing client 58 from list position 2
+---clientstatus-62
+NVS entries cleared for slot 0
+[1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+Client 61 connected. Total clients before assignment: 0
+New client connected, socket 59
+Client 55 connected. Total clients before assignment: 0
+Accept failed
+Client List Status: NVS entries cleared for slot 2
+Client 57 disconnected
+Assigned Client 60 to Device ID Index 0
+---clientstatus-63
+
+Client 59 connected. Total clients before assignment: 0
+New client connected, socket 58
+Client List Status: [0] = 60, 
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 60, Client 62 disconnected
+[1] = 56, [2] = 63, [3] = 57, [4] = 62, [5] = -1, Assigned Client 59 to Device ID Index 5
+[0] = 60, [1] = 56, [2] = 63, [3] = 57, [4] = 62, [5] = 59, [6] = -1, Assigned Client 55 to Device ID Index 6
+Accept failed
+Client 58 connected. Total clients before assignment: 0
+Clearing client 57 from list position 3
+---clientstatus-60
+
+[DEBUG] Client count after assignment: 0
+Accept failed
+Clearing client 62 from list position 4
+---clientstatus-59
+---clientstatus-55
+
+NVS entries cleared for slot 3
+[1] = 56, [2] = 63, [3] = -1, Assigned Client 61 to Device ID Index 3
+
+[DEBUG] Client count after assignment: 0
+New client connected, socket 57
+[DEBUG] Client count after assignment: 0
+[DEBUG] Client count after assignment: 0
+Client 60 disconnected
+NVS entries cleared for slot 4
+---clientstatus-61
+Client List Status: [0] = 60, [1] = 56, [2] = 63, [3] = 61, [4] = -1, Assigned Client 58 to Device ID Index 4
+New client connected, socket 62
+Client 59 disconnected
+Clearing client 59 from list position 5
+Client 55 disconnected
+Client 63 disconnected
+Clearing client 60 from list position 0
+Accept failed
+
+[DEBUG] Client count after assignment: 0
+---clientstatus-58
+Client 57 connected. Total clients before assignment: 0
+Client List Status: Clearing client 55 from list position 6
+Clearing client 63 from list position 2
+Accept failed
+NVS entries cleared for slot 0
+Client 62 connected. Total clients before assignment: 0
+Client 61 disconnected
+
+[DEBUG] Client count after assignment: 0
+[0] = -1, Assigned Client 57 to Device ID Index 0
+NVS entries cleared for slot 2
+Client List Status: [0] = 57, [1] = 56, [2] = -1, Assigned Client 62 to Device ID Index 2
+New client connected, socket 60
+---clientstatus-57
+Clearing client 61 from list position 3
+NVS entries cleared for slot 5
+Client 58 disconnected
+NVS entries cleared for slot 6
+---clientstatus-62
+New client connected, socket 59
+Client 60 connected. Total clients before assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Clearing client 58 from list position 4
+New client connected, socket 55
+
+[DEBUG] Client count after assignment: 0
+Client List Status: [0] = 57, NVS entries cleared for slot 3
+NVS entries cleared for slot 4
+New client connected, socket 63
+Client 59 connected. Total clients before assignment: 0
+Client 55 connected. Total clients before assignment: 0
+Client List Status: [1] = 56, [2] = 62, [3] = -1, Assigned Client 60 to Device ID Index 3
+New client connected, socket 58
+Client 62 disconnected
+[0] = 57, [1] = 56, [2] = 62, [3] = 60, [4] = -1, Assigned Client 55 to Device ID Index 4
+Clearing client 62 from list position 2
+Client 57 disconnected
+Clearing client 57 from list position 0
+New client connected, socket 61
+Client List Status: [0] = -1, Assigned Client 59 to Device ID Index 0
+---clientstatus-55
+
+Client 63 connected. Total clients before assignment: 0
+NVS entries cleared for slot 0
+Accept failed
+---clientstatus-60
+Client 58 connected. Total clients before assignment: 0
+Client 61 connected. Total clients before assignment: 0
+---clientstatus-59
+NVS entries cleared for slot 2
+[DEBUG] Client count after assignment: 0
+New client connected, socket 57
+Client List Status: [0] = 59, [1] = 56, [2] = -1, Assigned Client 63 to Device ID Index 2
+Client 55 disconnected
+Client 57 connected. Total clients before assignment: 0
+
+Client List Status: [0] = 59, [1] = 56, [2] = 63, [3] = 60, [4] = 55, [5] = -1, Assigned Client 58 to Device ID Index 5
+New client connected, socket 62
+
+[DEBUG] Client count after assignment: 0
+Clearing client 55 from list position 4
+NVS entries cleared for slot 4
+[DEBUG] Client count after assignment: 0
+New client connected, socket 55
+Client List Status: [0] = 59, [1] = 56, [2] = 63, [3] = 60, [4] = -1, Assigned Client 61 to Device ID Index 4
+Accept failed
+---clientstatus-61
+Client 55 connected. Total clients before assignment: 0
+---clientstatus-63
+Client 62 connected. Total clients before assignment: 0
+Client 59 disconnected
+Client List Status: Client 60 disconnected
+Clearing client 60 from list position 3
+
+[DEBUG] Client count after assignment: 0
+
+[DEBUG] Client count after assignment: 0
+Client 63 disconnected
+Accept failed
+Clearing client 63 from list position 2
+---clientstatus-58

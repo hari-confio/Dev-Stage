@@ -1,0 +1,25 @@
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 13 06 0B 42 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 10 3A 08 46 AB B6 
+-->Received Btn/Knob 6 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 06 01 01 A5 B9 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-06 -10-01 -11-01 -12-A5 -13-B9 
+
+CRC Calculated: A5 B9
+
+--CRC is in correct Format--Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0D 31 04 4B 5B B6 
+-->Received Btn/Knob 5 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 05 01 01 55 B9 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-05 -10-01 -11-01 -12-55 -13-B9 
+
+CRC Calculated: 55 B9
+
+I BO�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x0 (DOWNLOAD(USB/UART0))
+waiting for download

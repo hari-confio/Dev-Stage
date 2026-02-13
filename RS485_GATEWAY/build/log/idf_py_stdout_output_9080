@@ -1,0 +1,13 @@
+[0;32mI (20333) eth_example: Ethernet Link Down[0m
+[0;32mI (22333) eth_example: Ethernet Link Up[0m
+[0;32mI (22333) eth_example: MAC: 02:ba:97:01:ca:b1[0m
+[0;32mI (23853) esp_netif_handlers: eth ip: 192.168.0.119, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (23853) eth_example: Got IP: 192.168.0.119[0m
+[0;32mI (92333) eth_example: Ethernet Link Down[0m
+[0;32mI (98333) eth_example: Ethernet Link Up[0m
+[0;32mI (98333) eth_example: MAC: 02:ba:97:01:ca:b1[0m
+[0;32mI (100333) eth_example: Ethernet Link Down[0m
+[0;32mI (108333) eth_example: Ethernet Link Up[0m
+[0;32mI (108333) eth_example: MAC: 02:ba:97:01:ca:b1[0m
+[0;32mI (109853) esp_netif_handlers: eth ip: 192.168.0.119, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (109853) eth_example: Got IP: 192.168.0.119[0m

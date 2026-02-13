@@ -1,0 +1,424 @@
+�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x0 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (31) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=15918h ( 88344) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00025940 vaddr=3fc96700 size=02d28h ( 11560) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00028670 vaddr=40374000 size=079a8h ( 31144) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4c174h (311668) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007c19c vaddr=4037b9a8 size=0ac78h ( 44152) load[0m
+[0;32mI (181) esp_image: segment 5: paddr=00086e1c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     app-template[0m
+[0;32mI (213) app_init: App version:      6d4ace7[0m
+[0;32mI (217) app_init: Compile time:     Apr 25 2025 15:14:48[0m
+[0;32mI (222) app_init: ELF file SHA256:  1b747944c...[0m
+[0;32mI (227) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (231) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (239) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (249) heap_init: At 3FC9C648 len 0004D0C8 (308 KiB): RAM[0m
+[0;32mI (255) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (271) spi_flash: detected chip: gd[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (295) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (302) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (342) RS485_APP: Generated ETH MAC: 02:ba:97:01:ca:cd[0m
+[0;32mI (342) esp_eth.netif.netif_glue: 02:ba:97:01:ca:cd[0m
+[0;32mI (342) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (352) RS485_APP: Ethernet initialized[0m
+No NVS entries found or error: ESP_ERR_NVS_NOT_FOUND
+TCP server listening on port 5000
+Waiting for new client...
+[0;32mI (1352) main_task: Returned from app_main()[0m
+[0;32mI (2352) RS485_APP: Ethernet Link Up[0m
+[0;32mI (2352) RS485_APP: MAC: 02:ba:97:01:ca:cd[0m
+[0;32mI (3872) esp_netif_handlers: eth ip: 192.168.0.166, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3872) RS485_APP: Got IP: 192.168.0.166[0m
+[0;32mI (3872) mdns_mem: mDNS task will be created from internal RAM[0m
+mDNS service started with hostname 'confiors485' on port 5000
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Client connected on socket 55
+Waiting for new client...
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 2F 0A 08 59 10 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 66 01 01 01 0A 78 
+Processed Response: 84 BA 20 FF FE 92 62 FF 66 01 01 01 0A 78 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3E 0D 05 57 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 01 01 01 84 BA 20 FF FE 92 62 FF 66 01 01 01 F3 2F 
+Storing Key: 54 0F 57 FF FE 0A BC C3 55 01 01 01 
+Storing Value: 84 BA 20 FF FE 92 62 FF 66 01 01 01 F3 2F 
+Saved key DBF64EE3 to NVS
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 42 01 0C 33 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 01 01 F3 2F 
+Sent mapped value to client.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 42 06 51 44 73 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 0D 01 6D 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 0D 01 6D 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+Matched delete condition: 0x55 && 0x0D
+Deleted key from NVS: 54 0F 57 FF FE 0A BC C3 55 01 01 01 
+Deleted 1 matching keys and compacted NVM table.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 46 09 11 38 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 01 01 01 84 BA 20 FF FE 92 62 FF 66 01 01 01 D5 08 
+Storing Key: 54 0F 57 FF FE 0A BC C3 55 01 01 01 
+Storing Value: 84 BA 20 FF FE 92 62 FF 66 01 01 01 D5 08 
+Saved key DBF64EE3 to NVS
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 42 01 05 49 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 01 01 D5 08 
+Sent mapped value to client.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 02 01 01 84 BA 20 FF FE 92 62 FF 66 02 01 01 3B 82 
+Storing Key: 54 0F 57 FF FE 0A BC C3 55 02 01 01 
+Storing Value: 84 BA 20 FF FE 92 62 FF 66 02 01 01 3B 82 
+Saved key D9B0F0BA to NVS
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 40 12 11 3F 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 02 01 01 3B 82 
+Sent mapped value to client.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3E 03 13 58 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 01 01 D5 08 
+Sent mapped value to client.
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 02 01 01 84 BA 20 FF FE 92 62 FF 66 01 03 01 B2 3D 
+Storing Key: 54 0F 57 FF FE 0A BC C3 55 02 01 01 
+Storing Value: 84 BA 20 FF FE 92 62 FF 66 01 03 01 B2 3D 
+Saved key D9B0F0BA to NVS
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 42 0F 08 45 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 03 01 B2 3D 
+Sent mapped value to client.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3E 07 5C 3C 73 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 0D 01 6D 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 0D 01 6D 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+Matched delete condition: 0x55 && 0x0D
+Deleted key from NVS: 54 0F 57 FF FE 0A BC C3 55 01 01 01 
+Deleted key from NVS: 54 0F 57 FF FE 0A BC C3 55 02 01 01 
+Failed to delete key from NVS: 54 0F 57 FF FE 0A BC C3 55 02 01 01 
+Deleted 3 matching keys and compacted NVM table.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 40 11 11 5D 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 45 11 04 5A 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 44 09 10 47 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 01 01 01 84 BA 20 FF FE 92 62 FF 66 01 01 01 65 55 
+Storing Key: 54 0F 57 FF FE 0A BC C3 55 01 01 01 
+Storing Value: 84 BA 20 FF FE 92 62 FF 66 01 01 01 65 55 
+Saved key DBF64EE3 to NVS
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 01 02 01 84 BA 20 FF FE 92 62 FF 66 01 02 01 7B FE 
+Storing Key: 54 0F 57 FF FE 0A BC C3 55 01 02 01 
+Storing Value: 84 BA 20 FF FE 92 62 FF 66 01 02 01 7B FE 
+Saved key F0DB1D20 to NVS
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3D 09 0C 53 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 01 01 65 55 
+Sent mapped value to client.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 46 04 26 39 6E FC 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 02 01 68 FF 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 02 01 68 FF 
+--CRC is in correct Format--
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 02 01 7B FE 
+Sent mapped value to client.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+I BOD: �?v��?��~����������ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (31) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=15918h ( 88344) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00025940 vaddr=3fc96700 size=02d28h ( 11560) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00028670 vaddr=40374000 size=079a8h ( 31144) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4c174h (311668) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007c19c vaddr=4037b9a8 size=0ac78h ( 44152) load[0m
+[0;32mI (181) esp_image: segment 5: paddr=00086e1c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     app-template[0m
+[0;32mI (213) app_init: App version:      6d4ace7[0m
+[0;32mI (217) app_init: Compile time:     Apr 25 2025 15:14:48[0m
+[0;32mI (222) app_init: ELF file SHA256:  1b747944c...[0m
+[0;32mI (227) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (239) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (250) heap_init: At 3FC9C648 len 0004D0C8 (308 KiB): RAM[0m
+[0;32mI (255) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (271) spi_flash: detected chip: gd[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (295) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (302) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (342) RS485_APP: Generated ETH MAC: 02:ba:97:01:ca:cd[0m
+[0;32mI (342) esp_eth.netif.netif_glue: 02:ba:97:01:ca:cd[0m
+[0;32mI (342) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (352) RS485_APP: Ethernet initialized[0m
+TCP server listening on port 5000
+Waiting for new client...
+[0;32mI (1352) main_task: Returned from app_main()[0m
+[0;32mI (2352) RS485_APP: Ethernet Link Up[0m
+[0;32mI (2352) RS485_APP: MAC: 02:ba:97:01:ca:cd[0m
+[0;32mI (3872) esp_netif_handlers: eth ip: 192.168.0.166, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3872) RS485_APP: Got IP: 192.168.0.166[0m
+[0;32mI (3872) mdns_mem: mDNS task will be created from internal RAM[0m
+mDNS service started with hostname 'confiors485' on port 5000
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3F 06 0F 37 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 01 01 65 55 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3F 03 16 5B 6E FC 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 02 01 68 FF 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 02 01 68 FF 
+--CRC is in correct Format--
+BTN PROCESSING
+
+---Remote Data---
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 02 01 7B FE 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 44 01 51 50 73 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 0D 01 6D 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 0D 01 6D 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+Matched delete condition: 0x55 && 0x0D
+Deleted key from NVS: 54 0F 57 FF FE 0A BC C3 55 01 01 01 
+Deleted key from NVS: 54 0F 57 FF FE 0A BC C3 55 01 02 01 
+Deleted 2 matching keys and compacted NVM table.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 46 06 02 3F 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+--CRC is in correct Format--
+BTN PROCESSING
+
+---Remote Data---
+No matching key found in NVM.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 44 04 1F 36 6E FC 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 02 01 68 FF 
+Processed Response: 54 0F 57 FF FE 0A BC C3 55 01 02 01 68 FF 
+--CRC is in correct Format--
+BTN PROCESSING
+
+---Remote Data---
+No matching key found in NVM.

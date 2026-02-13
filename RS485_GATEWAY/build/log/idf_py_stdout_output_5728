@@ -1,0 +1,56 @@
+New client connected, socket 55
+Waiting for new client...
+Added client 55 to slot 0 (pre-pairing)
+Raw Response and len 13: 8D B6 25 FD FF 8B 63 AD 01 4B 50 A9 3D 
+-->Received Button/Knob 4 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5A AF 01 04 01 A3 40 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5A -7-AF -8-01 -9-04 -10-01 -11-A3 -12-40 
+
+CRC Calculated: A3 40
+
+--CRC is in correct Format--
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 63 AD 01 4C 60 A9 3D 
+Slot 0 -> Client: 55 | Device ID: SUCCESS: Paired device 84BA... with client 55 in slot 0
+Checking Device ID list [0]: 84 BA 20 FF FE 92 5A AF  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 1
+New client connected, socket 56
+Waiting for new client...
+Added client 56 to slot 1 (pre-pairing)
+Failed to receive initial bytes from client 55
+New client connected, socket 55
+New client 55 connected. Total clients: 1
+Waiting for new client...
+Assigned Client 55 to Device ID Index 2
+Added client 55 to slot 3 (pre-pairing)
+Failed to receive initial bytes from client 55
+Client 55 disconnected
+Clearing client 55 from list position 0
+New client 55 connected. Total clients: 1
+Assigned Client 55 to Device ID Index 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+NVS entries cleared for slot 0
+Failed to receive initial bytes from client 56
+New client 56 connected. Total clients: 0
+Assigned Client 56 to Device ID Index 0
+Client 56 disconnected
+Clearing client 56 from list position 0
+New client connected, socket 55
+Waiting for new client...
+NVS entries cleared for slot 0
+Added client 55 to slot 0 (pre-pairing)
+New client connected, socket 56
+Waiting for new client...
+Added client 56 to slot 4 (pre-pairing)
+Failed to receive initial bytes from client 56
+New client 56 connected. Total clients: 0
+Assigned Client 56 to Device ID Index 5
+Client 56 disconnected
+Clearing client 56 from list position 1
+NVS entries cleared for slot 1

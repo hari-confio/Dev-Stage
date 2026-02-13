@@ -1,0 +1,10 @@
+Raw Response and len 14: 8D B6 25 FD FF 8B 6C B9 07 12 0D 55 1A 93 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 63 BB 02 02 01 01 14 96 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-63 -7-BB -8-02 -9-02 -10-01 -11-01 -12-14 -13-96 
+
+CRC Calculated: 14 96
+
+--CRC is in correct Format--
+
+BTN PROCESSING

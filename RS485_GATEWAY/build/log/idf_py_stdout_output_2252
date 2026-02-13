@@ -1,0 +1,63 @@
+Client 56 disconnected
+Clearing client 56 from list position 1
+NVS entries cleared for slot 1
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Added client 55 to slot 0 (pre-pairing)
+New client connected, socket 56
+Added client 56 to slot 1 (pre-pairing)
+New client connected, socket 57
+Added client 57 to slot 2 (pre-pairing)
+Received 8 bytes from client 56: 84 BA 20 FF FE 92 5A AF Received 8 bytes from client 55: 84 BA 20 FF FE 92 5D 89 
+
+New device 84BA20FFFE925D89 connected
+New client 55 connected. Total clients: 0
+New device 84BA20FFFE925AAF connected
+New client 56 connected. Total clients: 0
+Assigned Client 55 to Device ID Index 3
+Assigned Client 56 to Device ID Index 4
+Raw Response and len 13: 8D B6 25 FD FF 8B 66 87 0E 0D 40 F4 95 
+-->Received Button/Knob 1 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 02 01 01 EE 98 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-02 -9-01 -10-01 -11-EE -12-98 
+
+CRC Calculated: EE 98
+
+--CRC is in correct Format--Checking Device ID list [0]: 00 00 00 00 00 00 00 00  | Client: 55
+Checking Device ID list [1]: 00 00 00 00 00 00 00 00  | Client: 56
+Checking Device ID list [2]: 00 00 00 00 00 00 00 00  | Client: 57
+Checking Device ID list [3]: 84 BA 20 FF FE 92 5D 89  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 5
+Raw Response and len 13: 8D B6 25 FD FF 8B 66 87 02 0D 54 24 95 
+-->Received Button/Knob 1 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 01 01 01 1E 98 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-01 -9-01 -10-01 -11-1E -12-98 
+
+CRC Calculated: 1E 98
+
+--CRC is in correct Format--Checking Device ID list [0]: 00 00 00 00 00 00 00 00  | Client: 55
+Checking Device ID list [1]: 00 00 00 00 00 00 00 00  | Client: 56
+Checking Device ID list [2]: 00 00 00 00 00 00 00 00  | Client: 57
+Checking Device ID list [3]: 84 BA 20 FF FE 92 5D 89  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 5
+Raw Response and len 13: 8D B6 25 FD FF 8B 63 AD 40 0E 50 46 0E 
+-->Received Button/Knob 1 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5A AF 07 01 01 40 11 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5A -7-AF -8-07 -9-01 -10-01 -11-40 -12-11 
+
+CRC Calculated: 40 11
+
+--CRC is in correct Format--Checking Device ID list [0]: 00 00 00 00 00 00 00 00  | Client: 55
+Checking Device ID list [1]: 00 00 00 00 00 00 00 00  | Client: 56
+Checking Device ID list [2]: 00 00 00 00 00 00 00 00  | Client: 57
+Checking Device ID list [3]: 84 BA 20 FF FE 92 5D 89  | Client: 55
+Checking Device ID list [4]: 84 BA 20 FF FE 92 5A AF  | Client: 56
+Device ID matched for client 56
+Sent data to client 56
+[DEBUG] Client count after processing RS485: 5

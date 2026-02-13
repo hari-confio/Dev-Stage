@@ -1,0 +1,505 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+:0xLBPOWERON)���2b (SPI_FAST_FLAS�	==Q)
+SPR��UQ, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c97�Lb��:0xbb8
+load:0x403cc700,len:0x2eb0
+�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+���������������������������������������ESP�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+H���.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (79) boot:  2 phy�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (31) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 22:50:50[0m
+[0;32mI (32) boot: chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (94) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (102) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (109) boot: End of partition table[0m
+[0;32mI (114) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (31) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 22:50:50[0m
+[0;32mI (32) boot: chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (94) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (102) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (109) boot: End of partition table[0m
+[0;32mI (114) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (208) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (214) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m
+[0;32mI (536) esp_image: segment 3: paddr=0017a6a8 vaddr=3fc9e998 size=00730h (  1840) load[0m
+[0;32mI (537) esp_image: segment 4: paddr=0017ade0 vaddr=40374000 size=16020h ( 90144) load[0m
+[0;32mI (570) esp_image: segment 5: paddr=00190e08 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (579) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (580) boot: Disabling RNG early entropy source...[0m
+
+abort() was called at PC 0x403755ca on core 0
+
+
+Backtrace: 0x40375dae:0x3fceb260 0x4037ec71:0x3fceb280 0x40387316:0x3fceb2a0 0x403755ca:0x3fceb310 0x403cd7cc:0x3fceb340 0x403cdc35:0x3fceb380 0x403c99bd:0x3fceb4b0 0x40045c01:0x3fceb570 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: e91da0174291ff67
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a4c
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (33) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (34) boot: compile time 22:50:50[0m
+[0;32mI (34) boot: chip revision: 0[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (74) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (81) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (96) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (104) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (111) boot: End of partition table[0m
+[0;32mI (116) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m
+[0;32mI (538) esp_image: segment 3: paddr=0017a6a8 vaddr=3fc9e998 size=00730h (  1840) load[0m
+[0;32mI (539) esp_image: segment 4: paddr=0017ade0 vaddr=40374000 size=16020h ( 90144) load[0m
+[0;32mI (572) esp_image: segment 5: paddr=00190e08 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (581) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (582) boot: Disabling RNG early entropy source...[0m
+
+abort() was called at PC 0x403755ca on core 0
+
+
+Backtrace: 0x40375dae:0x3fceb260 0x4037ec71:0x3fceb280 0x40387316:0x3fceb2a0 0x403755ca:0x3fceb310 0x403cd7cc:0x3fceb340 0x403cdc35:0x3fceb380 0x403c99bd:0x3fceb4b0 0x40045c01:0x3fceb570 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: e91da0174291ff67
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a4c
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (33) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (34) boot: compile time 22:50:50[0m
+[0;32mI (34) boot: chip revision: 0[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (74) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (81) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (96) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (104) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (111) boot: End of partition table[0m
+[0;32mI (116) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (31) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 22:50:50[0m
+[0;32mI (32) boot: chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 000020������������������ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x23 (DOWNLOAD(USB/UART0))
+waiting for download
+E�$�-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (31) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 22:50:50[0m
+[0;32mI (32) boot: chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (94) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (102) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (109) boot: End of partition table[0m
+[0;32mI (114) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (208) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (214) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m
+[0;32mI (536) esp_image: segment 3: paddr=0017a6a8 vaddr=3fc9e998 size=00730h (  1840) load[0m
+[0;32mI (537) esp_image: segment 4: paddr=0017ade0 vaddr=40374000 size=16020h ( 90144) load[0m
+[0;32mI (570) esp_image: segment 5: paddr=00190e08 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (579) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (580) boot: Disabling RNG early entropy source...[0m
+
+abort() was called at PC 0x403755ca on core 0
+
+
+Backtrace: 0x40375dae:0x3fceb260 0x4037ec71:0x3fceb280 0x40387316:0x3fceb2a0 0x403755ca:0x3fceb310 0x403cd7cc:0x3fceb340 0x403cdc35:0x3fceb380 0x403c99bd:0x3fceb4b0 0x40045c01:0x3fceb570 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: e91da0174291ff67
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a4c
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (33) �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (31) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 22:50:50[0m
+[0;32mI (32) boot: chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadat�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (31) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 22:50:50[0m
+[0;32mI (32) boot: chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (94) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (102) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (109) boot: End of partition table[0m
+[0;32mI (114) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (31) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time 22:50:50[0m
+[0;32mI (32) boot: chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (94) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (102) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (109) boot: End of partition table[0m
+[0;32mI (114) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (208) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (214) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m
+[0;32mI (536) esp_image: segment 3: paddr=0017a6a8 vaddr=3fc9e998 size=00730h (  1840) load[0m
+[0;32mI (537) esp_image: segment 4: paddr=0017ade0 vaddr=40374000 size=16020h ( 90144) load[0m
+[0;32mI (570) esp_image: segment 5: paddr=00190e08 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (579) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (580) boot: Disabling RNG early entropy source...[0m
+
+abort() was called at PC 0x403755ca on core 0
+
+
+Backtrace: 0x40375dae:0x3fceb260 0x4037ec71:0x3fceb280 0x40387316:0x3fceb2a0 0x403755ca:0x3fceb310 0x403cd7cc:0x3fceb340 0x403cdc35:0x3fceb380 0x403c99bd:0x3fceb4b0 0x40045c01:0x3fceb570 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: e91da0174291ff67
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a4c
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (33) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (34) boot: compile time 22:50:50[0m
+[0;32mI (34) boot: chip revision: 0[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (74) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (81) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (96) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (104) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (111) boot: End of partition table[0m
+[0;32mI (116) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m
+[0;32mI (538) esp_image: segment 3: paddr=0017a6a8 vaddr=3fc9e998 size=00730h (  1840) load[0m
+[0;32mI (539) esp_image: segment 4: paddr=0017ade0 vaddr=40374000 size=16020h ( 90144) load[0m
+[0;32mI (572) esp_image: segment 5: paddr=00190e08 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (581) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (582) boot: Disabling RNG early entropy source...[0m
+
+abort() was called at PC 0x403755ca on core 0
+
+
+Backtrace: 0x40375dae:0x3fceb260 0x4037ec71:0x3fceb280 0x40387316:0x3fceb2a0 0x403755ca:0x3fceb310 0x403cd7cc:0x3fceb340 0x403cdc35:0x3fceb380 0x403c99bd:0x3fceb4b0 0x40045c01:0x3fceb570 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: e91da0174291ff67
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a4c
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (33) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (34) boot: compile time 22:50:50[0m
+[0;32mI (34) boot: chip revision: 0[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (74) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (81) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (96) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (104) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (111) boot: End of partition table[0m
+[0;32mI (116) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m
+[0;32mI (538) esp_image: segment 3: paddr=0017a6a8 vaddr=3fc9e998 size=00730h (  1840) load[0m
+[0;32mI (539) esp_image: segment 4: paddr=0017ade0 vaddr=40374000 size=16020h ( 90144) load[0m
+[0;32mI (572) esp_image: segment 5: paddr=00190e08 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (581) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (582) boot: Disabling RNG early entropy source...[0m
+
+abort() was called at PC 0x403755ca on core 0
+
+
+Backtrace: 0x40375dae:0x3fceb260 0x4037ec71:0x3fceb280 0x40387316:0x3fceb2a0 0x403755ca:0x3fceb310 0x403cd7cc:0x3fceb340 0x403cdc35:0x3fceb380 0x403c99bd:0x3fceb4b0 0x40045c01:0x3fceb570 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: e91da0174291ff67
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a4c
+SPIWP:0xee
+mode:DOUT, clock div:2
+load:0x3fce3808,len:0x1664
+load:0x403c9700,len:0xbb8
+load:0x403cc700,len:0x2eb0
+entry 0x403c9954
+[0;32mI (33) boot: ESP-IDF v4.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (34) boot: compile time 22:50:50[0m
+[0;32mI (34) boot: chip revision: 0[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 40MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DOUT[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 32MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (74) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (81) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  3 ota_0            OTA app          00 10 00010000 00600000[0m
+[0;32mI (96) boot:  4 ota_1            OTA app          00 11 00610000 00600000[0m
+[0;32mI (104) boot:  5 storage          Unknown data     01 82 00c10000 00c00000[0m
+[0;32mI (111) boot: End of partition table[0m
+[0;32mI (116) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=4b678h (308856) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005b6a0 vaddr=3fc9a020 size=04978h ( 18808) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=11a680h (1156736) map[0m

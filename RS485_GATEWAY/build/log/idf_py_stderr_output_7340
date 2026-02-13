@@ -1,0 +1,1015 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4037595d: rtc_brownout_isr_handler at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/brownout.c:72
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c2: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+0x4200e3c3: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:844 (discriminator 1)
+0x4204959f: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:186
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is f6f891433aa003bb945e714e1bb1e7428c62b978df97a412cda13ef854a5e47b[0m
+[0;33m--- 0x4200e25f: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:816
+[0m
+[0m

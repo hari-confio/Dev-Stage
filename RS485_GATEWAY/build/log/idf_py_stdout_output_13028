@@ -1,0 +1,15 @@
+[0;32mI (54651) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (54651) RS485_DATA: Decrypted Response: [0m
+[0;32mI (54651) RS485_DATA: Processed Response:[0m
+[0;32mI (54651) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (54651) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (71171) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (71171) RS485_DATA: Decrypted Response: [0m
+[0;32mI (71171) RS485_DATA: Processed Response:[0m
+[0;32mI (71171) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (71171) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (77431) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (77431) RS485_C4_DATA: Received 4 bytes from client: [0m

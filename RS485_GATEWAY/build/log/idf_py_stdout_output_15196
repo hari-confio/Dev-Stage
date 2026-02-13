@@ -1,0 +1,6 @@
+esptool.py v4.8.1
+Serial port COM11
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32-S3: Invalid head of packet (0x61): Possible serial noise or corruption.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html

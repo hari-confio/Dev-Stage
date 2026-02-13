@@ -1,0 +1,37 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200e2a3: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:819 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e2a3: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:819 (discriminator 1)
+0x4200e407: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:849
+0x420495e3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e2a3: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:819 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e2a3: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:819 (discriminator 1)
+0x4200e407: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:849
+0x420495e3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

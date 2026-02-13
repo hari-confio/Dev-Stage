@@ -1,0 +1,33 @@
+[0;32mI (2539) RS485_APP: Ethernet Link Up[0m
+[0;32mI (2539) RS485_APP: MAC: 02:85:18:7a:94:ed[0m
+mDNS already started, skipping service add.
+[0;32mI (4059) esp_netif_handlers: eth ip: 192.168.0.110, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4059) RS485_APP: Got IP: 192.168.0.110[0m
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 17 42 0B 54 15 71 
+-->Received Btn/Knob 7 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 07 01 01 0F 74 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-07 -10-01 -11-01 -12-0F -13-74 
+
+CRC Calculated: 0F 74
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Received 14 bytes from client: 84 BA 20 FF FE 92 60 DD 08 01 01 01 EF 75 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 18 0A 0D 62 F5 72 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 69 DB 18 0A 0D 62 F5 72 
+Sent encrypted data over RS485.
+Received 14 bytes from client: 84 BA 20 FF FE 92 60 DD 08 02 01 01 1F 75 
+--CRC is in correct Format--
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 19 0C 0E 3B 25 72 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 69 DB 19 0C 0E 3B 25 72 
+Sent encrypted data over RS485.

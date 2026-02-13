@@ -1,0 +1,198 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x20 (DOWNLOAD(USB/UART0))
+waiting for download
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 29 17 0E 4F B1 B5 
+-->Received Btn/Knob 3 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 66 03 01 01 AB B8 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-66 -9-03 -10-01 -11-01 -12-AB -13-B8 
+
+CRC Calculated: AB B8
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 45 23 08 49 7E 0B 
+-->Received Btn/Knob 4 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 04 01 01 78 0E 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-04 -10-01 -11-01 -12-78 -13-0E 
+
+CRC Calculated: 78 0E
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+
+---Remote Data---
+No matching key found in NVM.
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 2B 02 44 50 0F 25 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 66 01 04 01 09 28 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-66 -9-01 -10-04 -11-01 -12-09 -13-28 
+
+CRC Calculated: 09 28
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6B FD 2B 09 40 43 0F 25 
+Sending data to RS485 device: 8D B6 25 FD FF 8B 6B FD 2B 09 40 43 0F 25 
+Sent data to client 55
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 44 03 08 4D 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-01 -11-01 -12-68 -13-0F 
+
+CRC Calculated: 68 0F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 44 06 2D 63 6F 6C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 03 01 69 6F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-03 -11-01 -12-69 -13-6F 
+
+CRC Calculated: 69 6F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+No matching key found in NVM.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 01 01 01 84 BA 20 FF FE 92 62 FF 66 01 01 01 69 8F 
+Stored key-value in NVM at index 0
+Received 26 bytes from client: 54 0F 57 FF FE 0A BC C3 55 02 01 01 84 BA 20 FF FE 92 62 FF 66 02 01 01 0B 20 
+Stored key-value in NVM at index 1
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 42 01 01 59 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-01 -11-01 -12-68 -13-0F 
+
+CRC Calculated: 68 0F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+
+---Remote Data---
+Mapped value from NVM: 84 BA 54 0F 57 FF FE 0A BC C3 55 01 01 01 
+Sent mapped value to client.
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 

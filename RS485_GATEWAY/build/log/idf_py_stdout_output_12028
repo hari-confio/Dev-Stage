@@ -1,0 +1,96 @@
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 31 35 14 5F C1 B6 
+-->Received Btn/Knob 6 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 66 06 01 01 BB B9 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-66 -9-06 -10-01 -11-01 -12-BB -13-B9 
+
+CRC Calculated: BB B9
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 41 08 0E 42 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-01 -11-01 -12-68 -13-0F 
+
+CRC Calculated: 68 0F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+
+---Remote Data---
+Loaded key DBF64EE3 from NVS
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 02 01 43 4C 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 41 14 14 58 9E 0C 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 02 01 01 98 0F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-02 -10-01 -11-01 -12-98 -13-0F 
+
+CRC Calculated: 98 0F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+
+---Remote Data---
+Key not found in NVS: D9B0F0BA (ESP_ERR_NVS_NOT_FOUND)
+No matching key found in NVM.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 45 09 14 3E 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-01 -11-01 -12-68 -13-0F 
+
+CRC Calculated: 68 0F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+
+---Remote Data---
+Loaded key DBF64EE3 from NVS
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 02 01 43 4C 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 43 04 25 5E 6E FC 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 02 01 68 FF 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-02 -11-01 -12-68 -13-FF 
+
+CRC Calculated: 68 FF
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+
+---Remote Data---
+Loaded key F0DB1D20 from NVS
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 03 01 E9 43 
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 43 09 51 39 73 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 0D 01 6D 0F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-0D -11-01 -12-6D -13-0F 
+
+CRC Calculated: 6D 0F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+
+---Remote Data---
+Key not found in NVS: 774301EF (ESP_ERR_NVS_NOT_FOUND)
+No matching key found in NVM.
+Failed to delete key 774301EF: ESP_ERR_NVS_NOT_FOUND
+Deleted key from NVM as per command
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 3E 04 01 43 6E 0C 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 55 01 01 01 68 0F 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-55 -9-01 -10-01 -11-01 -12-68 -13-0F 
+
+CRC Calculated: 68 0F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+
+---Remote Data---
+Loaded key DBF64EE3 from NVS
+Mapped value from NVM: 84 BA 20 FF FE 92 62 FF 66 01 02 01 43 4C 

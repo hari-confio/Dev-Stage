@@ -1,0 +1,109 @@
+New client connected, socket 55
+Waiting for new client...
+Added client 55 to slot 0 (pre-pairing)
+Raw Response and len 13: 8D B6 25 FD FF 8B 63 AD 08 3E 49 A9 3D 
+-->Received Button/Knob 4 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5A AF 01 04 01 A3 40 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5A -7-AF -8-01 -9-04 -10-01 -11-A3 -12-40 
+
+CRC Calculated: A3 40
+
+--CRC is in correct Format--
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 63 AD 03 4E 5B A9 3D 
+Slot 0 -> Client: 55 | Device ID: SUCCESS: Paired device 84BA... with client 55 in slot 0
+Checking Device ID list [0]: 84 BA 20 FF FE 92 5A AF  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 3
+New client connected, socket 56
+Waiting for new client...
+Added client 56 to slot 2 (pre-pairing)
+Raw Response and len 13: 8D B6 25 FD FF 8B 66 87 03 41 33 23 C5 
+-->Received Button/Knob 4 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 01 04 01 1D C8 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-01 -9-04 -10-01 -11-1D -12-C8 
+
+CRC Calculated: 1D C8
+
+--CRC is in correct Format--
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 02 4F 3A 23 C5 
+Slot 0 -> Client: 55 | Device ID: Slot 1 -> Client: 55 | Device ID: Slot 2 -> Client: 56 | Device ID: SUCCESS: Paired device 84BA... with client 56 in slot 2
+Checking Device ID list [0]: 84 BA 20 FF FE 92 5A AF  | Client: 55
+Checking Device ID list [1]: 84 BA 20 FF FE 92 5A AF  | Client: 55
+Checking Device ID list [2]: 84 BA 20 FF FE 92 5D 89  | Client: 56
+Device ID matched for client 56
+Sent data to client 56
+[DEBUG] Client count after processing RS485: 3
+Failed to receive initial bytes from client 55
+New client 55 connected. Total clients: 3
+Assigned Client 55 to Device ID Index 3
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+Failed to receive initial bytes from client 56
+New client 56 connected. Total clients: 3
+Assigned Client 56 to Device ID Index 0
+Client 56 disconnected
+Clearing client 56 from list position 0
+NVS entries cleared for slot 0
+New client connected, socket 55
+Waiting for new client...
+Added client 55 to slot 0 (pre-pairing)
+Received 8 bytes from client 55: 84 BA 20 FF FE 92 5A AF 
+Device 84BA20FFFE925AAF reconnected - updating slot 1 (old client: 55, new client: 55)
+Sent device ID back to client 55
+Raw Response and len 13: 8D B6 25 FD FF 8B 63 AD 07 0B 4F A6 0D 
+-->Received Button/Knob 1 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5A AF 01 01 01 A0 10 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5A -7-AF -8-01 -9-01 -10-01 -11-A0 -12-10 
+
+CRC Calculated: A0 10
+
+--CRC is in correct Format--Checking Device ID list [0]: 00 00 00 00 00 00 00 00  | Client: 55
+Checking Device ID list [1]: 84 BA 20 FF FE 92 5A AF  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 3
+New client connected, socket 56
+Waiting for new client...
+Added client 56 to slot 4 (pre-pairing)
+Raw Response and len 13: 8D B6 25 FD FF 8B 66 87 06 42 3F 23 C5 
+-->Received Button/Knob 4 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 01 04 01 1D C8 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-01 -9-04 -10-01 -11-1D -12-C8 
+
+CRC Calculated: 1D C8
+
+--CRC is in correct Format--
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 0A 4A 4F 23 C5 
+Slot 0 -> Client: 55 | Device ID: SUCCESS: Paired device 84BA... with client 55 in slot 0
+Checking Device ID list [0]: 84 BA 20 FF FE 92 5D 89  | Client: 55
+Device ID matched for client 55
+Sent data to client 55
+[DEBUG] Client count after processing RS485: 3
+
+CRC Calculated: 1B 98
+--C4 CRC is in correct Format--
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 03 5B 58 21 95 
+Sent encrypted 13 bytes over RS485: 
+
+
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0
+Failed to receive initial bytes from client 56
+New client 56 connected. Total clients: 3
+Assigned Client 56 to Device ID Index 0
+Client 56 disconnected
+Clearing client 56 from list position 0
+NVS entries cleared for slot 0

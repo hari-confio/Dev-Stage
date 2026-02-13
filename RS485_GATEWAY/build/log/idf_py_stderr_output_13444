@@ -1,0 +1,1397 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400570f0: memset in ROM
+0x42017805: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:155
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x403823fc: spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:86
+0x40379c14: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:785
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4038238e: spi_ll_set_dummy at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/spi_ll.h:1042
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:56
+0x40379c14: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:785
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x4037d3cc: xQueueSemaphoreTake at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x4201782d: w5500_spi_lock at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:119
+ (inlined by) w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:162
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400570c5: __memset_aux in ROM
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x40379013: vPortExitCriticalSafe at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:596
+ (inlined by) acquire_end_core at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:457
+0x403790d1: spi_bus_lock_acquire_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:757
+0x4037a030: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1441
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037d38c: xQueueSemaphoreTake at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:1727
+0x40379071: dev_wait_prepare at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:570
+ (inlined by) spi_bus_lock_acquire_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:730
+0x40379f31: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1378
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037d38c: xQueueSemaphoreTake at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:1727
+0x40379071: dev_wait_prepare at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:570
+ (inlined by) spi_bus_lock_acquire_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:730
+0x40379f31: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1378
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40379bf6: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:780
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x4037d3cc: xQueueSemaphoreTake at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x4201782d: w5500_spi_lock at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:119
+ (inlined by) w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:162
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x4037a4da: vPortExitCriticalSafe at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:596
+ (inlined by) gdma_reset at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/dma/gdma.c:589
+0x40379b47: s_spi_dma_prepare_data at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:693
+0x40379b9d: s_spi_prepare_data at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:720
+0x40379c1b: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:786
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x40378f0e: vPortExitCriticalSafe at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:596
+ (inlined by) acquire_core at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:373
+0x40379076: spi_bus_lock_acquire_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:731
+0x40379f31: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1378
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x40378f0e: vPortExitCriticalSafe at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:596
+ (inlined by) acquire_core at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:373
+0x40379076: spi_bus_lock_acquire_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:731
+0x40379f31: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1378
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037f1d2: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) xTaskGetSchedulerState at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/tasks.c:5028
+0x4037cf0c: xQueueGenericSend at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:941
+0x42017772: w5500_spi_unlock at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:124
+0x42017866: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:167
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x4037f91d: ulTaskGenericNotifyTake at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/tasks.c:5793
+0x42017171: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:758
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40381e23: spi_ll_master_set_line_mode at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/spi_ll.h:661
+0x4038236a: spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:46
+0x40379c14: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:785
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a497: gdma_reset at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/dma/gdma.c:582
+0x40379b47: s_spi_dma_prepare_data at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:693
+0x40379b9d: s_spi_prepare_data at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:720
+0x40379c1b: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:786
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40056f5f: memcpy in ROM
+0x40382525: spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:114
+0x40379c14: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:785
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x4037cfab: xQueueGenericSend at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x42017772: w5500_spi_unlock at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:124
+0x42017866: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:167
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40379bff: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:783
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a215: mask_get_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:687
+ (inlined by) dev_lock_get_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:692
+ (inlined by) spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:704
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x4037d3cc: xQueueSemaphoreTake at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x4201782d: w5500_spi_lock at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:119
+ (inlined by) w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:162
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40382346: spi_ll_get_running_cmd at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/spi_ll.h:308
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:44
+0x40379c14: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:785
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037990b: check_trans_valid at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1086
+0x40379ecb: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1357
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40379517: check_trans_valid at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1038
+0x40379ecb: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1357
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x403823dc: spi_ll_set_mosi_bitlen at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/spi_ll.h:908
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:84
+0x40379c14: spi_new_trans at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:785
+0x40379f87: spi_device_polling_start at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1395
+0x4037a052: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1450
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037d92a: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x4037d3cc: xQueueSemaphoreTake at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x4201782d: w5500_spi_lock at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:119
+ (inlined by) w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:162
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201719a: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:766
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x420083ea: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/uart_ll.h:410
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_uart/src/uart_vfs.c:170
+0x42009297: uart_write at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_uart/src/uart_vfs.c:223
+0x4200cb06: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4/components/vfs/vfs.c:945 (discriminator 4)
+0x42039356: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11 (discriminator 1)
+0x4200c160: console_write at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_vfs_console/vfs_console.c:71
+0x4200cb06: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4/components/vfs/vfs.c:945 (discriminator 4)
+0x42038d02: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x420382c5: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x42038316: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x42038915: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42040003: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4203f442: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x42038d79: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4204a142: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4/components/log/src/os/log_write.c:34
+0x4038407d: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4/components/log/src/os/log_write.c:44
+0x4201720b: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:783 (discriminator 1)
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x40382733: spi_ll_usr_is_done at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/esp32s3/include/hal/spi_ll.h:286
+ (inlined by) spi_hal_usr_is_done at C:/Espressif/frameworks/esp-idf-v5.4/components/hal/spi_hal_iram.c:145
+0x40379ffd: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1409
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201670f: w5500_read_buffer at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:277
+0x4201799b: emac_w5500_receive at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:681
+0x420171db: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:779
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4201b522: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:434
+0x4201b938: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/task_wdt/task_wdt.c:507
+0x40377629: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_vectors.S:1240
+0x4037a20a: spi_bus_lock_get_dev_id at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_hw_support/spi_bus_lock.c:703
+0x40379996: get_acquiring_dev at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:653
+0x40379fd4: spi_device_polling_end at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1406
+0x4037a05d: spi_device_polling_transmit at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_driver_spi/src/gpspi/spi_master.c:1455
+0x4201783b: w5500_spi_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:163
+0x42045fd3: w5500_read at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:183
+0x4201670f: w5500_read_buffer at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:277
+0x4201799b: emac_w5500_receive at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:681
+0x420171db: emac_w5500_task at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_eth/src/spi/w5500/esp_eth_mac_w5500.c:779
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e231: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:850 (discriminator 1)
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+[0m
+[0;33m--- 0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e231: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:850 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e231: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:850 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+[0m
+[0;33m--- 0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e231: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:850 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e231: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:850 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+[0m
+[0;33m--- 0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375d09: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037caf9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40384161: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037caef: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200e16b: ethernet_config at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:833 (discriminator 1)
+0x4200e2cf: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:874
+0x420494ab: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037d591: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c48: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0m

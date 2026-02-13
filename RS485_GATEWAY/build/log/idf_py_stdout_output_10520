@@ -1,0 +1,577 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (31) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1d9c4h (121284) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002d9ec vaddr=3fc9aa00 size=0262ch (  9772) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=9b8f4h (637172) map[0m
+[0;32mI (227) esp_image: segment 3: paddr=000cb91c vaddr=3fc9d02c size=0236ch (  9068) load[0m
+[0;32mI (229) esp_image: segment 4: paddr=000cdc90 vaddr=40374000 size=1692ch ( 92460) load[0m
+[0;32mI (251) esp_image: segment 5: paddr=000e45c4 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (260) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (260) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Multicore app[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (279) app_init: Project name:     app-template[0m
+[0;32mI (284) app_init: App version:      6d4ace7[0m
+[0;32mI (288) app_init: Compile time:     Apr 25 2025 15:14:48[0m
+[0;32mI (293) app_init: ELF file SHA256:  758740205...[0m
+[0;32mI (297) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (302) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (306) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (310) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (314) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (320) heap_init: At 3FCA3A60 len 00045CB0 (279 KiB): RAM[0m
+[0;32mI (325) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (335) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (342) spi_flash: detected chip: gd[0m
+[0;32mI (344) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (359) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) main_task: Started on CPU0[0m
+[0;32mI (392) main_task: Calling app_main()[0m
+[0;32mI (402) RS485_APP: No saved credentials. Starting AP...[0m
+[0;32mI (402) RS485_APP: Starting SoftAP...[0m
+[0;32mI (402) pp: pp rom version: e7ae62f[0m
+[0;32mI (402) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (422) wifi:wifi driver task: 3fcad9e0, prio:23, stack:6656, core=0[0m
+[0;32mI (422) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (422) wifi:wifi certification version: v7.0[0m
+[0;32mI (422) wifi:config NVS flash: enabled[0m
+[0;32mI (422) wifi:config nano formatting: disabled[0m
+[0;32mI (432) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (432) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (442) wifi:Init management short buffer num: 32[0m
+[0;32mI (442) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (442) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (452) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (452) wifi:Init static rx buffer num: 10[0m
+[0;32mI (462) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (462) wifi_init: rx ba win: 6[0m
+[0;32mI (462) wifi_init: accept mbox: 6[0m
+[0;32mI (472) wifi_init: tcpip mbox: 32[0m
+[0;32mI (472) wifi_init: udp mbox: 6[0m
+[0;32mI (472) wifi_init: tcp mbox: 6[0m
+[0;32mI (472) wifi_init: tcp tx win: 5760[0m
+[0;32mI (482) wifi_init: tcp rx win: 5760[0m
+[0;32mI (482) wifi_init: tcp mss: 1440[0m
+[0;32mI (482) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (492) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (952) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (952) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (982) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (992) wifi:mode : softAP (cc:ba:97:01:ca:b1)[0m
+[0;32mI (992) wifi:Total power save buffer number: 16[0m
+[0;32mI (992) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (992) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (992) RS485_APP: SoftAP started. SSID: CONFIO-RS485, Password: Confio@2025[0m
+[0;32mI (1002) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+TCP server listening on port 5000
+Waiting for new client...
+[0;32mI (2012) main_task: Returned from app_main()[0m
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 12 05 49 54 1D 25 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 04 01 17 28 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-04 -11-01 -12-17 -13-28 
+
+CRC Calculated: 17 28
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6B FD 0E 03 47 5E 1D 25 
+sent data to rs485 device
+[0;32mI (24902) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (24902) wifi:station: 1e:fb:4f:89:2f:6d join, AID=1, bgn, 40U[0m
+[0;32mI (25442) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (26232) wifi:<ba-add>idx:2 (ifx:1, 1e:fb:4f:89:2f:6d), tid:0, ssn:16, winSize:64[0m
+[0;32mI (52032) TAG: Received SSID: CONFIO, Password: Window@2022[0m
+[0;32mI (54042) wifi:station: 1e:fb:4f:89:2f:6d leave, AID = 1, reason = 2, bss_flags is 756851, bss:0x3fca6700[0m
+[0;32mI (54042) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (54042) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (54102) wifi:flush txq[0m
+[0;32mI (54102) wifi:stop sw txq[0m
+[0;32mI (54102) wifi:lmac stop hw txq[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c54
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.2[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (83) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1d9c4h (121284) map[0m
+[0;32mI (115) esp_image: segment 1: paddr=0002d9ec vaddr=3fc9aa00 size=0262ch (  9772) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=9b8f4h (637172) map[0m
+[0;32mI (231) esp_image: segment 3: paddr=000cb91c vaddr=3fc9d02c size=0236ch (  9068) load[0m
+[0;32mI (234) esp_image: segment 4: paddr=000cdc90 vaddr=40374000 size=1692ch ( 92460) load[0m
+[0;32mI (255) esp_image: segment 5: paddr=000e45c4 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (264) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) cpu_start: Multicore app[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (284) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (284) app_init: Application information:[0m
+[0;32mI (284) app_init: Project name:     app-template[0m
+[0;32mI (288) app_init: App version:      6d4ace7[0m
+[0;32mI (292) app_init: Compile time:     Apr 25 2025 15:14:48[0m
+[0;32mI (297) app_init: ELF file SHA256:  758740205...[0m
+[0;32mI (301) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (306) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (310) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (314) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (318) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (324) heap_init: At 3FCA3A60 len 00045CB0 (279 KiB): RAM[0m
+[0;32mI (329) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (334) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (340) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (346) spi_flash: detected chip: gd[0m
+[0;32mI (348) spi_flash: flash io: dio[0m
+[0;33mW (351) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (364) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (370) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (417) RS485_APP: Trying saved SSID: CONFIO[0m
+[0;32mI (417) RS485_APP: Connecting to SSID: CONFIO with password: Window@2022[0m
+[0;32mI (417) pp: pp rom version: e7ae62f[0m
+[0;32mI (417) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (437) wifi:wifi driver task: 3fcada74, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (447) wifi:config nano formatting: disabled[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (487) wifi_init: udp mbox: 6[0m
+[0;32mI (487) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (497) wifi_init: tcp mss: 1440[0m
+[0;32mI (507) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (517) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (537) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (567) wifi:mode : sta (cc:ba:97:01:ca:b0)[0m
+[0;32mI (567) wifi:enable tsf[0m
+[0;32mI (577) mdns_mem: mDNS task will be created from internal RAM[0m
+mdns hostname set to: [confiors485]
+TCP server listening on port 5000
+Waiting for new client...
+[0;32mI (1577) main_task: Returned from app_main()[0m
+[0;32mI (2117) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2117) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2157) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2167) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2387) wifi:<ba-add>idx:0 (ifx:0, 28:87:ba:d2:c4:54), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2387) wifi:connected with CONFIO, aid = 5, channel 10, BW20, bssid = 28:87:ba:d2:c4:54[0m
+[0;32mI (2387) wifi:security: WPA2-PSK, phy: bgn, rssi: -33[0m
+[0;32mI (2407) wifi:pm start, type: 1[0m
+
+[0;32mI (2407) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2407) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2447) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3957) esp_netif_handlers: sta ip: 192.168.0.113, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (5727) wifi:<ba-add>idx:1 (ifx:0, 28:87:ba:d2:c4:54), tid:6, ssn:0, winSize:64[0m
+I��ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (31) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1d9c4h (121284) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0002d9ec vaddr=3fc9aa00 size=0262ch (  9772) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=9b8f4h (637172) map[0m
+[0;32mI (227) esp_image: segment 3: paddr=000cb91c vaddr=3fc9d02c size=0236ch (  9068) load[0m
+[0;32mI (229) esp_image: segment 4: paddr=000cdc90 vaddr=40374000 size=1692ch ( 92460) load[0m
+[0;32mI (251) esp_image: segment 5: paddr=000e45c4 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (260) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (260) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Multicore app[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (279) app_init: Project name:     app-template[0m
+[0;32mI (284) app_init: App version:      6d4ace7[0m
+[0;32mI (288) app_init: Compile time:     Apr 25 2025 15:14:48[0m
+[0;32mI (293) app_init: ELF file SHA256:  758740205...[0m
+[0;32mI (297) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (302) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (306) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (310) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (314) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (320) heap_init: At 3FCA3A60 len 00045CB0 (279 KiB): RAM[0m
+[0;32mI (325) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (335) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (342) spi_flash: detected chip: gd[0m
+[0;32mI (344) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (359) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) main_task: Started on CPU0[0m
+[0;32mI (392) main_task: Calling app_main()[0m
+[0;32mI (422) RS485_APP: Trying saved SSID: CONFIO[0m
+[0;32mI (422) RS485_APP: Connecting to SSID: CONFIO with password: Window@2022[0m
+[0;32mI (422) pp: pp rom version: e7ae62f[0m
+[0;32mI (422) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (442) wifi:wifi driver task: 3fcadaf8, prio:23, stack:6656, core=0[0m
+[0;32mI (452) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (452) wifi:wifi certification version: v7.0[0m
+[0;32mI (452) wifi:config NVS flash: enabled[0m
+[0;32mI (452) wifi:config nano formatting: disabled[0m
+[0;32mI (452) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (462) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (462) wifi:Init management short buffer num: 32[0m
+[0;32mI (472) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (472) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (482) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (482) wifi:Init static rx buffer num: 10[0m
+[0;32mI (482) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (492) wifi_init: rx ba win: 6[0m
+[0;32mI (492) wifi_init: accept mbox: 6[0m
+[0;32mI (492) wifi_init: tcpip mbox: 32[0m
+[0;32mI (502) wifi_init: udp mbox: 6[0m
+[0;32mI (502) wifi_init: tcp mbox: 6[0m
+[0;32mI (502) wifi_init: tcp tx win: 5760[0m
+[0;32mI (502) wifi_init: tcp rx win: 5760[0m
+[0;32mI (512) wifi_init: tcp mss: 1440[0m
+[0;32mI (512) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (512) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (522) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (532) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (572) wifi:mode : sta (cc:ba:97:01:ca:b0)[0m
+[0;32mI (572) wifi:enable tsf[0m
+[0;32mI (572) mdns_mem: mDNS task will be created from internal RAM[0m
+mdns hostname set to: [confiors485]
+[0;32mI (582) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (582) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (592) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (592) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (822) wifi:<ba-add>idx:0 (ifx:0, 28:87:ba:d2:c4:54), tid:0, ssn:2, winSize:64[0m
+[0;32mI (832) wifi:connected with CONFIO, aid = 5, channel 10, BW20, bssid = 28:87:ba:d2:c4:54[0m
+[0;32mI (832) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (842) wifi:pm start, type: 1[0m
+
+[0;32mI (842) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (842) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (862) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+TCP server listening on port 5000
+Waiting for new client...
+[0;32mI (1572) main_task: Returned from app_main()[0m
+[0;32mI (2392) esp_netif_handlers: sta ip: 192.168.0.113, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2512) wifi:<ba-add>idx:1 (ifx:0, 28:87:ba:d2:c4:54), tid:6, ssn:1, winSize:64[0m
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 13 07 50 57 1D 25 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 04 01 17 28 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-04 -11-01 -12-17 -13-28 
+
+CRC Calculated: 17 28
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6B FD 0B 01 45 35 1D 25 
+sent data to rs485 device
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0B 07 06 3E 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 13 04 01 3B 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+[0;32mI (2412) esp_netif_handlers: sta ip: 192.168.0.113, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (7882) wifi:<ba-add>idx:1 (ifx:0, 28:87:ba:d2:c4:54), tid:6, ssn:0, winSize:64[0m
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 10 07 0B 39 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0C 09 3D 59 1D 25 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 04 01 17 28 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-04 -11-01 -12-17 -13-28 
+
+CRC Calculated: 17 28
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 6B FD 13 04 40 43 1D 25 
+sent data to rs485 device
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0E 13 14 3F EA 75 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 02 01 01 E4 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-02 -10-01 -11-01 -12-E4 -13-78 
+
+CRC Calculated: E4 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0B 0B 0C 3B EA 75 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 02 01 01 E4 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-02 -10-01 -11-01 -12-E4 -13-78 
+
+CRC Calculated: E4 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+[0;32mI (2422) esp_netif_handlers: sta ip: 192.168.0.113, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (6552) wifi:<ba-add>idx:1 (ifx:0, 28:87:ba:d2:c4:54), tid:6, ssn:0, winSize:64[0m
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 14 06 01 3D 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0D 08 05 5F 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 13 01 05 45 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 13 18 08 44 BB B5 
+-->Received Btn/Knob 3 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 03 01 01 B5 B8 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-03 -10-01 -11-01 -12-B5 -13-B8 
+
+CRC Calculated: B5 B8
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0D 26 0F 45 0A 76 
+-->Received Btn/Knob 4 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 04 01 01 04 79 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-04 -10-01 -11-01 -12-04 -13-79 
+
+CRC Calculated: 04 79
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0D 09 14 4A 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0F 04 08 58 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 14 0D 04 4B EA 75 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 02 01 01 E4 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-02 -10-01 -11-01 -12-E4 -13-78 
+
+CRC Calculated: E4 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 0C 03 0A 4F 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 10 03 09 5B 1A 75 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 01 01 01 14 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-01 -10-01 -11-01 -12-14 -13-78 
+
+CRC Calculated: 14 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 12 0C 05 61 EA 75 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 02 01 01 E4 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-02 -10-01 -11-01 -12-E4 -13-78 
+
+CRC Calculated: E4 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 12 13 0B 61 EA 75 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 06 02 01 01 E4 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-06 -9-02 -10-01 -11-01 -12-E4 -13-78 
+
+CRC Calculated: E4 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55

@@ -1,0 +1,2329 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (33) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v0.1[0m
+[0;32mI (37) boot: efuse block revision: v1.2[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1b594h (112020) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0002b5bc vaddr=3fc9a800 size=04988h ( 18824) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002ff4c vaddr=40374000 size=000cch (   204) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=8f164h (586084) map[0m
+[0;32mI (272) esp_image: segment 4: paddr=000bf18c vaddr=403740cc size=16700h ( 91904) load[0m
+[0;32mI (297) esp_image: segment 5: paddr=000d5894 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (306) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (306) boot: Disabling RNG early entropy source...[0m
+[0;32mI (317) cpu_start: Multicore app[0m
+[0;32mI (325) cpu_start: Pro cpu start user code[0m
+[0;32mI (325) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (325) app_init: Application information:[0m
+[0;32mI (325) app_init: Project name:     app-template[0m
+[0;32mI (330) app_init: App version:      6d4ace7[0m
+[0;32mI (334) app_init: Compile time:     Apr 24 2025 11:59:59[0m
+[0;32mI (339) app_init: ELF file SHA256:  aeba756e9...[0m
+[0;32mI (343) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (348) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (352) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (356) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (360) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FCA3818 len 00045EF8 (279 KiB): RAM[0m
+[0;32mI (371) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (376) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (381) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (387) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (396) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (400) spi_flash: flash io: opi_str[0m
+[0;33mW (404) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (416) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (439) main_task: Calling app_main()[0m
+[0;32mI (459) pp: pp rom version: e7ae62f[0m
+[0;32mI (459) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (469) wifi:wifi driver task: 3fcad914, prio:23, stack:6656, core=0[0m
+[0;32mI (469) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (469) wifi:wifi certification version: v7.0[0m
+[0;32mI (469) wifi:config NVS flash: enabled[0m
+[0;32mI (479) wifi:config nano formatting: disabled[0m
+[0;32mI (479) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (479) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (489) wifi:Init management short buffer num: 32[0m
+[0;32mI (489) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (499) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (499) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (499) wifi:Init static rx buffer num: 10[0m
+[0;32mI (509) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (509) wifi_init: rx ba win: 6[0m
+[0;32mI (519) wifi_init: accept mbox: 6[0m
+[0;32mI (519) wifi_init: tcpip mbox: 32[0m
+[0;32mI (519) wifi_init: udp mbox: 6[0m
+[0;32mI (519) wifi_init: tcp mbox: 6[0m
+[0;32mI (529) wifi_init: tcp tx win: 5760[0m
+[0;32mI (529) wifi_init: tcp rx win: 5760[0m
+[0;32mI (529) wifi_init: tcp mss: 1440[0m
+[0;32mI (539) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (539) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (539) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (549) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (599) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (619) wifi:mode : sta (7c:df:a1:e1:13:60)[0m
+[0;32mI (619) wifi:enable tsf[0m
+[0;32mI (619) RS485_APP: No existing mappings[0m
+Client list at boot:
+[0] = 0
+[1] = 0
+[2] = 0
+[3] = 0
+[4] = 0
+[5] = 0
+[0;32mI (619) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (629) wifi:state: init -> auth (0xb0)[0m
+[6] = 0
+[7] = 0
+[8] = 0
+[9] = 0
+[0;32mI (629) main_task: Returned from app_main()[0m
+[0;32mI (639) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (649) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (879) wifi:<ba-add>idx:0 (ifx:0, 2a:87:ba:d1:c4:54), tid:0, ssn:1, winSize:64[0m
+[0;32mI (899) wifi:connected with CONFIO_5G, aid = 6, channel 3, BW20, bssid = 2a:87:ba:d1:c4:54[0m
+[0;32mI (899) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (899) wifi:pm start, type: 1[0m
+
+[0;32mI (899) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (909) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (919) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2449) esp_netif_handlers: sta ip: 192.168.0.106, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2449) RS485_APP: Connected! IP Address: 192.168.0.106[0m
+ESP32 IP Address: 192.168.0.106
+[0;32mI (2669) wifi:<ba-add>idx:1 (ifx:0, 2a:87:ba:d1:c4:54), tid:6, ssn:0, winSize:64[0m
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+[0;32mI (3449) mdns_mem: mDNS task will be created from internal RAM[0m
+mdns hostname set to: [confiors485]
+TCP server listening on port 5000
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 CC 2B EA FF 8B 63 AD 10 0D 42 56 0D 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 CC 2B EA FF 8B 63 AD 10 0D 42 56 0D 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 53: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 01 FF 
+Decrypted Response: 01 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 01 FF 
+Decrypted Response: 01 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 120: 00 00 E0 00 F0 00 F0 00 F0 00 E0 00 F0 00 E0 00 F0 00 F0 00 F8 00 F0 00 F0 00 F8 00 F8 00 F0 00 F0 00 FC 00 F0 00 F8 00 FA 00 FE 00 F8 00 FE 00 FC 00 FC 00 FC 00 FF 00 FC 00 FC 00 FC 00 FC 00 FC 00 FC 00 FC 02 FC 00 FF 00 FC 00 FC 00 FC 02 FC 00 FC 00 FC 00 FC 02 FC 03 FC 00 FC 00 FC 00 FC 02 FC 00 FC 00 FC 00 FC 03 FC 03 FC 00 FC 00 FC 02 FC 02 FC 00 FF 00 
+-->Received Button/Knob 0 state : 104
+Decrypted Response: F7 04 DB 02 EF 07 E7 02 F0 00 68 FA F3 00 E0 00 F0 00 F0 00 F8 00 F0 00 F0 00 F8 00 F8 00 F0 00 F0 00 FC 00 F0 00 F8 00 FA 00 FE 00 F8 00 FE 00 FC 00 FC 00 FC 00 FF 00 FC 00 FC 00 FC 00 FC 00 FC 00 FC 00 FC 02 FC 00 FF 00 FC 00 FC 00 FC 02 FC 00 FC 00 FC 00 FC 02 FC 03 FC 00 FC 00 FC 00 FC 02 FC 00 FC 00 FC 00 FC 03 FC 03 FC 00 FC 00 FC 02 FC 02 FC 00 FF 00 
+Raw Response and len 50: FE 00 FE 00 00 00 FF 00 FF 00 00 00 FE 00 FE 00 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 00 FF 00 FE 00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F5 04 F9 02 FF 07 F6 02 FF 00 00 FA 01 00 FE 00 00 FF 00 FE 00 FE 00 FE 00 FE 00 FE 00 FE 00 00 FF 00 FE 00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 F8 
+Decrypted Response: 00 F8 
+Raw Response and len 5: 00 FC FE 00 FE 
+Decrypted Response: 00 FC FE 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 120: 00 FC 00 FF 00 FF 00 FE 00 00 00 FF 00 00 FF 00 00 00 00 FC 00 FF 00 FF 00 FF 00 FF 00 FC 00 FF 00 FE 00 FE 00 FF 00 FC 00 FD 00 FF 00 FE 00 FE 00 FF 00 FE 00 FC 00 FF 00 FD 00 FF 00 FE 00 00 24 7C 24 00 00 00 A4 00 00 00 60 5F 00 00 70 3E 00 78 FC 00 E0 BC 02 00 84 FE 00 00 A0 7E 00 00 00 84 3D 00 00 00 24 3D 04 00 00 08 FE 00 00 00 60 3B 00 00 FE 00 FD 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 00 FB 01 FF 06 F7 00 00 00 00 F9 03 00 FF 00 00 00 00 FC 00 FF 00 FF 00 FF 00 FF 00 FC 00 FF 00 FE 00 FE 00 FF 00 FC 00 FD 00 FF 00 FE 00 FE 00 FF 00 FE 00 FC 00 FF 00 FD 00 FF 00 FE 00 00 24 7C 24 00 00 00 A4 00 00 00 60 5F 00 00 70 3E 00 78 FC 00 E0 BC 02 00 84 FE 00 00 A0 7E 00 00 00 84 3D 00 00 00 24 3D 04 00 00 08 FE 00 00 00 60 3B 00 00 FE 00 FD 00 
+Raw Response and len 120: FE 00 FF 00 FE 01 FF 00 FE 00 FE 00 FF 00 FF 00 FF 00 FD 00 00 45 B8 00 FE 01 00 00 64 FC 00 00 20 79 00 FC 00 FE 00 FF 00 FE 00 FF 00 FE 00 FF 00 FE 00 00 FF 00 FF 00 FF 00 00 00 FF 00 FF 00 FF 00 FF 00 00 00 00 00 FF 00 FF 00 FF 00 00 00 FF 00 FE 00 FF 00 FE 00 00 FE 00 FF 00 00 00 FE 00 00 00 FF 00 00 00 00 FF 00 FF 00 FF 00 00 00 00 FE 00 00 FF 01 FE 00 
+-->Received Button/Knob 0 state : 134
+Decrypted Response: F5 04 FA 02 FD 08 F6 02 FE 00 86 FA 02 00 FF 00 FF 00 FD 00 00 45 B8 00 FE 01 00 00 64 FC 00 00 20 79 00 FC 00 FE 00 FF 00 FE 00 FF 00 FE 00 FF 00 FE 00 00 FF 00 FF 00 FF 00 00 00 FF 00 FF 00 FF 00 FF 00 00 00 00 00 FF 00 FF 00 FF 00 00 00 FF 00 FE 00 FF 00 FE 00 00 FE 00 FF 00 00 00 FE 00 00 00 FF 00 00 00 00 FF 00 FF 00 FF 00 00 00 00 FE 00 00 FF 01 FE 00 
+Raw Response and len 120: 00 00 FE 00 FF 00 FF 00 00 00 00 FF 00 FF 00 FF 00 00 00 FF 00 00 FF 00 FF 00 00 FE 00 FF 00 FF 00 FF 00 FD 00 FE 00 FE 00 FF 00 FF 00 FF 00 00 FD 00 FF 00 FF 00 FF 00 FE 00 FE 00 FE 00 FF 00 FE 00 FC 00 FF 00 FE 00 FF 00 00 00 90 04 00 00 A3 0B 00 01 00 B0 04 00 E0 FC 01 00 80 FA 00 00 A0 FC 24 00 00 70 5F 00 00 70 7C 00 00 80 E2 00 00 E0 7E 20 04 00 FB 04 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 F9 02 FE 07 F6 02 00 00 00 F9 03 FF 00 FF 00 00 00 FF 00 00 FF 00 FF 00 00 FE 00 FF 00 FF 00 FF 00 FD 00 FE 00 FE 00 FF 00 FF 00 FF 00 00 FD 00 FF 00 FF 00 FF 00 FE 00 FE 00 FE 00 FF 00 FE 00 FC 00 FF 00 FE 00 FF 00 00 00 90 04 00 00 A3 0B 00 01 00 B0 04 00 E0 FC 01 00 80 FA 00 00 A0 FC 24 00 00 70 5F 00 00 70 7C 00 00 80 E2 00 00 E0 7E 20 04 00 FB 04 
+Raw Response and len 120: 00 00 E0 7F 00 01 00 B1 03 00 28 FF 00 00 28 FC 00 04 80 FC 04 00 00 28 3F 00 00 78 3B 01 00 80 FB 02 00 FE 00 00 A0 F9 08 00 00 E0 00 00 00 E0 7F 00 00 20 FE 00 00 00 40 FF 00 04 A4 00 00 00 0E 0F 00 00 00 BA 20 00 00 00 E9 00 00 00 A0 BC 00 00 00 A4 3B 00 00 00 20 7F 00 00 00 70 02 00 60 FA 00 00 E0 7F 00 04 A4 5F 00 00 00 31 7F 04 00 B0 7D 00 00 00 E3 20 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 DB 81 FF 08 F7 B3 01 00 00 F9 03 00 28 FC 00 04 80 FC 04 00 00 28 3F 00 00 78 3B 01 00 80 FB 02 00 FE 00 00 A0 F9 08 00 00 E0 00 00 00 E0 7F 00 00 20 FE 00 00 00 40 FF 00 04 A4 00 00 00 0E 0F 00 00 00 BA 20 00 00 00 E9 00 00 00 A0 BC 00 00 00 A4 3B 00 00 00 20 7F 00 00 00 70 02 00 60 FA 00 00 E0 7F 00 04 A4 5F 00 00 00 31 7F 04 00 B0 7D 00 00 00 E3 20 
+Raw Response and len 120: 00 00 A0 FC 04 04 00 E7 00 00 00 E0 3C 00 00 00 88 04 00 68 FC 00 00 28 FC 08 00 00 E0 5F 00 00 00 48 FF 08 00 E0 2E 00 00 00 FA 00 00 E0 FE 00 00 00 04 3F 00 00 00 E1 ED 00 00 00 00 8A 42 00 E8 EC 00 00 00 00 F0 BE 00 00 00 A0 BC 0C 00 00 70 7F 00 00 00 B8 04 04 00 76 00 00 E0 FE 00 00 00 E2 1F 00 00 00 20 5F 00 00 00 C2 01 00 00 E0 76 00 00 00 C0 7A 04 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 9B FE 03 0B F7 E9 00 00 00 DA 3F 00 00 00 88 04 00 68 FC 00 00 28 FC 08 00 00 E0 5F 00 00 00 48 FF 08 00 E0 2E 00 00 00 FA 00 00 E0 FE 00 00 00 04 3F 00 00 00 E1 ED 00 00 00 00 8A 42 00 E8 EC 00 00 00 00 F0 BE 00 00 00 A0 BC 0C 00 00 70 7F 00 00 00 B8 04 04 00 76 00 00 E0 FE 00 00 00 E2 1F 00 00 00 20 5F 00 00 00 C2 01 00 00 E0 76 00 00 00 C0 7A 04 00 
+Raw Response and len 120: 00 FC 00 00 00 8A 03 00 00 EE 11 00 00 7A 00 00 00 E0 BE 00 00 00 F4 00 00 00 A0 00 00 00 28 6F 00 00 00 E0 76 00 00 00 C0 FA 00 04 A0 BC 04 00 80 8A 04 00 00 2A 04 00 E0 7B 00 00 00 20 BD 00 00 00 00 CE 00 00 80 DB 00 00 20 FE 00 00 24 BC 01 00 00 40 FE 00 00 D8 FE 02 00 00 58 7F 00 00 30 7E 00 00 00 24 7C 01 00 60 5F 00 00 00 00 AC 00 00 C0 E0 01 00 80 7E 
+-->Received Button/Knob 238 state : 0
+Decrypted Response: F7 00 FB 02 FF 91 FA 02 00 EE 00 FA 03 7A 00 00 00 E0 BE 00 00 00 F4 00 00 00 A0 00 00 00 28 6F 00 00 00 E0 76 00 00 00 C0 FA 00 04 A0 BC 04 00 80 8A 04 00 00 2A 04 00 E0 7B 00 00 00 20 BD 00 00 00 00 CE 00 00 80 DB 00 00 20 FE 00 00 24 BC 01 00 00 40 FE 00 00 D8 FE 02 00 00 58 7F 00 00 30 7E 00 00 00 24 7C 01 00 60 5F 00 00 00 00 AC 00 00 C0 E0 01 00 80 7E 
+Raw Response and len 120: 00 00 A0 BE 04 00 00 18 FD 02 00 00 C0 FA 08 00 00 60 78 11 00 00 00 00 11 FE 00 00 A0 FE 00 00 68 F6 00 00 00 A0 BE 00 40 40 E0 0F 00 00 00 77 00 00 80 BE 04 00 40 FC 00 00 00 FA 18 00 00 00 E1 04 00 80 FC 00 00 E4 F6 00 00 A0 3C 04 00 00 00 24 4B 00 00 00 20 3E 00 00 80 BE 00 00 04 E8 00 00 A0 3E 04 00 A0 F5 00 00 00 88 04 00 38 06 00 00 00 72 41 00 A0 7E 
+-->Received Button/Knob 1 state : 0
+Decrypted Response: F7 04 9B C0 03 07 F7 1A FD 01 00 FA C3 FA 08 00 00 60 78 11 00 00 00 00 11 FE 00 00 A0 FE 00 00 68 F6 00 00 00 A0 BE 00 40 40 E0 0F 00 00 00 77 00 00 80 BE 04 00 40 FC 00 00 00 FA 18 00 00 00 E1 04 00 80 FC 00 00 E4 F6 00 00 A0 3C 04 00 00 00 24 4B 00 00 00 20 3E 00 00 80 BE 00 00 04 E8 00 00 A0 3E 04 00 A0 F5 00 00 00 88 04 00 38 06 00 00 00 72 41 00 A0 7E 
+Raw Response and len 120: 00 04 C0 F8 00 00 00 51 F8 00 00 C0 B0 00 00 10 FA 00 00 20 3F 00 00 00 7F 00 00 00 82 0F 00 00 00 80 0B 00 20 3F 00 00 40 7C 00 00 40 7C 00 00 00 20 08 0F 00 00 00 A0 10 00 00 F8 00 00 42 FD 10 00 80 10 00 00 00 E2 0F 00 00 C0 23 00 00 40 FC 00 00 60 3A 20 00 20 3C 00 00 00 41 38 00 00 E0 E8 00 00 14 AC 00 00 08 1D 00 00 80 B6 00 00 00 01 7E 00 00 20 FC 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 08 BB FA FF 07 F7 53 F8 00 00 BA B3 00 00 10 FA 00 00 20 3F 00 00 00 7F 00 00 00 82 0F 00 00 00 80 0B 00 20 3F 00 00 40 7C 00 00 40 7C 00 00 00 20 08 0F 00 00 00 A0 10 00 00 F8 00 00 42 FD 10 00 80 10 00 00 00 E2 0F 00 00 C0 23 00 00 40 FC 00 00 60 3A 20 00 20 3C 00 00 00 41 38 00 00 E0 E8 00 00 14 AC 00 00 08 1D 00 00 80 B6 00 00 00 01 7E 00 00 20 FC 00 
+Raw Response and len 120: 00 00 7F 00 00 80 76 00 00 20 1F 00 00 00 51 3F 01 00 E0 7A 00 00 94 FC 00 00 00 28 3E 00 00 E0 B4 00 00 00 20 FD 00 00 80 E0 03 00 00 F4 00 00 A4 09 00 00 20 BF 00 00 00 00 80 00 00 40 82 0C 00 82 0B 20 7C 00 00 A0 FC 00 00 00 C1 0F 00 00 00 00 2F 00 00 A0 FE 00 00 08 7E 00 00 20 7D 00 00 00 68 3C 00 00 00 A8 0B 00 20 F8 00 00 40 E8 00 00 E0 F4 00 00 00 00 
+-->Received Button/Knob 2 state : 0
+Decrypted Response: F7 04 7A 02 FF 87 6D 02 00 02 00 FA 03 00 51 3F 01 00 E0 7A 00 00 94 FC 00 00 00 28 3E 00 00 E0 B4 00 00 00 20 FD 00 00 80 E0 03 00 00 F4 00 00 A4 09 00 00 20 BF 00 00 00 00 80 00 00 40 82 0C 00 82 0B 20 7C 00 00 A0 FC 00 00 00 C1 0F 00 00 00 00 2F 00 00 A0 FE 00 00 08 7E 00 00 20 7D 00 00 00 68 3C 00 00 00 A8 0B 00 20 F8 00 00 40 E8 00 00 E0 F4 00 00 00 00 
+Raw Response and len 120: 82 1F 00 00 10 1F 00 00 A0 FC 00 00 20 FC 00 00 00 20 FE 00 00 00 20 80 0B 00 00 00 A0 01 00 81 7B 00 00 40 6C 00 00 20 FE 00 00 00 00 89 0B 00 00 88 2F 00 00 00 FC 00 00 04 0B 00 00 80 FE 04 00 00 00 4F 00 00 00 A2 0D 00 00 01 FE 00 00 20 7C 00 00 80 F8 00 00 00 00 85 00 00 00 00 80 0F 00 00 E0 BC 00 00 08 FC 00 00 00 2F 00 00 00 28 5F 00 00 00 A2 0D 00 E0 
+-->Received Button/Knob 252 state : 0
+Decrypted Response: 79 23 FB 02 0F 26 F7 02 A0 FC 00 FA 23 FC 00 00 00 20 FE 00 00 00 20 80 0B 00 00 00 A0 01 00 81 7B 00 00 40 6C 00 00 20 FE 00 00 00 00 89 0B 00 00 88 2F 00 00 00 FC 00 00 04 0B 00 00 80 FE 04 00 00 00 4F 00 00 00 A2 0D 00 00 01 FE 00 00 20 7C 00 00 80 F8 00 00 00 00 85 00 00 00 00 80 0F 00 00 E0 BC 00 00 08 FC 00 00 00 2F 00 00 00 28 5F 00 00 00 A2 0D 00 E0 
+Raw Response and len 120: F8 00 00 30 2E 00 00 20 7E 00 00 00 20 1F 00 00 00 20 7E 00 00 C0 FC 04 00 00 5C 00 00 20 3F 00 00 00 00 4F 00 00 00 30 FC 00 00 30 BC 00 00 02 8B 00 00 A0 FC 00 00 00 A0 7D 00 00 00 E0 5C 00 00 40 F8 00 00 A4 78 00 00 20 7C 04 00 01 20 3F 00 00 10 F1 03 00 30 B8 00 00 00 01 00 00 E0 FC 00 00 E0 1D 00 00 C0 5A 00 00 40 78 00 00 00 7D 00 00 A0 3E 00 00 00 20 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: EF 04 FB 32 2D 07 F7 22 7E 00 00 FA 23 1F 00 00 00 20 7E 00 00 C0 FC 04 00 00 5C 00 00 20 3F 00 00 00 00 4F 00 00 00 30 FC 00 00 30 BC 00 00 02 8B 00 00 A0 FC 00 00 00 A0 7D 00 00 00 E0 5C 00 00 40 F8 00 00 A4 78 00 00 20 7C 04 00 01 20 3F 00 00 10 F1 03 00 30 B8 00 00 00 01 00 00 E0 FC 00 00 E0 1D 00 00 C0 5A 00 00 40 78 00 00 00 7D 00 00 A0 3E 00 00 00 20 
+Raw Response and len 120: 7E 00 00 00 B0 FC 00 00 20 00 2F 00 00 40 FD 00 00 80 3F 00 00 00 E0 2F 00 00 00 40 7E 00 00 60 7C 00 00 C4 7C 00 00 00 BE 00 00 00 20 BF 00 00 00 A0 0D 00 00 A0 7B 00 00 00 50 3E 00 00 80 FC 00 00 00 00 C0 7E 00 00 00 A0 5E 00 00 E0 F8 00 00 82 DC 00 00 20 7E 04 00 62 7F 00 00 00 30 7B 00 00 10 3B 00 00 2E 00 00 20 7C 00 00 80 DA 08 00 00 F4 00 00 00 22 01 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: 75 04 FB 02 AF 03 F7 02 04 00 00 FA 03 40 FD 00 00 80 3F 00 00 00 E0 2F 00 00 00 40 7E 00 00 60 7C 00 00 C4 7C 00 00 00 BE 00 00 00 20 BF 00 00 00 A0 0D 00 00 A0 7B 00 00 00 50 3E 00 00 80 FC 00 00 00 00 C0 7E 00 00 00 A0 5E 00 00 E0 F8 00 00 82 DC 00 00 20 7E 04 00 62 7F 00 00 00 30 7B 00 00 10 3B 00 00 2E 00 00 20 7C 00 00 80 DA 08 00 00 F4 00 00 00 22 01 
+Raw Response and len 120: 00 A0 7D 00 00 00 30 3E 00 01 60 3C 00 00 00 A0 00 00 10 FC 00 00 2A 07 00 00 A0 7E 00 00 38 3F 00 00 00 FA 0B 00 00 F8 00 00 00 FC 01 00 80 7C 00 01 20 BC 00 00 10 F9 00 00 20 F8 01 00 08 03 00 00 E0 FC 00 00 20 9F 00 00 00 7A 00 00 00 E0 00 00 00 C0 F8 00 00 00 40 F8 04 00 A0 BE 00 00 50 F0 01 00 80 FE 00 00 F0 6C 00 00 80 BC 00 00 E0 FC 00 00 00 B6 00 00 
+-->Received Button/Knob 1 state : 1
+Decrypted Response: F7 A4 78 02 FF 07 27 40 00 01 01 36 03 00 00 A0 00 00 10 FC 00 00 2A 07 00 00 A0 7E 00 00 38 3F 00 00 00 FA 0B 00 00 F8 00 00 00 FC 01 00 80 7C 00 01 20 BC 00 00 10 F9 00 00 20 F8 01 00 08 03 00 00 E0 FC 00 00 20 9F 00 00 00 7A 00 00 00 E0 00 00 00 C0 F8 00 00 00 40 F8 04 00 A0 BE 00 00 50 F0 01 00 80 FE 00 00 F0 6C 00 00 80 BC 00 00 E0 FC 00 00 00 B6 00 00 
+Raw Response and len 120: 00 00 78 02 00 00 7E 00 00 00 A4 7E 00 01 A0 FC 00 00 10 F0 00 00 B0 F8 00 00 20 2E 00 00 40 7A 00 00 20 FD 04 00 00 E0 0B 00 00 EA 00 FF 00 FF 00 FF 00 FE 00 FE 00 00 FF 00 FF 00 FF 00 FF 00 00 00 00 FF 00 FF 00 00 00 00 FF 00 00 00 00 01 00 FF 00 00 00 00 FF 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 FF 00 00 00 00 FF 00 FF 00 FF 00 00 00 00 FF 
+-->Received Button/Knob 0 state : 44
+Decrypted Response: F7 04 73 04 FF 07 75 02 00 00 2C 78 03 01 A0 FC 00 00 10 F0 00 00 B0 F8 00 00 20 2E 00 00 40 7A 00 00 20 FD 04 00 00 E0 0B 00 00 EA 00 FF 00 FF 00 FF 00 FE 00 FE 00 00 FF 00 FF 00 FF 00 FF 00 00 00 00 FF 00 FF 00 00 00 00 FF 00 00 00 00 01 00 FF 00 00 00 00 FF 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 FF 00 00 00 00 FF 00 FF 00 FF 00 00 00 00 FF 
+Raw Response and len 120: 00 FE 00 FF 00 00 00 FE 00 FF 00 FF 00 00 00 00 FE 00 00 00 00 FF 00 FF 00 00 00 00 FF 00 00 FF 00 FF 00 FF 00 FF 00 FC 00 00 FF 00 00 FF 00 FE 00 00 00 00 FF 00 FC 00 00 FF 00 FF 00 00 FE 00 FF 00 FF 00 FF 00 00 FF 00 00 FF 00 00 00 FF 00 00 FF 00 00 00 FC 00 FF 00 00 00 FF 00 FE 00 00 00 FF 00 00 FF 00 FF 00 FF 00 FF 00 00 FC 00 FF 00 FF 00 00 00 FC 00 00 
+-->Received Button/Knob 255 state : 0
+Decrypted Response: F7 02 FB 01 FF 07 F7 00 00 FF 00 F9 03 00 00 00 FE 00 00 00 00 FF 00 FF 00 00 00 00 FF 00 00 FF 00 FF 00 FF 00 FF 00 FC 00 00 FF 00 00 FF 00 FE 00 00 00 00 FF 00 FC 00 00 FF 00 FF 00 00 FE 00 FF 00 FF 00 FF 00 00 FF 00 00 FF 00 00 00 FF 00 00 FF 00 00 00 FC 00 FF 00 00 00 FF 00 FE 00 00 00 FF 00 00 FF 00 FF 00 FF 00 FF 00 00 FC 00 FF 00 FF 00 00 00 FC 00 00 
+Raw Response and len 120: 00 00 00 FE 00 00 00 FF 00 FF 00 FF 00 00 01 FE 00 FF 00 FF 00 00 FF 00 FF 00 FF 00 00 00 00 FF 00 FF 00 FF 00 FF 00 FF 00 00 FE 00 FF 00 00 F0 00 FE 00 FF 00 FE 00 FF 00 FC 00 FF 00 FE 00 FF 00 FF 00 FF 00 FE 00 FE 00 FC 01 FD 00 FC 00 FE 00 FD 00 FF 00 FF 00 F0 00 FC 00 FD 02 FE 00 F0 00 FE 00 FD 00 A0 00 FE 00 FC 00 FC 00 FE 00 FE 00 FC 00 FC 00 F0 00 FC 
+-->Received Button/Knob 255 state : 0
+Decrypted Response: F7 04 FB 00 FF 07 F7 01 00 FF 00 F9 03 00 01 FE 00 FF 00 FF 00 00 FF 00 FF 00 FF 00 00 00 00 FF 00 FF 00 FF 00 FF 00 FF 00 00 FE 00 FF 00 00 F0 00 FE 00 FF 00 FE 00 FF 00 FC 00 FF 00 FE 00 FF 00 FF 00 FF 00 FE 00 FE 00 FC 01 FD 00 FC 00 FE 00 FD 00 FF 00 FF 00 F0 00 FC 00 FD 02 FE 00 F0 00 FE 00 FD 00 A0 00 FE 00 FC 00 FC 00 FE 00 FE 00 FC 00 FC 00 F0 00 FC 
+Raw Response and len 120: 00 FE 00 FF 00 FF 00 FF 00 00 00 FE 00 FE 00 FE 00 FC 00 FE 00 E0 00 FE 00 FE 00 FC 00 E0 02 FC 00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 FE 00 FF 00 FF 00 FE 00 FF 00 FE 00 FE 00 E0 00 FE 00 FE 00 FD 00 FE 00 F8 00 FE 00 FC 00 FC 01 FE 00 FD 00 FD 00 FC 00 FF 00 FC 00 F8 01 FE 00 FE 00 FE 00 FF 00 FF 00 FC 00 FC 00 FC 00 FD 00 FF 00 FE 00 FD 00 FC 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 02 FB 01 FF 06 F7 01 00 00 00 F8 03 FE 00 FE 00 FC 00 FE 00 E0 00 FE 00 FE 00 FC 00 E0 02 FC 00 FC 00 FE 00 FE 00 FE 00 FE 00 FE 00 FC 00 FE 00 FF 00 FF 00 FE 00 FF 00 FE 00 FE 00 E0 00 FE 00 FE 00 FD 00 FE 00 F8 00 FE 00 FC 00 FC 01 FE 00 FD 00 FD 00 FC 00 FF 00 FC 00 F8 01 FE 00 FE 00 FE 00 FF 00 FF 00 FC 00 FC 00 FC 00 FD 00 FF 00 FE 00 FD 00 FC 00 00 
+Raw Response and len 120: FC 00 FC 00 FC 00 FC 00 FE 00 FE 00 FD 00 FC 00 FC 00 F0 01 FC 00 FE 00 F0 00 FE 00 FC 00 FE 00 FF 00 FC 00 FC 00 FC 00 FD 00 FC 00 FF 00 00 80 00 FC 00 FE 01 FC 00 FC 00 FF 00 FC 00 F0 00 FE 00 FD 00 FF 00 FC 00 FC 00 FC 00 FC 00 FC 00 FE 00 FC 00 FC 00 FC 02 FF 00 FD 00 E0 02 E0 00 00 10 20 F8 00 00 00 01 00 6B 02 00 00 00 00 00 00 E0 FC 00 00 00 00 20 E1 
+-->Received Button/Knob 0 state : 134
+Decrypted Response: F3 04 F7 02 FB 07 F3 02 FE 00 86 FA 00 00 FC 00 FC 00 F0 01 FC 00 FE 00 F0 00 FE 00 FC 00 FE 00 FF 00 FC 00 FC 00 FC 00 FD 00 FC 00 FF 00 00 80 00 FC 00 FE 01 FC 00 FC 00 FF 00 FC 00 F0 00 FE 00 FD 00 FF 00 FC 00 FC 00 FC 00 FC 00 FC 00 FE 00 FC 00 FC 00 FC 02 FF 00 FD 00 E0 02 E0 00 00 10 20 F8 00 00 00 01 00 6B 02 00 00 00 00 00 00 E0 FC 00 00 00 00 20 E1 
+Raw Response and len 120: 2F 22 00 00 00 00 60 BF 00 00 00 00 00 00 E0 FE 02 00 00 00 01 FC 02 E0 02 E0 02 E0 00 E0 02 E0 02 E0 00 E0 00 E0 00 00 00 00 81 7D 00 00 00 00 00 20 E8 22 02 00 00 20 60 02 00 00 00 00 01 A1 D8 25 00 00 00 00 01 21 FE 22 00 00 00 00 00 A0 F8 22 00 00 E0 02 E0 00 E0 00 E0 00 E0 00 E0 00 E0 00 E0 00 E0 00 E0 02 E0 00 E0 02 E0 00 00 00 01 20 FC 02 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: 26 26 FB 02 FF 07 57 C1 00 00 00 FA 03 00 E0 FE 02 00 00 00 01 FC 02 E0 02 E0 02 E0 00 E0 02 E0 02 E0 00 E0 00 E0 00 00 00 00 81 7D 00 00 00 00 00 20 E8 22 02 00 00 20 60 02 00 00 00 00 01 A1 D8 25 00 00 00 00 01 21 FE 22 00 00 00 00 00 A0 F8 22 00 00 E0 02 E0 00 E0 00 E0 00 E0 00 E0 00 E0 00 E0 00 E0 00 E0 02 E0 00 E0 02 E0 00 00 00 01 20 FC 02 00 00 00 00 
+Raw Response and len 120: 00 E0 FD 00 00 00 00 00 00 A0 FB 00 00 00 00 00 20 68 7F 20 00 00 00 00 00 81 FD 00 00 00 00 00 00 81 FE 00 00 00 00 01 20 69 7D 00 00 00 01 20 78 3D 00 00 00 00 00 20 F0 FD 20 00 00 01 20 61 BF 02 00 00 01 20 A8 22 00 00 00 01 20 F0 7F 02 00 00 00 00 A0 FD 02 02 00 10 00 C0 FC 00 00 00 10 00 B0 F8 00 00 00 20 00 FE 02 00 E0 00 10 F0 FE 00 00 FE 00 F8 00 F8 
+-->Received Button/Knob 160 state : 131
+Decrypted Response: F7 E4 F8 02 FF 07 F7 02 00 A0 83 FA 03 00 00 00 20 68 7F 20 00 00 00 00 00 81 FD 00 00 00 00 00 00 81 FE 00 00 00 00 01 20 69 7D 00 00 00 01 20 78 3D 00 00 00 00 00 20 F0 FD 20 00 00 01 20 61 BF 02 00 00 01 20 A8 22 00 00 00 01 20 F0 7F 02 00 00 00 00 A0 FD 02 02 00 10 00 C0 FC 00 00 00 10 00 B0 F8 00 00 00 20 00 FE 02 00 E0 00 10 F0 FE 00 00 FE 00 F8 00 F8 
+Raw Response and len 120: 00 C0 00 C0 00 80 00 80 00 E0 00 E0 00 E0 00 E0 00 F0 00 E0 00 E0 00 E0 00 E0 00 F0 00 E0 00 E0 00 E0 00 E0 02 F0 00 E0 00 E0 00 F0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 224 state : 0
+Decrypted Response: F7 C4 FB C2 FF 87 F7 82 00 E0 00 DA 03 E0 00 E0 00 F0 00 E0 00 E0 00 E0 00 E0 00 F0 00 E0 00 E0 00 E0 00 E0 02 F0 00 E0 00 E0 00 F0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 14: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 5: 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 6: 00 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 3: 00 00 00 
+Decrypted Response: 00 00 00 
+Raw Response and len 4: 00 00 00 00 
+Decrypted Response: 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 4: 00 00 00 00 
+Decrypted Response: 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 5: 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 
+Raw Response and len 3: 00 00 00 
+Decrypted Response: 00 00 00 
+Raw Response and len 5: 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 
+Raw Response and len 4: 00 00 00 00 
+Decrypted Response: 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 4: 00 00 00 00 
+Decrypted Response: 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 6: 00 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 5: 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 8: 00 00 00 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 00 00 00 
+Raw Response and len 4: 00 00 00 00 
+Decrypted Response: 00 00 00 00 
+Raw Response and len 116: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 11: 00 00 00 00 00 00 00 00 00 00 00 
+Decrypted Response: 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 4: 00 00 00 00 
+Decrypted Response: 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F5 00 FF 80 FC 00 00 E7 00 EE 00 00 E7 00 FC 00 F1 00 FE 00 00 FB 00 EF 00 EF 00 E7 00 FD 00 F7 00 00 F7 00 00 FF 00 CE 00 FF 00 F7 00 FF 00 FC 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F5 00 FF 80 FC 00 00 E7 00 EE 00 00 E7 00 FC 00 F1 00 FE 00 00 FB 00 EF 00 EF 00 E7 00 FD 00 F7 00 00 F7 00 00 FF 00 CE 00 FF 00 F7 00 FF 00 FC 00 
+Raw Response and len 120: FF 00 F7 00 F7 00 FD 00 FF 00 FF 00 C7 00 E7 00 F7 00 00 F7 00 00 EB 00 D7 00 FE 00 EF 00 FF 00 00 FF 00 FF 00 FF 00 EE 00 FF 00 FF 00 E7 00 FF 00 00 FF 00 FE 00 FF 00 E7 00 E7 00 FF 00 FF 00 EF 00 FF 00 00 00 00 EF 00 DF 00 FF 00 F7 00 EF 00 00 FF 00 FE 00 FF 00 00 EF 00 FF 00 D7 00 FE 00 F7 00 00 FE 00 FE 00 EF 00 FE 00 FF 00 FF 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 135
+Decrypted Response: F6 04 F2 02 F6 07 F4 02 FF 00 87 FA CA 00 E7 00 F7 00 00 F7 00 00 EB 00 D7 00 FE 00 EF 00 FF 00 00 FF 00 FF 00 FF 00 EE 00 FF 00 FF 00 E7 00 FF 00 00 FF 00 FE 00 FF 00 E7 00 E7 00 FF 00 FF 00 EF 00 FF 00 00 00 00 EF 00 DF 00 FF 00 F7 00 EF 00 00 FF 00 FE 00 FF 00 00 EF 00 FF 00 D7 00 FE 00 F7 00 00 FE 00 FE 00 EF 00 FE 00 FF 00 FF 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F8 F0 00 F0 00 1B 06 07 0E 03 0B 00 00 00 E0 00 03 0F F0 00 00 F0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F8 F0 00 F0 00 1B 06 07 0E 03 0B 00 00 00 E0 00 03 0F F0 00 00 F0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 0B 00 07 00 00 00 03 06 02 01 02 00 07 03 06 00 00 00 00 00 FC 07 00 0C 03 02 03 03 03 00 00 00 07 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 07 03 01 00 00 00 00 00 00 00 02 0A 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 0B 00 07 00 00 00 03 06 02 01 02 00 07 03 06 00 00 00 00 00 FC 07 00 0C 03 02 03 03 03 00 00 00 07 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 07 03 01 00 00 00 00 00 00 00 02 0A 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 07 07 00 06 00 00 E0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 00 00 00 07 01 01 07 00 0B 02 00 07 02 F0 07 00 70 00 00 01 03 03 00 00 0E 07 00 03 01 01 03 03 01 0B 00 00 06 15 01 07 00 00 0E 00 00 17 06 00 00 00 78 0D 03 0F 07 01 05 00 00 00 0B 00 07 00 00 0B 03 00 00 0B 07 00 00 F0 05 00 07 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 02 09 FF 0D F7 02 E0 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 00 00 00 07 01 01 07 00 0B 02 00 07 02 F0 07 00 70 00 00 01 03 03 00 00 0E 07 00 03 01 01 03 03 01 0B 00 00 06 15 01 07 00 00 0E 00 00 17 06 00 00 00 78 0D 03 0F 07 01 05 00 00 00 0B 00 07 00 00 0B 03 00 00 0B 07 00 00 F0 05 00 07 
+Raw Response and len 120: 00 02 02 07 00 0F 07 07 07 0B 01 0C 07 F0 00 00 07 00 00 0B 02 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 00 03 00 0E 03 0E 00 07 00 01 02 03 03 01 05 00 01 00 00 20 00 1E 00 70 07 00 00 00 0F 0A 03 00 07 0B 01 00 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0F 01 07 03 01 07 03 06 00 02 02 
+-->Received Button/Knob 1 state : 0
+Decrypted Response: F7 06 FD 09 FF 16 FE 09 01 01 00 06 0A F0 00 00 07 00 00 0B 02 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 00 03 00 0E 03 0E 00 07 00 01 02 03 03 01 05 00 01 00 00 20 00 1E 00 70 07 00 00 00 0F 0A 03 00 07 0B 01 00 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0F 01 07 03 01 07 03 06 00 02 02 
+Raw Response and len 120: 00 00 07 05 00 00 00 03 06 07 07 07 0A 03 01 00 00 04 00 00 00 0D 01 00 06 03 06 00 00 03 20 00 01 00 07 03 07 03 00 07 02 01 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 1 state : 0
+Decrypted Response: F7 04 02 07 FF 07 F7 05 01 01 00 01 0D 03 01 00 00 04 00 00 00 0D 01 00 06 03 06 00 00 03 20 00 01 00 07 03 07 03 00 07 02 01 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FB 00 00 00 00 00 00 00 00 00 00 00 FD 00 D7 00 FE 00 E7 00 C7 00 E7 00 00 F2 00 FA 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 FB 00 00 00 00 00 00 00 00 00 00 00 FD 00 D7 00 FE 00 E7 00 C7 00 E7 00 00 F2 00 FA 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 41: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 117: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 2: 00 00 
+Decrypted Response: 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 115: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 120: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 FA 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (33) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v0.1[0m
+[0;32mI (37) boot: efuse block revision: v1.2[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1b594h (112020) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0002b5bc vaddr=3fc9a800 size=04988h ( 18824) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002ff4c vaddr=40374000 size=000cch (   204) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=8f164h (586084) map[0m
+[0;32mI (272) esp_image: segment 4: paddr=000bf18c vaddr=403740cc size=16700h ( 91904) load[0m
+[0;32mI (297) esp_image: segment 5: paddr=000d5894 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (306) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (306) boot: Disabling RNG early entropy source...[0m
+[0;32mI (317) cpu_start: Multicore app[0m
+[0;32mI (325) cpu_start: Pro cpu start user code[0m
+[0;32mI (325) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (325) app_init: Application information:[0m
+[0;32mI (325) app_init: Project name:     app-template[0m
+[0;32mI (330) app_init: App version:      6d4ace7[0m
+[0;32mI (334) app_init: Compile time:     Apr 24 2025 11:59:59[0m
+[0;32mI (339) app_init: ELF file SHA256:  aeba756e9...[0m
+[0;32mI (343) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (348) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (352) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (356) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (360) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FCA3818 len 00045EF8 (279 KiB): RAM[0m
+[0;32mI (371) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (376) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (381) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (387) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (396) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (400) spi_flash: flash io: opi_str[0m
+[0;33mW (404) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (416) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (422) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (439) main_task: Calling app_main()[0m
+[0;32mI (459) pp: pp rom version: e7ae62f[0m
+[0;32mI (459) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (469) wifi:wifi driver task: 3fcad914, prio:23, stack:6656, core=0[0m
+[0;32mI (469) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (469) wifi:wifi certification version: v7.0[0m
+[0;32mI (479) wifi:config NVS flash: enabled[0m
+[0;32mI (479) wifi:config nano formatting: disabled[0m
+[0;32mI (479) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (479) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (489) wifi:Init management short buffer num: 32[0m
+[0;32mI (489) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (499) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (499) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (509) wifi:Init static rx buffer num: 10[0m
+[0;32mI (509) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (509) wifi_init: rx ba win: 6[0m
+[0;32mI (519) wifi_init: accept mbox: 6[0m
+[0;32mI (519) wifi_init: tcpip mbox: 32[0m
+[0;32mI (519) wifi_init: udp mbox: 6[0m
+[0;32mI (519) wifi_init: tcp mbox: 6[0m
+[0;32mI (529) wifi_init: tcp tx win: 5760[0m
+[0;32mI (529) wifi_init: tcp rx win: 5760[0m
+[0;32mI (529) wifi_init: tcp mss: 1440[0m
+[0;32mI (539) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (539) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (539) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (549) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (589) wifi:mode : sta (7c:df:a1:e1:13:60)[0m
+[0;32mI (589) wifi:enable tsf[0m
+[0;32mI (599) RS485_APP: No existing mappings[0m
+Client list at boot:
+[0] = 0
+[1] = 0
+[2] = 0
+[3] = 0
+[4] = 0
+[5] = 0
+[6] = 0
+[7] = 0
+[8] = 0
+[9] = 0
+[0;32mI (599) main_task: Returned from app_main()[0m
+[0;32mI (609) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (609) wifi:state: init -> auth (0xb0)[0m
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (619) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (629) wifi:state: assoc -> run (0x10)[0m
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (909) wifi:<ba-add>idx:0 (ifx:0, 2a:87:ba:d1:c4:54), tid:0, ssn:1, winSize:64[0m
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (919) wifi:connected with CONFIO_5G, aid = 6, channel 3, BW20, bssid = 2a:87:ba:d1:c4:54[0m
+[0;32mI (919) wifi:security: WPA2-PSK, phy: bgn, rssi: -35[0m
+[0;32mI (929) wifi:pm start, type: 1[0m
+
+[0;32mI (929) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (939) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (959) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (1679) wifi:<ba-add>idx:1 (ifx:0, 2a:87:ba:d1:c4:54), tid:6, ssn:0, winSize:64[0m
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (2479) esp_netif_handlers: sta ip: 192.168.0.106, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2479) RS485_APP: Connected! IP Address: 192.168.0.106[0m
+ESP32 IP Address: 192.168.0.106
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (3479) mdns_mem: mDNS task will be created from internal RAM[0m
+mdns hostname set to: [confiors485]
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+TCP server listening on port 5000
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 3: FC 00 FF 
+Decrypted Response: FC 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 01 
+Decrypted Response: 01 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 F8 
+Decrypted Response: 00 F8 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FF 
+Decrypted Response: 00 FF 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 FA 
+Decrypted Response: 00 FA 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 2: 00 F8 
+Decrypted Response: 00 F8 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 01 FF 
+Decrypted Response: 01 FF 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FC 
+Decrypted Response: 00 FC 
+Raw Response and len 2: 00 FE 
+Decrypted Response: 00 FE 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 7: 00 10 00 00 00 F7 FF 
+Decrypted Response: 00 10 00 00 00 F7 FF 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: FF 
+Decrypted Response: FF 
+Raw Response and len 19: 00 00 00 00 00 00 00 00 00 00 00 90 D2 E5 3F FA D9 DB DD 
+-->Received Button/Knob 0 state : 0
+Decrypted Response: F7 04 FB 02 FF 07 F7 02 00 00 00 8A D5 E5 3F FA D9 DB DD 

@@ -1,0 +1,21 @@
+New client connected, socket 55
+New client connected, socket 55
+Raw Response and len 13: 8D B6 25 FD FF 8B 66 87 08 3D 47 23 C5 
+-->Received Button/Knob 4 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 01 04 01 1D C8 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-01 -9-04 -10-01 -11-1D -12-C8 
+
+CRC Calculated: 1D C8
+
+--CRC is in correct Format--
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 05 4E 61 23 C5 
+Slot 0 -> Client: -1 | Device ID: Slot 1 -> Client: -1 | Device ID: Slot 2 -> Client: -1 | Device ID: Slot 3 -> Client: -1 | Device ID: Slot 4 -> Client: -1 | Device ID: Slot 5 -> Client: -1 | Device ID: Slot 6 -> Client: -1 | Device ID: Slot 7 -> Client: -1 | Device ID: Slot 8 -> Client: -1 | Device ID: Slot 9 -> Client: -1 | Device ID: WARNING: Valid client socket not found in client_list[]!
+Current client_list: [0]=-1 [1]=-1 [2]=-1 [3]=-1 [4]=-1 [5]=-1 [6]=-1 [7]=-1 [8]=-1 [9]=-1 
+[DEBUG] Client count after processing RS485: 0
+Assigned Client 55 to Device ID Index 0
+Client 55 disconnected
+Clearing client 55 from list position 0
+NVS entries cleared for slot 0

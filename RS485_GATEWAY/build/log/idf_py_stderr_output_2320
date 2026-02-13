@@ -1,0 +1,133 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0;33m--- 0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bd1: panic_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x4037b5d9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x40382b35: abort at C:/Espressif/frameworks/esp-idf-v5.4/components/newlib/abort.c:38
+0x4037b5cf: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/esp_err.c:49
+0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+0x42035fa3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bfb9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b10: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b5b8: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:126 (discriminator 1)
+[0m
+[0m

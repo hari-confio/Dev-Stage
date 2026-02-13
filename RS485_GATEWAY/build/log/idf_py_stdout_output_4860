@@ -1,0 +1,546 @@
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 1A 01 4F 43 F2 22 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 04 01 EC 25 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-04 -11-01 -12-EC -13-25 
+
+CRC Calculated: EC 25
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 1E 07 43 46 F2 22 
+sent data to rs485 device
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0D 04 42 5E E1 E9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 04 01 DB EC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-04 -11-01 -12-DB -13-EC 
+
+CRC Calculated: DB EC
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 0C 06 3E 5A E1 E9 
+sent data to rs485 device
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0D 05 45 5C E1 E9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 04 01 DB EC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-04 -11-01 -12-DB -13-EC 
+
+CRC Calculated: DB EC
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 66 87 14 01 4C 5B E1 E9 
+sent data to rs485 device
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 18 01 46 5C F2 22 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 04 01 EC 25 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-04 -11-01 -12-EC -13-25 
+
+CRC Calculated: EC 25
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+8D B6 25 FD FF 8B 69 DB 1B 07 4B 4A F2 22 
+sent data to rs485 device
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 1A 50 06 62 45 74 
+-->Received Btn/Knob 8 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 08 01 01 3F 77 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-08 -10-01 -11-01 -12-3F -13-77 
+
+CRC Calculated: 3F 77
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 19 49 32 42 44 14 
+-->Received Btn/Knob 8 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 08 03 01 3E 17 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-08 -10-03 -11-01 -12-3E -13-17 
+
+CRC Calculated: 3E 17
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 18 47 16 4F 45 84 
+-->Received Btn/Knob 8 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 08 02 01 3F 87 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-08 -10-02 -11-01 -12-3F -13-87 
+
+CRC Calculated: 3F 87
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 69 DB 17 05 07 5D F5 72 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 60 DD 08 01 01 01 EF 75 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-60 -7-DD -8-08 -9-01 -10-01 -11-01 -12-EF -13-75 
+
+CRC Calculated: EF 75
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0E 0A 10 39 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 13 06 0F 4A DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 12 05 02 4F DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 14 08 08 63 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 14 04 10 44 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 10 06 0F 59 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0C 03 03 37 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 12 0A 0A 4C DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0B 06 0F 55 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 12 05 02 42 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0C 03 05 62 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 11 02 0E 60 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0C 04 12 4D DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0E 03 10 50 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 13 07 0C 5E DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0E 07 06 3E DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 12 05 14 4F DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 10 01 02 5A DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0F 03 08 5E DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 13 08 04 39 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 12 05 06 3E DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 14 04 02 5F DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 11 04 07 50 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0F 09 0A 56 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 11 09 02 59 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0B 01 0F 5B DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 14 09 0F 57 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0C 04 0D 5C DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 11 01 0A 3C DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Received 14 bytes from client: 84 BA 20 FF FE 92 5D 89 06 01 01 00 19 7C 
+--CRC is not in correct Format--
+Raw Response and len 14: 8D B6 25 FD FF 8B 66 87 0E 03 0A 51 DE B9 
+-->Received Btn/Knob 1 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 06 01 01 01 D8 BC 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-06 -9-01 -10-01 -11-01 -12-D8 -13-BC 
+
+CRC Calculated: D8 BC
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Received 14 bytes from client: 84 BA 20 FF FE 92 5D 89 06 01 01 00 19 7C 
+--CRC is not in correct Format--
+Client disconnected from socket 55

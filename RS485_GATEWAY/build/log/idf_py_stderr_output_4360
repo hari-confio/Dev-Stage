@@ -1,0 +1,13 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM19 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM19 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4038a646: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_context.S:159
+[0m
+[0;33m--- 0x4038a6a6: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_context.S:220
+[0m
+[0;33m--- 0x4038a641: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.4/components/xtensa/xtensa_context.S:157
+[0m
+[0;33m--- 0x40378e84: _xt_panic at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/arch/xtensa/panic_handler_asm.S:41
+[0m
+[0m

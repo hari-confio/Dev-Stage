@@ -1,0 +1,46 @@
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+Raw Response and len 14: 8D B6 25 FD FF 8B 6B FD 32 13 01 33 00 75 
+-->Received Btn/Knob 2 btn state 1
+Decrypted Response: 84 BA 20 FF FE 92 62 FF 66 02 01 01 FA 78 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-62 -7-FF -8-66 -9-02 -10-01 -11-01 -12-FA -13-78 
+
+CRC Calculated: FA 78
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Sent heartbeat to client.
+Sent heartbeat to client.
+Raw Response and len 14: 5D 0B 5C FD FF 03 C5 C1 15 02 03 77 FE C8 
+-->Received Btn/Knob 1 btn state 119
+Decrypted Response: 54 0F 57 FF FE 0A BC C3 06 01 01 77 F8 CB 
+Processed Response: -0-54 -1-0F -2-57 -3-FF -4-FE -5-0A -6-BC -7-C3 -8-06 -9-01 -10-01 -11-77 -12-F8 -13-CB 
+
+CRC Calculated: F8 AD
+
+--CRC is not in correct Format--
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Client disconnected from socket 55

@@ -1,0 +1,624 @@
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3A 01 0C D8 72 AD 
+-->Received Btn/Knob 1 btn state 96
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 01 60 6C B0 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-01 -11-60 -12-6C -13-B0 
+
+CRC Calculated: 6C B0
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3A 10 06 A5 62 82 
+-->Received Btn/Knob 2 btn state 45
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 2D 5C 85 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-2D -12-5C -13-85 
+
+CRC Calculated: 5C 85
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3C 0D 0E DD 62 B0 
+-->Received Btn/Knob 2 btn state 101
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 65 5C B3 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-65 -12-5C -13-B3 
+
+CRC Calculated: 5C B3
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 34 02 3F 2C 75 C5 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 04 00 6F C8 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-04 -11-00 -12-6F -13-C8 
+
+CRC Calculated: 6F C8
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+95 6B BE FD FF 03 97 8B 34 05 48 29 75 C5 
+Sending data to RS485 device: 95 6B BE FD FF 03 97 8B 34 05 48 29 75 C5 
+[0;32mI (276450) RS485_APP: Ethernet Link Down[0m
+[0;32mI (282450) RS485_APP: Ethernet Link Up[0m
+[0;32mI (282450) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (284080) esp_netif_handlers: eth ip: 192.168.0.156, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (284080) RS485_APP: Got IP: 192.168.0.156[0m
+mDNS already started, skipping service add.
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 39 07 0A 82 F2 9C 
+-->Received Btn/Knob 1 btn state 10
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 01 0A EC 9F 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-01 -11-0A -12-EC -13-9F 
+
+CRC Calculated: EC 9F
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3B 04 4D 11 75 C5 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 04 00 6F C8 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-04 -11-00 -12-6F -13-C8 
+
+CRC Calculated: 6F C8
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+95 6B BE FD FF 03 97 8B 35 05 4C 07 75 C5 
+Sending data to RS485 device: 95 6B BE FD FF 03 97 8B 35 05 4C 07 75 C5 
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3B 05 56 23 6F 95 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 0D 00 69 98 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-0D -11-00 -12-69 -13-98 
+
+CRC Calculated: 69 98
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3C 0A 60 0C 6F 95 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 0D 00 69 98 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-0D -11-00 -12-69 -13-98 
+
+CRC Calculated: 69 98
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 34 04 47 1F 75 C5 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 04 00 6F C8 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-04 -11-00 -12-6F -13-C8 
+
+CRC Calculated: 6F C8
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+95 6B BE FD FF 03 97 8B 38 06 4A 02 75 C5 
+Sending data to RS485 device: 95 6B BE FD FF 03 97 8B 38 06 4A 02 75 C5 
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 33 01 54 01 6F 95 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 0D 00 69 98 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-0D -11-00 -12-69 -13-98 
+
+CRC Calculated: 69 98
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Sent heartbeat to client.
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Sent heartbeat to client.
+Sent heartbeat to client.
+Client disconnected from socket 55
+New client connected, socket 56
+Waiting for new client...
+Another client is already connected. Closing new connection.
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 34 02 05 81 B2 9B 
+-->Received Btn/Knob 1 btn state 9
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 01 09 AC 9E 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-01 -11-09 -12-AC -13-9E 
+
+CRC Calculated: AC 9E
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 33 01 4C 0B 75 C5 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 04 00 6F C8 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-04 -11-00 -12-6F -13-C8 
+
+CRC Calculated: 6F C8
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+95 6B BE FD FF 03 97 8B 35 03 3D 25 75 C5 
+Sending data to RS485 device: 95 6B BE FD FF 03 97 8B 35 03 3D 25 75 C5 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 37 03 59 11 6F 95 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 0D 00 69 98 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-0D -11-00 -12-69 -13-98 
+
+CRC Calculated: 69 98
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 39 04 44 26 75 C5 
+-->Received Btn/Knob 1 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 04 00 6F C8 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-04 -11-00 -12-6F -13-C8 
+
+CRC Calculated: 6F C8
+
+--CRC is in correct Format--
+
+DEVICE INCLUSION PROCESSING
+
+Encrypted Frame:
+95 6B BE FD FF 03 97 8B 38 0A 50 04 75 C5 
+Sending data to RS485 device: 95 6B BE FD FF 03 97 8B 38 0A 50 04 75 C5 
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3C 0D 05 B7 E2 85 
+-->Received Btn/Knob 2 btn state 63
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 3F DC 88 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-3F -12-DC -13-88 
+
+CRC Calculated: DC 88
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3C 0C 12 B9 62 A5 
+-->Received Btn/Knob 2 btn state 65
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 41 5C A8 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-41 -12-5C -13-A8 
+
+CRC Calculated: 5C A8
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3C 04 14 8A F2 92 
+-->Received Btn/Knob 1 btn state 18
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 01 01 12 EC 95 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-01 -10-01 -11-12 -12-EC -13-95 
+
+CRC Calculated: EC 95
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 3B 11 04 DD 62 B0 
+-->Received Btn/Knob 2 btn state 101
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 65 5C B3 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-65 -12-5C -13-B3 
+
+CRC Calculated: 5C B3
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 36 0B 08 B9 62 A5 
+-->Received Btn/Knob 2 btn state 65
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 41 5C A8 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-41 -12-5C -13-A8 
+
+CRC Calculated: 5C A8
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Client disconnected from socket 55
+New client connected, socket 55
+Waiting for new client...
+Client connected on socket 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 38 14 0E DD 62 B0 
+-->Received Btn/Knob 2 btn state 101
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 65 5C B3 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-65 -12-5C -13-B3 
+
+CRC Calculated: 5C B3
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 37 0D 05 31 A2 95 
+-->Received Btn/Knob 2 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 00 9C 98 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-00 -12-9C -13-98 
+
+CRC Calculated: 9C 98
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 37 0D 04 DD 62 B0 
+-->Received Btn/Knob 2 btn state 101
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 65 5C B3 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-65 -12-5C -13-B3 
+
+CRC Calculated: 5C B3
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 34 0C 04 2E A2 95 
+-->Received Btn/Knob 2 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 00 9C 98 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-00 -12-9C -13-98 
+
+CRC Calculated: 9C 98
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 33 0C 14 DD 62 B0 
+-->Received Btn/Knob 2 btn state 101
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 65 5C B3 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-65 -12-5C -13-B3 
+
+CRC Calculated: 5C B3
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 38 14 0E 2A A2 95 
+-->Received Btn/Knob 2 btn state 0
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 00 9C 98 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-00 -12-9C -13-98 
+
+CRC Calculated: 9C 98
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Raw Response and len 14: 95 6B BE FD FF 03 97 8B 39 0D 02 DD 62 B0 
+-->Received Btn/Knob 2 btn state 101
+Decrypted Response: 8C 6F B9 FF FE 0A 8E 8D 03 02 01 65 5C B3 
+Processed Response: -0-8C -1-6F -2-B9 -3-FF -4-FE -5-0A -6-8E -7-8D -8-03 -9-02 -10-01 -11-65 -12-5C -13-B3 
+
+CRC Calculated: 5C B3
+
+--CRC is in correct Format--
+
+BTN PROCESSING
+Sent data to client 55
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 
+Sent heartbeat to client.
+Received 4 bytes from client: 50 4F 4E 47 

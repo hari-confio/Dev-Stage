@@ -1,0 +1,75 @@
+[0;32mI (394161) RS485_DATA: Raw Response and len 14: [0m
+[0;32mI (394161) RS485_DATA: Decrypted Response: [0m
+[0;32mI (394161) RS485_DATA: Processed Response:[0m
+[0;32mI (394161) RS485_DATA: rs485--CRC is in correct Format--[0m
+[0;32mI (394161) RS485_APP: Sent data to client 55[0m
+
+[0;32mI (397621) RS485_C4_DATA: Received 14 bytes from client: [0m
+[0;32mI (397621) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (397621) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (397631) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (397751) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (397751) RS485_C4_DATA: Received 14 bytes from client: [0m
+[0;32mI (397751) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (397751) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (397751) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (397881) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (397881) RS485_C4_DATA: Received 14 bytes from client: [0m
+[0;32mI (397881) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (397881) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (397881) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (398011) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (398011) RS485_C4_DATA: Received 42 bytes from client: [0m
+[0;32mI (398011) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (398011) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (398011) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (398141) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (398141) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (398141) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (398141) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (398261) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (398261) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (398261) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (398261) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (398381) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (398381) RS485_C4_DATA: Received 28 bytes from client: [0m
+[0;32mI (398381) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (398381) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (398381) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (398511) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+
+[0;32mI (398511) RS485_C4_DATA: --CRC is in correct Format--[0m
+
+[0;32mI (398511) RS485_DATA: [0m
+Encrypted Frame:
+
+[0;32mI (398511) RS485_DATA: Sending data to RS485 device: [0m
+[0;32mI (398631) RS485_C4_DATA: Sent encrypted data over RS485.[0m
+

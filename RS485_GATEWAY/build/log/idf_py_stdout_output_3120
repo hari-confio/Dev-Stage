@@ -1,0 +1,44 @@
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 E0 8B DD 61 53 71 
+Decrypted Response: A0 93 1A 0A 00 7E 66 E0 8B DD 61 53 71 
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 60 DB FB 4F 2E F0 
+Decrypted Response: A0 93 1A 0A 00 7E 66 60 DB FB 4F 2E F0 
+[0;32mI (76360) RS485_APP: Ethernet Link Down[0m
+[0;32mI (78360) RS485_APP: Ethernet Link Up[0m
+[0;32mI (78360) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (79360) esp_netif_handlers: eth ip: 192.168.1.177, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (79360) RS485_APP: Got IP: 192.168.1.177[0m
+mDNS already started, skipping service add.
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 A0 CB E3 73 26 F8 
+Decrypted Response: A0 93 1A 0A 00 7E 66 A0 CB E3 73 26 F8 
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 E0 DB F1 61 53 71 
+Decrypted Response: A0 93 1A 0A 00 7E 66 E0 DB F1 61 53 71 
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 E0 DB E5 A1 CF 49 
+Decrypted Response: A0 93 1A 0A 00 7E 66 E0 DB E5 A1 CF 49 
+Raw Response and len 13: 80 4D 69 0A 00 7E 66 A0 BB EB 3D 4D 72 
+Decrypted Response: 80 4D 69 0A 00 7E 66 A0 BB EB 3D 4D 72 
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 E0 CB ED 03 CF 13 
+Decrypted Response: A0 93 1A 0A 00 7E 66 E0 CB ED 03 CF 13 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 E0 2D DB 51 2A F8 
+Decrypted Response: A0 93 1A 0A 00 7E 66 E0 2D DB 51 2A F8 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+[0;32mI (2370) RS485_APP: Ethernet Link Up[0m
+[0;32mI (2370) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (3370) esp_netif_handlers: eth ip: 192.168.1.177, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3370) RS485_APP: Got IP: 192.168.1.177[0m
+[0;32mI (3370) mdns_mem: mDNS task will be created from internal RAM[0m
+mDNS service started with hostname 'confiors485' on port 5000
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 A0 9B E1 6D 13 70 
+Decrypted Response: A0 93 1A 0A 00 7E 66 A0 9B E1 6D 13 70 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 1: 00 
+Decrypted Response: 00 
+Raw Response and len 13: A0 93 1A 0A 00 7E 66 20 7B F3 7F AE F8 
+Decrypted Response: A0 93 1A 0A 00 7E 66 20 7B F3 7F AE F8 

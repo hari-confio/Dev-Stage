@@ -1,0 +1,22 @@
+[0;32mI (176151) RS485_APP: Sent heartbeat to client.[0m
+
+[0;32mI (176151) RS485_C4_DATA: Received 4 bytes from client: [0m
+50 4F 4E 47 
+[0;32mI (202861) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (230271) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (230271) RS485_APP: Waiting for new client...[0m
+
+[0;32mI (230271) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (230271) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (230281) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (230281) RS485_APP: Waiting for new client...[0m
+
+[0;32mI (230281) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (239071) RS485_APP: Client disconnected from socket 55[0m
+

@@ -1,0 +1,12 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\DELL\workspace\RS485_GATEWAY\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/DELL/workspace/RS485_GATEWAY/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c: In function 'handle_client_task':
+C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:682:13: warning: unused variable 'err' [-Wunused-variable]
+  682 |         int err = errno;
+      |             ^~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld

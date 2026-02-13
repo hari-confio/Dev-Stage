@@ -1,0 +1,114 @@
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.1[0m
+[0;32mI (31) boot: efuse block revision: v1.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=159f4h ( 88564) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=00025a1c vaddr=3fc96200 size=02ccch ( 11468) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=000286f0 vaddr=40374000 size=07928h ( 31016) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4b730h (309040) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=0007b758 vaddr=4037b928 size=0a88ch ( 43148) load[0m
+[0;32mI (181) esp_image: segment 5: paddr=00085fec vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (208) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (208) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     app-template[0m
+[0;32mI (212) app_init: App version:      6d4ace7[0m
+[0;32mI (216) app_init: Compile time:     Apr 25 2025 15:14:48[0m
+[0;32mI (221) app_init: ELF file SHA256:  590ec5641...[0m
+[0;32mI (225) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (230) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (234) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (238) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (242) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (248) heap_init: At 3FC9B648 len 0004E0C8 (312 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (270) spi_flash: detected chip: gd[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (288) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (294) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (341) RS485_APP: Generated ETH MAC: 02:85:18:76:fd:69[0m
+[0;32mI (341) esp_eth.netif.netif_glue: 02:85:18:76:fd:69[0m
+[0;32mI (341) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (351) RS485_APP: Ethernet initialized[0m
+[1;31mE (1351) RS485_NVS: No NVS entries found or error: ESP_ERR_NVS_NOT_FOUND[0m
+
+[0;32mI (1351) RS485_APP: TCP server listening on port 5000[0m
+
+[0;32mI (1351) main_task: Returned from app_main()[0m
+[0;32mI (2351) RS485_APP: Ethernet Link Up[0m
+[0;32mI (2351) RS485_APP: MAC: 02:85:18:76:fd:69[0m
+[0;32mI (3891) esp_netif_handlers: eth ip: 192.168.0.115, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3891) RS485_APP: Got IP: 192.168.0.115[0m
+[0;32mI (3891) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (3891) RS485_APP: mDNS service started with hostname 'confiors485' on port 5000[0m
+
+[0;32mI (7471) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7471) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (7481) RS485_APP: Client disconnected from socket 55[0m
+
+[0;32mI (7491) RS485_APP: New client connected, socket 55[0m
+
+[0;32mI (7491) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (33141) RS485_APP: New client connected, socket 56[0m
+
+[0;33mW (33141) RS485_APP: Existing client on socket 55 found. Disconnecting old client.[0m
+[1;31mE (33141) RS485_APP: Socket error on recv: errno=128[0m
+
+[0;32mI (33241) RS485_APP: Client connected on socket 56[0m
+
+[0;32mI (63161) RS485_APP: New client connected, socket 55[0m
+
+[0;33mW (63161) RS485_APP: Existing client on socket 56 found. Disconnecting old client.[0m
+[1;31mE (63161) RS485_APP: Socket error on recv: errno=128[0m
+
+[0;32mI (63261) RS485_APP: Client connected on socket 55[0m
+
+[0;32mI (80161) RS485_APP: New client connected, socket 56[0m
+
+[0;33mW (80161) RS485_APP: Existing client on socket 55 found. Disconnecting old client.[0m
+[1;31mE (80161) RS485_APP: Socket error on recv: errno=128[0m
+
+[0;32mI (80171) RS485_APP: New client connected, socket 55[0m
+
+[0;33mW (80171) RS485_APP: Existing client on socket 55 found. Disconnecting old client.[0m
+[0;32mI (80261) RS485_APP: Client connected on socket 56[0m
+
+[0;32mI (80261) RS485_APP: Client disconnected from socket 56[0m
+
+[0;32mI (80281) RS485_APP: Client connected on socket 55[0m
+
+[1;31mE (80281) RS485_APP: Socket error on recv: errno=9[0m
+

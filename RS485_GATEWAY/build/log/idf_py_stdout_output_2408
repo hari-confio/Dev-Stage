@@ -1,0 +1,134 @@
+�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 21 2025 15:45:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (31) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1b934h (112948) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0002b95c vaddr=3fc9a800 size=046bch ( 18108) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8f698h (587416) map[0m
+[0;32mI (217) esp_image: segment 3: paddr=000bf6c0 vaddr=3fc9eebc size=002cch (   716) load[0m
+[0;32mI (218) esp_image: segment 4: paddr=000bf994 vaddr=40374000 size=167cch ( 92108) load[0m
+[0;32mI (241) esp_image: segment 5: paddr=000d6168 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (260) cpu_start: Multicore app[0m
+[0;32mI (269) cpu_start: Pro cpu start user code[0m
+[0;32mI (269) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (270) app_init: Application information:[0m
+[0;32mI (270) app_init: Project name:     app-template[0m
+[0;32mI (274) app_init: App version:      6d4ace7[0m
+[0;32mI (278) app_init: Compile time:     Apr 25 2025 15:14:48[0m
+[0;32mI (283) app_init: ELF file SHA256:  7c49e93c0...[0m
+[0;32mI (287) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (292) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (296) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (300) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (310) heap_init: At 3FCA3818 len 00045EF8 (279 KiB): RAM[0m
+[0;32mI (315) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (320) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (332) spi_flash: detected chip: gd[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (337) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (349) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (356) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (362) main_task: Started on CPU0[0m
+[0;32mI (382) main_task: Calling app_main()[0m
+[0;32mI (1382) WIFI: Initializing WiFi...[0m
+[0;32mI (1382) pp: pp rom version: e7ae62f[0m
+[0;32mI (1382) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1412) wifi:wifi driver task: 3fcad74c, prio:23, stack:6656, core=0[0m
+[0;32mI (1412) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (1412) wifi:wifi certification version: v7.0[0m
+[0;32mI (1412) wifi:config NVS flash: enabled[0m
+[0;32mI (1412) wifi:config nano formatting: disabled[0m
+[0;32mI (1422) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1422) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1432) wifi:Init management short buffer num: 32[0m
+[0;32mI (1432) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1432) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1442) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1442) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1452) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1452) wifi_init: rx ba win: 6[0m
+[0;32mI (1452) wifi_init: accept mbox: 6[0m
+[0;32mI (1462) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1462) wifi_init: udp mbox: 6[0m
+[0;32mI (1462) wifi_init: tcp mbox: 6[0m
+[0;32mI (1472) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1472) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1472) wifi_init: tcp mss: 1440[0m
+[0;32mI (1472) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1482) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3502) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3502) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (3502) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (3542) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (3552) wifi:mode : sta (cc:ba:97:01:ca:b0)[0m
+[0;32mI (3552) wifi:enable tsf[0m
+[0;32mI (3552) WIFI: wifi_init finished.[0m
+[0;32mI (3552) WIFI: Wi-Fi STA started, trying to connect...[0m
+[0;32mI (3562) RS485_APP: No existing mappings[0m
+Client list at boot:
+[0] = 0
+[1] = 0
+[2] = 0
+[3] = 0
+[4] = 0
+[5] = 0
+[6] = 0
+[7] = 0
+[8] = 0
+[9] = 0
+[0;32mI (3572) main_task: Returned from app_main()[0m
+[0;32mI (4262) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4262) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4272) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4272) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4542) wifi:<ba-add>idx:0 (ifx:0, 2a:87:ba:d1:c4:54), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4542) wifi:connected with CONFIO_5G, aid = 1, channel 3, BW20, bssid = 2a:87:ba:d1:c4:54[0m
+[0;32mI (4542) wifi:security: WPA2-PSK, phy: bgn, rssi: -31[0m
+[0;32mI (4562) wifi:pm start, type: 1[0m
+
+[0;32mI (4562) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4562) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4572) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6112) esp_netif_handlers: sta ip: 192.168.0.124, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (6112) WIFI: Got IP: 192.168.0.124[0m
+ESP32 IP Address: 192.168.0.124
+[0;32mI (6382) wifi:<ba-add>idx:1 (ifx:0, 2a:87:ba:d1:c4:54), tid:6, ssn:0, winSize:64[0m
+[0;32mI (6612) mdns_mem: mDNS task will be created from internal RAM[0m
+mdns hostname set to: [confiors485]
+[1;31mE (6612) mdns: mdns_service_remove_for_host(6674): Invalid state or arguments[0m
+[1;31mE (6612) RS485_APP: Failed to remove existing mDNS service: ESP_ERR_INVALID_ARG[0m
+TCP server listening on port 5000
+Raw Response and len 13: 8D B6 25 FD FF 8B 66 87 20 12 49 14 96 
+-->Received Button/Knob 1 state : 1
+Decrypted Response: 84 BA 20 FF FE 92 5D 89 04 01 01 0E 99 
+Processed Response: -0-84 -1-BA -2-20 -3-FF -4-FE -5-92 -6-5D -7-89 -8-04 -9-01 -10-01 -11-0E -12-99 
+
+CRC Calculated: 0E 99
+
+--CRC is in correct Format--[DEBUG] Client count after processing RS485: 0

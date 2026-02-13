@@ -1,0 +1,115 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+[0m
+[0;33m--- 0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+[0m
+[0;33m--- 0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420143db: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:984
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x420143d8: esp_netif_attach at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_netif/lwip/esp_netif_lwip.c:980
+0x4200a96e: app_main at C:/Users/DELL/workspace/RS485_GATEWAY/main/main.c:194 (discriminator 1)
+0x420308b3: main_task at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/app_startup.c:208
+0x4037bee9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b2c: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m
