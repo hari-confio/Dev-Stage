@@ -1,0 +1,1280 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x3a (SPI_FAS�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xf (BROWNOUT_RST),boot:0x3a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f3c
+entry 0x403c8928
+[0;32mI (34) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (34) boot: compile time Feb  4 2026 15:35:28[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v0.1[0m
+[0;32mI (38) boot: efuse block revision: v1.2[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (80) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (86) boot:  3 ota_0            OTA app          00 10 00020000 00300000[0m
+[0;32mI (93) boot:  4 ota_1            OTA app          00 11 00320000 00300000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) boot: No factory image, trying OTA 0[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=4bc18h (310296) map[0m
+[0;32mI (187) esp_image: segment 1: paddr=0006bc40 vaddr=3fc9b100 size=043d8h ( 17368) load[0m
+[0;32mI (192) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=9cdd4h (642516) map[0m
+[0;32mI (343) esp_image: segment 3: paddr=0010cdfc vaddr=3fc9f4d8 size=006d0h (  1744) load[0m
+[0;32mI (343) esp_image: segment 4: paddr=0010d4d4 vaddr=40374000 size=17078h ( 94328) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=00124554 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (406) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (416) cpu_start: Multicore app[0m
+[0;32mI (424) cpu_start: Pro cpu start user code[0m
+[0;32mI (424) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (424) app_init: Application information:[0m
+[0;32mI (424) app_init: Project name:     JAQUAR_RS485_REMOTE_GATEWAY[0m
+[0;32mI (430) app_init: App version:      6d4ace7[0m
+[0;32mI (434) app_init: Compile time:     Feb  4 2026 15:35:17[0m
+[0;32mI (439) app_init: ELF file SHA256:  896e9bda3...[0m
+[0;32mI (443) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (448) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (452) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (456) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (460) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FCA9D40 len 0003F9D0 (254 KiB): RAM[0m
+[0;32mI (471) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (476) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (488) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (497) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (501) spi_flash: flash io: opi_str[0m
+[0;33mW (504) spi_flash: Detected size(32768k) larger than the size in the binary image header(16384k). Using the size in the binary image header.[0m
+[0;32mI (517) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (523) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+[0;32mI (540) MAIN: Starting Jaquar Remote Configuration Application[0m
+[0;32mI (570) MAIN: Watchdog timer started[0m
+[0;32mI (570) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (570) MAIN: Waiting for Z-Wave module to initialize...[0m
+[0;32mI (1820) MAIN: RAW RX (12 bytes):[0m
+01 0A 00 0A 05 00 01 02 01 00 00 F8 
+[0;32mI (1820) MAIN: SERIALAPI_STARTED received[0m
+[0;32mI (1820) MAIN: RF region set: INDIA[0m
+[0;32mI (1920) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 40 01 B1 
+[0;32mI (1920) MAIN: Received ACK (0x06)[0m
+[0;32mI (1920) MAIN: RF region set successfully[0m
+[0;32mI (2020) MAIN: RAW RX (11 bytes):[0m
+06 01 08 01 20 E1 0C 10 44 01 6E 
+[0;32mI (2020) MAIN: Received ACK (0x06)[0m
+[0;32mI (2020) MAIN: HomeID: E10C1044[0m
+[0;32mI (2020) MAIN: Z-Wave controller ready[0m
+[0;32mI (3580) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3580) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3580) WEB_MSG: Gateway Status : Loading...[0m
+[0;32mI (3590) MAIN: [0m
+
+
+[0;32mI (3590) MAIN: ========================================================[0m
+[0;32mI (3590) MAIN: STARTING Z-WAVE SERIAL API INITIALIZATION SEQUENCE[0m
+[0;32mI (3600) MAIN: ========================================================[0m
+[0;32mI (3810) MAIN: [0m
+[1] Getting controller capabilities...
+TX Get Capabilities: 01 03 00 07 FB 
+[0;32mI (3810) MAIN: Requesting controller capabilities...[0m
+[0;32mI (3910) MAIN: RAW RX (46 bytes):[0m
+06 01 2B 01 07 07 12 00 00 00 04 00 04 F6 87 3E 
+88 CF 2B C0 4F FB D7 FD E0 17 00 00 80 00 80 86 
+80 BA 05 00 70 00 00 EE 7F C0 00 00 00 D5 
+[0;32mI (3910) MAIN: Received ACK (0x06)[0m
+[0;32mI (3910) MAIN: === GET CAPABILITIES RESPONSE ===[0m
+[0;32mI (3920) MAIN: === CAPABILITIES RESPONSE ===[0m
+[0;32mI (3920) MAIN: Length: 41 bytes[0m
+[0;32mI (3920) MAIN: Full data:[0m
+07 12 00 00 00 04 00 04 F6 87 3E 88 CF 2B C0 4F 
+FB D7 FD E0 17 00 00 80 00 80 86 80 BA 05 00 70 
+00 00 EE 7F C0 00 00 00 D5 
+=============================
+[0;32mI (4010) MAIN: [0m
+[2] Getting SerialAPI supported command classes...
+TX SerialAPI Setup: Supported: 01 04 00 0B 01 F1 
+[0;32mI (4010) MAIN: Requesting SerialAPI supported command classes...[0m
+[0;32mI (4110) MAIN: RAW RX (25 bytes):[0m
+06 01 16 01 0B 01 FE 3E 01 03 00 01 00 00 00 01 
+00 00 00 00 00 00 00 01 21 
+[0;32mI (4110) MAIN: Received ACK (0x06)[0m
+[0;32mI (4110) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x01[0m
+[0;32mI (4110) MAIN: === SERIALAPI SUPPORTED RESPONSE ===[0m
+[0;32mI (4210) MAIN: [0m
+[3] Getting SUC Node ID...
+TX Get SUC Node ID: 01 03 00 02 FE 
+[0;32mI (4210) MAIN: Requesting SUC (Static Update Controller) Node ID...[0m
+[0;32mI (4310) MAIN: RAW RX (40 bytes):[0m
+06 01 25 01 02 09 00 1D D1 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 07 00 1B 
+[0;32mI (4310) MAIN: Received ACK (0x06)[0m
+[0;32mI (4310) MAIN: === GET SUC NODE ID RESPONSE ===[0m
+[0;32mI (4320) MAIN: === SUC NODE RESPONSE ===[0m
+[0;32mI (4320) MAIN: SUC Node ID: 9[0m
+[0;32mI (4320) MAIN: Capabilities: 0x00[0m
+[0;32mI (4320) MAIN: Full response:[0m
+09 00 1D D1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 1B 
+=============================
+[0;32mI (4410) MAIN: [0m
+[4] Getting Z-Wave library version...
+TX Get Version: 01 03 00 15 E9 
+[0;32mI (4410) MAIN: Requesting Z-Wave library version...[0m
+[0;32mI (4510) MAIN: RAW RX (19 bytes):[0m
+06 01 10 01 15 5A 2D 57 61 76 65 20 37 2E 31 38 
+00 07 9E 
+[0;32mI (4510) MAIN: Received ACK (0x06)[0m
+[0;32mI (4510) MAIN: === GET VERSION RESPONSE ===[0m
+[0;32mI (4510) MAIN: === VERSION RESPONSE ===[0m
+[0;32mI (4510) MAIN: Library Type: 0x5A[0m
+[0;32mI (4520) MAIN: Library Type: Unknown[0m
+[0;32mI (4520) MAIN: Protocol Version: 45.87[0m
+[0;32mI (4520) MAIN: Application Version: 97.118[0m
+[0;32mI (4530) MAIN: Full data:[0m
+5A 2D 57 61 76 65 20 37 2E 31 38 00 07 9E 
+=============================
+[0;32mI (4610) MAIN: [0m
+[5] Getting Home ID and Node ID...
+[0;32mI (4710) MAIN: RAW RX (11 bytes):[0m
+06 01 08 01 20 E1 0C 10 44 01 6E 
+[0;32mI (4710) MAIN: Received ACK (0x06)[0m
+[0;32mI (4810) MAIN: [0m
+[7] Setting TX power...
+TX Set TX Power: 01 06 00 0B 04 7F 00 89 
+[0;32mI (4810) MAIN: Setting TX power to: 0x7F (measured: 0x00)[0m
+[0;32mI (4910) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 04 01 F5 
+[0;32mI (4910) MAIN: Received ACK (0x06)[0m
+[0;32mI (4910) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x04[0m
+[0;32mI (4910) MAIN: === TX POWER SET RESPONSE ===[0m
+[0;32mI (4910) MAIN: Status: 0x01[0m
+[0;32mI (4910) MAIN: ✓ TX power set SUCCESSFULLY to 0x7F[0m
+[0;32mI (4920) MAIN: TX Power is now at maximum (+7 dBm)[0m
+[0;32mI (4920) MAIN: [0m
+[9] Setting RF region to India...
+TX RF Region Set: 01 05 00 0B 40 05 B4 
+[0;32mI (4930) MAIN: Setting RF Region to: 0x05[0m
+[0;32mI (4940) MAIN: Region: India[0m
+[0;32mI (5030) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 40 01 B1 
+[0;32mI (5030) MAIN: Received ACK (0x06)[0m
+[0;32mI (5030) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x40[0m
+[0;32mI (5030) MAIN: === RF REGION SET RESPONSE ===[0m
+[0;32mI (5030) MAIN: Status: 0x01[0m
+[0;32mI (5030) MAIN: ✓ RF Region set SUCCESSFULLY[0m
+[0;32mI (5040) MAIN: [0m
+[10] Verifying RF region...
+TX RF Region Get: 01 04 00 0B 20 D0 
+[0;32mI (5050) MAIN: Requesting current RF Region[0m
+[0;32mI (5150) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 20 05 D5 
+[0;32mI (5150) MAIN: Received ACK (0x06)[0m
+[0;32mI (5150) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x20[0m
+[0;32mI (5150) MAIN: === RF REGION GET RESPONSE ===[0m
+[0;32mI (5150) MAIN: Current RF Region: 0x05[0m
+[0;32mI (5160) MAIN: === RF REGION INFORMATION ===[0m
+[0;32mI (5160) MAIN: Region Code: 0x05[0m
+[0;32mI (5160) MAIN: Region Name: India[0m
+[0;32mI (5170) MAIN: ============================[0m
+[0;32mI (5250) MAIN: ========================================================[0m
+[0;32mI (5250) MAIN: ✓ Z-WAVE CONTROLLER INITIALIZATION COMPLETE[0m
+[0;32mI (5250) MAIN: ========================================================[0m
+[0;32mI (5250) MAIN: [0m
+
+
+[0;32mI (5250) WIFI: Valid SSID found in NVS, use STA mode[0m
+[0;32mI (5260) WIFI: Starting in STA mode with saved credentials[0m
+[0;32mI (5260) WIFI: Initializing WiFi STA mode[0m
+[0;32mI (5270) pp: pp rom version: e7ae62f[0m
+[0;32mI (5270) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (5290) wifi:wifi driver task: 3fcbb24c, prio:23, stack:6656, core=0[0m
+[0;32mI (5300) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (5300) wifi:wifi certification version: v7.0[0m
+[0;32mI (5300) wifi:config NVS flash: enabled[0m
+[0;32mI (5300) wifi:config nano formatting: disabled[0m
+[0;32mI (5300) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (5310) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (5310) wifi:Init management short buffer num: 32[0m
+[0;32mI (5320) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (5320) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (5330) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (5330) wifi:Init static rx buffer num: 10[0m
+[0;32mI (5330) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (5340) wifi_init: rx ba win: 6[0m
+[0;32mI (5340) wifi_init: accept mbox: 6[0m
+[0;32mI (5340) wifi_init: tcpip mbox: 32[0m
+[0;32mI (5350) wifi_init: udp mbox: 6[0m
+[0;32mI (5350) wifi_init: tcp mbox: 6[0m
+[0;32mI (5350) wifi_init: tcp tx win: 5760[0m
+[0;32mI (5360) wifi_init: tcp rx win: 5760[0m
+[0;32mI (5360) wifi_init: tcp mss: 1440[0m
+[0;32mI (5360) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (5370) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (5370) WIFI: Connecting to SSID: Confio_R&D[0m
+[0;32mI (5380) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (5410) wifi:mode : sta (68:b6:b3:3e:0f:10)[0m
+[0;32mI (5410) wifi:enable tsf[0m
+[0;32mI (5420) WIFI: WiFi STA started, connecting...[0m
+[0;32mI (5420) MAIN: ✓ Loaded 2 nodes from NVS[0m
+[0;32mI (5420) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (5420) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (5430) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (5430) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (5440) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (5450) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (5450) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (5460) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (5460) MAIN: DEVICE 2 -> Node 8 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (5470) MAIN:            Node 8 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (5470) MAIN:            Node 8 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (5480) MAIN:            Node 8 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (5490) MAIN:            Node 8 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (5490) MAIN:            Node 8 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (5500) MAIN:            Node 8 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (5500) MAIN: =============================[0m
+[0;32mI (5500) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5510) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5520) MAIN: [0m
+
+
+[0;32mI (5520) MAIN: ========================================================[0m
+[0;32mI (5520) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5530) MAIN: APPLICATION STARTED SUCCESSFULLY[0m
+[0;32mI (5530) MAIN: ========================================================[0m
+[0;32mI (5540) MAIN: Z-Wave Controller: READY[0m
+[0;32mI (5540) MAIN: ========================================================[0m
+[0;32mI (5550) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5550) MAIN: [0m
+
+
+[0;32mI (5580) wifi:connected with Confio_R&D, aid = 3, channel 3, BW20, bssid = a2:c9:eb:d7:01:43[0m
+[0;32mI (5580) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (5580) wifi:pm start, type: 1[0m
+
+[0;32mI (5580) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5590) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5610) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (8590) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (9370) WIFI: Got IP: 192.168.1.34[0m
+[0;32mI (9370) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (9370) WIFI: mDNS service started with hostname 'jaquarremote' on port 5000[0m
+
+[0;32mI (9370) MAIN: Starting web server...[0m
+[0;32mI (9370) MAIN: Starting HTTP server on port: 80[0m
+[0;32mI (9380) MAIN: HTTP server started successfully[0m
+[0;32mI (9380) WIFI: WiFi connected successfully after 0 seconds total[0m
+[0;32mI (9390) esp_netif_handlers: sta ip: 192.168.1.34, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (13590) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (18590) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (23590) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (26920) wifi:<ba-add>idx:0 (ifx:0, a2:c9:eb:d7:01:43), tid:0, ssn:0, winSize:64[0m
+[0;32mI (28590) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (30550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (30550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (30550) MAIN: Node 8: REMOTE         NIF:18 bytes[0m
+[0;32mI (30550) MAIN: =====================[0m
+[0;32mI (30600) MAIN: Exclusion process started via web[0m
+[0;32mI (30600) WEB_MSG: Exclusion process started. Put device in exclusion mode. The device will be removed automatically when exclusion completes.[0m
+[0;32mI (31200) MAIN: ========== STARTING EXCLUSION PROCESS ==========[0m
+TX Ensure Clean (Exclusion): 01 04 00 4B 05 B5 
+[0;32mI (31300) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4B 05 05 00 00 B3 
+[0;32mI (31300) MAIN: Received ACK (0x06)[0m
+TX Exclusion Start: 01 04 00 4B 01 B1 
+[0;32mI (31400) MAIN: Z-Wave exclusion started[0m
+[0;32mI (31500) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4B 05 01 00 00 B7 
+[0;32mI (31500) MAIN: Received ACK (0x06)[0m
+[0;32mI (31500) MAIN: REMOVE_NODE cb: status=0x01 nodeId=0[0m
+[0;32mI (31500) MAIN: Exclusion: Learn ready - waiting for device[0m
+[0;32mI (34410) MAIN: RAW RX (9 bytes):[0m
+01 07 00 4B 05 02 00 00 B4 
+[0;32mI (34410) MAIN: REMOVE_NODE cb: status=0x02 nodeId=0[0m
+[0;32mI (34410) MAIN: Exclusion: Node found[0m
+[0;32mI (34600) MAIN: RAW RX (27 bytes):[0m
+01 19 00 4B 05 03 08 12 04 18 01 5E 98 9F 55 86 
+6C 73 72 87 7A 5A 5B 8E 59 85 E5 
+[0;32mI (34600) MAIN: REMOVE_NODE cb: status=0x03 nodeId=8[0m
+[0;32mI (34600) MAIN: Exclusion: Removing slave node 8[0m
+[0;32mI (34600) MAIN: Node 8 is being excluded from network[0m
+[0;32mI (34710) MAIN: RAW RX (27 bytes):[0m
+01 19 00 4B 05 06 08 12 04 18 01 5E 98 9F 55 86 
+6C 73 72 87 7A 5A 5B 8E 59 85 E0 
+[0;32mI (34710) MAIN: REMOVE_NODE cb: status=0x06 nodeId=8[0m
+[0;32mI (34710) MAIN: ✔ Exclusion COMPLETED for node 8[0m
+[0;32mI (34710) MAIN: Removing node 8 from list[0m
+[0;32mI (34730) MAIN: ✓ Node table saved to NVS (1 nodes)[0m
+[0;32mI (34730) MAIN: ==============NVS Table Data=================[0m
+[0;32mI (34730) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (34730) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (34740) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (34740) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (34750) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (34760) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (34760) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (34770) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (34770) MAIN: =============================[0m
+[0;32mI (34780) MAIN: Node 8 removed permanently. Total nodes: 1[0m
+[0;32mI (34780) MAIN: Stopping exclusion process...[0m
+TX Stop Exclusion: 01 04 00 4B 05 B5 
+[0;32mI (34890) MAIN: Exclusion stopped, state set to ZW_IDLE[0m
+[0;32mI (34890) MAIN: ========== EXCLUSION COMPLETED SUCCESSFULLY ==========[0m
+[0;32mI (34890) WEB_MSG: DeviceID 8 Exclusion Completed!![0m
+[0;32mI (34900) MAIN: Done received from within 60 seconds[0m
+[0;32mI (34990) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4B 05 05 00 00 B3 
+[0;32mI (34990) MAIN: Received ACK (0x06)[0m
+[0;32mI (39890) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (40220) MAIN: Inclusion process started via web[0m
+[0;32mI (40230) WEB_MSG: Inclusion process started. Put Z-Wave device in inclusion mode within 60 seconds.[0m
+[0;32mI (40820) MAIN: ========== STARTING INCLUSION PROCESS ==========[0m
+[0;32mI (40920) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 05 06 08 00 B9 
+[0;32mI (40920) MAIN: Received ACK (0x06)[0m
+[0;32mI (40920) MAIN: ADD_NODE → status=DONE node=8[0m
+[0;33mW (40920) MAIN: Ignoring ADD_NODE callback outside inclusion[0m
+[0;32mI (41020) MAIN: Z-Wave inclusion started[0m
+[0;32mI (41120) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 05 01 00 00 B6 
+[0;32mI (41120) MAIN: Received ACK (0x06)[0m
+[0;32mI (41120) MAIN: ADD_NODE → status=LEARN_READY node=0[0m
+[0;32mI (41120) MAIN: Controller ready[0m
+[0;32mI (44140) MAIN: RAW RX (9 bytes):[0m
+01 07 00 4A 05 02 00 00 B5 
+[0;32mI (44140) MAIN: ADD_NODE → status=NODE_FOUND node=0[0m
+[0;32mI (44140) MAIN: Device detected[0m
+[0;32mI (44140) WEB_MSG: Device detected and adding please wait!![0m
+[0;32mI (44240) MAIN: RAW RX (27 bytes):[0m
+01 19 00 4A 05 03 09 12 04 18 01 5E 98 9F 55 86 
+6C 73 72 87 7A 5A 5B 8E 59 85 E5 
+[0;32mI (44240) MAIN: ADD_NODE → status=ADDING_SLAVE node=9[0m
+[0;32mI (44240) MAIN: Node 9 assigned, NIF stored (18 bytes)[0m
+[0;32mI (48040) MAIN: RAW RX (9 bytes):[0m
+01 07 00 4A 05 05 09 00 BB 
+[0;32mI (48040) MAIN: ADD_NODE → status=PROTOCOL_DONE node=9[0m
+[0;32mI (48040) MAIN: Protocol done for node 9[0m
+[0;32mI (48040) MAIN: Sending ADD_NODE_STOP after PROTOCOL_DONE[0m
+[0;32mI (48070) MAIN: Done received from within 60 seconds[0m
+[0;32mI (48150) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 05 06 09 00 B8 
+[0;32mI (48150) MAIN: Received ACK (0x06)[0m
+[0;32mI (48150) MAIN: ADD_NODE → status=DONE node=9[0m
+[0;32mI (48150) MAIN: ✔ Inclusion COMPLETED for node 9[0m
+[0;32mI (48150) MAIN: Node 9 added to list. Total nodes: 2[0m
+[0;32mI (48160) MAIN: Adding node 9 with HomeID: E10C1044[0m
+[0;32mI (48160) MAIN: === NODE 9 INFORMATION ===[0m
+[0;32mI (48170) MAIN: NIF length: 18 bytes[0m
+[0;32mI (48170) MAIN: Basic Device Class   : 0x04 (Routing Slave)[0m
+[0;32mI (48170) MAIN: Generic Device Class : 0x18[0m
+[0;32mI (48180) MAIN: Specific Device Class: 0x01[0m
+[0;32mI (48180) MAIN: Supported Command Classes:[0m
+[0;32mI (48190) MAIN:   CC 0x5E (Z-Wave Plus Info)[0m
+[0;32mI (48190) MAIN:   CC 0x98 (Security)[0m
+[0;32mI (48190) MAIN:   CC 0x9F (Unknown CC)[0m
+[0;32mI (48200) MAIN:   CC 0x55 (Unknown CC)[0m
+[0;32mI (48200) MAIN:   CC 0x86 (Unknown CC)[0m
+[0;32mI (48200) MAIN:   CC 0x6C (Unknown CC)[0m
+[0;32mI (48210) MAIN:   CC 0x73 (Unknown CC)[0m
+[0;32mI (48210) MAIN:   CC 0x72 (Manufacturer Specific)[0m
+[0;32mI (48210) MAIN:   CC 0x87 (Unknown CC)[0m
+[0;32mI (48220) MAIN:   CC 0x7A (Unknown CC)[0m
+[0;32mI (48220) MAIN:   CC 0x5A (Unknown CC)[0m
+[0;32mI (48220) MAIN:   CC 0x5B (Unknown CC)[0m
+[0;32mI (48230) MAIN:   CC 0x8E (Multi Channel Association)[0m
+[0;32mI (48230) MAIN:   CC 0x59 (Unknown CC)[0m
+[0;32mI (48240) MAIN:   CC 0x85 (Association)[0m
+[0;32mI (48240) MAIN: ==========================[0m
+[0;32mI (48240) MAIN: =============================================[0m
+[0;32mI (48250) MAIN: Node 9 classified as REMOTE / CENTRAL SCENE[0m
+[0;32mI (48250) MAIN: =============================================[0m
+[0;32mI (48260) WEB_MSG: REMOTE Device 9 was adding...[0m
+[0;32mI (48260) MAIN: [INT] Start interview node 9[0m
+[0;32mI (48270) MAIN: Sent Manufacturer Specific Get to node 9[0m
+[0;32mI (48370) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (48370) MAIN: Received ACK (0x06)[0m
+[0;32mI (48470) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 D7 7F 7F 7F 7F 01 01 
+04 00 00 00 00 02 01 00 00 7F 7F 7F 7F 7F 5E 
+[0;32mI (48570) MAIN: RAW RX (19 bytes):[0m
+01 11 00 A8 00 01 09 08 72 05 00 00 00 04 00 01 
+00 D7 E3 
+[0;32mI (48570) MAIN: Manufacturer Report: node=9 man=0x0000 type=0x0004 prod=0x0001[0m
+[0;32mI (48570) MAIN: Sent Central Scene Supported Get to node 9[0m
+[0;32mI (48670) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (48670) MAIN: Received ACK (0x06)[0m
+[0;32mI (48770) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 D7 7F 7F 7F 7F 01 01 
+03 00 00 00 00 02 01 00 00 7F 7F 7F 7F 7F 59 
+[0;32mI (48870) MAIN: RAW RX (16 bytes):[0m
+01 0E 00 A8 00 01 09 05 5B 02 03 83 07 00 D7 5D 
+
+[0;32mI (48870) MAIN: Central Scene: node=9 scenes=3 flags=0x83[0m
+[0;32mI (48870) MAIN: Sent MC Lifeline association to node 9[0m
+[0;32mI (48870) MAIN: [INT] Interview completed for node 9[0m
+[0;32mI (48920) MAIN: ✓ Node table saved to NVS (2 nodes)[0m
+[0;32mI (48930) MAIN: ==============NVS Table Data=================[0m
+[0;32mI (48930) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (48930) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (48940) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (48940) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (48950) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (48950) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (48960) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (48960) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (48970) MAIN: RAW RX (7 bytes):[0m
+[0;32mI (48970) MAIN: DEVICE 2 -> Node 9 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+06 I (48980) MAIN:            Node 9 | REMOTE         | EP:1 SC:3
+01 I (48990) MAIN:            Node 9 | REMOTE         | EP:2 SC:3
+04 I (48990) MAIN:            Node 9 | REMOTE         | EP:3 SC:3
+01 I (49000) MAIN:            Node 9 | REMOTE         | EP:4 SC:3
+13 I (49000) MAIN:            Node 9 | REMOTE         | EP:5 SC:3
+01 I (49010) MAIN:            Node 9 | REMOTE         | EP:6 SC:3
+E8 I (49010) MAIN: =============================
+
+[0;32mI (49020) WEB_MSG: REMOTE 9  - was Added Successfully!!![0m
+[0;32mI (49020) MAIN: Received ACK (0x06)[0m
+[0;32mI (54020) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (59020) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (64020) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (65550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (65550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (65550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (65550) MAIN: =====================[0m
+[0;32mI (69020) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (74020) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (79030) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (80970) MAIN: RAW RX (24 bytes):[0m
+01 16 00 A8 00 01 09 0D 87 03 00 03 50 03 00 50 
+04 00 50 05 00 00 DA 4B 
+[0;32mI (84030) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (89030) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (91060) MAIN: RAW RX (16 bytes):[0m
+01 0E 00 A8 00 01 09 05 5B 03 14 80 01 00 DC 45 
+
+[0;32mI (91060) WEB_MSG: REMOTE Device 9 was Reported[0m
+[0;32mI (91060) MAIN: REMOTE Node 9 Reports[0m
+[0;32mI (96060) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (99180) MAIN: RAW RX (16 bytes):[0m
+01 0E 00 A8 00 01 09 05 5B 03 15 80 06 00 D5 4A 
+
+[0;32mI (99180) WEB_MSG: REMOTE Device 9 was Reported[0m
+[0;32mI (99180) MAIN: REMOTE Node 9 Reports[0m
+[0;32mI (100550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (100550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (100550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (100550) MAIN: =====================[0m
+[0;32mI (104180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (109180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (114180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (119180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (124180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (129180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (134180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (135550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (135550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (135550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (135550) MAIN: =====================[0m
+[0;32mI (139180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (144180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (149180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (154180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (159180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (164180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (169180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (170550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (170550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (170550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (170550) MAIN: =====================[0m
+[0;32mI (174180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (179180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (184180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (189180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (194180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (199180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (204180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (205550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (205550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (205550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (205550) MAIN: =====================[0m
+[0;32mI (209180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (214180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (219180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (224180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (229180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (234180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (239180) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (240550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (240550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (240550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (240550) MAIN: =====================[0m
+[0;32mI (244190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;33mW (245740) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (245740) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (249190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (254190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (259190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (264190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (269190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (274190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (275550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (275550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (275550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (275550) MAIN: =====================[0m
+[0;32mI (279190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (284190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (289190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (294190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (299190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (304190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (309190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (310550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (310550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (310550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (310550) MAIN: =====================[0m
+[0;32mI (314190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (319190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (324190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (329190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (334190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (339190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (344190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (345550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (345550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (345550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (345550) MAIN: =====================[0m
+[0;32mI (349190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (354190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (359190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (364190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (369190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (374190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (379190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (380550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (380550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (380550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (380550) MAIN: =====================[0m
+[0;32mI (384190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (389190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (394190) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (399200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (404200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (409200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (414200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (415550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (415550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (415550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (415550) MAIN: =====================[0m
+[0;32mI (419200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (424200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (429200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (434200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (439200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (444200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (449200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (450550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (450550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (450550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (450550) MAIN: =====================[0m
+[0;32mI (454200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (459200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (464200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (469200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (474200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (479200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (484200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (485550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (485550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (485550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (485550) MAIN: =====================[0m
+[0;32mI (489200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (494200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (499200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (504200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (509200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (514200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (519200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (520550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (520550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (520550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (520550) MAIN: =====================[0m
+[0;32mI (524200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (529200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (534200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (539200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (544200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (549200) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (554210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (555550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (555550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (555550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (555550) MAIN: =====================[0m
+[0;32mI (559210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (564210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (569210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (574210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (579210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (584210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (589210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (590550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (590550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (590550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (590550) MAIN: =====================[0m
+[0;32mI (594210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (599210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (604210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (609210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (614210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (619210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (624210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (625550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (625550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (625550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (625550) MAIN: =====================[0m
+[0;32mI (629210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (634210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (639210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (644210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (649210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (654210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (659210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (660550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (660550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (660550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (660550) MAIN: =====================[0m
+[0;32mI (664210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (669210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (674210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (679210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (684210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (689210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (694210) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (695550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (695550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (695550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (695550) MAIN: =====================[0m
+[0;32mI (699220) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (704220) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (709220) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (714220) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (719220) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (724220) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (725590) wifi:<ba-add>idx:1 (ifx:0, a2:c9:eb:d7:01:43), tid:6, ssn:2, winSize:64[0m
+[0;32mI (727740) MAIN: RAW RX (16 bytes):[0m
+01 0E 00 A8 00 01 09 05 5B 03 16 80 04 00 D8 46 
+
+[0;32mI (727740) WEB_MSG: REMOTE Device 9 was Reported[0m
+[0;32mI (727740) MAIN: REMOTE Node 9 Reports[0m
+[0;32mI (730550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (730550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (730550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (730550) MAIN: =====================[0m
+[0;32mI (732740) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (737740) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (742740) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (747740) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (752740) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (757740) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (762740) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (762970) MAIN: Inclusion process started via web[0m
+[0;32mI (762970) WEB_MSG: Inclusion process started. Put Z-Wave device in inclusion mode within 60 seconds.[0m
+[0;32mI (763570) MAIN: ========== STARTING INCLUSION PROCESS ==========[0m
+[0;32mI (763670) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 06 06 09 00 BB 
+[0;32mI (763670) MAIN: Received ACK (0x06)[0m
+[0;32mI (763670) MAIN: ADD_NODE → status=DONE node=9[0m
+[0;33mW (763670) MAIN: Ignoring ADD_NODE callback outside inclusion[0m
+[0;32mI (763770) MAIN: Z-Wave inclusion started[0m
+[0;32mI (763870) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 06 01 00 00 B5 
+[0;32mI (763870) MAIN: Received ACK (0x06)[0m
+[0;32mI (763870) MAIN: ADD_NODE → status=LEARN_READY node=0[0m
+[0;32mI (763870) MAIN: Controller ready[0m
+[0;32mI (765550) MAIN: === CURRENT NODES (2) ===[0m
+[0;32mI (765550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (765550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (765550) MAIN: =====================[0m
+[0;32mI (767360) MAIN: RAW RX (9 bytes):[0m
+01 07 00 4A 06 02 00 00 B6 
+[0;32mI (767360) MAIN: ADD_NODE → status=NODE_FOUND node=0[0m
+[0;32mI (767360) MAIN: Device detected[0m
+[0;32mI (767360) WEB_MSG: Device detected and adding please wait!![0m
+[0;32mI (767460) MAIN: RAW RX (29 bytes):[0m
+01 1B 00 4A 06 03 0A 14 04 10 04 5E 25 85 8E 59 
+55 86 72 5A 87 73 98 60 9F 6C 7A 70 82 
+[0;32mI (767460) MAIN: ADD_NODE → status=ADDING_SLAVE node=10[0m
+[0;32mI (767460) MAIN: Node 10 assigned, NIF stored (20 bytes)[0m
+[0;32mI (772380) MAIN: RAW RX (9 bytes):[0m
+01 07 00 4A 06 05 0A 00 BB 
+[0;32mI (772380) MAIN: ADD_NODE → status=PROTOCOL_DONE node=10[0m
+[0;32mI (772380) MAIN: Protocol done for node 10[0m
+[0;32mI (772380) MAIN: Sending ADD_NODE_STOP after PROTOCOL_DONE[0m
+[0;32mI (772420) MAIN: Done received from within 60 seconds[0m
+[0;32mI (772490) MAIN: RAW RX (10 bytes):[0m
+06 01 07 00 4A 06 06 0A 00 B8 
+[0;32mI (772490) MAIN: Received ACK (0x06)[0m
+[0;32mI (772490) MAIN: ADD_NODE → status=DONE node=10[0m
+[0;32mI (772490) MAIN: ✔ Inclusion COMPLETED for node 10[0m
+[0;32mI (772490) MAIN: Node 10 added to list. Total nodes: 3[0m
+[0;32mI (772500) MAIN: Adding node 10 with HomeID: E10C1044[0m
+[0;32mI (772500) MAIN: === NODE 10 INFORMATION ===[0m
+[0;32mI (772510) MAIN: NIF length: 20 bytes[0m
+[0;32mI (772510) MAIN: Basic Device Class   : 0x04 (Routing Slave)[0m
+[0;32mI (772510) MAIN: Generic Device Class : 0x10[0m
+[0;32mI (772520) MAIN: Specific Device Class: 0x04[0m
+[0;32mI (772520) MAIN: Supported Command Classes:[0m
+[0;32mI (772530) MAIN:   CC 0x5E (Z-Wave Plus Info)[0m
+[0;32mI (772530) MAIN:   CC 0x25 (Switch Binary)[0m
+[0;32mI (772530) MAIN:   CC 0x85 (Association)[0m
+[0;32mI (772540) MAIN:   CC 0x8E (Multi Channel Association)[0m
+[0;32mI (772540) MAIN:   CC 0x59 (Unknown CC)[0m
+[0;32mI (772550) MAIN:   CC 0x55 (Unknown CC)[0m
+[0;32mI (772550) MAIN:   CC 0x86 (Unknown CC)[0m
+[0;32mI (772550) MAIN:   CC 0x72 (Manufacturer Specific)[0m
+[0;32mI (772560) MAIN:   CC 0x5A (Unknown CC)[0m
+[0;32mI (772560) MAIN:   CC 0x87 (Unknown CC)[0m
+[0;32mI (772570) MAIN:   CC 0x73 (Unknown CC)[0m
+[0;32mI (772570) MAIN:   CC 0x98 (Security)[0m
+[0;32mI (772570) MAIN:   CC 0x60 (Multi Channel)[0m
+[0;32mI (772580) MAIN:   CC 0x9F (Unknown CC)[0m
+[0;32mI (772580) MAIN:   CC 0x6C (Unknown CC)[0m
+[0;32mI (772580) MAIN:   CC 0x7A (Unknown CC)[0m
+[0;32mI (772590) MAIN:   CC 0x70 (Configuration)[0m
+[0;32mI (772590) MAIN: ==========================[0m
+[0;32mI (772590) MAIN: ===================================================[0m
+[0;32mI (772600) MAIN: Node 10 classified as MULTI-ENDPOINT SWITCH BINARY[0m
+[0;32mI (772610) MAIN: ===================================================[0m
+[0;32mI (772610) WEB_MSG: RS485 Device 10 was adding...[0m
+[0;32mI (772620) MAIN: [INT] Start interview node 10[0m
+[0;32mI (772620) MAIN: Sent Manufacturer Specific Get to node 10[0m
+[0;32mI (772730) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (772730) MAIN: Received ACK (0x06)[0m
+[0;32mI (772830) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+04 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 6F 
+[0;32mI (772930) MAIN: RAW RX (19 bytes):[0m
+01 11 00 A8 00 01 0A 08 72 05 00 00 00 04 00 02 
+00 E7 D3 
+[0;32mI (772930) MAIN: Manufacturer Report: node=10 man=0x0000 type=0x0004 prod=0x0002[0m
+[0;32mI (772930) MAIN: Sent Multi Channel Endpoint Get to node 10[0m
+[0;32mI (773030) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (773030) MAIN: Received ACK (0x06)[0m
+[0;32mI (773130) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (773230) MAIN: RAW RX (16 bytes):[0m
+01 0E 00 A8 00 01 0A 05 60 08 00 08 00 00 E7 D0 
+
+[0;32mI (773230) MAIN: Node 10 reports 8 endpoints[0m
+[0;32mI (773230) MAIN: Sent MC Capability Get (EP 1) to node 10[0m
+[0;32mI (773330) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (773330) MAIN: Received ACK (0x06)[0m
+[0;32mI (773430) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (773530) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 01 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 02 
+[0;32mI (773530) MAIN: EP 1: Generic=0x10 Specific=0x01[0m
+[0;32mI (773530) MAIN: EP 1 Supported CCs:[0m
+[0;32mI (773530) MAIN:   CC 0x5E[0m
+[0;32mI (773530) MAIN:   CC 0x25[0m
+[0;32mI (773540) MAIN:   CC 0x85[0m
+[0;32mI (773540) MAIN:   CC 0x59[0m
+[0;32mI (773540) MAIN:   CC 0x8E[0m
+[0;32mI (773540) MAIN:   CC 0x6C[0m
+[0;32mI (773550) MAIN:   CC 0x9F[0m
+[0;32mI (773550) MAIN: Sent MC Capability Get (EP 2) to node 10[0m
+[0;32mI (773650) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (773650) MAIN: Received ACK (0x06)[0m
+[0;32mI (773750) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (773850) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 02 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 01 
+[0;32mI (773850) MAIN: EP 2: Generic=0x10 Specific=0x01[0m
+[0;32mI (773850) MAIN: EP 2 Supported CCs:[0m
+[0;32mI (773850) MAIN:   CC 0x5E[0m
+[0;32mI (773850) MAIN:   CC 0x25[0m
+[0;32mI (773860) MAIN:   CC 0x85[0m
+[0;32mI (773860) MAIN:   CC 0x59[0m
+[0;32mI (773860) MAIN:   CC 0x8E[0m
+[0;32mI (773860) MAIN:   CC 0x6C[0m
+[0;32mI (773870) MAIN:   CC 0x9F[0m
+[0;32mI (773870) MAIN: Sent MC Capability Get (EP 3) to node 10[0m
+[0;32mI (773970) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (773970) MAIN: Received ACK (0x06)[0m
+[0;32mI (774070) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (774170) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 03 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 00 
+[0;32mI (774170) MAIN: EP 3: Generic=0x10 Specific=0x01[0m
+[0;32mI (774170) MAIN: EP 3 Supported CCs:[0m
+[0;32mI (774170) MAIN:   CC 0x5E[0m
+[0;32mI (774170) MAIN:   CC 0x25[0m
+[0;32mI (774180) MAIN:   CC 0x85[0m
+[0;32mI (774180) MAIN:   CC 0x59[0m
+[0;32mI (774180) MAIN:   CC 0x8E[0m
+[0;32mI (774180) MAIN:   CC 0x6C[0m
+[0;32mI (774190) MAIN:   CC 0x9F[0m
+[0;32mI (774190) MAIN: Sent MC Capability Get (EP 4) to node 10[0m
+[0;32mI (774290) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (774290) MAIN: Received ACK (0x06)[0m
+[0;32mI (774390) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (774490) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 04 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 07 
+[0;32mI (774490) MAIN: EP 4: Generic=0x10 Specific=0x01[0m
+[0;32mI (774490) MAIN: EP 4 Supported CCs:[0m
+[0;32mI (774490) MAIN:   CC 0x5E[0m
+[0;32mI (774490) MAIN:   CC 0x25[0m
+[0;32mI (774500) MAIN:   CC 0x85[0m
+[0;32mI (774500) MAIN:   CC 0x59[0m
+[0;32mI (774500) MAIN:   CC 0x8E[0m
+[0;32mI (774500) MAIN:   CC 0x6C[0m
+[0;32mI (774510) MAIN:   CC 0x9F[0m
+[0;32mI (774510) MAIN: Sent MC Capability Get (EP 5) to node 10[0m
+[0;32mI (774610) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (774610) MAIN: Received ACK (0x06)[0m
+[0;32mI (774710) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (774810) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 05 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 06 
+[0;32mI (774810) MAIN: EP 5: Generic=0x10 Specific=0x01[0m
+[0;32mI (774810) MAIN: EP 5 Supported CCs:[0m
+[0;32mI (774810) MAIN:   CC 0x5E[0m
+[0;32mI (774810) MAIN:   CC 0x25[0m
+[0;32mI (774820) MAIN:   CC 0x85[0m
+[0;32mI (774820) MAIN:   CC 0x59[0m
+[0;32mI (774820) MAIN:   CC 0x8E[0m
+[0;32mI (774820) MAIN:   CC 0x6C[0m
+[0;32mI (774830) MAIN:   CC 0x9F[0m
+[0;32mI (774830) MAIN: Sent MC Capability Get (EP 6) to node 10[0m
+[0;32mI (774930) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (774930) MAIN: Received ACK (0x06)[0m
+[0;32mI (775030) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (775130) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 06 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 05 
+[0;32mI (775130) MAIN: EP 6: Generic=0x10 Specific=0x01[0m
+[0;32mI (775130) MAIN: EP 6 Supported CCs:[0m
+[0;32mI (775130) MAIN:   CC 0x5E[0m
+[0;32mI (775130) MAIN:   CC 0x25[0m
+[0;32mI (775140) MAIN:   CC 0x85[0m
+[0;32mI (775140) MAIN:   CC 0x59[0m
+[0;32mI (775140) MAIN:   CC 0x8E[0m
+[0;32mI (775140) MAIN:   CC 0x6C[0m
+[0;32mI (775150) MAIN:   CC 0x9F[0m
+[0;32mI (775150) MAIN: Sent MC Capability Get (EP 7) to node 10[0m
+[0;32mI (775250) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (775250) MAIN: Received ACK (0x06)[0m
+[0;32mI (775350) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (775450) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 07 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 04 
+[0;32mI (775450) MAIN: EP 7: Generic=0x10 Specific=0x01[0m
+[0;32mI (775450) MAIN: EP 7 Supported CCs:[0m
+[0;32mI (775450) MAIN:   CC 0x5E[0m
+[0;32mI (775450) MAIN:   CC 0x25[0m
+[0;32mI (775460) MAIN:   CC 0x85[0m
+[0;32mI (775460) MAIN:   CC 0x59[0m
+[0;32mI (775460) MAIN:   CC 0x8E[0m
+[0;32mI (775460) MAIN:   CC 0x6C[0m
+[0;32mI (775470) MAIN:   CC 0x9F[0m
+[0;32mI (775470) MAIN: Sent MC Capability Get (EP 8) to node 10[0m
+[0;32mI (775570) MAIN: RAW RX (7 bytes):[0m
+06 01 04 01 13 01 E8 
+[0;32mI (775570) MAIN: Received ACK (0x06)[0m
+[0;32mI (775670) MAIN: RAW RX (31 bytes):[0m
+01 1D 00 13 01 00 00 01 00 E7 7F 7F 7F 7F 00 00 
+03 00 00 00 00 03 01 00 00 7F 7F 7F 7F 7F 68 
+[0;32mI (775770) MAIN: RAW RX (23 bytes):[0m
+01 15 00 A8 00 01 0A 0C 60 0A 08 10 01 5E 25 85 
+59 8E 6C 9F 00 E7 0B 
+[0;32mI (775770) MAIN: EP 8: Generic=0x10 Specific=0x01[0m
+[0;32mI (775770) MAIN: EP 8 Supported CCs:[0m
+[0;32mI (775770) MAIN:   CC 0x5E[0m
+[0;32mI (775770) MAIN:   CC 0x25[0m
+[0;32mI (775780) MAIN:   CC 0x85[0m
+[0;32mI (775780) MAIN:   CC 0x59[0m
+[0;32mI (775780) MAIN:   CC 0x8E[0m
+[0;32mI (775780) MAIN:   CC 0x6C[0m
+[0;32mI (775790) MAIN:   CC 0x9F[0m
+[0;32mI (775790) MAIN: [INT] Interview completed for node 10[0m
+[0;32mI (775800) MAIN: ✓ Node table saved to NVS (3 nodes)[0m
+[0;32mI (775800) MAIN: ==============NVS Table Data=================[0m
+[0;32mI (775800) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (775810) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (775820) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (775820) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (775830) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (775830) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (775840) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (775840) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (775850) MAIN: DEVICE 2 -> Node 9 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (775860) MAIN:            Node 9 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (775860) MAIN:            Node 9 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (775870) MAIN:            Node 9 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (775870) MAIN:            Node 9 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (775880) MAIN:            Node 9 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (775880) MAIN:            Node 9 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (775890) MAIN: DEVICE 3 -> Node 10 | SWITCH_BINARY  | MFG:0000 TYPE:0004 PROD:0002[0m
+[0;32mI (775900) MAIN:            Node 10 | SWITCH_BINARY  | EP:1 SC:0[0m
+[0;32mI (775900) MAIN:            Node 10 | SWITCH_BINARY  | EP:2 SC:0[0m
+[0;32mI (775910) MAIN:            Node 10 | SWITCH_BINARY  | EP:3 SC:0[0m
+[0;32mI (775910) MAIN:            Node 10 | SWITCH_BINARY  | EP:4 SC:0[0m
+[0;32mI (775920) MAIN:            Node 10 | SWITCH_BINARY  | EP:5 SC:0[0m
+[0;32mI (775930) MAIN:            Node 10 | SWITCH_BINARY  | EP:6 SC:0[0m
+[0;32mI (775930) MAIN:            Node 10 | SWITCH_BINARY  | EP:7 SC:0[0m
+[0;32mI (775940) MAIN:            Node 10 | SWITCH_BINARY  | EP:8 SC:0[0m
+[0;32mI (775940) MAIN: =============================[0m
+[0;32mI (775950) WEB_MSG: RS485 Device  10  - was Added Successfully!!![0m
+[0;32mI (780950) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (785950) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (790950) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (795950) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (800550) MAIN: === CURRENT NODES (3) ===[0m
+[0;32mI (800550) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (800550) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (800550) MAIN: Node 10: SWITCH_BINARY  NIF:20 bytes[0m
+[0;32mI (800550) MAIN: =====================[0m
+[0;32mI (800950) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (805960) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (810960) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (815960) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (820960) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (825960) WEB_MSG: Gateway Status : ONLINE[0m
+[0;32mI (830560) MAIN: === CURRENT NODES (3) ===[0m
+[0;32mI (830560) MAIN: Node 7: REMOTE         NIF:18 bytes[0m
+[0;32mI (830560) MAIN: Node 9: REMOTE         NIF:18 bytes[0m
+[0;32mI (830560) MAIN: Node 10: SWITCH_BINARY  NIF:20 bytes[0m
+[0;32mI (830560) MAIN: =====================[0m
+[0;32mI (830960) WEB_MSG: Gateway Status : ONLINE[0m
+[1;31mE (835570) MAIN: Watchdog timeout - System appears stuck, restarting...[0m
+[0;32mI (835570) wifi:state: run -> init (0x0)[0m
+[0;32mI (835580) wifi:pm stop, total sleep time: 748508119 us / 829992429 us[0m
+
+[0;32mI (835580) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (835580) wifi:<ba-del>idx:1, tid:6[0m
+[0;32mI (835580) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (835590) WIFI: WiFi disconnected, reason: 8. Retry 1/5 in 4 seconds[0m
+[0;33mW (835590) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;33mW (835600) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (835650) wifi:flush txq[0m
+[0;32mI (835650) wifi:stop sw txq[0m
+[0;32mI (835650) wifi:lmac stop hw txq[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x3a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375cbc
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f3c
+entry 0x403c8928
+[0;32mI (37) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Feb  4 2026 15:35:28[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v0.1[0m
+[0;32mI (42) boot: efuse block revision: v1.2[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (54) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (90) boot:  3 ota_0            OTA app          00 10 00020000 00300000[0m
+[0;32mI (97) boot:  4 ota_1            OTA app          00 11 00320000 00300000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=4bc18h (310296) map[0m
+[0;32mI (187) esp_image: segment 1: paddr=0006bc40 vaddr=3fc9b100 size=043d8h ( 17368) load[0m
+[0;32mI (192) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=9cdd4h (642516) map[0m
+[0;32mI (343) esp_image: segment 3: paddr=0010cdfc vaddr=3fc9f4d8 size=006d0h (  1744) load[0m
+[0;32mI (343) esp_image: segment 4: paddr=0010d4d4 vaddr=40374000 size=17078h ( 94328) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=00124554 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (401) app_init: Project name:     JAQUAR_RS485_REMOTE_GATEWAY[0m
+[0;32mI (407) app_init: App version:      6d4ace7[0m
+[0;32mI (411) app_init: Compile time:     Feb  4 2026 15:35:17[0m
+[0;32mI (416) app_init: ELF file SHA256:  896e9bda3...[0m
+[0;32mI (420) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (436) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FCA9D40 len 0003F9D0 (254 KiB): RAM[0m
+[0;32mI (448) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (453) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;33mW (464) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (473) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (477) spi_flash: flash io: opi_str[0m
+[0;33mW (481) spi_flash: Detected size(32768k) larger than the size in the binary image header(16384k). Using the size in the binary image header.[0m
+[0;32mI (493) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (499) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (506) main_task: Started on CPU0[0m
+[0;32mI (516) main_task: Calling app_main()[0m
+[0;32mI (516) MAIN: Starting Jaquar Remote Configuration Application[0m
+[0;32mI (546) MAIN: Watchdog timer started[0m
+[0;32mI (546) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (546) MAIN: Waiting for Z-Wave module to initialize...[0m
+[0;32mI (3556) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3556) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3556) WEB_MSG: Gateway Status : Loading...[0m
+[0;32mI (3566) MAIN: [0m
+
+
+[0;32mI (3566) MAIN: ========================================================[0m
+[0;32mI (3566) MAIN: STARTING Z-WAVE SERIAL API INITIALIZATION SEQUENCE[0m
+[0;32mI (3576) MAIN: ========================================================[0m
+[0;32mI (3786) MAIN: [0m
+[1] Getting controller capabilities...
+TX Get Capabilities: 01 03 00 07 FB 
+[0;32mI (3786) MAIN: Requesting controller capabilities...[0m
+[0;32mI (3886) MAIN: RAW RX (46 bytes):[0m
+06 01 2B 01 07 07 12 00 00 00 04 00 04 F6 87 3E 
+88 CF 2B C0 4F FB D7 FD E0 17 00 00 80 00 80 86 
+80 BA 05 00 70 00 00 EE 7F C0 00 00 00 D5 
+[0;32mI (3886) MAIN: Received ACK (0x06)[0m
+[0;32mI (3886) MAIN: === GET CAPABILITIES RESPONSE ===[0m
+[0;32mI (3896) MAIN: === CAPABILITIES RESPONSE ===[0m
+[0;32mI (3896) MAIN: Length: 41 bytes[0m
+[0;32mI (3896) MAIN: Full data:[0m
+07 12 00 00 00 04 00 04 F6 87 3E 88 CF 2B C0 4F 
+FB D7 FD E0 17 00 00 80 00 80 86 80 BA 05 00 70 
+00 00 EE 7F C0 00 00 00 D5 
+=============================
+[0;32mI (3986) MAIN: [0m
+[2] Getting SerialAPI supported command classes...
+TX SerialAPI Setup: Supported: 01 04 00 0B 01 F1 
+[0;32mI (3986) MAIN: Requesting SerialAPI supported command classes...[0m
+[0;32mI (4086) MAIN: RAW RX (25 bytes):[0m
+06 01 16 01 0B 01 FE 3E 01 03 00 01 00 00 00 01 
+00 00 00 00 00 00 00 01 21 
+[0;32mI (4086) MAIN: Received ACK (0x06)[0m
+[0;32mI (4086) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x01[0m
+[0;32mI (4086) MAIN: === SERIALAPI SUPPORTED RESPONSE ===[0m
+[0;32mI (4186) MAIN: [0m
+[3] Getting SUC Node ID...
+TX Get SUC Node ID: 01 03 00 02 FE 
+[0;32mI (4186) MAIN: Requesting SUC (Static Update Controller) Node ID...[0m
+[0;32mI (4286) MAIN: RAW RX (40 bytes):[0m
+06 01 25 01 02 09 00 1D 51 03 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 07 00 98 
+[0;32mI (4286) MAIN: Received ACK (0x06)[0m
+[0;32mI (4286) MAIN: === GET SUC NODE ID RESPONSE ===[0m
+[0;32mI (4296) MAIN: === SUC NODE RESPONSE ===[0m
+[0;32mI (4296) MAIN: SUC Node ID: 9[0m
+[0;32mI (4296) MAIN: Capabilities: 0x00[0m
+[0;32mI (4296) MAIN: Full response:[0m
+09 00 1D 51 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 98 
+=============================
+[0;32mI (4386) MAIN: [0m
+[4] Getting Z-Wave library version...
+TX Get Version: 01 03 00 15 E9 
+[0;32mI (4386) MAIN: Requesting Z-Wave library version...[0m
+[0;32mI (4486) MAIN: RAW RX (19 bytes):[0m
+06 01 10 01 15 5A 2D 57 61 76 65 20 37 2E 31 38 
+00 07 9E 
+[0;32mI (4486) MAIN: Received ACK (0x06)[0m
+[0;32mI (4486) MAIN: === GET VERSION RESPONSE ===[0m
+[0;32mI (4486) MAIN: === VERSION RESPONSE ===[0m
+[0;32mI (4486) MAIN: Library Type: 0x5A[0m
+[0;32mI (4496) MAIN: Library Type: Unknown[0m
+[0;32mI (4496) MAIN: Protocol Version: 45.87[0m
+[0;32mI (4496) MAIN: Application Version: 97.118[0m
+[0;32mI (4506) MAIN: Full data:[0m
+5A 2D 57 61 76 65 20 37 2E 31 38 00 07 9E 
+=============================
+[0;32mI (4586) MAIN: [0m
+[5] Getting Home ID and Node ID...
+[0;32mI (4686) MAIN: RAW RX (11 bytes):[0m
+06 01 08 01 20 E1 0C 10 44 01 6E 
+[0;32mI (4686) MAIN: Received ACK (0x06)[0m
+[0;32mI (4786) MAIN: [0m
+[7] Setting TX power...
+TX Set TX Power: 01 06 00 0B 04 7F 00 89 
+[0;32mI (4786) MAIN: Setting TX power to: 0x7F (measured: 0x00)[0m
+[0;32mI (4886) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 04 01 F5 
+[0;32mI (4886) MAIN: Received ACK (0x06)[0m
+[0;32mI (4886) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x04[0m
+[0;32mI (4886) MAIN: === TX POWER SET RESPONSE ===[0m
+[0;32mI (4886) MAIN: Status: 0x01[0m
+[0;32mI (4886) MAIN: ✓ TX power set SUCCESSFULLY to 0x7F[0m
+[0;32mI (4896) MAIN: TX Power is now at maximum (+7 dBm)[0m
+[0;32mI (4896) MAIN: [0m
+[9] Setting RF region to India...
+TX RF Region Set: 01 05 00 0B 40 05 B4 
+[0;32mI (4906) MAIN: Setting RF Region to: 0x05[0m
+[0;32mI (4916) MAIN: Region: India[0m
+[0;32mI (5006) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 40 01 B1 
+[0;32mI (5006) MAIN: Received ACK (0x06)[0m
+[0;32mI (5006) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x40[0m
+[0;32mI (5006) MAIN: === RF REGION SET RESPONSE ===[0m
+[0;32mI (5006) MAIN: Status: 0x01[0m
+[0;32mI (5006) MAIN: ✓ RF Region set SUCCESSFULLY[0m
+[0;32mI (5016) MAIN: [0m
+[10] Verifying RF region...
+TX RF Region Get: 01 04 00 0B 20 D0 
+[0;32mI (5026) MAIN: Requesting current RF Region[0m
+[0;32mI (5126) MAIN: RAW RX (8 bytes):[0m
+06 01 05 01 0B 20 05 D5 
+[0;32mI (5126) MAIN: Received ACK (0x06)[0m
+[0;32mI (5126) MAIN: SERIALAPI_SETUP Response - Sub-command: 0x20[0m
+[0;32mI (5126) MAIN: === RF REGION GET RESPONSE ===[0m
+[0;32mI (5126) MAIN: Current RF Region: 0x05[0m
+[0;32mI (5136) MAIN: === RF REGION INFORMATION ===[0m
+[0;32mI (5136) MAIN: Region Code: 0x05[0m
+[0;32mI (5136) MAIN: Region Name: India[0m
+[0;32mI (5146) MAIN: ============================[0m
+[0;32mI (5226) MAIN: ========================================================[0m
+[0;32mI (5226) MAIN: ✓ Z-WAVE CONTROLLER INITIALIZATION COMPLETE[0m
+[0;32mI (5226) MAIN: ========================================================[0m
+[0;32mI (5226) MAIN: [0m
+
+
+[0;32mI (5226) WIFI: Valid SSID found in NVS, use STA mode[0m
+[0;32mI (5236) WIFI: Starting in STA mode with saved credentials[0m
+[0;32mI (5236) WIFI: Initializing WiFi STA mode[0m
+[0;32mI (5246) pp: pp rom version: e7ae62f[0m
+[0;32mI (5246) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (5266) wifi:wifi driver task: 3fcbb2d0, prio:23, stack:6656, core=0[0m
+[0;32mI (5276) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (5276) wifi:wifi certification version: v7.0[0m
+[0;32mI (5276) wifi:config NVS flash: enabled[0m
+[0;32mI (5276) wifi:config nano formatting: disabled[0m
+[0;32mI (5276) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (5286) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (5286) wifi:Init management short buffer num: 32[0m
+[0;32mI (5296) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (5296) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (5306) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (5306) wifi:Init static rx buffer num: 10[0m
+[0;32mI (5306) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (5316) wifi_init: rx ba win: 6[0m
+[0;32mI (5316) wifi_init: accept mbox: 6[0m
+[0;32mI (5316) wifi_init: tcpip mbox: 32[0m
+[0;32mI (5326) wifi_init: udp mbox: 6[0m
+[0;32mI (5326) wifi_init: tcp mbox: 6[0m
+[0;32mI (5326) wifi_init: tcp tx win: 5760[0m
+[0;32mI (5336) wifi_init: tcp rx win: 5760[0m
+[0;32mI (5336) wifi_init: tcp mss: 1440[0m
+[0;32mI (5336) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (5346) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (5346) WIFI: Connecting to SSID: Confio_R&D[0m
+[0;32mI (5356) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (5386) wifi:mode : sta (68:b6:b3:3e:0f:10)[0m
+[0;32mI (5386) wifi:enable tsf[0m
+[0;32mI (5396) WIFI: WiFi STA started, connecting...[0m
+[0;32mI (5396) MAIN: ✓ Loaded 3 nodes from NVS[0m
+[0;32mI (5396) MAIN: ===== STORED NODE TABLE =====[0m
+[0;32mI (5396) MAIN: DEVICE 1 -> Node 7 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (5406) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5416) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5416) MAIN:            Node 7 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (5426) MAIN:            Node 7 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (5426) MAIN:            Node 7 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (5426) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5436) MAIN:            Node 7 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (5446) MAIN:            Node 7 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (5446) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5446) MAIN:            Node 7 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (5456) MAIN: DEVICE 2 -> Node 9 | REMOTE         | MFG:0000 TYPE:0004 PROD:0001[0m
+[0;32mI (5466) MAIN:            Node 9 | REMOTE         | EP:1 SC:3[0m
+[0;32mI (5466) wifi:connected with Confio_R&D, aid = 2, channel 3, BW20, bssid = a2:c9:eb:d7:01:43[0m
+[0;32mI (5476) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (5486) wifi:pm start, type: 1[0m
+
+[0;32mI (5486) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5496) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5506) MAIN:            Node 9 | REMOTE         | EP:2 SC:3[0m
+[0;32mI (5506) MAIN:            Node 9 | REMOTE         | EP:3 SC:3[0m
+[0;32mI (5516) MAIN:            Node 9 | REMOTE         | EP:4 SC:3[0m
+[0;32mI (5516) MAIN:            Node 9 | REMOTE         | EP:5 SC:3[0m
+[0;32mI (5526) MAIN:            Node 9 | REMOTE         | EP:6 SC:3[0m
+[0;32mI (5526) MAIN: DEVICE 3 -> Node 10 | SWITCH_BINARY  | MFG:0000 TYPE:0004 PROD:0002[0m
+[0;32mI (5536) MAIN:            Node 10 | SWITCH_BINARY  | EP:1 SC:0[0m
+[0;32mI (5536) MAIN:            Node 10 | SWITCH_BINARY  | EP:2 SC:0[0m
+[0;32mI (5546) MAIN:            Node 10 | SWITCH_BINARY  | EP:3 SC:0[0m
+[0;32mI (5556) MAIN:            Node 10 | SWITCH_BINARY  | EP:4 SC:0[0m
+[0;32mI (5556) MAIN:            Node 10 | SWITCH_BINARY  | EP:5 SC:0[0m
+[0;32mI (5566) MAIN:            Node 10 | SWITCH_BINARY  | EP:6 SC:0[0m
+[0;32mI (5566) MAIN:            Node 10 | SWITCH_BINARY  | EP:7 SC:0[0m
+[0;32mI (5576) MAIN:            Node 10 | SWITCH_BINARY  | EP:8 SC:0[0m
+[0;32mI (5576) MAIN: =============================[0m
+[0;32mI (5586) MAIN: [0m
+
+
+[0;32mI (5586) MAIN: ========================================================[0m
+[0;32mI (5596) MAIN: APPLICATION STARTED SUCCESSFULLY[0m
+[0;32mI (5596) MAIN: ========================================================[0m
+[0;32mI (5606) MAIN: Z-Wave Controller: READY[0m
+[0;32mI (5606) MAIN: ========================================================[0m
+[0;32mI (5616) MAIN: [0m
+
+
+[0;32mI (5636) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (7986) WIFI: Got IP: 192.168.1.34[0m
+[0;32mI (7986) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (7986) WIFI: mDNS service started with hostname 'jaquarremote' on port 5000[0m
+
+[0;32mI (7986) MAIN: Starting web server...[0m
+[0;32mI (7986) MAIN: Starting HTTP server on port: 80[0m
+[0;32mI (7996) MAIN: HTTP server started successfully[0m
+[0;32mI (7996) WIFI: WiFi connected successfully after 0 seconds total[0m
+[0;32mI (8006) esp_netif_handlers: sta ip: 192.168.1.34, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8566) WEB_MSG: Gateway Status : ONLINE[0m
+I BOD: Brownout detector was trig
