@@ -1,0 +1,122 @@
+<!-- Copyright (c) 2008,2020 Silicon Labs.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+    -->
+<!--
+     This xml file contains a sample extension to the Application Framework's
+     cluster definitions. There are 4 ways to add manufacturer specific
+     extensions within ZigBee.
+
+     1. Private Profile:
+        You can create your own private ZigBee profile.
+        We do not provide an example of this here since private profiles
+        may or may not even use the cluster library or something like it. If
+        you create your own custom profile you can basically do whatever you
+        want after the APS frame in the ZigBee packet. If you choose to use
+        the ZigBee cluster library within your private profile the Application
+        Framework will be useful to you. If you do not, it will not be useful
+        to you as all of the code in the Application Framework centers around
+        support for the ZigBee Cluster Library (ZCL).
+
+    2. Manufacturer Specific Clusters:
+       You can add manufacturer specific clusters to a standard profile.
+       We provide an example of this below. In order to do this you must
+       satisfy two obligations:
+
+         1. The cluster id MUST be in the manufacturer specific range,
+            0xfc00 - 0xffff.
+         2. The cluster definition must include a manufacturer code
+            which will be applied to ALL attributes and
+            commands within that cluster and must be provided when sending
+            and receiving commands and interacting with attributes.
+
+     3. Manufacturer Specific Commands in Standard ZigBee Custer:
+        You can add your own commands to any standard ZigBee cluster with
+        the following requirements:
+
+        1. Your manufacturer specific commands may use any command id
+          within the command id range, 0x00 - 0xff.
+        2. You must also provide a manufacturer code for the command so
+           that it can be distinguished from other commands in the cluster
+           and handled appropriately.
+
+     4. Manufacturer Specific Attributes in Standard ZigBee Cluster:
+        You can add your own attributes to any standard ZigBee cluster with
+        the following requirements:
+
+        1. Your manufacturer specific attributes may use any attribute id
+           within the attribute id range, 0x0000 - 0xffff.
+        2. You must also provide a manufacturer code for the attribute so
+           that it can be distinguished from other attributes in the cluster
+           and handled appropriately.
+
+     This sample provides an example of how to:
+       1. Extend the ZCL with a manufacturer specific cluster
+       2. Extend the standard ZCL on/off cluster with manufacturer specific
+          attributes.
+       3. Extend the standard ZCL on/off cluster with manufacturer specific
+          commands.
+
+     Manufacturer Code:
+     In all cases below, we have used Ember's manufacturerCode 0x1002 since
+     the cluster, attributes and the commands were created by Ember
+     as an example of how the Application Framework can be
+     extended to support manufacturer specific commands and attributes.
+
+     XML Validation:
+     You may validate any xml file that you create against the
+     AppBuilder XSD located in tool/appbuilder/appbuilder.xsd
+
+    -->
+<configurator>
+    <domain name = "Ember"/>
+    <!-- Use manufacturerCode to indicate that this is a manufacturer specific cluster. -->
+    <cluster manufacturerCode = "0x1002">
+        <name>custom end device configuration Cluster </name>
+        <domain>Ember</domain>
+        <description>This cluster provides an End-device configuration parameters .</description>
+        <!-- Cluster Id must be within the mfg spec range 0xfc00 - 0xffff    -->
+        <code>0xfd01</code>
+        <define>CUSTOM_END_DEVICE_CONFIGURATION_CLUSTER</define>
+        <client init="false" tick="false">true</client>
+        <server init="false" tick="false">true</server>
+        <attribute side="server" code="0x000D" define="BOOT_COUNT" type="INT32U" min="0x00" max="0xFFFFFFFF" writable="true" default="0" optional="true">Boot_Count</attribute>
+		
+<attribute side="server" code="0x0016" define="6_Bt_Id1" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Id1</attribute>
+<attribute side="server" code="0x0017" define="6_Bt_Id2" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Id2</attribute>
+<attribute side="server" code="0x0018" define="6_Bt_Id3" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Id3</attribute>
+<attribute side="server" code="0x0019" define="6_Bt_Id4" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Id4</attribute>
+<attribute side="server" code="0x001A" define="6_Bt_Id5" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Id5</attribute>
+<attribute side="server" code="0x001B" define="6_Bt_Id6" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Id6</attribute>
+
+<attribute side="server" code="0x001E" define="6_Bt_Zone1" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Zone1</attribute>
+<attribute side="server" code="0x001F" define="6_Bt_Zone2" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Zone2</attribute>
+<attribute side="server" code="0x0020" define="6_Bt_Zone3" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Zone3</attribute>
+<attribute side="server" code="0x0021" define="6_Bt_Zone4" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Zone4</attribute>
+<attribute side="server" code="0x0022" define="6_Bt_Zone5" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Zone5</attribute>
+<attribute side="server" code="0x0023" define="6_Bt_Zone6" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Zone6</attribute>
+
+<attribute side="server" code="0x0026" define="6_Bt_Scene1" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Scene1</attribute>
+<attribute side="server" code="0x0027" define="6_Bt_Scene2" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Scene2</attribute>
+<attribute side="server" code="0x0028" define="6_Bt_Scene3" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Scene3</attribute>
+<attribute side="server" code="0x0029" define="6_Bt_Scene4" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Scene4</attribute>
+<attribute side="server" code="0x002A" define="6_Bt_Scene5" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Scene5</attribute>
+<attribute side="server" code="0x002B" define="6_Bt_Scene6" type="INT8U" min="0x00" max="0xFF" writable="true" default="0" optional="true">6_Bt_Scene6</attribute>
+
+
+        <command source="client" code="0x02" name="CommandOne" optional="true">
+            <description> This cluster provides an End device configuration command. </description>
+            <arg name="argOne" type="INT8U"/>
+        </command>
+    </cluster>
+</configurator>
