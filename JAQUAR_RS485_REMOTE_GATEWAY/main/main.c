@@ -54,6 +54,7 @@ static uint8_t pending_node_id = 0;
 static uint8_t pending_nif[64];
 static uint8_t pending_nif_len = 0;
 static bool exclusion_in_progress = false;
+static uint8_t g_controller_node_id = 1;   // default controller node id
 // WiFi configuration variables
 static bool wifi_connected = false;
 uint8_t web_dev_type = 0;
@@ -249,7 +250,7 @@ static const char* wifi_config_html =
 "</body>"
 "</html>";
 
-// Function to check if character is whitespace (safe version)
+// Function to check if character is whitespace
 static bool is_whitespace(char c) {
     return (c == ' ' || c == '\t' || c == '\n' || c == '\r');
 }
@@ -353,7 +354,7 @@ bool parse_multipart_form_data(char* data, size_t data_len, char* ssid, size_t s
     return (strlen(ssid) > 0);
 }
 
-// WiFi configuration POST handler (updated to handle both content types)
+// WiFi configuration POST handler
 esp_err_t wifi_config_post_handler(httpd_req_t *req) {
     char content[512]; // Increased buffer size
     int ret, remaining = req->content_len;
@@ -1378,7 +1379,7 @@ static void add_node_to_list(uint8_t node_id, uint8_t *nif_data, uint8_t nif_len
             node_id, 
             g_home_id[0], g_home_id[1], g_home_id[2], g_home_id[3]);    
     print_node_info(node_id, nif_data, nif_len);
-    // /* ✅ SAVE TO NVS */
+    // /* SAVE TO NVS */
     // nvs_save_node_table();    
 }
 
@@ -1395,7 +1396,7 @@ static void remove_node_from_list(uint8_t node_id)
 
             g_node_count--;
 
-            /* ✅ SAVE UPDATED TABLE */
+            /* SAVE UPDATED TABLE */
             nvs_save_node_table();
 
             ESP_LOGI(TAG,
@@ -1436,12 +1437,6 @@ static void link_devices_to_gateway(){
     if (g_node_count > 0) {
         ESP_LOGI(TAG, "=== CURRENT NODES (%d) ===", g_node_count);
         for (int i = 0; i < g_node_count; i++) {
-            // ESP_LOGI(TAG,
-            //     "Node %d: %-14s NIF:%d bytes",
-            //     g_included_nodes[i].node_id,
-            //     dev_type_str(g_included_nodes[i].dev_type),
-            //     g_included_nodes[i].nif_len
-            // );
         zw_send_mc_lifeline_association_set(g_included_nodes[i].node_id);
         kick_watchdog();
         vTaskDelay(50);
@@ -1455,12 +1450,6 @@ static void unlink_devices_to_gateway(){
     if (g_node_count > 0) {
         ESP_LOGI(TAG, "=== CURRENT NODES (%d) ===", g_node_count);
         for (int i = 0; i < g_node_count; i++) {
-            // ESP_LOGI(TAG,
-            //     "Node %d: %-14s NIF:%d bytes",
-            //     g_included_nodes[i].node_id,
-            //     dev_type_str(g_included_nodes[i].dev_type),
-            //     g_included_nodes[i].nif_len
-            // );
         zw_send_mc_lifeline_association_remove(g_included_nodes[i].node_id);
         kick_watchdog();
         vTaskDelay(50);
@@ -1497,8 +1486,6 @@ static void classify_device(node_info_t  *node)
         ESP_LOGI(TAG, "=============================================");
         ESP_LOGI(TAG, "Node %d classified as REMOTE / CENTRAL SCENE", node->node_id);
         ESP_LOGI(TAG, "=============================================");
-        // show_Online_msg = false;
-        // send_msg_to_web("REMOTE Device was adding...");        
         show_Online_msg = false;
         char web_msg[128];
         snprintf(web_msg, sizeof(web_msg),
@@ -1536,9 +1523,9 @@ static void zw_interview_task(void *arg)
     node_info_t *node = NULL;
 
     while (1) {
-        kick_watchdog();// Kick watchdog before waiting for queue
+        kick_watchdog();
         if (xQueueReceive(interview_queue, &msg, pdMS_TO_TICKS(1000))) {
-            kick_watchdog();// Kick watchdog after receiving message
+            kick_watchdog();
             node = find_node(msg.node_id);
             if (!node) continue;
 
@@ -1712,34 +1699,125 @@ void zw_send_mc_capability_get(uint8_t node_id, uint8_t ep)
     ESP_LOGI(TAG, "Sent MC Capability Get (EP %d) to node %d", ep, node_id);
 }
 
+// void zw_send_mc_lifeline_association_set(uint8_t node_id)
+// {
+//     uint8_t frame[] = {
+//         SOF, 0x0C, REQUEST, FUNC_ID_ZW_SEND_DATA,
+//         node_id,
+//         0x06,
+//         COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION, MULTI_CHANNEL_ASSOCIATION_SET,
+//         LIFELINE_GROUP_1,0x01,0x01,0x00,0x05,0x00
+//     };
+//     frame[13] = calculate_checksum(&frame[1], 12);
+//     uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
+//     for(int i=0;i<sizeof(frame);i++){
+//         printf("%02X-", frame[i]);
+//     }
+//     printf("\n");
+//     ESP_LOGI(TAG, "Sent MC Lifeline Association SET to node %d", node_id);
+// }
+
+
+
+void zw_print_frame(const char *tag, uint8_t *frame, uint8_t len)
+{
+    printf("%s (%d bytes): ", tag, len);
+
+    for (int i = 0; i < len; i++)
+    {
+        printf("%02X ", frame[i]);
+    }
+
+    printf("\n");
+}
 void zw_send_mc_lifeline_association_set(uint8_t node_id)
 {
-    uint8_t frame[] = {
-        SOF, 0x0C, REQUEST, FUNC_ID_ZW_SEND_DATA,
-        node_id,
-        0x06,
-        COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION, MULTI_CHANNEL_ASSOCIATION_SET,
-        LIFELINE_GROUP_1,0x01,0x01,0x00,0x05,0x00
+    uint8_t payload[] =
+    {
+        COMMAND_CLASS_ASSOCIATION,   // 0x85
+        ASSOCIATION_SET,             // 0x01
+        0x01,                        // Lifeline group
+        g_controller_node_id         // controller
     };
-    frame[13] = calculate_checksum(&frame[1], 12);
-    uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
-
-    ESP_LOGI(TAG, "Sent MC Lifeline Association SET to node %d", node_id);
+    uint8_t frame[32];
+    uint8_t i = 0;
+    frame[i++] = SOF;
+    frame[i++] = 0;
+    frame[i++] = REQUEST;
+    frame[i++] = FUNC_ID_ZW_SEND_DATA;
+    frame[i++] = node_id;
+    frame[i++] = sizeof(payload);
+    memcpy(&frame[i], payload, sizeof(payload));
+    i += sizeof(payload);
+    frame[i++] =
+        TRANSMIT_OPTION_ACK |
+        TRANSMIT_OPTION_AUTO_ROUTE |
+        TRANSMIT_OPTION_EXPLORE |
+        TRANSMIT_OPTION_SECURITY;
+    frame[i++] = 0x01;
+    frame[1] = i - 1;
+    frame[i] = calculate_checksum(&frame[1], frame[1]);
+    uart_write_bytes(UART_PORT, (char *)frame, i + 1);
+    //zw_print_frame("TX FRAME", frame, i + 1);
+    ESP_LOGI(TAG,
+        "ASSOCIATION_SET Lifeline sent node %d → controller %d",
+        node_id, g_controller_node_id);
 }
+
+// void zw_send_mc_lifeline_association_remove(uint8_t node_id)
+// {
+//     uint8_t frame[] = {
+//         SOF, 0x0C, REQUEST, FUNC_ID_ZW_SEND_DATA,
+//         node_id,
+//         0x06,
+//         COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION, MULTI_CHANNEL_ASSOCIATION_REMOVE,
+//         LIFELINE_GROUP_1,0x01,0x01,0x00,0x05,0x00
+//     };
+//     frame[13] = calculate_checksum(&frame[1], 12);
+//     uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
+
+//     ESP_LOGI(TAG, "Sent MC Lifeline Association REMOVE to node %d", node_id);
+// }
 
 void zw_send_mc_lifeline_association_remove(uint8_t node_id)
 {
-    uint8_t frame[] = {
-        SOF, 0x0C, REQUEST, FUNC_ID_ZW_SEND_DATA,
-        node_id,
-        0x06,
-        COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION, MULTI_CHANNEL_ASSOCIATION_REMOVE,
-        LIFELINE_GROUP_1,0x01,0x01,0x00,0x05,0x00
+    uint8_t payload[] =
+    {
+        COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION,   // 0x8E
+        MULTI_CHANNEL_ASSOCIATION_REMOVE,          // 0x04
+        0x01,                                      // Lifeline group
+        0x00,                                      // marker (node list)
+        g_controller_node_id                       // controller node
     };
-    frame[13] = calculate_checksum(&frame[1], 12);
-    uart_write_bytes(UART_PORT, (char *)frame, sizeof(frame));
 
-    ESP_LOGI(TAG, "Sent MC Lifeline Association REMOVE to node %d", node_id);
+    uint8_t frame[32];
+    uint8_t i = 0;
+
+    frame[i++] = SOF;
+    frame[i++] = 0;
+    frame[i++] = REQUEST;
+    frame[i++] = FUNC_ID_ZW_SEND_DATA;
+
+    frame[i++] = node_id;
+    frame[i++] = sizeof(payload);
+
+    memcpy(&frame[i], payload, sizeof(payload));
+    i += sizeof(payload);
+
+    frame[i++] =
+        TRANSMIT_OPTION_ACK |
+        TRANSMIT_OPTION_AUTO_ROUTE |
+        TRANSMIT_OPTION_EXPLORE |
+        TRANSMIT_OPTION_SECURITY;
+
+    frame[i++] = 0x01;
+
+    frame[1] = i - 1;
+    frame[i] = calculate_checksum(&frame[1], frame[1]);
+
+    uart_write_bytes(UART_PORT, (char *)frame, i + 1);
+
+    zw_print_frame("TX MC REMOVE", frame, i + 1);
 }
 
 void zw_send_central_scene_get(uint8_t node_id)
@@ -1767,9 +1845,6 @@ static void parse_multi_channel_association_report(
         uint8_t cmd_len,
         uint8_t src_node)
 {
-    /* Minimum valid length:
-     * 8E 03 grp max rpt marker node ep  -> 8 bytes
-     */
     if (cmd_len < 5) {
         ESP_LOGW(TAG_ASSOCIATION,
             "Invalid MC_ASSOCIATION_REPORT length: %d", cmd_len);
@@ -1777,8 +1852,6 @@ static void parse_multi_channel_association_report(
     }
 
     uint8_t group_id          = cmd[2];
-    //uint8_t max_nodes         = cmd[3];
-    //uint8_t reports_to_follow = cmd[4];
     if (cmd_len == 5) {
         ESP_LOGW(TAG_ASSOCIATION,"Group %d has NO associations", group_id);
         char web_msg[128];
@@ -1792,8 +1865,6 @@ static void parse_multi_channel_association_report(
     ESP_LOGI(TAG_ASSOCIATION, "=== MULTI_CHANNEL_ASSOCIATION_REPORT ===");
     ESP_LOGI(TAG_ASSOCIATION, "Remote node      : %d", src_node);
     ESP_LOGI(TAG_ASSOCIATION, "Group ID         : %d", group_id);
-    //ESP_LOGI(TAG_ASSOCIATION, "Max nodes        : %d", max_nodes);
-    //ESP_LOGI(TAG_ASSOCIATION, "Reports to follow: %d", reports_to_follow);
 
     /* Start parsing after reports_to_follow */
     uint8_t idx = 5;
@@ -1855,7 +1926,6 @@ static void parse_configuration_report(uint8_t *cmd, uint8_t cmd_len, uint8_t sr
 // ==================== UART RX TASK ====================
 static void zw_uart_rx_task(void *arg) {
     uint8_t rx[256];
-    //static uint32_t inclusion_timeout = 0;
     static uint32_t exclusion_timeout = 0;
     static bool debug_mode = true;
 
@@ -2042,18 +2112,18 @@ static void zw_uart_rx_task(void *arg) {
                     parse_version_response(response_data, data_len);
                 }
             }
-                        // Handle RF Region Set response
-                        else if (type == RESPONSE && func == FUNC_ID_MEMORY_GET_ID && zw_state == ZW_WAIT_HOMEID) {
-                            if (frame_len >= 5) {
-                                memcpy(g_home_id, &rx[sof + 4], 4);
-                                g_home_id_valid = true;
-                                ESP_LOGI(TAG, "HomeID: %02X%02X%02X%02X",
-                                        g_home_id[0], g_home_id[1], g_home_id[2], g_home_id[3]);
-                            }
-                            zw_state = ZW_IDLE;
-                            ESP_LOGI(TAG, "Z-Wave controller ready");
+            // Handle RF Region Set response
+            else if (type == RESPONSE && func == FUNC_ID_MEMORY_GET_ID && zw_state == ZW_WAIT_HOMEID) {
+                if (frame_len >= 5) {
+                    memcpy(g_home_id, &rx[sof + 4], 4);
+                    g_home_id_valid = true;
+                    ESP_LOGI(TAG, "HomeID: %02X%02X%02X%02X",
+                            g_home_id[0], g_home_id[1], g_home_id[2], g_home_id[3]);
+                }
+                zw_state = ZW_IDLE;
+                ESP_LOGI(TAG, "Z-Wave controller ready");
 
-                        } 
+            } 
             else if (type == REQUEST && func == FUNC_ID_ZW_ADD_NODE_TO_NETWORK)
             {
                 uint8_t status = rx[sof + 5];
@@ -2102,8 +2172,6 @@ static void zw_uart_rx_task(void *arg) {
                         );
                         break;
                     }
-
-                    /* 🔥 KEY CHANGE IS HERE 🔥 */
                     case ADD_NODE_STATUS_PROTOCOL_DONE:
                     {
                         inclusion_protocol_done = true;
@@ -2209,7 +2277,7 @@ static void zw_uart_rx_task(void *arg) {
                         "(status=0x%02X)",
                         rx[sof + 5]
                     );
-                    continue;   // NOT return (we are inside a task loop)
+                    continue;
                 }
             //uint8_t callback_id = rx[sof + 4];
             uint8_t status      = rx[sof + 5];
@@ -3196,72 +3264,36 @@ static esp_err_t save_assoc_remove_post_handler(httpd_req_t *req) {
     return ESP_OK;
 }
 
-// Handler for clear wifi credentials
-static esp_err_t clear_wifi_post_handler(httpd_req_t *req) {
-    char buf[100];
-    int ret, remaining = req->content_len;
-    
-    // Read POST data if any
-    while (remaining > 0) {
-        if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
-            if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
-                continue;
-            }
-            return ESP_FAIL;
-        }
-        remaining -= ret;
-    }
-    
-    ESP_LOGI(TAG, "Wi-Fi reset requested via web");
-    
-    // Send immediate response
-    httpd_resp_set_type(req, "application/json");
-    httpd_resp_send(req, "{\"status\":\"reset_started\"}", HTTPD_RESP_USE_STRLEN);
-    
-    // Delay to allow response to be sent
-    vTaskDelay(pdMS_TO_TICKS(100));
-    nvs_handle_t nvs;
-    esp_err_t err = nvs_open("wifi_config", NVS_READWRITE, &nvs);
-    if (err == ESP_OK) {
-        nvs_erase_all(nvs);
-        nvs_commit(nvs);
-        nvs_close(nvs);
-        ESP_LOGI(TAG, "WiFi credentials cleared");
-    }
-    vTaskDelay(500);
-    esp_restart();
-    return ESP_OK;
-}
 
-// Handler for Z-Wave Network Reset
-static esp_err_t zwave_reset_post_handler(httpd_req_t *req) {
-    char buf[100];
-    int ret, remaining = req->content_len;
+// // Handler for Z-Wave Network Reset
+// static esp_err_t zwave_reset_post_handler(httpd_req_t *req) {
+//     char buf[100];
+//     int ret, remaining = req->content_len;
+//     while (remaining > 0) {
+//         if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
+//             if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
+//                 continue;
+//             }
+//             return ESP_FAIL;
+//         }
+//         remaining -= ret;
+//     }
     
-    // Read POST data if any
-    while (remaining > 0) {
-        if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
-            if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
-                continue;
-            }
-            return ESP_FAIL;
-        }
-        remaining -= ret;
-    }
-    
-    ESP_LOGI(TAG, "Z-Wave network reset requested via web");
-    TURN_OFF_ZWAVE_LED
-    // Send immediate response
-    httpd_resp_set_type(req, "application/json");
-    httpd_resp_send(req, "{\"status\":\"reset_started\"}", HTTPD_RESP_USE_STRLEN);
-    
-    // Delay to allow response to be sent
-    vTaskDelay(pdMS_TO_TICKS(100));
-    reset_zwave();
-    vTaskDelay(500);
-    esp_restart();
-    return ESP_OK;
-}
+//     ESP_LOGI(TAG, "Z-Wave network reset requested via web");
+//     TURN_OFF_ZWAVE_LED
+//     httpd_resp_set_type(req, "application/json");
+//     httpd_resp_send(req, "{\"status\":\"reset_started\"}", HTTPD_RESP_USE_STRLEN);
+//     vTaskDelay(pdMS_TO_TICKS(100));
+//     // 1. Clear all nodes from NVS
+//     //nvs_clear_all_nodes();
+//     //2. Reset Z-Wave Network
+//     vTaskDelay(pdMS_TO_TICKS(100));
+//     reset_zwave();
+//     vTaskDelay(500);
+//     esp_restart();
+//     return ESP_OK;
+// }
+
 // Handler for soft reset
 static esp_err_t soft_reset_post_handler(httpd_req_t *req) {
     char buf[100];
@@ -3279,16 +3311,18 @@ static esp_err_t soft_reset_post_handler(httpd_req_t *req) {
     }
     
     ESP_LOGI(TAG, "Soft reset requested via web");
-    TURN_OFF_ZWAVE_LED
-    // Send immediate response
+    TURN_OFF_WIFI_LED
     httpd_resp_set_type(req, "application/json");
     httpd_resp_send(req, "{\"status\":\"reset_started\"}", HTTPD_RESP_USE_STRLEN);
-    
-    // Delay to allow response to be sent
-    vTaskDelay(pdMS_TO_TICKS(100));
-    nvs_clear_all_nodes();
-    vTaskDelay(100);
-    reset_zwave();
+    // 1. Clear WiFi credentials
+    nvs_handle_t nvs;
+    esp_err_t err = nvs_open("wifi_config", NVS_READWRITE, &nvs);
+    if (err == ESP_OK) {
+        nvs_erase_all(nvs);
+        nvs_commit(nvs);
+        nvs_close(nvs);
+        ESP_LOGI(TAG, "WiFi credentials cleared");
+    }
     vTaskDelay(500);
     esp_restart();
     
@@ -3299,8 +3333,6 @@ static esp_err_t soft_reset_post_handler(httpd_req_t *req) {
 static esp_err_t hard_reset_post_handler(httpd_req_t *req) {
     char buf[100];
     int ret, remaining = req->content_len;
-    
-    // Read POST data if any
     while (remaining > 0) {
         if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
             if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
@@ -3316,8 +3348,8 @@ static esp_err_t hard_reset_post_handler(httpd_req_t *req) {
     TURN_OFF_ZWAVE_LED
     // This should clear all configurations, nodes, and factory reset
     
-     // 1. Clear all nodes from NVS
-     nvs_clear_all_nodes();
+    // 1. Clear all nodes from NVS
+    nvs_clear_all_nodes();
     
     // 2. Clear WiFi credentials
     nvs_handle_t nvs;
@@ -3328,13 +3360,10 @@ static esp_err_t hard_reset_post_handler(httpd_req_t *req) {
         nvs_close(nvs);
         ESP_LOGI(TAG, "WiFi credentials cleared");
     }
-    // Send response
     httpd_resp_set_type(req, "application/json");
     httpd_resp_send(req, "{\"status\":\"hard_reset_complete\"}", HTTPD_RESP_USE_STRLEN);
-    
-    // Delay to allow response to be sent
     vTaskDelay(pdMS_TO_TICKS(100));
-    
+    //3. Reset Z-Wave Network
     reset_zwave();
     vTaskDelay(500);
     esp_restart();
@@ -3345,8 +3374,6 @@ static esp_err_t hard_reset_post_handler(httpd_req_t *req) {
 static esp_err_t inclusion_post_handler(httpd_req_t *req) {
     char buf[100];
     int ret, remaining = req->content_len;
-    
-    // Read POST data if any
     while (remaining > 0) {
         if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
             if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
@@ -3370,10 +3397,8 @@ static esp_err_t inclusion_post_handler(httpd_req_t *req) {
     
     // // Start inclusion process
     // zw_start_inclusion();
-    zw_start_inclusion_async();   // 🔥 non-blocking
-    // Return immediate response
+    zw_start_inclusion_async();
     const char *response = "Inclusion process started. Put Z-Wave device in inclusion mode within 60 seconds.";
-   // const char *response = "Inclusion process started. Please put your Z-Wave device in inclusion mode within 60 seconds.";
     httpd_resp_send(req, response, strlen(response));
     show_Online_msg = false;
     send_msg_to_web(response);
@@ -3383,8 +3408,6 @@ static esp_err_t inclusion_post_handler(httpd_req_t *req) {
 static esp_err_t exclusion_post_handler(httpd_req_t *req) {
     char buf[100];
     int ret, remaining = req->content_len;
-    
-    // Read POST data if any
     while (remaining > 0) {
         if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
             if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
@@ -3400,7 +3423,6 @@ static esp_err_t exclusion_post_handler(httpd_req_t *req) {
     // Start exclusion process
     //zw_start_exclusion();
     zw_start_exclusion_async();
-    // Return immediate response
     const char *response = "Exclusion process started. Put device in exclusion mode. "
                           "The device will be removed automatically when exclusion completes.";
     httpd_resp_send(req, response, strlen(response));
@@ -3410,10 +3432,9 @@ static esp_err_t exclusion_post_handler(httpd_req_t *req) {
 }
 
 static esp_err_t linkGateway_post_handler(httpd_req_t *req) {
+    TURN_OFF_ZWAVE_LED
     char buf[100];
     int ret, remaining = req->content_len;
-    
-    // Read POST data if any
     while (remaining > 0) {
         if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
             if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
@@ -3429,14 +3450,14 @@ static esp_err_t linkGateway_post_handler(httpd_req_t *req) {
     const char *response = "Linking was successfull!!";
     httpd_resp_send(req, response, strlen(response));
     show_Online_msg = true;
+    TURN_ON_ZWAVE_LED
     return ESP_OK;
 }
 
 static esp_err_t unlinkGateway_post_handler(httpd_req_t *req) {
+    TURN_OFF_ZWAVE_LED
     char buf[100];
     int ret, remaining = req->content_len;
-    
-    // Read POST data if any
     while (remaining > 0) {
         if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0) {
             if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
@@ -3452,6 +3473,7 @@ static esp_err_t unlinkGateway_post_handler(httpd_req_t *req) {
     const char *response = "UnLinking was successfull!!";
     httpd_resp_send(req, response, strlen(response));
     show_Online_msg = true;
+    TURN_ON_ZWAVE_LED
     return ESP_OK;
 }
 
@@ -3615,19 +3637,12 @@ static const httpd_uri_t unlinkGateway = {
     .user_ctx  = NULL
 };
 
-static const httpd_uri_t clearWifi = {
-    .uri       = "/clearWifi",
-    .method    = HTTP_POST,
-    .handler   = clear_wifi_post_handler,
-    .user_ctx  = NULL
-};
-
-static const httpd_uri_t zwaveNetworkReset = {
-    .uri       = "/zwaveNetworkReset",
-    .method    = HTTP_POST,
-    .handler   = zwave_reset_post_handler,
-    .user_ctx  = NULL
-};
+// static const httpd_uri_t zwaveNetworkReset = {
+//     .uri       = "/zwaveNetworkReset",
+//     .method    = HTTP_POST,
+//     .handler   = zwave_reset_post_handler,
+//     .user_ctx  = NULL
+// };
 
 static const httpd_uri_t softReset = {
     .uri       = "/softReset",
@@ -3671,8 +3686,7 @@ httpd_handle_t start_webserver(void) {
         httpd_register_uri_handler(server, &saveAssocRemove);
         httpd_register_uri_handler(server, &linkGateway);
         httpd_register_uri_handler(server, &unlinkGateway);
-        httpd_register_uri_handler(server, &clearWifi);
-        httpd_register_uri_handler(server, &zwaveNetworkReset);
+//        httpd_register_uri_handler(server, &zwaveNetworkReset);
         httpd_register_uri_handler(server, &softReset);
         httpd_register_uri_handler(server, &hardReset);
         httpd_register_uri_handler(server, &ota_upload);
@@ -3698,8 +3712,6 @@ static void button_task(void *arg)
     uint32_t current_time;
 
     while (1) {
-
-        /* Wait for button interrupt */
         if (xQueueReceive(gpio_evt_queue, &gpio_num, pdMS_TO_TICKS(50))) {
 
             current_time = xTaskGetTickCount() * portTICK_PERIOD_MS;
@@ -3729,29 +3741,31 @@ static void button_task(void *arg)
                          button_press_count);
 
                 if (button_press_count >= MULTI_PRESS_THRESHOLD_HARD_RESET) {
-
+                    // This should clear all configurations, nodes, and factory reset
                     ESP_LOGE(TAGBUTTON, "=== RESETTING Gateway ===");
                     TURN_OFF_WIFI_LED;
                     TURN_OFF_ZWAVE_LED;
-
+                    // 1. Clear all nodes from NVS
                     nvs_clear_all_nodes();
-
+                    vTaskDelay(pdMS_TO_TICKS(100));
+                    // 2. Clear WiFi credentials
                     nvs_handle_t nvs;
                     if (nvs_open("wifi_config", NVS_READWRITE, &nvs) == ESP_OK) {
                         nvs_erase_all(nvs);
                         nvs_commit(nvs);
                         nvs_close(nvs);
                     }
-
+                    vTaskDelay(pdMS_TO_TICKS(100));
                     reset_zwave();
                     vTaskDelay(pdMS_TO_TICKS(500));
                     esp_restart();
+
                 }
                 else if (button_press_count >= MULTI_PRESS_THRESHOLD_CLEAR_WIFI) {
 
                     ESP_LOGE(TAGBUTTON, "=== RESETTING WiFi CREDENTIALS ===");
                     TURN_OFF_WIFI_LED;
-
+                    // 1. Clear WiFi credentials
                     nvs_handle_t nvs;
                     if (nvs_open("wifi_config", NVS_READWRITE, &nvs) == ESP_OK) {
                         nvs_erase_all(nvs);
@@ -3762,8 +3776,6 @@ static void button_task(void *arg)
                     vTaskDelay(pdMS_TO_TICKS(500));
                     esp_restart();
                 }
-
-                /* Reset counter AFTER evaluation */
                 button_press_count = 0;
             }
         }
@@ -3787,7 +3799,7 @@ void init_button_isr(){
         .mode = GPIO_MODE_INPUT,
         .pull_up_en = GPIO_PULLUP_ENABLE,
         .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .intr_type = GPIO_INTR_NEGEDGE   // falling edge = press
+        .intr_type = GPIO_INTR_NEGEDGE
     };
     gpio_config(&io_conf);
 
@@ -3812,8 +3824,27 @@ void init_led(){
     TURN_OFF_ZWAVE_LED
 
 }
+
+static void ota_confirm_running_firmware(void)
+{
+    const esp_partition_t *running = esp_ota_get_running_partition();
+    esp_ota_img_states_t ota_state;
+
+    if (esp_ota_get_state_partition(running, &ota_state) == ESP_OK) {
+
+        ESP_LOGW("OTA", "OTA state = %d", ota_state);
+
+        if (ota_state == ESP_OTA_IMG_PENDING_VERIFY) {
+
+            ESP_LOGW("OTA", "Marking firmware as VALID");
+            esp_ota_mark_app_valid_cancel_rollback();
+        }
+    }
+}
+
 // ==================== MAIN APPLICATION ====================
 void app_main(void) {
+    
     ESP_LOGI(TAG, "Starting Jaquar Remote Configuration Application");
     
     // Initialize NVS
@@ -3831,26 +3862,20 @@ void app_main(void) {
         xTimerStart(task_watchdog_timer, 0);
         ESP_LOGI(TAG, "Watchdog timer started");
     }
-    
-    // Initialize UART
     init_uart();
-
     init_button_isr();
-    /* Create one-shot timer */
     esp_timer_create_args_t timer_args = {
         .callback = &web_msg_timer_cb,
         .name = "web_msg_5s_timer"
     };
     esp_timer_create(&timer_args, &web_msg_timer);
     web_status_mutex = xSemaphoreCreateMutex();
-    //show_Online_msg = true;
-    // Start UART RX task immediately
     xTaskCreate(zw_uart_rx_task, "zw_rx", 8192, NULL, 5, NULL);
     
     // Wait for Z-Wave module to boot
     ESP_LOGI(TAG, "Waiting for Z-Wave module to initialize...");
     xTaskCreate(&blink_zwave_led_task, "Setting up Zwave S_API", 2048, NULL, 5, &blink_zwave_led_handle);
-    for (int i = 0; i < 30; i++) {  // 3 seconds total
+    for (int i = 0; i < 30; i++) {
         kick_watchdog();
         vTaskDelay(pdMS_TO_TICKS(100));
     }
@@ -3870,13 +3895,12 @@ void app_main(void) {
     ESP_LOGI(TAG, "STARTING Z-WAVE SERIAL API INITIALIZATION SEQUENCE");
     ESP_LOGI(TAG, "========================================================");
     
-    // Wait for any pending responses first
     vTaskDelay(pdMS_TO_TICKS(200));
     
     // 1. Get Controller Capabilities
     ESP_LOGI(TAG, "\n[1] Getting controller capabilities...");
     zw_get_capabilities();
-    vTaskDelay(pdMS_TO_TICKS(200));  // Wait for response
+    vTaskDelay(pdMS_TO_TICKS(200));
     
     // 2. Get SerialAPI Supported Command Classes
     ESP_LOGI(TAG, "\n[2] Getting SerialAPI supported command classes...");
@@ -3893,15 +3917,14 @@ void app_main(void) {
     zw_get_version();
     vTaskDelay(pdMS_TO_TICKS(200));
     
-    // 5. Get Memory ID (Home ID and Node ID) - Already got this from startup
+    // 5. Get Memory ID (Home ID and Node ID)
     ESP_LOGI(TAG, "\n[5] Getting Home ID and Node ID...");
     send_memory_get_id();
     vTaskDelay(pdMS_TO_TICKS(200));
     
     // 7. Set TX Power (adjust based on response)
     ESP_LOGI(TAG, "\n[7] Setting TX power...");
-    // Try different values if 0x7F fails
-    zw_set_tx_power(0x7F, 0x00);  // 0x32 = 0dBm
+    zw_set_tx_power(0x7F, 0x00);
     vTaskDelay(pdMS_TO_TICKS(100));
     
     // 9. Set RF Region to India (only if not already India)
@@ -3933,20 +3956,21 @@ void app_main(void) {
     }
     nvs_load_node_table();
     print_node_table();
-    ESP_LOGI(TAG, "\n");
+    // ESP_LOGI(TAG, "\n");
     // ESP_LOGI(TAG, "========================================================");
     // ESP_LOGI(TAG, "APPLICATION STARTED SUCCESSFULLY");
     // ESP_LOGI(TAG, "========================================================");
     ESP_LOGI(TAG, "Z-Wave Controller: READY");
     // ESP_LOGI(TAG, "========================================================");
-    ESP_LOGI(TAG, "\n");
+    // ESP_LOGI(TAG, "\n");
    // ESP_LOGI("CHECK", "Next OTA partition: %s", esp_ota_get_next_update_partition(NULL)->label);
     //ESP_LOGI(TAG, "Application started successfully");
    // ESP_LOGE("OTA_TEST", "OTA IMAGE BOOTED");
    // ESP_LOGE("OTA_TEST", "BUILD: %s %s", __DATE__, __TIME__);
     ESP_LOGI(TAG, "=====================================");
-    ESP_LOGI(TAG, "====Jaquar RS485 Remote Gateway====");
+    ESP_LOGI(TAG, "==== Jaquar RS485 Remote Gateway ====");
     ESP_LOGI(TAG, "=====================================");
+    ota_confirm_running_firmware();
     // Main loop
     while (1) {
         kick_watchdog();
@@ -3954,7 +3978,7 @@ void app_main(void) {
         // Periodically log system status
         static uint32_t last_log = 0;
         uint32_t now = esp_log_timestamp();
-        if (now - last_log > 30000) {  // Every 30 seconds
+        if (now - last_log > 30000) {
             last_log = now;
             
             // Print all nodes information
