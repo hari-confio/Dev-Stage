@@ -56,6 +56,10 @@
 #define FUNC_ID_ZW_IS_PRIMARY_CTRL          0x66
 #define FUNC_ID_ZW_SET_DEFAULT              0x42
 #define FUNC_ID_APPLICATION_COMMAND_HANDLER 0xA8
+#define TRANSMIT_OPTION_ACK       0x01
+#define TRANSMIT_OPTION_LOW_POWER 0x02
+#define TRANSMIT_OPTION_AUTO_ROUTE 0x04
+#define TRANSMIT_OPTION_EXPLORE   0x20
 
 // RF Region Commands
 #define RF_REGION_SET       0x40
@@ -123,9 +127,13 @@
 #define MULTI_CHANNEL_ASSOCIATION_REMOVE        0x04
 #define MULTI_CHANNEL_ASSOCIATION_SET_MARKER    0x00
 #define COMMAND_CLASS_MULTI_CHANNEL             0x60
+#define COMMAND_CLASS_ASSOCIATION               0x85
 #define LIFELINE_GROUP_1                        0x01
+#define ASSOCIATION_SET                         0x01
+#define TRANSMIT_OPTION_SECURITY                0x10
 #define INCLUSION_TIMEOUT_MS   60000
 #define EXCLUSION_TIMEOUT_MS   60000
+
 
 typedef enum {
     INT_EVT_START,
